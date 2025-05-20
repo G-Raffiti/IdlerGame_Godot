@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="AutoSaveRes" load_steps=2 format=3 uid="uid://ct1pnyea0oud1"]
+
+[ext_resource type="Script" uid="uid://dgo2ggjhojix2" path="res://save/auto_save_res.gd" id="1_w5oxb"]
+
+[resource]
+script = ExtResource("1_w5oxb")
+metadata/_custom_type_script = "uid://dgo2ggjhojix2"

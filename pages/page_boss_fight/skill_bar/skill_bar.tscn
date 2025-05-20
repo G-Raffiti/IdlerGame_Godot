@@ -1,0 +1,79 @@
+[gd_scene load_steps=5 format=3 uid="uid://c4b1l3uy4uy"]
+
+[ext_resource type="Script" uid="uid://dkg0p8iyb60wa" path="res://pages/page_boss_fight/skill_bar/skill_bar.gd" id="1_ppmoi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lc2xo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ppmoi"]
+resource_local_to_scene = true
+bg_color = Color(0.743482, 0.743482, 0.743482, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x84tg"]
+resource_local_to_scene = true
+bg_color = Color(2.88785e-07, 0.362862, 0.516815, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.917647, 0, 0.211765, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="SkillBar" type="HBoxContainer"]
+tooltip_text = "Not Implemented Yet"
+mouse_filter = 0
+mouse_default_cursor_shape = 16
+script = ExtResource("1_ppmoi")
+fill_color = Color(2.88785e-07, 0.362862, 0.516815, 1)
+back_color = Color(0.743482, 0.743482, 0.743482, 1)
+font_color = Color(3.85046e-07, 0.163219, 0.249492, 1)
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_lc2xo")
+
+[node name="ProgressBar" type="ProgressBar" parent="PanelContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 1
+mouse_filter = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_ppmoi")
+theme_override_styles/fill = SubResource("StyleBoxFlat_x84tg")
+max_value = 1.0
+show_percentage = false
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 7
+theme_override_constants/margin_top = 7
+theme_override_constants/margin_right = 7
+theme_override_constants/margin_bottom = 7
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PanelContainer/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+bbcode_enabled = true
+text = "Attack"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1

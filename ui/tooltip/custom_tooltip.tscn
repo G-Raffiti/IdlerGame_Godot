@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://id3gv3ymu6qd"]
+
+[ext_resource type="Script" uid="uid://b2arkflfh2r2n" path="res://ui/tooltip/tooltip.gd" id="1_5a56t"]
+
+[node name="MarginContainer" type="MarginContainer" node_paths=PackedStringArray("rich_text")]
+offset_right = 445.0
+offset_bottom = 118.0
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_bottom = 5
+script = ExtResource("1_5a56t")
+rich_text = NodePath("MarginContainer/RichTextLabel")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+theme_override_constants/margin_bottom = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer"]
+layout_mode = 2
+bbcode_enabled = true
+text = "[u][b]Gold[/b] resource:[/u]
+Can be used in the Central to increase acces to [b]Energy[/b]
+[b]Click here[/b] to increase the [b]Gold[/b] storage capacity.
+(cost 90% of current maximum)"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 3
+vertical_alignment = 3
+justification_flags = 35

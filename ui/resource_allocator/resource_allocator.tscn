@@ -1,0 +1,70 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnx4s5bwkidgp"]
+
+[ext_resource type="Script" uid="uid://c0ba6gf4rnvpc" path="res://ui/resource_allocator/resource_allocator.gd" id="1_ieu20"]
+[ext_resource type="PackedScene" uid="uid://pxrbejhtrm8w" path="res://ui/left_bar/progress_bar_button/button.tscn" id="1_udyrh"]
+
+[node name="ResourceAllocator" type="HBoxContainer"]
+offset_right = 697.0
+offset_bottom = 32.0
+script = ExtResource("1_ieu20")
+fill_color = Color(0.505882, 0, 0, 1)
+back_color = Color(0.372251, 0.372251, 0.372251, 1)
+font_color = Color(1, 1, 1, 1)
+fill_duration_at_maximum = Vector2(6, 1)
+increase_factor_on_bar_filled = Vector2(0, 0)
+
+[node name="ProgressBarButton" parent="." instance=ExtResource("1_udyrh")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 29)
+layout_mode = 2
+size_flags_horizontal = 3
+text_value = "Idle Attack"
+
+[node name="LevelText" type="RichTextLabel" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "1,758 e75"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AllocatedText" type="RichTextLabel" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "1.500"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="Add" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+text = " + "
+
+[node name="Remove" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+text = " - "
+
+[node name="Max" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+text = " Max "
+
+[node name="LockedText" type="RichTextLabel" parent="."]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+text = "Unlock At Boss Level 1"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1

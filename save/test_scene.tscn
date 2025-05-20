@@ -1,0 +1,94 @@
+[gd_scene load_steps=3 format=3 uid="uid://dds5iy8lo2hgg"]
+
+[ext_resource type="Script" uid="uid://du68brvoxc0yr" path="res://save/test.gd" id="1_hkc3h"]
+[ext_resource type="Resource" uid="uid://cvfsxhowbinw3" path="res://save/creature_data.tres" id="2_3eb3d"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hkc3h")
+auto_save_res = ExtResource("2_3eb3d")
+saved_res = Dictionary[String, Variant]({
+"RefCounted": null,
+"Resource": null,
+"attack": Vector2(0, 0),
+"attack_duration": Vector2(1.76, 0),
+"auto_save_res.gd": null,
+"creature_data.gd": null,
+"defense": Vector2(12, -5),
+"defense_duration": Vector2(1, 0),
+"hp": Vector2(250, 0),
+"icon": Dictionary[String, Variant]({
+"CompressedTexture2D": null,
+"RefCounted": null,
+"Resource": null,
+"Texture": null,
+"Texture2D": null,
+"load_path": "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex",
+"resource_local_to_scene": false,
+"resource_name": "",
+"resource_path": "res://icon.svg",
+"resource_scene_unique_id": "",
+"script": null
+}),
+"metadata/_custom_type_script": "uid://cm15s8j7exwpj",
+"name": "Boss 2",
+"regen": Vector2(0.25, 0),
+"resource_local_to_scene": false,
+"resource_name": "",
+"resource_path": "res://save/creature_data.tres",
+"resource_scene_unique_id": "",
+"resources_gained_on_killed": Dictionary[int, Vector2]({
+1: Vector2(7, 0)
+}),
+"script": Dictionary[String, Variant]({
+"GDScript": null,
+"RefCounted": null,
+"Resource": null,
+"Script": null,
+"resource_local_to_scene": false,
+"resource_name": "",
+"resource_path": "res://pages/page_boss_fight/creature/creature_data.gd",
+"resource_scene_unique_id": "",
+"script/source": "@tool
+extends AutoSaveRes
+class_name Creature_Data
+
+@export var name: String = \"\"
+@export var icon: Texture2D = null
+@export_multiline var text: String = \"Level X Rewards\\n[b]Unlock: [/b]\"
+
+@export var hp: Vector2 = Vector2(1.0, 0)
+@export var attack: Vector2 = Vector2(0.0, 0)
+@export var attack_duration: Vector2 = Vector2(1.0, 0)
+@export var defense: Vector2 = Vector2(0.0, 0)
+@export var defense_duration: Vector2 = Vector2(1.0, 0)
+@export var regen: Vector2 = Vector2(0.0, 0)
+
+@export var resources_gained_on_killed: Dictionary[E.Res, Vector2]
+",
+"source_code": "@tool
+extends AutoSaveRes
+class_name Creature_Data
+
+@export var name: String = \"\"
+@export var icon: Texture2D = null
+@export_multiline var text: String = \"Level X Rewards\\n[b]Unlock: [/b]\"
+
+@export var hp: Vector2 = Vector2(1.0, 0)
+@export var attack: Vector2 = Vector2(0.0, 0)
+@export var attack_duration: Vector2 = Vector2(1.0, 0)
+@export var defense: Vector2 = Vector2(0.0, 0)
+@export var defense_duration: Vector2 = Vector2(1.0, 0)
+@export var regen: Vector2 = Vector2(0.0, 0)
+
+@export var resources_gained_on_killed: Dictionary[E.Res, Vector2]
+"
+}),
+"text": "Level X Rewards
+[b]Unlock: [/b]"
+})

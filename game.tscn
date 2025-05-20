@@ -1,0 +1,1553 @@
+[gd_scene load_steps=61 format=3 uid="uid://bvrw8m4ifsabq"]
+
+[ext_resource type="Script" uid="uid://bbb3btex1u0ft" path="res://game.gd" id="1_mfdv2"]
+[ext_resource type="PackedScene" uid="uid://coh24q5vdlgfx" path="res://ui/left_bar/title/title.tscn" id="2_iotsf"]
+[ext_resource type="PackedScene" uid="uid://pxrbejhtrm8w" path="res://ui/left_bar/progress_bar_button/button.tscn" id="3_lc2xo"]
+[ext_resource type="Script" uid="uid://dodpfpno0ubo8" path="res://ui/tabs/tab_container.gd" id="4_215e1"]
+[ext_resource type="PackedScene" uid="uid://cnx4s5bwkidgp" path="res://ui/resource_allocator/resource_allocator.tscn" id="5_7sc4i"]
+[ext_resource type="Script" uid="uid://b1ktt5buk8o6x" path="res://ui/tabs/tab_unlock_data.gd" id="5_e8heu"]
+[ext_resource type="Script" uid="uid://cas0aholycrmc" path="res://pages/page_traigning.gd" id="5_lc2xo"]
+[ext_resource type="Script" uid="uid://bvuqs7aar7g20" path="res://pages/page_excavation.gd" id="6_80cx4"]
+[ext_resource type="Script" uid="uid://vxadgjl5nmk" path="res://ui/tabs/tab_button.gd" id="6_rvswv"]
+[ext_resource type="Script" uid="uid://d0w6sksq4fu4p" path="res://ui/resource_allocator/resource_allocator_data.gd" id="7_e8heu"]
+[ext_resource type="Script" uid="uid://bp73r0jgdnjbf" path="res://pages/page_boss_fight/page_boss_fight.gd" id="8_7sc4i"]
+[ext_resource type="PackedScene" uid="uid://ci1ut4cmxwup2" path="res://pages/page_boss_fight/creature/creature.tscn" id="9_80cx4"]
+[ext_resource type="Script" uid="uid://d2ihsd4q4b5y1" path="res://ui/resource_button/resource_button.gd" id="9_boyg6"]
+[ext_resource type="Script" uid="uid://cm15s8j7exwpj" path="res://pages/page_boss_fight/creature/creature_data.gd" id="9_e8heu"]
+[ext_resource type="Script" uid="uid://fq6jkdyef3oo" path="res://cheat/cheat.gd" id="10_e36ub"]
+[ext_resource type="Script" uid="uid://bu1ygj21droc3" path="res://pages/page_central.gd" id="10_iotsf"]
+[ext_resource type="Script" uid="uid://beit5sf1ullka" path="res://systems/resource_system_initializer.gd" id="11_hb5m1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7sc4i"]
+bg_color = Color(0.210507, 0.210507, 0.210507, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_80cx4"]
+bg_color = Color(0.859949, 0.000127306, 7.09447e-05, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e8heu"]
+bg_color = Color(1, 0.816167, 0.806184, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rvswv"]
+bg_color = Color(0.657121, 0, 0.139927, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_boyg6"]
+bg_color = Color(0.769307, 0.880831, 1, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e36ub"]
+bg_color = Color(0, 0.450135, 0.777997, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Resource" id="Resource_i2p71"]
+script = ExtResource("5_e8heu")
+page_name = "Training"
+page_tooltip = "[b]Training[/b]
+This is the place to use your [b][color=pale_green]Energy[/color][/b] to upgrade your [b]Stats[/b]
+
+(you will need [b]Stats[/b] to progress in the [b]Boss Fight[/b])"
+tab_button = NodePath("Tabs/TabsButtons/Training")
+page_to_open = NodePath("Pages/Training")
+unlock_boss_level = 0
+metadata/_custom_type_script = "uid://b1ktt5buk8o6x"
+
+[sub_resource type="Resource" id="Resource_xa8c5"]
+script = ExtResource("5_e8heu")
+page_name = "Boss Fight"
+page_tooltip = "[b]Boss Fight[/b]
+This is the Arena ! Fight and prove you are the best !
+
+[color=red]Loss Penalty[/color]
+	Reset all your energy to 0
+[color=green]Victory Reward[/color]
+	Unlock the Next Boss
+	Unlock New Trainings
+	Unlock New Horizons"
+tab_button = NodePath("Tabs/TabsButtons/BossFight")
+page_to_open = NodePath("Pages/BossFight")
+unlock_boss_level = 0
+metadata/_custom_type_script = "uid://b1ktt5buk8o6x"
+
+[sub_resource type="Resource" id="Resource_5b14r"]
+script = ExtResource("5_e8heu")
+page_name = "The Mine"
+page_tooltip = "[b]The Mine[/b]
+Manage and collect [b][color=gold]Gold[/color][/b] here"
+tab_button = NodePath("Tabs/TabsButtons/TheMine")
+page_to_open = NodePath("Pages/TheMine")
+unlock_boss_level = 3
+metadata/_custom_type_script = "uid://b1ktt5buk8o6x"
+
+[sub_resource type="Resource" id="Resource_bnpwn"]
+script = ExtResource("5_e8heu")
+page_name = "Research Center"
+page_tooltip = "[b]Research Center[/b]
+Improve your [b][color=pale_green]Energy[/color][/b] production and research new way of spending it."
+tab_button = NodePath("Tabs/TabsButtons/Central")
+page_to_open = NodePath("Pages/Central")
+unlock_boss_level = 2
+metadata/_custom_type_script = "uid://b1ktt5buk8o6x"
+
+[sub_resource type="Resource" id="Resource_36jdj"]
+script = ExtResource("5_e8heu")
+page_name = "Cheat"
+page_tooltip = "[b]Dev Only[/b]
+Do not come Here"
+tab_button = NodePath("Tabs/TabsButtons/Cheat")
+page_to_open = NodePath("Pages/Cheat")
+unlock_boss_level = 0
+metadata/_custom_type_script = "uid://b1ktt5buk8o6x"
+
+[sub_resource type="Resource" id="Resource_lc2xo"]
+script = ExtResource("7_e8heu")
+display_name = "Basic Attack"
+display_level = true
+unlock_level = 0
+tooltip_message = "[b][u]Basic Attack Skill[/u][/b]
+Train your [b][color=tomato]Attack[/color][/b] Skills by allocating [b][color=pale_green]Energy[/color][/b] here."
+maximum_allocated = Vector2(5, 3)
+fill_duration_at_maximum = Vector2(1, -1)
+increase_factor_on_bar_filled = Vector2(1, 0)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = true
+decrease_factor_on_rebirth_maximum = Vector2(9, -1)
+decrease_maximum_on_rebirth_per_bar_filled = Vector2(1, 0)
+metadata/_custom_type_script = "uid://d0w6sksq4fu4p"
+
+[sub_resource type="Resource" id="Resource_7sc4i"]
+script = ExtResource("7_e8heu")
+display_name = "Advanced Attack"
+display_level = true
+unlock_level = 2
+tooltip_message = "[b][u]Advanced Attack Skill[/u][/b]
+Master your [b][color=tomato]Attack[/color][/b] Skills and speedup
+your training !"
+maximum_allocated = Vector2(777777, 0)
+fill_duration_at_maximum = Vector2(1, -1)
+increase_factor_on_bar_filled = Vector2(1, 0)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = true
+decrease_factor_on_rebirth_maximum = Vector2(9, -1)
+decrease_maximum_on_rebirth_per_bar_filled = Vector2(7, 0)
+metadata/_custom_type_script = "uid://d0w6sksq4fu4p"
+
+[sub_resource type="Resource" id="Resource_80cx4"]
+script = ExtResource("7_e8heu")
+display_name = "Master Attack"
+display_level = true
+unlock_level = 6
+tooltip_message = "[b][u]Master Attack Skill[/u][/b]
+This is the Ultimate trainning, train your [b][color=tomato]Attack[/color][/b] Skills
+to fight even the Gods!"
+maximum_allocated = Vector2(1, 9)
+fill_duration_at_maximum = Vector2(1, -1)
+increase_factor_on_bar_filled = Vector2(1, 0)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = true
+decrease_factor_on_rebirth_maximum = Vector2(9, -1)
+decrease_maximum_on_rebirth_per_bar_filled = Vector2(1, 3)
+metadata/_custom_type_script = "uid://d0w6sksq4fu4p"
+
+[sub_resource type="Resource" id="Resource_e8heu"]
+script = ExtResource("7_e8heu")
+display_name = "Strength Training"
+display_level = true
+unlock_level = 8
+tooltip_message = "[b][u]Strength Training[/u][/b]
+Train your body to the Limit. by reinforcing yourself all of your [b][color=tomato]Attack[/color][/b]'s Skills will be more POWERFULL !
+
++10% [b][color=tomato]Attack[/color][/b] / level"
+maximum_allocated = Vector2(5, 3)
+fill_duration_at_maximum = Vector2(2, 1)
+increase_factor_on_bar_filled = Vector2(1.07, 0)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = true
+decrease_factor_on_rebirth_maximum = Vector2(9, -1)
+decrease_maximum_on_rebirth_per_bar_filled = Vector2(1, 1)
+metadata/_custom_type_script = "uid://d0w6sksq4fu4p"
+
+[sub_resource type="Resource" id="Resource_rvswv"]
+script = ExtResource("7_e8heu")
+display_name = "Attack Speed"
+display_level = true
+unlock_level = 10
+tooltip_message = "[b][u]Attack Speed[/u][/b]
+Train your [b][color=tomato]Attack[/color][/b] [b][color=yellow]Speed[/color][/b] by allocating [b][color=pale_green]Energy[/color][/b] here.
+
++5 % [b][color=tomato]Attack[/color][/b] [b][color=yellow]Speed[/color][/b] / level"
+maximum_allocated = Vector2(4.4, 6)
+fill_duration_at_maximum = Vector2(1, 0)
+increase_factor_on_bar_filled = Vector2(1.2, 0)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = true
+decrease_factor_on_rebirth_maximum = Vector2(9, -1)
+decrease_maximum_on_rebirth_per_bar_filled = Vector2(4.4, 2)
+metadata/_custom_type_script = "uid://d0w6sksq4fu4p"
+
+[sub_resource type="Resource" id="Resource_215e1"]
+script = ExtResource("7_e8heu")
+display_name = "Basic Defense"
+display_level = true
+unlock_level = 0
+tooltip_message = "[b][u]Basic Defense Skill[/u][/b]
+Train your [b][color=sky_blue]Defense[/color][/b] Skills by allocating [b][color=pale_green]Energy[/color][/b] here."
+maximum_allocated = Vector2(3, 3)
+fill_duration_at_maximum = Vector2(1, -1)
+increase_factor_on_bar_filled = Vector2(1, 0)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = true
+decrease_factor_on_rebirth_maximum = Vector2(9, -1)
+decrease_maximum_on_rebirth_per_bar_filled = Vector2(1, 0)
+metadata/_custom_type_script = "uid://d0w6sksq4fu4p"
+
+[sub_resource type="Resource" id="Resource_boyg6"]
+script = ExtResource("7_e8heu")
+display_name = "Advanced Defense"
+display_level = true
+unlock_level = 5
+tooltip_message = "[b][u]Advanced Defense Skill[/u][/b]
+Improve your [b][color=sky_blue]Defense[/color][/b] Skills.
+Become more resistant to Hit and outscale your opponents !"
+maximum_allocated = Vector2(5, 5)
+fill_duration_at_maximum = Vector2(1, -1)
+increase_factor_on_bar_filled = Vector2(1, 0)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = true
+decrease_factor_on_rebirth_maximum = Vector2(9, -1)
+decrease_maximum_on_rebirth_per_bar_filled = Vector2(5.2, 1)
+metadata/_custom_type_script = "uid://d0w6sksq4fu4p"
+
+[sub_resource type="Resource" id="Resource_e36ub"]
+script = ExtResource("7_e8heu")
+display_name = "Master Defense"
+display_level = true
+unlock_level = 7
+tooltip_message = "[b][u]Master Defense Skill[/u][/b]
+Augment your [b][color=sky_blue]Defense[/color][/b] and reduce every incoming damage.
+This is the Ultimate Protection !"
+maximum_allocated = Vector2(1.818, 8)
+fill_duration_at_maximum = Vector2(1, 0)
+increase_factor_on_bar_filled = Vector2(1, 0)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = true
+decrease_factor_on_rebirth_maximum = Vector2(9, -1)
+decrease_maximum_on_rebirth_per_bar_filled = Vector2(1.818, 3)
+metadata/_custom_type_script = "uid://d0w6sksq4fu4p"
+
+[sub_resource type="Resource" id="Resource_hb5m1"]
+script = ExtResource("7_e8heu")
+display_name = "Vitality Training"
+display_level = true
+unlock_level = 9
+tooltip_message = "[b][u]Vitality Training[/u][/b]
+Tncrease your Vitality and every [b][color=sky_blue]Defense[/color][/b]'s source will be grant you more.
+
++10% [b][color=sky_blue]Defense[/color][/b] / level"
+maximum_allocated = Vector2(5, 3)
+fill_duration_at_maximum = Vector2(2, 1)
+increase_factor_on_bar_filled = Vector2(1.07, 0)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = true
+decrease_factor_on_rebirth_maximum = Vector2(9, -1)
+decrease_maximum_on_rebirth_per_bar_filled = Vector2(5.2, 1)
+metadata/_custom_type_script = "uid://d0w6sksq4fu4p"
+
+[sub_resource type="Resource" id="Resource_qhcbd"]
+script = ExtResource("7_e8heu")
+display_name = "Defense Speed"
+display_level = true
+unlock_level = 11
+tooltip_message = "[b][u]Defense Speed[/u][/b]
+Train your [b][color=sky_blue]Defense[/color][/b] [b][color=yellow]Speed[/color][/b] by allocating [b][color=pale_green]Energy[/color][/b] here.
+
++5 % [b][color=sky_blue]Defense[/color][/b] [b][color=yellow]Speed[/color][/b] / level"
+maximum_allocated = Vector2(4.4, 6)
+fill_duration_at_maximum = Vector2(1, 0)
+increase_factor_on_bar_filled = Vector2(1.2, 0)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = true
+decrease_factor_on_rebirth_maximum = Vector2(9, -1)
+decrease_maximum_on_rebirth_per_bar_filled = Vector2(4.4, 2)
+metadata/_custom_type_script = "uid://d0w6sksq4fu4p"
+
+[sub_resource type="Resource" id="Resource_vaj68"]
+script = ExtResource("7_e8heu")
+display_name = "Endurance"
+display_level = true
+unlock_level = 1
+tooltip_message = "[b][u]Endurance Training[/u][/b]
+Train your [b][color=red]Endurance[/color][/b] by allocating [b][color=pale_green]Energy[/color][/b] here.
+
++ 1 [color=red]HP[/color] / Level"
+maximum_allocated = Vector2(5, 2)
+fill_duration_at_maximum = Vector2(1, -1)
+increase_factor_on_bar_filled = Vector2(1.01, 0)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = true
+decrease_factor_on_rebirth_maximum = Vector2(9, -1)
+decrease_maximum_on_rebirth_per_bar_filled = Vector2(1, 0)
+metadata/_custom_type_script = "uid://d0w6sksq4fu4p"
+
+[sub_resource type="Gradient" id="Gradient_rvswv"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0.164063, 0.390625, 0.53125, 0.796875)
+colors = PackedColorArray(0.72549, 1, 0.423529, 1, 0, 0.276954, 0.113657, 1, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_boyg6"]
+gradient = SubResource("Gradient_rvswv")
+fill = 1
+fill_from = Vector2(0.494792, 0.515625)
+fill_to = Vector2(0.911458, 0.135417)
+
+[sub_resource type="Resource" id="Resource_x5p1p"]
+script = ExtResource("9_e8heu")
+name = "Energy Ball"
+icon = SubResource("GradientTexture2D_boyg6")
+text = "Level 1 Rewards:
+[b]Unlock: [/b]Training [color=green]Endurance[/color]"
+hp = Vector2(50, 0)
+attack = Vector2(12, 0)
+attack_duration = Vector2(3, 0)
+defense = Vector2(4, 0)
+defense_duration = Vector2(1, 0)
+regen = Vector2(0, 0)
+resources_gained_on_killed = Dictionary[int, Vector2]({
+0: Vector2(75, 0)
+})
+metadata/_custom_type_script = "uid://cm15s8j7exwpj"
+
+[sub_resource type="Gradient" id="Gradient_e36ub"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0.15894, 0.523179, 0.649007, 1)
+colors = PackedColorArray(0.645596, 0.96533, 1, 1, 1, 1, 1, 1, 0, 0.278431, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_hb5m1"]
+gradient = SubResource("Gradient_e36ub")
+fill = 1
+fill_from = Vector2(0.494792, 0.515625)
+fill_to = Vector2(1, 0.534884)
+
+[sub_resource type="Resource" id="Resource_f1jbl"]
+script = ExtResource("9_e8heu")
+name = "Aura Ball"
+icon = SubResource("GradientTexture2D_hb5m1")
+text = "Level 2 Rewards
+[b]Unlock: [/b] Acces to [b]Research Center[/b]
+[b]Unlock: [/b] Training [color=tomato]Advanced Attack[/color]"
+hp = Vector2(500, 0)
+attack = Vector2(75, 0)
+attack_duration = Vector2(4, 0)
+defense = Vector2(250, 0)
+defense_duration = Vector2(10, 0)
+regen = Vector2(2, 0)
+resources_gained_on_killed = Dictionary[int, Vector2]({
+1: Vector2(500, 0)
+})
+metadata/_custom_type_script = "uid://cm15s8j7exwpj"
+
+[sub_resource type="Gradient" id="Gradient_e8heu"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0.164063, 0.390625, 0.53125, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.191407, 1.65449e-07, 0, 1, 0.184074, 0.000350753, 0.315488, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_rvswv"]
+gradient = SubResource("Gradient_e8heu")
+fill = 1
+fill_from = Vector2(0.494792, 0.515625)
+fill_to = Vector2(1, 0.493023)
+
+[sub_resource type="Resource" id="Resource_xfvwf"]
+script = ExtResource("9_e8heu")
+name = "Shadow"
+icon = SubResource("GradientTexture2D_rvswv")
+text = "Level 3 Rewards
+[b]Unlock: [/b] Acces to [b]The Mine[/b]"
+hp = Vector2(1500, 0)
+attack = Vector2(50, 0)
+attack_duration = Vector2(1, 0)
+defense = Vector2(66, 0)
+defense_duration = Vector2(2, 0)
+regen = Vector2(6.6, 0)
+resources_gained_on_killed = Dictionary[int, Vector2]({
+1: Vector2(1, 3)
+})
+metadata/_custom_type_script = "uid://cm15s8j7exwpj"
+
+[sub_resource type="Gradient" id="Gradient_boyg6"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0.164063, 0.390625, 0.53125, 1)
+colors = PackedColorArray(1, 0, 0, 1, 1, 0.522026, 0.456301, 1, 0.254773, 0, 0.0532556, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_e36ub"]
+gradient = SubResource("Gradient_boyg6")
+fill = 1
+fill_from = Vector2(0.494792, 0.515625)
+fill_to = Vector2(1, 0.493023)
+
+[sub_resource type="Resource" id="Resource_dhpj7"]
+script = ExtResource("9_e8heu")
+name = "Shark"
+icon = SubResource("GradientTexture2D_e36ub")
+text = "Level 4 Rewards
+[b]Unlock: [/b] The Mine Auto Click "
+hp = Vector2(2500, 0)
+attack = Vector2(1.5, 4)
+attack_duration = Vector2(1.5, 1)
+defense = Vector2(0, 0)
+defense_duration = Vector2(0, 0)
+regen = Vector2(1.5, 2)
+resources_gained_on_killed = Dictionary[int, Vector2]({
+1: Vector2(5, 3)
+})
+metadata/_custom_type_script = "uid://cm15s8j7exwpj"
+
+[sub_resource type="Resource" id="Resource_eh0v1"]
+script = ExtResource("7_e8heu")
+display_name = "Auto Click"
+display_level = true
+unlock_level = 0
+tooltip_message = "[b]Auto Click[/b]
+Invest [b][color=pale_green]Energy[/color][/b] here is the only way of producing [b][color=gold]Gold[/color][/b] without [b]Clicking[/b] yourself.
+(each time the bar is filled you earn [b][color=gold]Gold[/color][/b] as if you clicked on the button, 
+requierment in energy will grow over time)"
+maximum_allocated = Vector2(5, 3)
+fill_duration_at_maximum = Vector2(1, -1)
+increase_factor_on_bar_filled = Vector2(10001, -4)
+_click_enabled = false
+should_decrease_maximum_after_rebirth = false
+decrease_factor_on_rebirth_maximum = Vector2(9, -1)
+decrease_maximum_on_rebirth_per_bar_filled = Vector2(1, 0)
+metadata/_custom_type_script = "uid://d0w6sksq4fu4p"
+
+[sub_resource type="Resource" id="Resource_pxugv"]
+script = ExtResource("7_e8heu")
+display_name = "Auto Upgrade Storage"
+display_level = true
+unlock_level = 0
+tooltip_message = "[b]Auto Upgrade [color=gold]Gold[/color] Storage[/b]
+You want to automate the flow of increasing your Maximum [b][color=gold]Gold[/color][/b] ?
+here is the place!
+(with 100% [b][color=pale_green]Energy[/color][/b] the [b][color=gold]Gold[/color][/b] maximum storage will be Upgraded every second)"
+maximum_allocated = Vector2(1, 3)
+fill_duration_at_maximum = Vector2(1, 0)
+increase_factor_on_bar_filled = Vector2(1, 0)
+_click_enabled = false
+should_decrease_maximum_after_rebirth = false
+decrease_factor_on_rebirth_maximum = Vector2(9, -1)
+decrease_maximum_on_rebirth_per_bar_filled = Vector2(1, 0)
+metadata/_custom_type_script = "uid://d0w6sksq4fu4p"
+
+[sub_resource type="Resource" id="Resource_am1vj"]
+script = ExtResource("7_e8heu")
+display_name = "Click Gold +1"
+display_level = true
+unlock_level = 0
+tooltip_message = "[b]Improve Click[/b]
+Increase the [b]Button[/b]'s [b][color=gold]Gold[/color][/b] production by 1 each time the bar is filled.
+(requierment in energy will grow by 12% each time the bar is filled)"
+maximum_allocated = Vector2(5, 2)
+fill_duration_at_maximum = Vector2(1, 0)
+increase_factor_on_bar_filled = Vector2(1.12, 0)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = false
+decrease_factor_on_rebirth_maximum = Vector2(9, -1)
+decrease_maximum_on_rebirth_per_bar_filled = Vector2(1, 0)
+metadata/_custom_type_script = "uid://d0w6sksq4fu4p"
+
+[sub_resource type="Resource" id="Resource_g31lc"]
+script = ExtResource("7_e8heu")
+display_name = "Click Gold x2"
+display_level = true
+unlock_level = 0
+tooltip_message = "[b]Improve Click[/b]
+Increase the [b]Button[/b]'s [b][color=gold]Gold[/color][/b] production by 100% (x2) each time the bar is filled.
+(requierment in energy will grow by 100% each time the bar is filled)"
+maximum_allocated = Vector2(1, 4)
+fill_duration_at_maximum = Vector2(1, 0)
+increase_factor_on_bar_filled = Vector2(2, 0)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = false
+decrease_factor_on_rebirth_maximum = Vector2(9, -1)
+decrease_maximum_on_rebirth_per_bar_filled = Vector2(1, 0)
+metadata/_custom_type_script = "uid://d0w6sksq4fu4p"
+
+[sub_resource type="Gradient" id="Gradient_7sc4i"]
+offsets = PackedFloat32Array(0, 0.639175, 0.783505)
+colors = PackedColorArray(0.848179, 0.373355, 3.85046e-07, 1, 0.984314, 0.811765, 0, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_80cx4"]
+gradient = SubResource("Gradient_7sc4i")
+width = 256
+height = 256
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
+
+[sub_resource type="Animation" id="Animation_80cx4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:icon:gradient:offsets")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedFloat32Array(0, 0.639175, 0.783505)]
+}
+
+[sub_resource type="Animation" id="Animation_7sc4i"]
+resource_name = "click"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:icon:gradient:offsets")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [PackedFloat32Array(0, 0.639175, 0.783505), PackedFloat32Array(0, 0.444, 0.944), PackedFloat32Array(0, 0.639175, 0.783505)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e8heu"]
+_data = {
+&"RESET": SubResource("Animation_80cx4"),
+&"click": SubResource("Animation_7sc4i")
+}
+
+[node name="Game" type="Control" node_paths=PackedStringArray("input", "energy_bar", "gold_bar", "hp_bar", "hp_text", "attack_bar", "attack_text", "defense_bar", "defense_text")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mfdv2")
+input = NodePath("PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer/Input")
+energy_bar = NodePath("PanelsContainer/LeftPanel/VBox/Resources/VBoxContainer/EnergyBar")
+gold_bar = NodePath("PanelsContainer/LeftPanel/VBox/Resources/VBoxContainer/GoldBar")
+hp_bar = NodePath("PanelsContainer/LeftPanel/VBox/Stats/VBoxContainer/HP_Bar/HP_ProgressBar")
+hp_text = NodePath("PanelsContainer/LeftPanel/VBox/Stats/VBoxContainer/HP_Bar/MarginContainer/HP_RichTextLabel")
+attack_bar = NodePath("PanelsContainer/LeftPanel/VBox/Stats/VBoxContainer/Attack_Bar/Attack_ProgressBar")
+attack_text = NodePath("PanelsContainer/LeftPanel/VBox/Stats/VBoxContainer/Attack_Bar/MarginContainer/AttackValue")
+defense_bar = NodePath("PanelsContainer/LeftPanel/VBox/Stats/VBoxContainer/Defense_Bar/Defense_ProgressBar")
+defense_text = NodePath("PanelsContainer/LeftPanel/VBox/Stats/VBoxContainer/Defense_Bar/MarginContainer/DefenseValue")
+
+[node name="PanelsContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="LeftPanel" type="ScrollContainer" parent="PanelsContainer"]
+custom_minimum_size = Vector2(220, 0)
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="PanelsContainer/LeftPanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Resources" type="MarginContainer" parent="PanelsContainer/LeftPanel/VBox"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelsContainer/LeftPanel/VBox/Resources"]
+layout_mode = 2
+
+[node name="Title" parent="PanelsContainer/LeftPanel/VBox/Resources/VBoxContainer" instance=ExtResource("2_iotsf")]
+layout_mode = 2
+text = "Productions"
+
+[node name="EnergyBar" parent="PanelsContainer/LeftPanel/VBox/Resources/VBoxContainer" instance=ExtResource("3_lc2xo")]
+layout_mode = 2
+text_value = "[b]Energy:[/b] 0 Idle
+1,56 x 10e12"
+font_color = Color(0, 0, 0, 1)
+back_color = Color(0.829368, 1, 0.769011, 1)
+fill_color = Color(0.273116, 0.651538, 4.04298e-06, 1)
+metadata/_edit_pinned_properties_ = [&"text_value"]
+
+[node name="GoldBar" parent="PanelsContainer/LeftPanel/VBox/Resources/VBoxContainer" instance=ExtResource("3_lc2xo")]
+layout_mode = 2
+tooltip_text = "Click on this to spend 45Gold and Increase the Maximum by 5."
+disabled = true
+text_value = "[b]Gold:[/b] 25 Idle
+2.000 / 30.000"
+tooltip_base_text = "[u][b]Gold[/b] resource:[/u]
+Can be used in the Central to increase acces to [b]Energy[/b]
+[b]Click here[/b] to increase the [b]Gold[/b] storage capacity.
+(cost 90% of current maximum)"
+enabled = false
+font_color = Color(0.112786, 0.0835383, 0, 1)
+back_color = Color(1, 0.958314, 0.828548, 1)
+fill_color = Color(0.950941, 0.775589, 0, 1)
+metadata/_edit_pinned_properties_ = [&"enabled"]
+
+[node name="Button3" parent="PanelsContainer/LeftPanel/VBox/Resources/VBoxContainer" instance=ExtResource("3_lc2xo")]
+layout_mode = 2
+disabled = true
+text_value = "[b]Energy:[/b] 0 Idle
+1,56 x 10e12"
+enabled = false
+
+[node name="Stats" type="MarginContainer" parent="PanelsContainer/LeftPanel/VBox"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelsContainer/LeftPanel/VBox/Stats"]
+layout_mode = 2
+
+[node name="Title" parent="PanelsContainer/LeftPanel/VBox/Stats/VBoxContainer" instance=ExtResource("2_iotsf")]
+layout_mode = 2
+text = "Stats"
+
+[node name="HP_Bar" type="PanelContainer" parent="PanelsContainer/LeftPanel/VBox/Stats/VBoxContainer"]
+layout_mode = 2
+
+[node name="HP_ProgressBar" type="ProgressBar" parent="PanelsContainer/LeftPanel/VBox/Stats/VBoxContainer/HP_Bar"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_7sc4i")
+theme_override_styles/fill = SubResource("StyleBoxFlat_80cx4")
+max_value = 1.0
+step = 0.001
+value = 1.0
+show_percentage = false
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelsContainer/LeftPanel/VBox/Stats/VBoxContainer/HP_Bar"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="HP_RichTextLabel" type="RichTextLabel" parent="PanelsContainer/LeftPanel/VBox/Stats/VBoxContainer/HP_Bar/MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+bbcode_enabled = true
+text = "150 / 300 [color=red]HP[/color]"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Attack_Bar" type="PanelContainer" parent="PanelsContainer/LeftPanel/VBox/Stats/VBoxContainer"]
+layout_mode = 2
+
+[node name="Attack_ProgressBar" type="ProgressBar" parent="PanelsContainer/LeftPanel/VBox/Stats/VBoxContainer/Attack_Bar"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_e8heu")
+theme_override_styles/fill = SubResource("StyleBoxFlat_rvswv")
+max_value = 1.0
+step = 0.001
+value = 0.5
+show_percentage = false
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelsContainer/LeftPanel/VBox/Stats/VBoxContainer/Attack_Bar"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="AttackValue" type="RichTextLabel" parent="PanelsContainer/LeftPanel/VBox/Stats/VBoxContainer/Attack_Bar/MarginContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+bbcode_enabled = true
+text = "[b]Attack:[/b]
+25"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+
+[node name="Defense_Bar" type="PanelContainer" parent="PanelsContainer/LeftPanel/VBox/Stats/VBoxContainer"]
+layout_mode = 2
+
+[node name="Defense_ProgressBar" type="ProgressBar" parent="PanelsContainer/LeftPanel/VBox/Stats/VBoxContainer/Defense_Bar"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_boyg6")
+theme_override_styles/fill = SubResource("StyleBoxFlat_e36ub")
+max_value = 1.0
+step = 0.001
+value = 1.0
+show_percentage = false
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelsContainer/LeftPanel/VBox/Stats/VBoxContainer/Defense_Bar"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="DefenseValue" type="RichTextLabel" parent="PanelsContainer/LeftPanel/VBox/Stats/VBoxContainer/Defense_Bar/MarginContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+bbcode_enabled = true
+text = "[b]Defense:[/b]
+25"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+
+[node name="Rebirth" type="MarginContainer" parent="PanelsContainer/LeftPanel/VBox"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelsContainer/LeftPanel/VBox/Rebirth"]
+layout_mode = 2
+
+[node name="Title" parent="PanelsContainer/LeftPanel/VBox/Rebirth/VBoxContainer" instance=ExtResource("2_iotsf")]
+layout_mode = 2
+text = "Rebirth"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="PanelsContainer/LeftPanel/VBox/Rebirth/VBoxContainer"]
+layout_mode = 2
+bbcode_enabled = true
+text = "[b]Current Rebirth Time:[/b]
+25:10:32"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+
+[node name="Button2" parent="PanelsContainer/LeftPanel/VBox/Rebirth/VBoxContainer" instance=ExtResource("3_lc2xo")]
+layout_mode = 2
+text_value = "[b]Rebirth Power:[/b]
+2,356 e7 > 9,854 e5"
+font_color = Color(0.169645, 0.0389223, 6.01634e-09, 1)
+back_color = Color(1, 0.701961, 0, 1)
+fill_color = Color(1, 1, 0.823529, 1)
+
+[node name="Button3" parent="PanelsContainer/LeftPanel/VBox/Rebirth/VBoxContainer" instance=ExtResource("3_lc2xo")]
+layout_mode = 2
+text_value = "[b]XP:[/b] 76 not Spend
++56 this Rebirth"
+font_color = Color(0.0985052, 0.000143285, 0.199789, 1)
+back_color = Color(0.454902, 0.00392157, 0.792157, 1)
+fill_color = Color(0.775339, 0.645289, 0.999942, 1)
+
+[node name="ColorRect" type="ColorRect" parent="PanelsContainer/LeftPanel/VBox/Rebirth"]
+layout_mode = 2
+color = Color(1, 1, 1, 0.215686)
+
+[node name="Label" type="Label" parent="PanelsContainer/LeftPanel/VBox/Rebirth/ColorRect"]
+layout_mode = 0
+offset_left = 51.0
+offset_top = 47.0
+offset_right = 203.0
+offset_bottom = 70.0
+rotation = 0.645361
+theme_override_constants/outline_size = 10
+text = "Not Implemented"
+uppercase = true
+
+[node name="MainPanel" type="VBoxContainer" parent="PanelsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TopSection" type="MarginContainer" parent="PanelsContainer/MainPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelsContainer/MainPanel/TopSection"]
+layout_mode = 2
+
+[node name="Title" parent="PanelsContainer/MainPanel/TopSection/VBoxContainer" instance=ExtResource("2_iotsf")]
+layout_mode = 2
+text = "One Idle Game"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelsContainer/MainPanel/TopSection/VBoxContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+bbcode_enabled = true
+text = "[b]Energy Input: [/b]"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+vertical_alignment = 1
+
+[node name="Input" type="LineEdit" parent="PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+text = "250"
+placeholder_text = "number of energy used"
+
+[node name="InputMax" type="Button" parent="PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Max"
+
+[node name="InputHalf" type="Button" parent="PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer"]
+visible = false
+layout_mode = 2
+text = "1/2"
+
+[node name="InputQuarter" type="Button" parent="PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer"]
+visible = false
+layout_mode = 2
+text = "1/4"
+
+[node name="MainSection" type="HBoxContainer" parent="PanelsContainer/MainPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("4_215e1")
+tabs_unlock_data = Array[ExtResource("5_e8heu")]([SubResource("Resource_i2p71"), SubResource("Resource_xa8c5"), SubResource("Resource_5b14r"), SubResource("Resource_bnpwn"), SubResource("Resource_36jdj")])
+
+[node name="Tabs" type="ScrollContainer" parent="PanelsContainer/MainPanel/MainSection"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="TabsButtons" type="VBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Tabs"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Training" type="Button" parent="PanelsContainer/MainPanel/MainSection/Tabs/TabsButtons"]
+layout_mode = 2
+toggle_mode = true
+text = "Training"
+script = ExtResource("6_rvswv")
+
+[node name="BossFight" type="Button" parent="PanelsContainer/MainPanel/MainSection/Tabs/TabsButtons"]
+layout_mode = 2
+toggle_mode = true
+text = "Boss Fight"
+script = ExtResource("6_rvswv")
+
+[node name="Adventure" type="Button" parent="PanelsContainer/MainPanel/MainSection/Tabs/TabsButtons"]
+visible = false
+layout_mode = 2
+toggle_mode = true
+text = "Adventure"
+script = ExtResource("6_rvswv")
+
+[node name="Central" type="Button" parent="PanelsContainer/MainPanel/MainSection/Tabs/TabsButtons"]
+layout_mode = 2
+toggle_mode = true
+text = "Research Center"
+script = ExtResource("6_rvswv")
+
+[node name="TheMine" type="Button" parent="PanelsContainer/MainPanel/MainSection/Tabs/TabsButtons"]
+layout_mode = 2
+toggle_mode = true
+text = "Excavation
+"
+script = ExtResource("6_rvswv")
+
+[node name="Cheat" type="Button" parent="PanelsContainer/MainPanel/MainSection/Tabs/TabsButtons"]
+visible = false
+layout_mode = 2
+toggle_mode = true
+text = "Cheat"
+script = ExtResource("6_rvswv")
+
+[node name="Pages" type="ScrollContainer" parent="PanelsContainer/MainPanel/MainSection"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Training" type="VBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages" node_paths=PackedStringArray("basic_attack_allocator", "advanced_attack_allocator", "master_attack_allocator", "increase_attack_allocator", "increase_attack_speed_allocator", "basic_defense_allocator", "advanced_defense_allocator", "master_defense_allocator", "increase_defense_allocator", "increase_defense_speed_allocator", "basic_hp_allocator")]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("5_lc2xo")
+basic_attack_allocator = NodePath("MarginContainer/VBoxContainer/BasicAttack")
+basic_attack_allocator_data = SubResource("Resource_lc2xo")
+basic_attack_amount = Vector2(1, 0)
+advanced_attack_allocator = NodePath("MarginContainer/VBoxContainer/AdvancedAttack")
+advanced_attack_allocator_data = SubResource("Resource_7sc4i")
+advanced_attack_amount = Vector2(7.5, 1)
+master_attack_allocator = NodePath("MarginContainer/VBoxContainer/MasterAttack")
+master_attack_allocator_data = SubResource("Resource_80cx4")
+master_attack_amount = Vector2(1, 3)
+increase_attack_allocator = NodePath("MarginContainer/VBoxContainer/IncreaseAttack")
+increase_attack_allocator_data = SubResource("Resource_e8heu")
+increase_attack_amount = Vector2(1, -1)
+increase_attack_speed_allocator = NodePath("MarginContainer/VBoxContainer/AttackSpeed")
+increase_attack_speed_allocator_data = SubResource("Resource_rvswv")
+increase_attack_speed_amount = Vector2(0.95, 0)
+basic_defense_allocator = NodePath("MarginContainer2/VBoxContainer/BasicDefense")
+basic_defense_allocator_data = SubResource("Resource_215e1")
+basic_defense_amount = Vector2(1, 0)
+advanced_defense_allocator = NodePath("MarginContainer2/VBoxContainer/AdvanceDefense")
+advanced_defense_allocator_data = SubResource("Resource_boyg6")
+advanced_defense_amount = Vector2(5, 1)
+master_defense_allocator = NodePath("MarginContainer2/VBoxContainer/MasterDefense")
+master_defense_allocator_data = SubResource("Resource_e36ub")
+master_defense_amount = Vector2(7.77, 2)
+increase_defense_allocator = NodePath("MarginContainer2/VBoxContainer/IncreaseDefense")
+increase_defense_allocator_data = SubResource("Resource_hb5m1")
+increase_defense_amount = Vector2(1, -1)
+increase_defense_speed_allocator = NodePath("MarginContainer2/VBoxContainer/DefenseSpeed")
+increase_defense_speed_allocator_data = SubResource("Resource_qhcbd")
+increase_defense_speed_amount = Vector2(0.95, 0)
+basic_hp_allocator = NodePath("MarginContainer3/VBoxContainer/Endurance")
+basic_hp_allocator_data = SubResource("Resource_vaj68")
+basic_hp_amount = Vector2(1, 0)
+
+[node name="Title" parent="PanelsContainer/MainPanel/MainSection/Pages/Training" instance=ExtResource("2_iotsf")]
+layout_mode = 2
+text = "Training"
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/Training"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "[b]Attack Skills:[/b]"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "[b]Level:[/b]"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "[b]Energy Allocated:[/b]"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control2" type="Control" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BasicAttack" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer/VBoxContainer" instance=ExtResource("5_7sc4i")]
+layout_mode = 2
+display_name = "Basic Attack"
+display_level = true
+fill_color = Color(0.650479, 0, 0.138108, 1)
+back_color = Color(1, 0.816167, 0.806184, 1)
+font_color = Color(0, 0, 0, 1)
+maximum_allocated = Vector2(3, 3)
+fill_duration_at_maximum = Vector2(1, -1)
+increase_factor_on_bar_filled = Vector2(1, 0)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = true
+
+[node name="AdvancedAttack" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer/VBoxContainer" instance=ExtResource("5_7sc4i")]
+layout_mode = 2
+display_name = "Basic Attack"
+display_level = true
+fill_color = Color(0.650479, 0, 0.138108, 1)
+back_color = Color(1, 0.816167, 0.806184, 1)
+font_color = Color(0, 0, 0, 1)
+maximum_allocated = Vector2(3, 3)
+fill_duration_at_maximum = Vector2(1, -1)
+increase_factor_on_bar_filled = Vector2(1, 0)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = true
+
+[node name="MasterAttack" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer/VBoxContainer" instance=ExtResource("5_7sc4i")]
+layout_mode = 2
+display_name = "Basic Attack"
+display_level = true
+fill_color = Color(0.650479, 0, 0.138108, 1)
+back_color = Color(1, 0.816167, 0.806184, 1)
+font_color = Color(0, 0, 0, 1)
+maximum_allocated = Vector2(3, 3)
+fill_duration_at_maximum = Vector2(1, -1)
+increase_factor_on_bar_filled = Vector2(1, 0)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = true
+
+[node name="IncreaseAttack" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer/VBoxContainer" instance=ExtResource("5_7sc4i")]
+layout_mode = 2
+display_name = "Basic Attack"
+display_level = true
+is_unlocked = true
+fill_color = Color(0.650479, 0, 0.138108, 1)
+back_color = Color(1, 0.816167, 0.806184, 1)
+font_color = Color(0, 0, 0, 1)
+maximum_allocated = Vector2(3, 3)
+fill_duration_at_maximum = Vector2(1, -1)
+increase_factor_on_bar_filled = Vector2(1, 0)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = true
+
+[node name="AttackSpeed" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer/VBoxContainer" instance=ExtResource("5_7sc4i")]
+layout_mode = 2
+display_name = "Basic Attack"
+display_level = true
+is_unlocked = true
+fill_color = Color(0.650479, 0, 0.138108, 1)
+back_color = Color(1, 0.816167, 0.806184, 1)
+font_color = Color(0, 0, 0, 1)
+maximum_allocated = Vector2(3, 3)
+fill_duration_at_maximum = Vector2(1, -1)
+increase_factor_on_bar_filled = Vector2(1, 0)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = true
+
+[node name="MarginContainer2" type="MarginContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/Training"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer2"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer2/VBoxContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer2/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "[b]Defense Skills:[/b]"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer2/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "[b]Level:[/b]"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer2/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "[b]Energy Allocated:[/b]"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control2" type="Control" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer2/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BasicDefense" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer2/VBoxContainer" instance=ExtResource("5_7sc4i")]
+layout_mode = 2
+display_name = "Basic Defense"
+display_level = true
+fill_color = Color(0, 0.450135, 0.777997, 1)
+back_color = Color(0.769307, 0.880831, 1, 1)
+font_color = Color(0, 0, 0, 1)
+maximum_allocated = Vector2(3, 3)
+fill_duration_at_maximum = Vector2(1, -1)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = true
+
+[node name="AdvanceDefense" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer2/VBoxContainer" instance=ExtResource("5_7sc4i")]
+layout_mode = 2
+display_name = "Basic Defense"
+display_level = true
+fill_color = Color(0, 0.450135, 0.777997, 1)
+back_color = Color(0.769307, 0.880831, 1, 1)
+font_color = Color(0, 0, 0, 1)
+maximum_allocated = Vector2(3, 3)
+fill_duration_at_maximum = Vector2(1, -1)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = true
+
+[node name="MasterDefense" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer2/VBoxContainer" instance=ExtResource("5_7sc4i")]
+layout_mode = 2
+display_name = "Basic Defense"
+display_level = true
+fill_color = Color(0, 0.450135, 0.777997, 1)
+back_color = Color(0.769307, 0.880831, 1, 1)
+font_color = Color(0, 0, 0, 1)
+maximum_allocated = Vector2(3, 3)
+fill_duration_at_maximum = Vector2(1, -1)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = true
+
+[node name="IncreaseDefense" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer2/VBoxContainer" instance=ExtResource("5_7sc4i")]
+layout_mode = 2
+display_name = "Basic Defense"
+display_level = true
+fill_color = Color(0, 0.450135, 0.777997, 1)
+back_color = Color(0.769307, 0.880831, 1, 1)
+font_color = Color(0, 0, 0, 1)
+maximum_allocated = Vector2(3, 3)
+fill_duration_at_maximum = Vector2(1, -1)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = true
+
+[node name="DefenseSpeed" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer2/VBoxContainer" instance=ExtResource("5_7sc4i")]
+layout_mode = 2
+display_name = "Basic Defense"
+display_level = true
+fill_color = Color(0, 0.450135, 0.777997, 1)
+back_color = Color(0.769307, 0.880831, 1, 1)
+font_color = Color(0, 0, 0, 1)
+maximum_allocated = Vector2(3, 3)
+fill_duration_at_maximum = Vector2(1, -1)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = true
+
+[node name="MarginContainer3" type="MarginContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/Training"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer3"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer3/VBoxContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer3/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "[b]Vitality Training:[/b]"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer3/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "[b]Level:[/b]"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer3/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "[b]Energy Allocated:[/b]"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control2" type="Control" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer3/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Endurance" parent="PanelsContainer/MainPanel/MainSection/Pages/Training/MarginContainer3/VBoxContainer" instance=ExtResource("5_7sc4i")]
+layout_mode = 2
+display_name = "Endurance"
+display_level = true
+fill_color = Color(0.617048, 0.871571, 2.69532e-06, 1)
+back_color = Color(0.923136, 1, 0.835036, 1)
+font_color = Color(0, 0, 0, 1)
+maximum_allocated = Vector2(5, 2)
+fill_duration_at_maximum = Vector2(1, 0)
+_click_enabled = true
+should_decrease_maximum_after_rebirth = true
+
+[node name="BossFight" type="VBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages" node_paths=PackedStringArray("player_creature", "fight_button", "flee_button", "refresh_button", "enemies_container")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("8_7sc4i")
+player_creature = NodePath("HBoxContainer/Player")
+fight_button = NodePath("CenterContainer2/HBoxContainer2/Fight")
+flee_button = NodePath("CenterContainer2/HBoxContainer2/Flee")
+refresh_button = NodePath("CenterContainer2/HBoxContainer2/RefreshStats")
+enemies_container = NodePath("HBoxContainer/EnemiesContainer")
+boss_fights = Array[ExtResource("9_e8heu")]([SubResource("Resource_x5p1p"), SubResource("Resource_f1jbl"), SubResource("Resource_xfvwf"), SubResource("Resource_dhpj7")])
+
+[node name="Title" parent="PanelsContainer/MainPanel/MainSection/Pages/BossFight" instance=ExtResource("2_iotsf")]
+layout_mode = 2
+text = "Boss Fight"
+
+[node name="CenterContainer2" type="CenterContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/BossFight"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/BossFight/CenterContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="RefreshStats" type="Button" parent="PanelsContainer/MainPanel/MainSection/Pages/BossFight/CenterContainer2/HBoxContainer2"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "Refresh Stats"
+autowrap_mode = 2
+
+[node name="Fight" type="Button" parent="PanelsContainer/MainPanel/MainSection/Pages/BossFight/CenterContainer2/HBoxContainer2"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "Fight !"
+autowrap_mode = 2
+
+[node name="Flee" type="Button" parent="PanelsContainer/MainPanel/MainSection/Pages/BossFight/CenterContainer2/HBoxContainer2"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "Flee"
+autowrap_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/BossFight"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Player" parent="PanelsContainer/MainPanel/MainSection/Pages/BossFight/HBoxContainer" instance=ExtResource("9_80cx4")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Control" type="CenterContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/BossFight/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/BossFight/HBoxContainer/Control"]
+layout_mode = 2
+
+[node name="EnemiesContainer" type="HBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/BossFight/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CenterContainer" type="CenterContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/BossFight"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BossFightTextArea" type="RichTextLabel" parent="PanelsContainer/MainPanel/MainSection/Pages/BossFight/CenterContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/outline_size = 10
+bbcode_enabled = true
+text = "Level 1:
+Unlock "
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Adventure" type="VBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Title" parent="PanelsContainer/MainPanel/MainSection/Pages/Adventure" instance=ExtResource("2_iotsf")]
+layout_mode = 2
+text = "Adventure"
+
+[node name="TheMine" type="VBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages" node_paths=PackedStringArray("excavation_button", "auto_click", "auto_click_max_gold", "improve_click_add", "improve_click_mult")]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("6_80cx4")
+excavation_button = NodePath("TheButton/ExcavationButton")
+auto_click = NodePath("Upgrades/VBoxContainer/AutoClick")
+auto_click_data = SubResource("Resource_eh0v1")
+auto_click_max_gold = NodePath("Upgrades/VBoxContainer/AutoClickMax")
+auto_click_max_gold_data = SubResource("Resource_pxugv")
+improve_click_add = NodePath("Upgrades/VBoxContainer/ImproveClick")
+improve_click_add_data = SubResource("Resource_am1vj")
+improve_click_add_value = Dictionary[int, Vector2]({
+1: Vector2(1, 0)
+})
+improve_click_mult = NodePath("Upgrades/VBoxContainer/ImproveClick2")
+improve_click_mult_data = SubResource("Resource_g31lc")
+improve_click_mult_value = Dictionary[int, Vector2]({
+1: Vector2(2, 0)
+})
+
+[node name="Title" parent="PanelsContainer/MainPanel/MainSection/Pages/TheMine" instance=ExtResource("2_iotsf")]
+layout_mode = 2
+text = "The Mine"
+
+[node name="TheButton" type="CenterContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/TheMine"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ExcavationButton" type="Button" parent="PanelsContainer/MainPanel/MainSection/Pages/TheMine/TheButton"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+icon = SubResource("GradientTexture2D_80cx4")
+flat = true
+script = ExtResource("9_boyg6")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="PanelsContainer/MainPanel/MainSection/Pages/TheMine/TheButton/ExcavationButton"]
+libraries = {
+&"": SubResource("AnimationLibrary_e8heu")
+}
+
+[node name="Upgrades" type="CenterContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/TheMine"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/TheMine/Upgrades"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/TheMine/Upgrades/VBoxContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PanelsContainer/MainPanel/MainSection/Pages/TheMine/Upgrades/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "[b]Helper Skills:[/b]"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="PanelsContainer/MainPanel/MainSection/Pages/TheMine/Upgrades/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "[b]Level:[/b]"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="PanelsContainer/MainPanel/MainSection/Pages/TheMine/Upgrades/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+text = "[b]Energy Allocated:[/b]"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control2" type="Control" parent="PanelsContainer/MainPanel/MainSection/Pages/TheMine/Upgrades/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ImproveClick" parent="PanelsContainer/MainPanel/MainSection/Pages/TheMine/Upgrades/VBoxContainer" instance=ExtResource("5_7sc4i")]
+layout_mode = 2
+display_name = "Improve Click (+1)"
+display_level = true
+fill_color = Color(0.950941, 0.775589, 0, 1)
+back_color = Color(1, 0.958314, 0.828548, 1)
+font_color = Color(0, 0, 0, 1)
+maximum_allocated = Vector2(5, 2)
+increase_factor_on_bar_filled = Vector2(1.07, 0)
+_click_enabled = true
+
+[node name="ImproveClick2" parent="PanelsContainer/MainPanel/MainSection/Pages/TheMine/Upgrades/VBoxContainer" instance=ExtResource("5_7sc4i")]
+layout_mode = 2
+display_name = "Improve Click (x2)"
+display_level = true
+fill_color = Color(0.950941, 0.775589, 0, 1)
+back_color = Color(1, 0.958314, 0.828548, 1)
+font_color = Color(0, 0, 0, 1)
+maximum_allocated = Vector2(9.999, 3)
+fill_duration_at_maximum = Vector2(1, 1)
+increase_factor_on_bar_filled = Vector2(1.2, 0)
+_click_enabled = true
+
+[node name="HSeparator" type="HSeparator" parent="PanelsContainer/MainPanel/MainSection/Pages/TheMine/Upgrades/VBoxContainer"]
+layout_mode = 2
+
+[node name="AutoClick" parent="PanelsContainer/MainPanel/MainSection/Pages/TheMine/Upgrades/VBoxContainer" instance=ExtResource("5_7sc4i")]
+layout_mode = 2
+display_name = "Auto Click"
+fill_color = Color(0.950941, 0.775589, 0, 1)
+back_color = Color(1, 0.958314, 0.828548, 1)
+font_color = Color(0, 0, 0, 1)
+maximum_allocated = Vector2(5, 3)
+fill_duration_at_maximum = Vector2(1, -1)
+increase_factor_on_bar_filled = Vector2(10001, -4)
+
+[node name="AutoClickMax" parent="PanelsContainer/MainPanel/MainSection/Pages/TheMine/Upgrades/VBoxContainer" instance=ExtResource("5_7sc4i")]
+layout_mode = 2
+display_name = "Auto Upgrade Gold Storage"
+fill_color = Color(0.950941, 0.775589, 0, 1)
+back_color = Color(1, 0.958314, 0.828548, 1)
+font_color = Color(0, 0, 0, 1)
+fill_duration_at_maximum = Vector2(1, 1)
+increase_factor_on_bar_filled = Vector2(1, 0)
+
+[node name="Central" type="VBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages" node_paths=PackedStringArray("energy_prod_add_button", "energy_prod_speed_button", "energy_prod_max_button")]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("10_iotsf")
+energy_prod_add_button = NodePath("CenterContainer/VBoxContainer/EnergyProdAdd")
+energy_prod_add_cost = Dictionary[int, Vector2]({
+1: Vector2(1, 2)
+})
+energy_prod_add_value = Vector2(1, 0)
+energy_prod_speed_button = NodePath("CenterContainer/VBoxContainer/EnergyProdSpeed")
+energy_prod_speed_cost = Dictionary[int, Vector2]({
+1: Vector2(2.5, 2)
+})
+energy_prod_speed_cost_increase = 3.0
+energy_prod_speed_value = Vector2(1.1, 0)
+energy_prod_max_button = NodePath("CenterContainer/VBoxContainer/EnergyProdMax")
+energy_prod_max_cost = Dictionary[int, Vector2]({
+0: Vector2(4.5, 2),
+1: Vector2(5, 2)
+})
+energy_prod_max_cost_increase = 1.5
+energy_prod_max_value = Vector2(1.2, 0)
+
+[node name="Title" parent="PanelsContainer/MainPanel/MainSection/Pages/Central" instance=ExtResource("2_iotsf")]
+layout_mode = 2
+text = "Central"
+
+[node name="CenterContainer" type="CenterContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/Central"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/Central/CenterContainer"]
+layout_mode = 2
+
+[node name="EnergyProdAdd" type="Button" parent="PanelsContainer/MainPanel/MainSection/Pages/Central/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "+ 1 Energy / Bar (100 Gold)"
+
+[node name="EnergyProdSpeed" type="Button" parent="PanelsContainer/MainPanel/MainSection/Pages/Central/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "+10% Energy Charge Speed (200 Gold)"
+
+[node name="EnergyProdMax" type="Button" parent="PanelsContainer/MainPanel/MainSection/Pages/Central/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "+10% Energy Max (200 Gold and 400 Energy)"
+
+[node name="Cheat" type="VBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("10_e36ub")
+
+[node name="Title" parent="PanelsContainer/MainPanel/MainSection/Pages/Cheat" instance=ExtResource("2_iotsf")]
+layout_mode = 2
+text = "Cheat"
+
+[node name="CenterContainer" type="CenterContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/Cheat"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/Cheat/CenterContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="PanelsContainer/MainPanel/MainSection/Pages/Cheat/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Fill Energy"
+
+[node name="Button3" type="Button" parent="PanelsContainer/MainPanel/MainSection/Pages/Cheat/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Max Energy x2"
+
+[node name="Button2" type="Button" parent="PanelsContainer/MainPanel/MainSection/Pages/Cheat/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Fill Gold"
+
+[node name="Button4" type="Button" parent="PanelsContainer/MainPanel/MainSection/Pages/Cheat/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Max Gold x2"
+
+[node name="ResourceSystemInitializer" type="Node" parent="."]
+script = ExtResource("11_hb5m1")
+max_energy_start_amount = Vector2(5, 2)
+production_energy_start_amount = Vector2(1, 0)
+tick_duration_energy_start_amount = Vector2(1, 0)
+max_gold_start_amount = Vector2(1, 3)
+tick_duration_gold_start_amount = Vector2(1, 0)
+hp_start_amount = Vector2(5, 1)
+regen_start_amount = Vector2(5, -1)
+attack_start_amount = Vector2(5, 0)
+attack_duration_start_amount = Vector2(5, 0)
+defense_start_amount = Vector2(2, 0)
+defense_duration_start_amount = Vector2(5, 0)
+
+[connection signal="pressed" from="PanelsContainer/MainPanel/MainSection/Pages/TheMine/TheButton/ExcavationButton" to="PanelsContainer/MainPanel/MainSection/Pages/TheMine/TheButton/ExcavationButton/AnimationPlayer" method="play" binds= ["click"]]

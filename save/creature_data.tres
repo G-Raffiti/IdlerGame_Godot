@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Creature_Data" load_steps=3 format=3 uid="uid://cvfsxhowbinw3"]
+
+[ext_resource type="Texture2D" uid="uid://bb77k2xukqibn" path="res://icon.svg" id="1_prntm"]
+[ext_resource type="Script" uid="uid://cm15s8j7exwpj" path="res://pages/page_boss_fight/creature/creature_data.gd" id="1_rr36j"]
+
+[resource]
+script = ExtResource("1_rr36j")
+name = "Boss 2"
+icon = ExtResource("1_prntm")
+text = "Level X Rewards
+[b]Unlock: [/b]"
+hp = Vector2(250, 0)
+attack = Vector2(0, 0)
+attack_duration = Vector2(1.76, 0)
+defense = Vector2(12, -5)
+defense_duration = Vector2(1, 0)
+regen = Vector2(0.25, 0)
+resources_gained_on_killed = Dictionary[int, Vector2]({
+1: Vector2(7, 0)
+})
+metadata/_custom_type_script = "uid://cm15s8j7exwpj"

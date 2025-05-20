@@ -1,0 +1,132 @@
+[gd_scene load_steps=8 format=3 uid="uid://ci1ut4cmxwup2"]
+
+[ext_resource type="Texture2D" uid="uid://bb77k2xukqibn" path="res://icon.svg" id="1_gclgj"]
+[ext_resource type="Script" uid="uid://n4b7al4sjiax" path="res://pages/page_boss_fight/creature/creature.gd" id="1_kluc8"]
+[ext_resource type="PackedScene" uid="uid://c4b1l3uy4uy" path="res://pages/page_boss_fight/skill_bar/skill_bar.tscn" id="3_kluc8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_62e2m"]
+bg_color = Color(0.210507, 0.210507, 0.210507, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qtu10"]
+bg_color = Color(0.859949, 0.000127306, 7.09447e-05, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kluc8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hd1d6"]
+bg_color = Color(0, 0.360784, 0.517647, 1)
+border_width_left = 5
+border_width_top = 40
+border_width_right = 3
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 0)
+border_blend = true
+
+[node name="Creature" type="CenterContainer"]
+script = ExtResource("1_kluc8")
+creature_name = "Player"
+icon = ExtResource("1_gclgj")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="CreatureName" type="RichTextLabel" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Player"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Icon" type="TextureRect" parent="VBoxContainer/MarginContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(160, 0)
+layout_mode = 2
+texture = ExtResource("1_gclgj")
+expand_mode = 5
+stretch_mode = 4
+
+[node name="HP_Bar" type="PanelContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="HP_ProgressBar" type="ProgressBar" parent="VBoxContainer/HP_Bar"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_62e2m")
+theme_override_styles/fill = SubResource("StyleBoxFlat_qtu10")
+max_value = 1.0
+step = 0.001
+value = 1.0
+show_percentage = false
+
+[node name="Def_ProgressBar" type="ProgressBar" parent="VBoxContainer/HP_Bar"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxEmpty_kluc8")
+theme_override_styles/fill = SubResource("StyleBoxFlat_hd1d6")
+max_value = 1.0
+step = 0.001
+value = 1.0
+show_percentage = false
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HP_Bar"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="HP_RichTextLabel" type="RichTextLabel" parent="VBoxContainer/HP_Bar/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+bbcode_enabled = true
+text = "150 / 300 [color=red]HP[/color]
++145 [color=sky_blue]Defense[/color]"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AttackBar" parent="VBoxContainer" instance=ExtResource("3_kluc8")]
+unique_name_in_owner = true
+layout_mode = 2
+fill_color = Color(0.92549, 0, 0.211765, 1)
+back_color = Color(1, 0.815686, 0.807843, 1)
+font_color = Color(1, 1, 1, 1)
+
+[node name="RegenBar" parent="VBoxContainer" instance=ExtResource("3_kluc8")]
+unique_name_in_owner = true
+layout_mode = 2
+fill_color = Color(0.273116, 0.651538, 4.04298e-06, 1)
+back_color = Color(0.829368, 1, 0.769011, 1)
+font_color = Color(1, 1, 1, 1)
+
+[node name="DefenseBar" parent="VBoxContainer" instance=ExtResource("3_kluc8")]
+unique_name_in_owner = true
+layout_mode = 2
+font_color = Color(1, 1, 1, 1)
+
+[node name="SkillContainer" type="VBoxContainer" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
