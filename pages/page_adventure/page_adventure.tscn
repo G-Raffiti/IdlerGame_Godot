@@ -1,0 +1,745 @@
+[gd_scene load_steps=23 format=3 uid="uid://blox1wlvp41h0"]
+
+[ext_resource type="PackedScene" uid="uid://coh24q5vdlgfx" path="res://ui/left_bar/title/title.tscn" id="1_gv8j7"]
+[ext_resource type="Script" uid="uid://bb7pxhly3d8os" path="res://pages/page_adventure/page_adventure.gd" id="1_xiccb"]
+[ext_resource type="Script" uid="uid://dgds1kt3wsv0c" path="res://pages/page_adventure/skills/skill_slot.gd" id="2_fw84d"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/skill_data.gd" id="3_0n8nl"]
+[ext_resource type="PackedScene" uid="uid://d1hlfk3rlejcs" path="res://pages/page_adventure/skills/skill_object.tscn" id="3_m47tj"]
+[ext_resource type="Texture2D" uid="uid://bb77k2xukqibn" path="res://icon.svg" id="4_0n8nl"]
+[ext_resource type="Script" uid="uid://boq0osg5lpa6f" path="res://pages/page_adventure/combat_manager.gd" id="4_qtvhb"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_we66y"]
+[ext_resource type="Script" uid="uid://b0bcypx457ih1" path="res://pages/page_adventure/adventurers/adventurer.gd" id="5_57kq1"]
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="7_nq4st"]
+
+[sub_resource type="Resource" id="Resource_b0qb6"]
+script = ExtResource("3_0n8nl")
+size = 1
+type = Array[int]([])
+time = 0.0
+active_effects = Array[ExtResource("7_nq4st")]([])
+triggered_effects = Dictionary[int, ExtResource("4_we66y")]({})
+metadata/_custom_type_script = "uid://bjjugwsaftjka"
+
+[sub_resource type="Resource" id="Resource_7j37x"]
+script = ExtResource("3_0n8nl")
+size = 1
+type = Array[int]([])
+time = 0.0
+active_effects = Array[ExtResource("7_nq4st")]([])
+triggered_effects = Dictionary[int, ExtResource("4_we66y")]({})
+metadata/_custom_type_script = "uid://bjjugwsaftjka"
+
+[sub_resource type="Resource" id="Resource_2mfnk"]
+script = ExtResource("3_0n8nl")
+size = 1
+type = Array[int]([])
+time = 0.0
+active_effects = Array[ExtResource("7_nq4st")]([])
+triggered_effects = Dictionary[int, ExtResource("4_we66y")]({})
+metadata/_custom_type_script = "uid://bjjugwsaftjka"
+
+[sub_resource type="Resource" id="Resource_dyp05"]
+script = ExtResource("5_57kq1")
+max_hp = 250.0
+level = 1
+reward = Dictionary[int, int]({
+0: 4,
+1: 2
+})
+board = Array[ExtResource("3_0n8nl")]([])
+metadata/_custom_type_script = "uid://b0bcypx457ih1"
+
+[sub_resource type="Resource" id="Resource_y74qm"]
+script = ExtResource("5_57kq1")
+max_hp = 0.0
+level = 1
+reward = Dictionary[int, int]({
+0: 4,
+1: 2
+})
+board = Array[ExtResource("3_0n8nl")]([])
+metadata/_custom_type_script = "uid://b0bcypx457ih1"
+
+[sub_resource type="Gradient" id="Gradient_we66y"]
+offsets = PackedFloat32Array(0.888715, 1)
+colors = PackedColorArray(0, 0, 0, 0, 1, 0.788235, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_57kq1"]
+gradient = SubResource("Gradient_we66y")
+width = 200
+height = 50
+fill = 2
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="Gradient" id="Gradient_m47tj"]
+offsets = PackedFloat32Array(0, 0.457571, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.839216, 0, 0.352941, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_0n8nl"]
+gradient = SubResource("Gradient_m47tj")
+width = 128
+height = 128
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
+
+[sub_resource type="Resource" id="Resource_3g4aq"]
+script = ExtResource("7_nq4st")
+target = 0
+target_number = 0
+metadata/_custom_type_script = "uid://dhw87ankvtaf5"
+
+[sub_resource type="Resource" id="Resource_pu657"]
+script = ExtResource("7_nq4st")
+target = 0
+target_number = 0
+metadata/_custom_type_script = "uid://dhw87ankvtaf5"
+
+[sub_resource type="Resource" id="Resource_xiccb"]
+script = ExtResource("3_0n8nl")
+size = 2
+icon = ExtResource("4_0n8nl")
+type = Array[int]([1, 3])
+time = 0.0
+active_effects = Array[ExtResource("7_nq4st")]([SubResource("Resource_3g4aq")])
+triggered_effects = Dictionary[int, ExtResource("7_nq4st")]({
+0: SubResource("Resource_pu657")
+})
+metadata/_custom_type_script = "uid://bjjugwsaftjka"
+
+[node name="PageAdventure" type="VBoxContainer" node_paths=PackedStringArray("intro", "skill_choice_1_btn", "skill_choice_2_btn", "skill_choice_3_btn", "start", "combat", "chest_button", "player_board", "player_chest", "monster_board")]
+custom_minimum_size = Vector2(728, 566)
+offset_right = 728.0
+offset_bottom = 566.0
+script = ExtResource("1_xiccb")
+skill_choices = Array[ExtResource("3_0n8nl")]([SubResource("Resource_b0qb6"), SubResource("Resource_7j37x"), SubResource("Resource_2mfnk")])
+player = SubResource("Resource_dyp05")
+fights = Array[ExtResource("5_57kq1")]([SubResource("Resource_y74qm")])
+intro = NodePath("Intro")
+skill_choice_1_btn = NodePath("Intro/VBoxContainer/VBoxContainer/SkillChoice1")
+skill_choice_2_btn = NodePath("Intro/VBoxContainer/VBoxContainer/SkillChoice2")
+skill_choice_3_btn = NodePath("Intro/VBoxContainer/VBoxContainer/SkillChoice3")
+start = NodePath("Intro/VBoxContainer/Start")
+combat = NodePath("Combat")
+chest_button = NodePath("Combat/PlayerProfile/OpenChest")
+player_board = NodePath("Combat/Board")
+player_chest = NodePath("Combat/Chest")
+monster_board = NodePath("Combat/MonsterBoard")
+
+[node name="Title" parent="." instance=ExtResource("1_gv8j7")]
+layout_mode = 2
+text = "Adventure"
+
+[node name="Intro" type="CenterContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Intro"]
+layout_mode = 2
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="Intro/VBoxContainer"]
+layout_mode = 2
+bbcode_enabled = true
+text = "[b]Welcome[/b] !!
+Welcome to the Tavern [b][color=wheat]Adventurer[/color][/b]
+"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control2" type="Control" parent="Intro/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Intro/VBoxContainer"]
+layout_mode = 2
+bbcode_enabled = true
+text = "Please choose your starting Skill:"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Intro/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="SkillChoice1" type="Button" parent="Intro/VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 54)
+layout_mode = 2
+
+[node name="Icon" type="TextureRect" parent="Intro/VBoxContainer/VBoxContainer/SkillChoice1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("4_0n8nl")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Select" type="TextureRect" parent="Intro/VBoxContainer/VBoxContainer/SkillChoice1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = SubResource("GradientTexture2D_57kq1")
+
+[node name="SkillChoice2" type="Button" parent="Intro/VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 54)
+layout_mode = 2
+
+[node name="Icon" type="TextureRect" parent="Intro/VBoxContainer/VBoxContainer/SkillChoice2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("4_0n8nl")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Select" type="TextureRect" parent="Intro/VBoxContainer/VBoxContainer/SkillChoice2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = SubResource("GradientTexture2D_57kq1")
+
+[node name="SkillChoice3" type="Button" parent="Intro/VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 54)
+layout_mode = 2
+
+[node name="Icon" type="TextureRect" parent="Intro/VBoxContainer/VBoxContainer/SkillChoice3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("4_0n8nl")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Select" type="TextureRect" parent="Intro/VBoxContainer/VBoxContainer/SkillChoice3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = SubResource("GradientTexture2D_57kq1")
+
+[node name="Control2" type="Control" parent="Intro/VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Intro/VBoxContainer"]
+layout_mode = 2
+bbcode_enabled = true
+text = "At the begining of your adventure you have
+14 [color=gold]Coins[/color] and 5 [color=gold]Income[/color]"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="Intro/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="Start" type="Button" parent="Intro/VBoxContainer"]
+layout_mode = 2
+text = "Start Your Adventure"
+
+[node name="Combat" type="HBoxContainer" parent="."]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("4_qtvhb")
+
+[node name="PlayerProfile" type="VBoxContainer" parent="Combat"]
+layout_mode = 2
+alignment = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Combat/PlayerProfile"]
+layout_mode = 2
+text = "The Player"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="Combat/PlayerProfile"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TextureRect" type="TextureRect" parent="Combat/PlayerProfile/CenterContainer"]
+layout_mode = 2
+texture = SubResource("GradientTexture2D_0n8nl")
+
+[node name="OpenChest" type="Button" parent="Combat/PlayerProfile"]
+layout_mode = 2
+toggle_mode = true
+text = "Chest"
+
+[node name="Board" type="PanelContainer" parent="Combat"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Background" type="VBoxContainer" parent="Combat/Board"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="Combat/Board/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer2" type="PanelContainer" parent="Combat/Board/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer3" type="PanelContainer" parent="Combat/Board/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer4" type="PanelContainer" parent="Combat/Board/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer5" type="PanelContainer" parent="Combat/Board/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer6" type="PanelContainer" parent="Combat/Board/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer7" type="PanelContainer" parent="Combat/Board/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer8" type="PanelContainer" parent="Combat/Board/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer9" type="PanelContainer" parent="Combat/Board/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer10" type="PanelContainer" parent="Combat/Board/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slots" type="VBoxContainer" parent="Combat/Board"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 0
+
+[node name="PanelContainer" type="Control" parent="Combat/Board/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer2" type="Control" parent="Combat/Board/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer3" type="Control" parent="Combat/Board/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="SkillObject" parent="Combat/Board/Slots/PanelContainer3" instance=ExtResource("3_m47tj")]
+custom_minimum_size = Vector2(0, 104)
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+offset_right = 228.0
+offset_bottom = 104.0
+grow_horizontal = 1
+data = SubResource("Resource_xiccb")
+
+[node name="PanelContainer4" type="Control" parent="Combat/Board/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer5" type="Control" parent="Combat/Board/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer6" type="Control" parent="Combat/Board/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="SkillObject2" parent="Combat/Board/Slots/PanelContainer6" instance=ExtResource("3_m47tj")]
+custom_minimum_size = Vector2(0, 104)
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+offset_right = 228.0
+offset_bottom = 104.0
+grow_horizontal = 1
+data = SubResource("Resource_xiccb")
+
+[node name="PanelContainer7" type="Control" parent="Combat/Board/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer8" type="Control" parent="Combat/Board/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer9" type="Control" parent="Combat/Board/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer10" type="Control" parent="Combat/Board/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="Chest" type="PanelContainer" parent="Combat"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Background" type="VBoxContainer" parent="Combat/Chest"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="Combat/Chest/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer2" type="PanelContainer" parent="Combat/Chest/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer3" type="PanelContainer" parent="Combat/Chest/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer4" type="PanelContainer" parent="Combat/Chest/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer5" type="PanelContainer" parent="Combat/Chest/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer6" type="PanelContainer" parent="Combat/Chest/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer7" type="PanelContainer" parent="Combat/Chest/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer8" type="PanelContainer" parent="Combat/Chest/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer9" type="PanelContainer" parent="Combat/Chest/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer10" type="PanelContainer" parent="Combat/Chest/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slots" type="VBoxContainer" parent="Combat/Chest"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 0
+
+[node name="PanelContainer" type="Control" parent="Combat/Chest/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer2" type="Control" parent="Combat/Chest/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer3" type="Control" parent="Combat/Chest/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer4" type="Control" parent="Combat/Chest/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer5" type="Control" parent="Combat/Chest/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer6" type="Control" parent="Combat/Chest/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer7" type="Control" parent="Combat/Chest/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer8" type="Control" parent="Combat/Chest/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="SkillObject" parent="Combat/Chest/Slots/PanelContainer8" instance=ExtResource("3_m47tj")]
+custom_minimum_size = Vector2(0, 104)
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+offset_right = 228.0
+offset_bottom = 104.0
+grow_horizontal = 1
+data = SubResource("Resource_xiccb")
+
+[node name="PanelContainer9" type="Control" parent="Combat/Chest/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer10" type="Control" parent="Combat/Chest/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="MonsterBoard" type="PanelContainer" parent="Combat"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Background" type="VBoxContainer" parent="Combat/MonsterBoard"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="Combat/MonsterBoard/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer2" type="PanelContainer" parent="Combat/MonsterBoard/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer3" type="PanelContainer" parent="Combat/MonsterBoard/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer4" type="PanelContainer" parent="Combat/MonsterBoard/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer5" type="PanelContainer" parent="Combat/MonsterBoard/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer6" type="PanelContainer" parent="Combat/MonsterBoard/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer7" type="PanelContainer" parent="Combat/MonsterBoard/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer8" type="PanelContainer" parent="Combat/MonsterBoard/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer9" type="PanelContainer" parent="Combat/MonsterBoard/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer10" type="PanelContainer" parent="Combat/MonsterBoard/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Slots" type="VBoxContainer" parent="Combat/MonsterBoard"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 0
+
+[node name="PanelContainer" type="Control" parent="Combat/MonsterBoard/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="SkillObject" parent="Combat/MonsterBoard/Slots/PanelContainer" instance=ExtResource("3_m47tj")]
+custom_minimum_size = Vector2(0, 104)
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+offset_right = 228.0
+offset_bottom = 104.0
+grow_horizontal = 1
+data = SubResource("Resource_xiccb")
+
+[node name="PanelContainer2" type="Control" parent="Combat/MonsterBoard/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer3" type="Control" parent="Combat/MonsterBoard/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer4" type="Control" parent="Combat/MonsterBoard/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer5" type="Control" parent="Combat/MonsterBoard/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer6" type="Control" parent="Combat/MonsterBoard/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer7" type="Control" parent="Combat/MonsterBoard/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer8" type="Control" parent="Combat/MonsterBoard/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer9" type="Control" parent="Combat/MonsterBoard/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer10" type="Control" parent="Combat/MonsterBoard/Slots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="MonsterProfile" type="CenterContainer" parent="Combat"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Combat/MonsterProfile"]
+layout_mode = 2
+texture = SubResource("GradientTexture2D_0n8nl")
