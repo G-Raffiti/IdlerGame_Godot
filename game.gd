@@ -1,8 +1,10 @@
 extends Control
 class_name Manager
 
+const saveable: bool = true
+
 #region    --- Pages ---
-var excavation: PageExcavation
+var the_mine: PageTheMine
 var central: Central
 var training: PageTraining
 var boss_fight: PageBossFight
@@ -84,7 +86,7 @@ func update_gold_bar() -> void:
 	gold_bar.update_progress(RS.gold.get_percent())
 	gold_bar.text_value = "[b]Gold:[/b]\n" + \
 	Number.to_str(RS.gold.amount) + " / " + Number.to_str(RS.gold.maximum_amount) + \
-	" (+" + Number.to_str(excavation.total_per_click[E.Res.GOLD]) + "/c)"
+	" (+" + Number.to_str(the_mine.total_per_click[E.Res.GOLD]) + "/c)"
 	gold_bar.tooltip_base_text = "[b][color=gold]Gold[/color]:[/b]
 Can be used in the Central to increase acces to [b][color=pale_green]Energy[/color][/b]
 

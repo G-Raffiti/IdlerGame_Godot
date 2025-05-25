@@ -3,8 +3,9 @@ extends HBoxContainer
 class_name ResourceAllocator
 
 signal on_change_amount_pressed(in_bar: ResourceAllocator, in_allocation: E.Allocation)
-signal on_bar_filled()
+signal on_bar_filled(in_num_bar: Vector2)
 
+const saveable: bool = true
 
 @export_group("Display")
 @export var display_name: String = "":
@@ -39,7 +40,7 @@ var dynamic_tooltip_value: String:
 		dynamic_tooltip_value = value
 		if not is_inside_tree(): 
 			return
-		var percent = Number.to_float(Number.div(bar_current_value, bar_total_value))
+		var percent: float = Number.to_float(Number.div(bar_current_value, bar_total_value))
 		progress_bar.tooltip_base_text = _get_tooltip_message(percent)
 
 @export var fill_color: Color:
@@ -89,7 +90,13 @@ var dynamic_tooltip_value: String:
 
 @export var increase_factor_on_bar_filled: Vector2 = Vector2(1.0, 0)
 
-var level: Vector2 = Vector2.ZERO
+var level: Vector2 = Vector2.ZERO:
+	get: return level
+	set(value):
+		level = value
+		if not is_inside_tree():
+			return
+		$LevelText.text = Number.to_str(level)
 
 var current_allocated: Vector2 = Vector2(0.0, 0):
 	set(value):
@@ -128,13 +135,13 @@ func init_data(in_data: ResourceAllocator_Data) -> void:
 	maximum_allocated = in_data.maximum_allocated
 	fill_duration_at_maximum = in_data.fill_duration_at_maximum
 	increase_factor_on_bar_filled = in_data.increase_factor_on_bar_filled
-	_click_enabled = in_data._click_enabled
+	_click_enabled = in_data.click_enabled
 	should_decrease_maximum_after_rebirth = in_data.should_decrease_maximum_after_rebirth
 	decrease_factor_on_rebirth_maximum = in_data.decrease_factor_on_rebirth_maximum
 	decrease_maximum_on_rebirth_per_bar_filled = in_data.decrease_maximum_on_rebirth_per_bar_filled
+	level = level
 	
 	allocate_resource(Vector2.ZERO)
-	$LevelText.text = Number.to_str(level)
 	_update_total_value()
 	after_rebirth_maximum = maximum_allocated
 	min_after_rebirth_maximum = Number.max_num(Number.mult(maximum_allocated, decrease_factor_on_rebirth_maximum), Vector2(1.0, 0))
@@ -149,7 +156,7 @@ func _ready() -> void:
 	$"HBoxContainer/Remove".pressed.connect(func() -> void: on_change_amount_pressed.emit(self, E.Allocation.REMOVE))
 	$"HBoxContainer/Max".pressed.connect(func() -> void: on_change_amount_pressed.emit(self, E.Allocation.MAX))
 	if _click_enabled:
-		progress_bar.pressed.connect(func():_on_tick(Number.div(Vector2(1.0, 0), Settings.income_frequency_number)))
+		progress_bar.pressed.connect(func() -> void: _on_fast_time(Vector2(1.0, 0)))
 	timer = Timer.new()
 	timer.autostart = false
 	timer.one_shot = false
@@ -159,20 +166,20 @@ func _ready() -> void:
 	fill_color = fill_color
 	back_color = back_color
 	font_color = font_color
+	RS.on_offline_progress_time_calculated.connect(_on_fast_time)
 
 func _on_tick(in_mult: Vector2 = Vector2(1.0, 0)) -> void:
 	bar_current_value = Number.add(bar_current_value, Number.mult(current_allocated, in_mult))
-	var percent = Number.to_float(Number.div(bar_current_value, bar_total_value))
+	var percent: float = Number.to_float(Number.div(bar_current_value, bar_total_value))
 	progress_bar.update_progress(percent)
 	progress_bar.tooltip_base_text = _get_tooltip_message(percent)
 	if percent < 1.0:
 		return
-	on_bar_filled.emit()
+	on_bar_filled.emit(Vector2(1.0, 0))
 	bar_current_value = Vector2.ZERO
 	maximum_allocated = Number.mult(maximum_allocated, increase_factor_on_bar_filled)
 	_update_total_value()
 	level = Number.add(level, Vector2(1.0, 0))
-	$LevelText.text = Number.to_str(level)
 	_decrease_rebirth_maximum()
 
 
@@ -217,3 +224,23 @@ func _decrease_rebirth_maximum() -> void:
 func set_unlocked(in_message: String, in_state: bool) -> void:
 	$LockedText.text = in_message
 	is_unlocked = in_state
+
+func _on_fast_time(in_delta_time: Vector2) -> void:
+	var add_per_sec: Vector2 = Number.div(current_allocated, Settings.income_frequency_number)
+	var total_added: Vector2 = Number.mult(add_per_sec, in_delta_time)
+	var total_bar_filled: Vector2 = Vector2.ZERO
+
+	var added: Vector2 = Vector2.ZERO
+	while Number.is_greater(Number.sub(total_added, added), bar_total_value):
+		added = Number.add(added, bar_total_value)
+		maximum_allocated = Number.mult(maximum_allocated, increase_factor_on_bar_filled)
+		_update_total_value()
+		_decrease_rebirth_maximum()
+		total_bar_filled = Number.add(total_bar_filled, Vector2(1.0, 0))
+
+	bar_current_value = Number.add(bar_current_value, Number.sub(total_added, added))
+	level = Number.add(level, total_bar_filled)
+	var percent: float = Number.to_float(Number.div(bar_current_value, bar_total_value))
+	progress_bar.update_progress(percent)
+	progress_bar.tooltip_base_text = _get_tooltip_message(percent)
+	on_bar_filled.emit(total_bar_filled)

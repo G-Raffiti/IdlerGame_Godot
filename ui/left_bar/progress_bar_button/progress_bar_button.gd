@@ -93,7 +93,7 @@ func update_progress(in_percent: float) -> void:
 		enabled = true
 	progress.value = in_percent
 
-func _get_tooltip(at_position: Vector2) -> String:
+func _get_tooltip(_at_position: Vector2) -> String:
 	if enabled == false: return ""
 	return tooltip_base_text
 

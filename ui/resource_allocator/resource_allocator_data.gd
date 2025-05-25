@@ -13,7 +13,7 @@ class_name ResourceAllocator_Data
 @export var increase_factor_on_bar_filled: Vector2 = Vector2(1.0, 0)
 
 @export_group("Click")
-@export var _click_enabled: bool
+@export var click_enabled: bool = true
 
 @export_group("Rebirth")
 @export var should_decrease_maximum_after_rebirth: bool = false

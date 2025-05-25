@@ -59,43 +59,43 @@ func register_to_manager(in_manager: Manager) -> void:
 func initialize_data() -> void:
 	basic_attack_allocator.init_data(basic_attack_allocator_data)
 	basic_attack_allocator.on_change_amount_pressed.connect(manager.add_energy_to_allocator)
-	basic_attack_allocator.on_bar_filled.connect(func(): _add_stat(E.Stats.ATTACK, basic_attack_amount))
+	basic_attack_allocator.on_bar_filled.connect(func(in_num_bar: Vector2) -> void: _add_stat(E.Stats.ATTACK, Number.mult(in_num_bar, basic_attack_amount)))
 	
 	advanced_attack_allocator.init_data(advanced_attack_allocator_data)
 	advanced_attack_allocator.on_change_amount_pressed.connect(manager.add_energy_to_allocator)
-	advanced_attack_allocator.on_bar_filled.connect(func(): _add_stat(E.Stats.ATTACK, advanced_attack_amount))
+	advanced_attack_allocator.on_bar_filled.connect(func(in_num_bar: Vector2) -> void: _add_stat(E.Stats.ATTACK, Number.mult(in_num_bar, advanced_attack_amount)))
 	
 	master_attack_allocator.init_data(master_attack_allocator_data)
 	master_attack_allocator.on_change_amount_pressed.connect(manager.add_energy_to_allocator)
-	master_attack_allocator.on_bar_filled.connect(func(): _add_stat(E.Stats.ATTACK, master_attack_amount))
+	master_attack_allocator.on_bar_filled.connect(func(in_num_bar: Vector2) -> void: _add_stat(E.Stats.ATTACK, Number.mult(in_num_bar, master_attack_amount)))
 	
 	increase_attack_allocator.init_data(increase_attack_allocator_data)
 	increase_attack_allocator.on_change_amount_pressed.connect(manager.add_energy_to_allocator)
-	increase_attack_allocator.on_bar_filled.connect(func(): _increase_stat(E.Stats.ATTACK, increase_attack_amount))
+	increase_attack_allocator.on_bar_filled.connect(func(in_num_bar: Vector2) -> void: _increase_stat(E.Stats.ATTACK, Number.mult(in_num_bar, increase_attack_amount)))
 	
 	increase_attack_speed_allocator.init_data(increase_attack_speed_allocator_data)
 	increase_attack_speed_allocator.on_change_amount_pressed.connect(manager.add_energy_to_allocator)
-	increase_attack_speed_allocator.on_bar_filled.connect(func(): _mult_attack_duration(increase_attack_speed_amount))
+	increase_attack_speed_allocator.on_bar_filled.connect(func(in_num_bar: Vector2) -> void: _mult_attack_duration(Number.mult(in_num_bar, increase_attack_speed_amount)))
 	
 	basic_defense_allocator.init_data(basic_defense_allocator_data)
 	basic_defense_allocator.on_change_amount_pressed.connect(manager.add_energy_to_allocator)
-	basic_defense_allocator.on_bar_filled.connect(func(): _add_stat(E.Stats.DEFENSE, basic_defense_amount))
+	basic_defense_allocator.on_bar_filled.connect(func(in_num_bar: Vector2) -> void: _add_stat(E.Stats.DEFENSE, Number.mult(in_num_bar, basic_defense_amount)))
 	
 	advanced_defense_allocator.init_data(advanced_defense_allocator_data)
 	advanced_defense_allocator.on_change_amount_pressed.connect(manager.add_energy_to_allocator)
-	advanced_defense_allocator.on_bar_filled.connect(func(): _add_stat(E.Stats.DEFENSE, advanced_defense_amount))
+	advanced_defense_allocator.on_bar_filled.connect(func(in_num_bar: Vector2) -> void: _add_stat(E.Stats.DEFENSE, Number.mult(in_num_bar, advanced_defense_amount)))
 	
 	master_defense_allocator.init_data(master_defense_allocator_data)
 	master_defense_allocator.on_change_amount_pressed.connect(manager.add_energy_to_allocator)
-	master_defense_allocator.on_bar_filled.connect(func(): _add_stat(E.Stats.DEFENSE, master_defense_amount))
+	master_defense_allocator.on_bar_filled.connect(func(in_num_bar: Vector2) -> void: _add_stat(E.Stats.DEFENSE, Number.mult(in_num_bar, master_defense_amount)))
 	
 	increase_defense_allocator.init_data(increase_defense_allocator_data)
 	increase_defense_allocator.on_change_amount_pressed.connect(manager.add_energy_to_allocator)
-	increase_defense_allocator.on_bar_filled.connect(func(): _increase_stat(E.Stats.DEFENSE, increase_defense_amount))
+	increase_defense_allocator.on_bar_filled.connect(func(in_num_bar: Vector2) -> void: _increase_stat(E.Stats.DEFENSE, Number.mult(in_num_bar, increase_defense_amount)))
 	
 	increase_defense_speed_allocator.init_data(increase_defense_speed_allocator_data)
 	increase_defense_speed_allocator.on_change_amount_pressed.connect(manager.add_energy_to_allocator)
-	increase_defense_speed_allocator.on_bar_filled.connect(func(): _mult_defense_duration(increase_attack_speed_amount))
+	increase_defense_speed_allocator.on_bar_filled.connect(func(in_num_bar: Vector2) -> void: _mult_defense_duration(Number.mult(in_num_bar, increase_attack_speed_amount)))
 	
 	basic_hp_allocator.init_data(basic_hp_allocator_data)
 	basic_hp_allocator.on_change_amount_pressed.connect(manager.add_energy_to_allocator)
@@ -112,7 +112,7 @@ func initialize_data() -> void:
 func _add_stat(in_stat_type: E.Stats, in_amount: Vector2) -> void:
 	RS.add_stats(in_stat_type, in_amount)
 
-func _increase_stat(in_stat_type: E.Stats, in_increase_amount) -> void:
+func _increase_stat(in_stat_type: E.Stats, in_increase_amount: Vector2) -> void:
 	RS.stats[in_stat_type].add_global_value_inc(in_increase_amount)
 
 func _mult_attack_duration(in_mult_amount: Vector2) -> void:
@@ -121,9 +121,9 @@ func _mult_attack_duration(in_mult_amount: Vector2) -> void:
 func _mult_defense_duration(in_mult_amount: Vector2) -> void:
 	RS.defense_duration.add_mult_bonus(in_mult_amount)
 
-func _add_hp_max() -> void:
-	RS.hp.maximum_amount = Number.add(RS.hp.maximum_amount, basic_hp_amount)
-	RS.hp.add(basic_hp_amount)
+func _add_hp_max(in_num_bar: Vector2) -> void:
+	RS.hp.maximum_amount = Number.add(RS.hp.maximum_amount, Number.mult(in_num_bar, basic_hp_amount))
+	RS.hp.add(Number.mult(in_num_bar, basic_hp_amount))
 
 func _update_tooltip_attack() -> void:
 	basic_attack_allocator.dynamic_tooltip_value = "+" + Number.to_str(Number.mult(RS.attack.total_global_value_inc, basic_attack_amount)) + " [b][color=tomato]Attack[/color][/b] / level"
@@ -148,7 +148,7 @@ func reset_energy_allocation() -> void:
 	increase_defense_speed_allocator.allocate_resource(Number.minus(increase_defense_speed_allocator.current_allocated))
 	basic_hp_allocator.allocate_resource(Number.minus(basic_hp_allocator.current_allocated))
 
-func _on_current_boss_level_changed(in_current_boss_level) -> void:
+func _on_current_boss_level_changed(in_current_boss_level: int) -> void:
 	basic_attack_allocator.set_unlocked("Unlocked at Boss Level " + str(basic_attack_allocator_data.unlock_level), basic_attack_allocator_data.unlock_level <= in_current_boss_level)
 	advanced_attack_allocator.set_unlocked("Unlocked at Boss Level " + str(advanced_attack_allocator_data.unlock_level), advanced_attack_allocator_data.unlock_level <= in_current_boss_level)
 	master_attack_allocator.set_unlocked("Unlocked at Boss Level " + str(master_attack_allocator_data.unlock_level), master_attack_allocator_data.unlock_level <= in_current_boss_level)

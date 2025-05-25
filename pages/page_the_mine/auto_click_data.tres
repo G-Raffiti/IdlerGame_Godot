@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ResourceAllocator_Data" load_steps=2 format=3 uid="uid://c0evfnv4110a0"]
+
+[ext_resource type="Script" uid="uid://d0w6sksq4fu4p" path="res://ui/resource_allocator/resource_allocator_data.gd" id="1_0pmia"]
+
+[resource]
+script = ExtResource("1_0pmia")
+display_name = "Auto Click"
+display_level = true
+unlock_level = 0
+tooltip_message = "[b]Auto Click[/b]
+Invest [b][color=pale_green]Energy[/color][/b] here is the only way of producing [b][color=gold]Gold[/color][/b] without [b]Clicking[/b] yourself.
+(each time the bar is filled you earn [b][color=gold]Gold[/color][/b] as if you clicked on the button, 
+requierment in energy will grow over time)"
+maximum_allocated = Vector2(5, 3)
+fill_duration_at_maximum = Vector2(1, -1)
+increase_factor_on_bar_filled = Vector2(10001, -4)
+click_enabled = true
+should_decrease_maximum_after_rebirth = false
+decrease_factor_on_rebirth_maximum = Vector2(9, -1)
+decrease_maximum_on_rebirth_per_bar_filled = Vector2(1, 0)
+metadata/_custom_type_script = "uid://d0w6sksq4fu4p"

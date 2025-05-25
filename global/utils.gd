@@ -18,7 +18,7 @@ static func stats_to_str(in_stat: E.Res) -> String:
 		_: return "Unknown Stat"
 
 static func resources_to_str(in_resources: Dictionary[E.Res, Vector2]) -> String:
-	var res_str: String
+	var res_str: String = ""
 	
 	var i: int = 0
 	for res: E.Res in in_resources:
@@ -28,3 +28,20 @@ static func resources_to_str(in_resources: Dictionary[E.Res, Vector2]) -> String
 			res_str += ", "
 	
 	return res_str
+
+
+static func get_all_childrens(in_parent: Node, in_include_parent: bool = false) -> Array[Node]:
+	var childrens: Array[Node] = []
+	if in_include_parent:
+		childrens.append(in_parent)
+	for child: Node in in_parent.get_children():
+		childrens.append_array(get_all_childrens(child, true))
+	return childrens
+
+static func get_all_children_whith_variable(in_parent: Node, in_var_name: String) -> Array[Node]:
+	var childrens: Array[Node] = []
+	if in_var_name in in_parent: 
+		childrens.append(in_parent)
+	for child: Node in in_parent.get_children():
+		childrens.append_array(get_all_children_whith_variable(child, in_var_name))
+	return childrens

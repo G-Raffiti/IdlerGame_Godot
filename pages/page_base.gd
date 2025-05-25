@@ -17,5 +17,5 @@ func open_page() -> void:
 func close_page() -> void:
 	pass
 
-func _on_current_boss_level_changed(in_current_boss_level) -> void:
+func _on_current_boss_level_changed(_in_current_boss_level: int) -> void:
 	pass

@@ -1,12 +1,13 @@
 extends Node
 class_name ResourceManager
 
+const saveable: bool = true
+
 signal on_amount_changed()
 signal on_maximum_amount_changed()
 signal on_amount_used_changed()
 signal on_production_changed()
 signal on_global_value_changed()
-
 
 var amount: Vector2 = Vector2.ZERO:
 	get(): return amount

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ResourceAllocator_Data" load_steps=2 format=3 uid="uid://pmnduqpkyr24"]
+
+[ext_resource type="Script" uid="uid://d0w6sksq4fu4p" path="res://ui/resource_allocator/resource_allocator_data.gd" id="1_oft0v"]
+
+[resource]
+script = ExtResource("1_oft0v")
+display_name = "Auto Upgrade Storage"
+display_level = true
+unlock_level = 0
+tooltip_message = "[b]Auto Upgrade [color=gold]Gold[/color] Storage[/b]
+You want to automate the flow of increasing your Maximum [b][color=gold]Gold[/color][/b] ?
+here is the place!
+(with 100% [b][color=pale_green]Energy[/color][/b] the [b][color=gold]Gold[/color][/b] maximum storage will be Upgraded every second)"
+maximum_allocated = Vector2(1, 3)
+fill_duration_at_maximum = Vector2(1, 0)
+increase_factor_on_bar_filled = Vector2(1, 0)
+click_enabled = true
+should_decrease_maximum_after_rebirth = false
+decrease_factor_on_rebirth_maximum = Vector2(9, -1)
+decrease_maximum_on_rebirth_per_bar_filled = Vector2(1, 0)
+metadata/_custom_type_script = "uid://d0w6sksq4fu4p"

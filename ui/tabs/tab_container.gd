@@ -3,7 +3,7 @@ extends HBoxContainer
 @export var tabs_unlock_data: Array[TabUnlock_Data]
 
 func _ready() -> void:
-	for tab_unlock in tabs_unlock_data:
+	for tab_unlock: TabUnlock_Data in tabs_unlock_data:
 		var button: Button = get_node(tab_unlock.tab_button) as Button
 		if button == null:
 			continue
@@ -13,7 +13,7 @@ func _ready() -> void:
 	update_lock_state(RS.current_boss_level)
 
 func display_page(in_page_to_open: PageBase) -> void:
-	for tab_unlock in tabs_unlock_data:
+	for tab_unlock: TabUnlock_Data in tabs_unlock_data:
 		var button: Button = get_node(tab_unlock.tab_button) as Button
 		if button == null:
 			continue
@@ -30,7 +30,7 @@ func display_page(in_page_to_open: PageBase) -> void:
 			page.close_page()
 
 func update_lock_state(in_current_boss_level: int) -> void:
-	for tab_unlock in tabs_unlock_data:
+	for tab_unlock: TabUnlock_Data in tabs_unlock_data:
 		var button: Button = get_node(tab_unlock.tab_button) as Button
 		if button == null:
 			continue

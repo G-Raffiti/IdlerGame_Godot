@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ResourceAllocator_Data" load_steps=2 format=3 uid="uid://d3x6pv0iy754t"]
+
+[ext_resource type="Script" uid="uid://d0w6sksq4fu4p" path="res://ui/resource_allocator/resource_allocator_data.gd" id="1_y6yva"]
+
+[resource]
+script = ExtResource("1_y6yva")
+display_name = "Click Gold x2"
+display_level = true
+unlock_level = 0
+tooltip_message = "[b]Improve Click[/b]
+Increase the [b]Button[/b]'s [b][color=gold]Gold[/color][/b] production by 100% (x2) each time the bar is filled.
+(requierment in energy will grow by 100% each time the bar is filled)"
+maximum_allocated = Vector2(1, 4)
+fill_duration_at_maximum = Vector2(1, 0)
+increase_factor_on_bar_filled = Vector2(2, 0)
+click_enabled = true
+should_decrease_maximum_after_rebirth = false
+decrease_factor_on_rebirth_maximum = Vector2(9, -1)
+decrease_maximum_on_rebirth_per_bar_filled = Vector2(1, 0)
+metadata/_custom_type_script = "uid://d0w6sksq4fu4p"

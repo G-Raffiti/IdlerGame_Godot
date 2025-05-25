@@ -1,7 +1,6 @@
 extends PageBase
 class_name PageBossFight
 
-signal on_fight_loss()
 const creature_ps: PackedScene = preload("uid://ci1ut4cmxwup2")
 
 @export var player_creature: Creature
@@ -25,7 +24,7 @@ func open_page() -> void:
 	clear_creature()
 	_update_player_stats()
 	if RS.current_boss_level >= boss_fights.size():
-		var label = RichTextLabel.new()
+		var label: RichTextLabel = RichTextLabel.new()
 		label.text = "Victory"
 		enemies_container.add_child(label)
 		return
@@ -52,14 +51,14 @@ func _update_player_stats() -> void:
 
 func clear_creature() -> void:
 	for i: int in enemies_container.get_child_count():
-		var child = enemies_container.get_child(0)
+		var child: Node = enemies_container.get_child(0)
 		if child == null:
 			continue
 		if child == creature:
 			player_creature.on_attack_done.disconnect(creature.take_hit)
 			creature.on_attack_done.disconnect(player_creature.take_hit)
 			creature.on_dead.disconnect(_win_fight)
-			creature == null
+			creature = null
 		enemies_container.remove_child(child)
 		child.queue_free()
 

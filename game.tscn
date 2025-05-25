@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=3 uid="uid://bvrw8m4ifsabq"]
+[gd_scene load_steps=70 format=3 uid="uid://bvrw8m4ifsabq"]
 
 [ext_resource type="Script" uid="uid://bbb3btex1u0ft" path="res://game.gd" id="1_mfdv2"]
 [ext_resource type="PackedScene" uid="uid://coh24q5vdlgfx" path="res://ui/left_bar/title/title.tscn" id="2_iotsf"]
@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://cnx4s5bwkidgp" path="res://ui/resource_allocator/resource_allocator.tscn" id="5_7sc4i"]
 [ext_resource type="Script" uid="uid://b1ktt5buk8o6x" path="res://ui/tabs/tab_unlock_data.gd" id="5_e8heu"]
 [ext_resource type="Script" uid="uid://cas0aholycrmc" path="res://pages/page_traigning.gd" id="5_lc2xo"]
-[ext_resource type="Script" uid="uid://bvuqs7aar7g20" path="res://pages/page_excavation.gd" id="6_80cx4"]
 [ext_resource type="Script" uid="uid://vxadgjl5nmk" path="res://ui/tabs/tab_button.gd" id="6_rvswv"]
 [ext_resource type="Script" uid="uid://d0w6sksq4fu4p" path="res://ui/resource_allocator/resource_allocator_data.gd" id="7_e8heu"]
 [ext_resource type="Script" uid="uid://bp73r0jgdnjbf" path="res://pages/page_boss_fight/page_boss_fight.gd" id="8_7sc4i"]
@@ -17,6 +16,12 @@
 [ext_resource type="Script" uid="uid://fq6jkdyef3oo" path="res://cheat/cheat.gd" id="10_e36ub"]
 [ext_resource type="Script" uid="uid://bu1ygj21droc3" path="res://pages/page_central.gd" id="10_iotsf"]
 [ext_resource type="Script" uid="uid://beit5sf1ullka" path="res://systems/resource_system_initializer.gd" id="11_hb5m1"]
+[ext_resource type="Script" uid="uid://cjad1v5qfkg6d" path="res://pages/page_the_mine/page_the_mine.gd" id="13_x5p1p"]
+[ext_resource type="Resource" uid="uid://c0evfnv4110a0" path="res://pages/page_the_mine/auto_click_data.tres" id="14_qhcbd"]
+[ext_resource type="Resource" uid="uid://pmnduqpkyr24" path="res://pages/page_the_mine/auto_click_max_gold_data.tres" id="15_f1jbl"]
+[ext_resource type="Resource" uid="uid://c443py5ab3jvy" path="res://pages/page_the_mine/improve_click_add_data.tres" id="16_vaj68"]
+[ext_resource type="Resource" uid="uid://d3x6pv0iy754t" path="res://pages/page_the_mine/improve_click_mult_data.tres" id="17_i2p71"]
+[ext_resource type="PackedScene" uid="uid://dds5iy8lo2hgg" path="res://save/test_scene.tscn" id="18_rvswv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7sc4i"]
 bg_color = Color(0.210507, 0.210507, 0.210507, 1)
@@ -135,7 +140,7 @@ Train your [b][color=tomato]Attack[/color][/b] Skills by allocating [b][color=pa
 maximum_allocated = Vector2(5, 3)
 fill_duration_at_maximum = Vector2(1, -1)
 increase_factor_on_bar_filled = Vector2(1, 0)
-_click_enabled = true
+click_enabled = true
 should_decrease_maximum_after_rebirth = true
 decrease_factor_on_rebirth_maximum = Vector2(9, -1)
 decrease_maximum_on_rebirth_per_bar_filled = Vector2(1, 0)
@@ -152,7 +157,7 @@ your training !"
 maximum_allocated = Vector2(777777, 0)
 fill_duration_at_maximum = Vector2(1, -1)
 increase_factor_on_bar_filled = Vector2(1, 0)
-_click_enabled = true
+click_enabled = true
 should_decrease_maximum_after_rebirth = true
 decrease_factor_on_rebirth_maximum = Vector2(9, -1)
 decrease_maximum_on_rebirth_per_bar_filled = Vector2(7, 0)
@@ -169,7 +174,7 @@ to fight even the Gods!"
 maximum_allocated = Vector2(1, 9)
 fill_duration_at_maximum = Vector2(1, -1)
 increase_factor_on_bar_filled = Vector2(1, 0)
-_click_enabled = true
+click_enabled = true
 should_decrease_maximum_after_rebirth = true
 decrease_factor_on_rebirth_maximum = Vector2(9, -1)
 decrease_maximum_on_rebirth_per_bar_filled = Vector2(1, 3)
@@ -187,7 +192,7 @@ Train your body to the Limit. by reinforcing yourself all of your [b][color=toma
 maximum_allocated = Vector2(5, 3)
 fill_duration_at_maximum = Vector2(2, 1)
 increase_factor_on_bar_filled = Vector2(1.07, 0)
-_click_enabled = true
+click_enabled = true
 should_decrease_maximum_after_rebirth = true
 decrease_factor_on_rebirth_maximum = Vector2(9, -1)
 decrease_maximum_on_rebirth_per_bar_filled = Vector2(1, 1)
@@ -197,7 +202,7 @@ metadata/_custom_type_script = "uid://d0w6sksq4fu4p"
 script = ExtResource("7_e8heu")
 display_name = "Attack Speed"
 display_level = true
-unlock_level = 10
+unlock_level = 5
 tooltip_message = "[b][u]Attack Speed[/u][/b]
 Train your [b][color=tomato]Attack[/color][/b] [b][color=yellow]Speed[/color][/b] by allocating [b][color=pale_green]Energy[/color][/b] here.
 
@@ -205,7 +210,7 @@ Train your [b][color=tomato]Attack[/color][/b] [b][color=yellow]Speed[/color][/b
 maximum_allocated = Vector2(4.4, 6)
 fill_duration_at_maximum = Vector2(1, 0)
 increase_factor_on_bar_filled = Vector2(1.2, 0)
-_click_enabled = true
+click_enabled = true
 should_decrease_maximum_after_rebirth = true
 decrease_factor_on_rebirth_maximum = Vector2(9, -1)
 decrease_maximum_on_rebirth_per_bar_filled = Vector2(4.4, 2)
@@ -221,7 +226,7 @@ Train your [b][color=sky_blue]Defense[/color][/b] Skills by allocating [b][color
 maximum_allocated = Vector2(3, 3)
 fill_duration_at_maximum = Vector2(1, -1)
 increase_factor_on_bar_filled = Vector2(1, 0)
-_click_enabled = true
+click_enabled = true
 should_decrease_maximum_after_rebirth = true
 decrease_factor_on_rebirth_maximum = Vector2(9, -1)
 decrease_maximum_on_rebirth_per_bar_filled = Vector2(1, 0)
@@ -238,7 +243,7 @@ Become more resistant to Hit and outscale your opponents !"
 maximum_allocated = Vector2(5, 5)
 fill_duration_at_maximum = Vector2(1, -1)
 increase_factor_on_bar_filled = Vector2(1, 0)
-_click_enabled = true
+click_enabled = true
 should_decrease_maximum_after_rebirth = true
 decrease_factor_on_rebirth_maximum = Vector2(9, -1)
 decrease_maximum_on_rebirth_per_bar_filled = Vector2(5.2, 1)
@@ -255,7 +260,7 @@ This is the Ultimate Protection !"
 maximum_allocated = Vector2(1.818, 8)
 fill_duration_at_maximum = Vector2(1, 0)
 increase_factor_on_bar_filled = Vector2(1, 0)
-_click_enabled = true
+click_enabled = true
 should_decrease_maximum_after_rebirth = true
 decrease_factor_on_rebirth_maximum = Vector2(9, -1)
 decrease_maximum_on_rebirth_per_bar_filled = Vector2(1.818, 3)
@@ -273,7 +278,7 @@ Tncrease your Vitality and every [b][color=sky_blue]Defense[/color][/b]'s source
 maximum_allocated = Vector2(5, 3)
 fill_duration_at_maximum = Vector2(2, 1)
 increase_factor_on_bar_filled = Vector2(1.07, 0)
-_click_enabled = true
+click_enabled = true
 should_decrease_maximum_after_rebirth = true
 decrease_factor_on_rebirth_maximum = Vector2(9, -1)
 decrease_maximum_on_rebirth_per_bar_filled = Vector2(5.2, 1)
@@ -283,7 +288,7 @@ metadata/_custom_type_script = "uid://d0w6sksq4fu4p"
 script = ExtResource("7_e8heu")
 display_name = "Defense Speed"
 display_level = true
-unlock_level = 11
+unlock_level = 5
 tooltip_message = "[b][u]Defense Speed[/u][/b]
 Train your [b][color=sky_blue]Defense[/color][/b] [b][color=yellow]Speed[/color][/b] by allocating [b][color=pale_green]Energy[/color][/b] here.
 
@@ -291,7 +296,7 @@ Train your [b][color=sky_blue]Defense[/color][/b] [b][color=yellow]Speed[/color]
 maximum_allocated = Vector2(4.4, 6)
 fill_duration_at_maximum = Vector2(1, 0)
 increase_factor_on_bar_filled = Vector2(1.2, 0)
-_click_enabled = true
+click_enabled = true
 should_decrease_maximum_after_rebirth = true
 decrease_factor_on_rebirth_maximum = Vector2(9, -1)
 decrease_maximum_on_rebirth_per_bar_filled = Vector2(4.4, 2)
@@ -309,7 +314,7 @@ Train your [b][color=red]Endurance[/color][/b] by allocating [b][color=pale_gree
 maximum_allocated = Vector2(5, 2)
 fill_duration_at_maximum = Vector2(1, -1)
 increase_factor_on_bar_filled = Vector2(1.01, 0)
-_click_enabled = true
+click_enabled = true
 should_decrease_maximum_after_rebirth = true
 decrease_factor_on_rebirth_maximum = Vector2(9, -1)
 decrease_maximum_on_rebirth_per_bar_filled = Vector2(1, 0)
@@ -362,8 +367,8 @@ text = "Level 2 Rewards
 [b]Unlock: [/b] Acces to [b]Research Center[/b]
 [b]Unlock: [/b] Training [color=tomato]Advanced Attack[/color]"
 hp = Vector2(500, 0)
-attack = Vector2(75, 0)
-attack_duration = Vector2(4, 0)
+attack = Vector2(10, 0)
+attack_duration = Vector2(0.5, 0)
 defense = Vector2(250, 0)
 defense_duration = Vector2(10, 0)
 regen = Vector2(2, 0)
@@ -413,11 +418,11 @@ fill_to = Vector2(1, 0.493023)
 
 [sub_resource type="Resource" id="Resource_dhpj7"]
 script = ExtResource("9_e8heu")
-name = "Shark"
+name = "Strength"
 icon = SubResource("GradientTexture2D_e36ub")
 text = "Level 4 Rewards
 [b]Unlock: [/b] The Mine Auto Click "
-hp = Vector2(2500, 0)
+hp = Vector2(2.5, 3)
 attack = Vector2(1.5, 4)
 attack_duration = Vector2(1.5, 1)
 defense = Vector2(0, 0)
@@ -428,75 +433,68 @@ resources_gained_on_killed = Dictionary[int, Vector2]({
 })
 metadata/_custom_type_script = "uid://cm15s8j7exwpj"
 
-[sub_resource type="Resource" id="Resource_eh0v1"]
-script = ExtResource("7_e8heu")
-display_name = "Auto Click"
-display_level = true
-unlock_level = 0
-tooltip_message = "[b]Auto Click[/b]
-Invest [b][color=pale_green]Energy[/color][/b] here is the only way of producing [b][color=gold]Gold[/color][/b] without [b]Clicking[/b] yourself.
-(each time the bar is filled you earn [b][color=gold]Gold[/color][/b] as if you clicked on the button, 
-requierment in energy will grow over time)"
-maximum_allocated = Vector2(5, 3)
-fill_duration_at_maximum = Vector2(1, -1)
-increase_factor_on_bar_filled = Vector2(10001, -4)
-_click_enabled = false
-should_decrease_maximum_after_rebirth = false
-decrease_factor_on_rebirth_maximum = Vector2(9, -1)
-decrease_maximum_on_rebirth_per_bar_filled = Vector2(1, 0)
-metadata/_custom_type_script = "uid://d0w6sksq4fu4p"
+[sub_resource type="Gradient" id="Gradient_qhcbd"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0.0671785, 0.193858, 0.487524, 0.618042)
+colors = PackedColorArray(0.726015, 0.474633, 5.77569e-07, 1, 0.279897, 0.172205, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0)
 
-[sub_resource type="Resource" id="Resource_pxugv"]
-script = ExtResource("7_e8heu")
-display_name = "Auto Upgrade Storage"
-display_level = true
-unlock_level = 0
-tooltip_message = "[b]Auto Upgrade [color=gold]Gold[/color] Storage[/b]
-You want to automate the flow of increasing your Maximum [b][color=gold]Gold[/color][/b] ?
-here is the place!
-(with 100% [b][color=pale_green]Energy[/color][/b] the [b][color=gold]Gold[/color][/b] maximum storage will be Upgraded every second)"
-maximum_allocated = Vector2(1, 3)
-fill_duration_at_maximum = Vector2(1, 0)
-increase_factor_on_bar_filled = Vector2(1, 0)
-_click_enabled = false
-should_decrease_maximum_after_rebirth = false
-decrease_factor_on_rebirth_maximum = Vector2(9, -1)
-decrease_maximum_on_rebirth_per_bar_filled = Vector2(1, 0)
-metadata/_custom_type_script = "uid://d0w6sksq4fu4p"
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_f1jbl"]
+gradient = SubResource("Gradient_qhcbd")
+fill = 1
+fill_from = Vector2(0.494792, 0.515625)
+fill_to = Vector2(1, 0.493023)
 
-[sub_resource type="Resource" id="Resource_am1vj"]
-script = ExtResource("7_e8heu")
-display_name = "Click Gold +1"
-display_level = true
-unlock_level = 0
-tooltip_message = "[b]Improve Click[/b]
-Increase the [b]Button[/b]'s [b][color=gold]Gold[/color][/b] production by 1 each time the bar is filled.
-(requierment in energy will grow by 12% each time the bar is filled)"
-maximum_allocated = Vector2(5, 2)
-fill_duration_at_maximum = Vector2(1, 0)
-increase_factor_on_bar_filled = Vector2(1.12, 0)
-_click_enabled = true
-should_decrease_maximum_after_rebirth = false
-decrease_factor_on_rebirth_maximum = Vector2(9, -1)
-decrease_maximum_on_rebirth_per_bar_filled = Vector2(1, 0)
-metadata/_custom_type_script = "uid://d0w6sksq4fu4p"
+[sub_resource type="Resource" id="Resource_082n1"]
+script = ExtResource("9_e8heu")
+name = "Darkness"
+icon = SubResource("GradientTexture2D_f1jbl")
+text = "Level 5 Rewards
+[b]Unlock: [/b] Training [color=tomato]Attack[/color] [color=yellow]Speed[/color]
+[b]Unlock: [/b] Training [color=sky_blue]Defense[/color] [color=yellow]Speed[/color]"
+hp = Vector2(7.5, 3)
+attack = Vector2(2.5, 2)
+attack_duration = Vector2(2.51, 0)
+defense = Vector2(1.5, 2)
+defense_duration = Vector2(3, 0)
+regen = Vector2(5, 0)
+resources_gained_on_killed = Dictionary[int, Vector2]({})
+metadata/_custom_type_script = "uid://cm15s8j7exwpj"
 
-[sub_resource type="Resource" id="Resource_g31lc"]
-script = ExtResource("7_e8heu")
-display_name = "Click Gold x2"
-display_level = true
-unlock_level = 0
-tooltip_message = "[b]Improve Click[/b]
-Increase the [b]Button[/b]'s [b][color=gold]Gold[/color][/b] production by 100% (x2) each time the bar is filled.
-(requierment in energy will grow by 100% each time the bar is filled)"
-maximum_allocated = Vector2(1, 4)
-fill_duration_at_maximum = Vector2(1, 0)
-increase_factor_on_bar_filled = Vector2(2, 0)
-_click_enabled = true
-should_decrease_maximum_after_rebirth = false
-decrease_factor_on_rebirth_maximum = Vector2(9, -1)
-decrease_maximum_on_rebirth_per_bar_filled = Vector2(1, 0)
-metadata/_custom_type_script = "uid://d0w6sksq4fu4p"
+[sub_resource type="Gradient" id="Gradient_x5p1p"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0.0671785, 0.193858, 0.487524, 0.618042)
+colors = PackedColorArray(0.726015, 0.474633, 5.77569e-07, 1, 0.279897, 0.172205, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_qhcbd"]
+gradient = SubResource("Gradient_x5p1p")
+fill = 1
+fill_from = Vector2(0.494792, 0.515625)
+fill_to = Vector2(1, 0.493023)
+
+[sub_resource type="Resource" id="Resource_7knny"]
+script = ExtResource("9_e8heu")
+name = "Darkness"
+icon = SubResource("GradientTexture2D_qhcbd")
+text = "Level 4 Rewards
+[b]Unlock: [/b] End of the DEMO"
+hp = Vector2(2.5, 4)
+attack = Vector2(2.5, 2)
+attack_duration = Vector2(7, -1)
+defense = Vector2(1.5, 2)
+defense_duration = Vector2(1, 0)
+regen = Vector2(1.5, 2)
+resources_gained_on_killed = Dictionary[int, Vector2]({})
+metadata/_custom_type_script = "uid://cm15s8j7exwpj"
+
+[sub_resource type="Gradient" id="Gradient_hb5m1"]
+offsets = PackedFloat32Array(0.114809, 0.332779, 0.613977, 0.728785, 1)
+colors = PackedColorArray(0.814462, 1, 0.988643, 1, 0, 0.843137, 0.823529, 1, 0, 0, 0.223529, 1, 1, 1, 1, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_x5p1p"]
+gradient = SubResource("Gradient_hb5m1")
+fill = 2
+fill_from = Vector2(0.478632, 0.512821)
+fill_to = Vector2(1, 0.5)
 
 [sub_resource type="Gradient" id="Gradient_7sc4i"]
 offsets = PackedFloat32Array(0, 0.639175, 0.783505)
@@ -555,7 +553,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_mfdv2")
-input = NodePath("PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer/Input")
+input = NodePath("PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer/Energy Input/Input")
 energy_bar = NodePath("PanelsContainer/LeftPanel/VBox/Resources/VBoxContainer/EnergyBar")
 gold_bar = NodePath("PanelsContainer/LeftPanel/VBox/Resources/VBoxContainer/GoldBar")
 hp_bar = NodePath("PanelsContainer/LeftPanel/VBox/Stats/VBoxContainer/HP_Bar/HP_ProgressBar")
@@ -575,7 +573,7 @@ grow_vertical = 2
 theme_override_constants/separation = 0
 
 [node name="LeftPanel" type="ScrollContainer" parent="PanelsContainer"]
-custom_minimum_size = Vector2(220, 0)
+custom_minimum_size = Vector2(350, 0)
 layout_mode = 2
 
 [node name="VBox" type="VBoxContainer" parent="PanelsContainer/LeftPanel"]
@@ -805,12 +803,16 @@ layout_mode = 2
 
 [node name="Title" parent="PanelsContainer/MainPanel/TopSection/VBoxContainer" instance=ExtResource("2_iotsf")]
 layout_mode = 2
-text = "One Idle Game"
+text = "This is not an Idle Game"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="PanelsContainer/MainPanel/TopSection/VBoxContainer"]
 layout_mode = 2
 
-[node name="RichTextLabel" type="RichTextLabel" parent="PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer"]
+[node name="Energy Input" type="HBoxContainer" parent="PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer/Energy Input"]
 layout_mode = 2
 bbcode_enabled = true
 text = "[b]Energy Input: [/b]"
@@ -819,25 +821,29 @@ scroll_active = false
 autowrap_mode = 0
 vertical_alignment = 1
 
-[node name="Input" type="LineEdit" parent="PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer"]
+[node name="Input" type="LineEdit" parent="PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer/Energy Input"]
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 text = "250"
 placeholder_text = "number of energy used"
 
-[node name="InputMax" type="Button" parent="PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer"]
+[node name="InputMax" type="Button" parent="PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer/Energy Input"]
 layout_mode = 2
 text = "Max"
 
-[node name="InputHalf" type="Button" parent="PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer"]
+[node name="InputHalf" type="Button" parent="PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer/Energy Input"]
 visible = false
 layout_mode = 2
 text = "1/2"
 
-[node name="InputQuarter" type="Button" parent="PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer"]
+[node name="InputQuarter" type="Button" parent="PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer/Energy Input"]
 visible = false
 layout_mode = 2
 text = "1/4"
+
+[node name="Button" type="Button" parent="PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Save"
 
 [node name="MainSection" type="HBoxContainer" parent="PanelsContainer/MainPanel"]
 layout_mode = 2
@@ -1230,6 +1236,7 @@ _click_enabled = true
 should_decrease_maximum_after_rebirth = true
 
 [node name="BossFight" type="VBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages" node_paths=PackedStringArray("player_creature", "fight_button", "flee_button", "refresh_button", "enemies_container")]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -1239,7 +1246,7 @@ fight_button = NodePath("CenterContainer2/HBoxContainer2/Fight")
 flee_button = NodePath("CenterContainer2/HBoxContainer2/Flee")
 refresh_button = NodePath("CenterContainer2/HBoxContainer2/RefreshStats")
 enemies_container = NodePath("HBoxContainer/EnemiesContainer")
-boss_fights = Array[ExtResource("9_e8heu")]([SubResource("Resource_x5p1p"), SubResource("Resource_f1jbl"), SubResource("Resource_xfvwf"), SubResource("Resource_dhpj7")])
+boss_fights = Array[ExtResource("9_e8heu")]([SubResource("Resource_x5p1p"), SubResource("Resource_f1jbl"), SubResource("Resource_xfvwf"), SubResource("Resource_dhpj7"), SubResource("Resource_082n1"), SubResource("Resource_7knny")])
 
 [node name="Title" parent="PanelsContainer/MainPanel/MainSection/Pages/BossFight" instance=ExtResource("2_iotsf")]
 layout_mode = 2
@@ -1279,6 +1286,7 @@ size_flags_vertical = 3
 [node name="Player" parent="PanelsContainer/MainPanel/MainSection/Pages/BossFight/HBoxContainer" instance=ExtResource("9_80cx4")]
 layout_mode = 2
 size_flags_horizontal = 3
+icon = SubResource("GradientTexture2D_x5p1p")
 
 [node name="Control" type="CenterContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/BossFight/HBoxContainer"]
 layout_mode = 2
@@ -1317,24 +1325,86 @@ size_flags_vertical = 3
 layout_mode = 2
 text = "Adventure"
 
-[node name="TheMine" type="VBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages" node_paths=PackedStringArray("excavation_button", "auto_click", "auto_click_max_gold", "improve_click_add", "improve_click_mult")]
+[node name="CenterContainer2" type="CenterContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/Adventure"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/Adventure/CenterContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="RefreshStats" type="Button" parent="PanelsContainer/MainPanel/MainSection/Pages/Adventure/CenterContainer2/HBoxContainer2"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "Refresh Stats"
+autowrap_mode = 2
+
+[node name="Fight" type="Button" parent="PanelsContainer/MainPanel/MainSection/Pages/Adventure/CenterContainer2/HBoxContainer2"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "Fight !"
+autowrap_mode = 2
+
+[node name="Flee" type="Button" parent="PanelsContainer/MainPanel/MainSection/Pages/Adventure/CenterContainer2/HBoxContainer2"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "Flee"
+autowrap_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/Adventure"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Player" parent="PanelsContainer/MainPanel/MainSection/Pages/Adventure/HBoxContainer" instance=ExtResource("9_80cx4")]
+layout_mode = 2
+size_flags_horizontal = 3
+icon = SubResource("GradientTexture2D_x5p1p")
+
+[node name="Control" type="CenterContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/Adventure/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/Adventure/HBoxContainer/Control"]
+layout_mode = 2
+
+[node name="EnemiesContainer" type="HBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/Adventure/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CenterContainer" type="CenterContainer" parent="PanelsContainer/MainPanel/MainSection/Pages/Adventure"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BossFightTextArea" type="RichTextLabel" parent="PanelsContainer/MainPanel/MainSection/Pages/Adventure/CenterContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+bbcode_enabled = true
+text = "Level 1:
+Unlock "
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TheMine" type="VBoxContainer" parent="PanelsContainer/MainPanel/MainSection/Pages" node_paths=PackedStringArray("the_mine_button", "auto_click", "auto_click_max_gold", "improve_click_add", "improve_click_mult")]
 visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("6_80cx4")
-excavation_button = NodePath("TheButton/ExcavationButton")
+script = ExtResource("13_x5p1p")
+the_mine_button = NodePath("TheButton/TheMineButton")
 auto_click = NodePath("Upgrades/VBoxContainer/AutoClick")
-auto_click_data = SubResource("Resource_eh0v1")
+auto_click_data = ExtResource("14_qhcbd")
 auto_click_max_gold = NodePath("Upgrades/VBoxContainer/AutoClickMax")
-auto_click_max_gold_data = SubResource("Resource_pxugv")
+auto_click_max_gold_data = ExtResource("15_f1jbl")
 improve_click_add = NodePath("Upgrades/VBoxContainer/ImproveClick")
-improve_click_add_data = SubResource("Resource_am1vj")
+improve_click_add_data = ExtResource("16_vaj68")
 improve_click_add_value = Dictionary[int, Vector2]({
 1: Vector2(1, 0)
 })
 improve_click_mult = NodePath("Upgrades/VBoxContainer/ImproveClick2")
-improve_click_mult_data = SubResource("Resource_g31lc")
+improve_click_mult_data = ExtResource("17_i2p71")
 improve_click_mult_value = Dictionary[int, Vector2]({
 1: Vector2(2, 0)
 })
@@ -1347,7 +1417,7 @@ text = "The Mine"
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="ExcavationButton" type="Button" parent="PanelsContainer/MainPanel/MainSection/Pages/TheMine/TheButton"]
+[node name="TheMineButton" type="Button" parent="PanelsContainer/MainPanel/MainSection/Pages/TheMine/TheButton"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -1355,7 +1425,7 @@ icon = SubResource("GradientTexture2D_80cx4")
 flat = true
 script = ExtResource("9_boyg6")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="PanelsContainer/MainPanel/MainSection/Pages/TheMine/TheButton/ExcavationButton"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="PanelsContainer/MainPanel/MainSection/Pages/TheMine/TheButton/TheMineButton"]
 libraries = {
 &"": SubResource("AnimationLibrary_e8heu")
 }
@@ -1476,7 +1546,6 @@ energy_prod_max_cost = Dictionary[int, Vector2]({
 0: Vector2(4.5, 2),
 1: Vector2(5, 2)
 })
-energy_prod_max_cost_increase = 1.5
 energy_prod_max_value = Vector2(1.2, 0)
 
 [node name="Title" parent="PanelsContainer/MainPanel/MainSection/Pages/Central" instance=ExtResource("2_iotsf")]
@@ -1550,4 +1619,9 @@ attack_duration_start_amount = Vector2(5, 0)
 defense_start_amount = Vector2(2, 0)
 defense_duration_start_amount = Vector2(5, 0)
 
-[connection signal="pressed" from="PanelsContainer/MainPanel/MainSection/Pages/TheMine/TheButton/ExcavationButton" to="PanelsContainer/MainPanel/MainSection/Pages/TheMine/TheButton/ExcavationButton/AnimationPlayer" method="play" binds= ["click"]]
+[node name="SaveTest" parent="." instance=ExtResource("18_rvswv")]
+layout_mode = 1
+mouse_filter = 2
+
+[connection signal="pressed" from="PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer/Button" to="SaveTest" method="call_save"]
+[connection signal="pressed" from="PanelsContainer/MainPanel/MainSection/Pages/TheMine/TheButton/TheMineButton" to="PanelsContainer/MainPanel/MainSection/Pages/TheMine/TheButton/TheMineButton/AnimationPlayer" method="play" binds= ["click"]]
