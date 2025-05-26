@@ -25,3 +25,5 @@ signal on_value_changed()
 @export var active_effects: Array[Skill_Effect] = []
 
 @export var triggered_effects: Dictionary[Combat.Trigger, EffectList] = {}
+
+@export var cost: int

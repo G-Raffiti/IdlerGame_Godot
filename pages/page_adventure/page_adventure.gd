@@ -1,6 +1,8 @@
 extends PageBase
 class_name PageAdventure
 
+@export var run_data: Adventure_RunData
+
 @export_group("Intro")
 @export var skill_choices: Array[SkillData] = [null, null, null]
 var skill_selected: SkillData
@@ -19,9 +21,12 @@ var skill_selected: SkillData
 @export_group("Dependencies/Combat")
 @export var combat: Combat
 @export var chest_button: Button
-@export var player_board: Control
-@export var player_chest: Control
-@export var monster_board: Control
+
+@export var player_board: Board
+@export var player_chest: Board
+@export var monster_board: Board
+@export var shop_board: Board
+@export var event_choice_container: VBoxContainer
 
 
 
@@ -48,12 +53,31 @@ func select(in_index: int) -> void:
 	if in_index == 0 or in_index >= skill_choices.size(): return
 	skill_selected = skill_choices[in_index - 1]
 
+
 func _start_adventure() -> void:
 	if skill_selected == null: return
 	
 	intro.visible = false
 	combat.visible = true
 
+
+func _end_adventure() -> void:
+	intro.visible = true
+	combat.visible = false
+
 func _toggle_chest_view(in_state: bool) -> void:
 	player_chest.visible = in_state
 	monster_board.visible = !in_state
+
+
+func next_event() -> void:
+	AdventureResources.hour += 1
+	if AdventureResources.hour >= 8:
+		AdventureResources.hour = 0
+		AdventureResources.day += 1
+	if run_data.get_run().size() <= AdventureResources.day or run_data.get_run()[AdventureResources.day].size() <= AdventureResources.hour:
+		_end_adventure()
+		return
+	var days_events: Array[Adventure_EventData] = run_data.get_run()[AdventureResources.day][AdventureResources.hour]
+	
+		
