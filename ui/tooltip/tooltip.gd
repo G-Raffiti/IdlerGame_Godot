@@ -1,7 +1,10 @@
-extends Node
+extends Control
 class_name Tooltip
 
 @export var rich_text: RichTextLabel
+
+func _ready() -> void:
+	get_parent().set_deferred("size", Vector2.ZERO)
 
 func set_text(in_str: String) -> void:
 	rich_text.text = in_str
