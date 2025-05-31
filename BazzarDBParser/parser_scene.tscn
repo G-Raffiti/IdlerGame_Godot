@@ -1,0 +1,1215 @@
+[gd_scene load_steps=606 format=3 uid="uid://b110auwfqcqq7"]
+
+[ext_resource type="Script" uid="uid://dwrd13xgw4b58" path="res://BazzarDBParser/generate_items.gd" id="1_v0yg7"]
+[ext_resource type="Resource" uid="uid://dn0u1aiakx46k" path="res://BazzarDBParser/items.tres" id="2_v0yg7"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_en2yo"]
+[ext_resource type="Resource" uid="uid://btt8ankr3w4o5" path="res://pages/page_adventure/skills/skill_data/28 Hour Fitness.tres" id="4_x5lox"]
+[ext_resource type="Resource" uid="uid://w85scjydmoap" path="res://pages/page_adventure/skills/skill_data/3D Printer.tres" id="5_o3iww"]
+[ext_resource type="Resource" uid="uid://b288ftqwqlsw4" path="res://pages/page_adventure/skills/skill_data/ATM.tres" id="6_ebk2n"]
+[ext_resource type="Resource" uid="uid://dk0y4sh42b2a8" path="res://pages/page_adventure/skills/skill_data/Abacus.tres" id="7_558ng"]
+[ext_resource type="Resource" uid="uid://bxgc3rvd04vbk" path="res://pages/page_adventure/skills/skill_data/Adrenal Converter.tres" id="8_6qpo8"]
+[ext_resource type="Resource" uid="uid://03ww3qmp020c" path="res://pages/page_adventure/skills/skill_data/Agility Boots.tres" id="9_p0qm1"]
+[ext_resource type="Resource" uid="uid://dfcutwmrthbut" path="res://pages/page_adventure/skills/skill_data/Alembic.tres" id="10_wc7o0"]
+[ext_resource type="Resource" uid="uid://bbj47ym00j0qx" path="res://pages/page_adventure/skills/skill_data/Alpha Ray.tres" id="11_45g7i"]
+[ext_resource type="Resource" uid="uid://rdoe04odd8hk" path="res://pages/page_adventure/skills/skill_data/Aludel.tres" id="12_kva4d"]
+[ext_resource type="Resource" uid="uid://cx6uw3poqq8ft" path="res://pages/page_adventure/skills/skill_data/Amber.tres" id="13_jbrpy"]
+[ext_resource type="Resource" uid="uid://bsjpau6c01mrx" path="res://pages/page_adventure/skills/skill_data/Ambergris.tres" id="14_0o2gw"]
+[ext_resource type="Resource" uid="uid://bg4y28p1yr5kk" path="res://pages/page_adventure/skills/skill_data/Anchor.tres" id="15_iuik1"]
+[ext_resource type="Resource" uid="uid://wsn2cqffjocs" path="res://pages/page_adventure/skills/skill_data/Angry Balloon Bot.tres" id="16_noon4"]
+[ext_resource type="Resource" uid="uid://ceavqnqx01fky" path="res://pages/page_adventure/skills/skill_data/Antimatter Chamber.tres" id="17_ntoia"]
+[ext_resource type="Resource" uid="uid://baj4ytfd3dnwn" path="res://pages/page_adventure/skills/skill_data/Apothecary.tres" id="18_vue16"]
+[ext_resource type="Resource" uid="uid://c8cvuq23672hs" path="res://pages/page_adventure/skills/skill_data/Apropos Chapeau.tres" id="19_omg7g"]
+[ext_resource type="Resource" uid="uid://ct3icq8ue7pt" path="res://pages/page_adventure/skills/skill_data/Arbalest.tres" id="20_s7pyx"]
+[ext_resource type="Resource" uid="uid://b8fduletvtlyx" path="res://pages/page_adventure/skills/skill_data/Arc Blaster.tres" id="21_qqidw"]
+[ext_resource type="Resource" uid="uid://bht3535p8mbtm" path="res://pages/page_adventure/skills/skill_data/Arkens Ring.tres" id="22_ffg14"]
+[ext_resource type="Resource" uid="uid://ba080phusvre3" path="res://pages/page_adventure/skills/skill_data/Armored Core.tres" id="23_ljntb"]
+[ext_resource type="Resource" uid="uid://8qjlpn38sbta" path="res://pages/page_adventure/skills/skill_data/Astrolabe.tres" id="24_a3ps1"]
+[ext_resource type="Resource" uid="uid://dfjcepkn8lso2" path="res://pages/page_adventure/skills/skill_data/Athanor.tres" id="25_dtm7x"]
+[ext_resource type="Resource" uid="uid://bxq2g6b56qut5" path="res://pages/page_adventure/skills/skill_data/Atlas Stone.tres" id="26_crxef"]
+[ext_resource type="Resource" uid="uid://vvqn2jxeils8" path="res://pages/page_adventure/skills/skill_data/Atlatl.tres" id="27_live0"]
+[ext_resource type="Resource" uid="uid://uweo4mws11c0" path="res://pages/page_adventure/skills/skill_data/Atomic Clock.tres" id="28_nqxny"]
+[ext_resource type="Resource" uid="uid://b4xkbktcricig" path="res://pages/page_adventure/skills/skill_data/Aurora Dome.tres" id="29_prty6"]
+[ext_resource type="Resource" uid="uid://c2rklyxtdvqg6" path="res://pages/page_adventure/skills/skill_data/BLK-SP1D3R.tres" id="30_5nokn"]
+[ext_resource type="Resource" uid="uid://n8dmcsurbiqw" path="res://pages/page_adventure/skills/skill_data/BLU-B33TL3.tres" id="31_x7ljx"]
+[ext_resource type="Resource" uid="uid://bh3ty50gsql6m" path="res://pages/page_adventure/skills/skill_data/Badblocker.tres" id="32_fo5en"]
+[ext_resource type="Resource" uid="uid://bsrkpjo5ha41v" path="res://pages/page_adventure/skills/skill_data/Bag of Jewels.tres" id="33_83eo1"]
+[ext_resource type="Resource" uid="uid://dxe5hongq1x6x" path="res://pages/page_adventure/skills/skill_data/Balcony.tres" id="34_btcyi"]
+[ext_resource type="Resource" uid="uid://bc2or0yumcb71" path="res://pages/page_adventure/skills/skill_data/Ballista.tres" id="35_erepu"]
+[ext_resource type="Resource" uid="uid://dqfxfeahv0hd1" path="res://pages/page_adventure/skills/skill_data/Balloon Bot.tres" id="36_ai3yu"]
+[ext_resource type="Resource" uid="uid://jmpekh3htlub" path="res://pages/page_adventure/skills/skill_data/Bandages.tres" id="37_tqo8y"]
+[ext_resource type="Resource" uid="uid://eb6hxv5lut6p" path="res://pages/page_adventure/skills/skill_data/Bar of Gold.tres" id="38_gmkws"]
+[ext_resource type="Resource" uid="uid://csb22780ytrj" path="res://pages/page_adventure/skills/skill_data/Barbed Claws.tres" id="39_dhpby"]
+[ext_resource type="Resource" uid="uid://beylaslchm6lb" path="res://pages/page_adventure/skills/skill_data/Barbed Wire.tres" id="40_f1dy4"]
+[ext_resource type="Resource" uid="uid://cxgvyfvnyt4xh" path="res://pages/page_adventure/skills/skill_data/Barrel.tres" id="41_cjtq1"]
+[ext_resource type="Resource" uid="uid://b53ihc7rrhs4n" path="res://pages/page_adventure/skills/skill_data/Basilisk Fang.tres" id="42_5f5it"]
+[ext_resource type="Resource" uid="uid://dpxdvonwp8vye" path="res://pages/page_adventure/skills/skill_data/Battery.tres" id="43_8eefd"]
+[ext_resource type="Resource" uid="uid://t27l5muo4xid" path="res://pages/page_adventure/skills/skill_data/Bayonet.tres" id="44_kh6dw"]
+[ext_resource type="Resource" uid="uid://cxhgw2a2m4weu" path="res://pages/page_adventure/skills/skill_data/Beach Ball.tres" id="45_vs8ue"]
+[ext_resource type="Resource" uid="uid://sq62llbreo6" path="res://pages/page_adventure/skills/skill_data/Beast of Burden.tres" id="46_kh1t0"]
+[ext_resource type="Resource" uid="uid://ey5gdcgnmqw3" path="res://pages/page_adventure/skills/skill_data/Beehive.tres" id="47_42dkv"]
+[ext_resource type="Resource" uid="uid://b8kiqkedprguj" path="res://pages/page_adventure/skills/skill_data/Bellelista.tres" id="48_w7gyo"]
+[ext_resource type="Resource" uid="uid://bcv6g8iem1r1w" path="res://pages/page_adventure/skills/skill_data/Belt.tres" id="49_k7iyc"]
+[ext_resource type="Resource" uid="uid://v82qo8xl2458" path="res://pages/page_adventure/skills/skill_data/Beta Ray.tres" id="50_g750r"]
+[ext_resource type="Resource" uid="uid://c8anqyp1h407p" path="res://pages/page_adventure/skills/skill_data/Bill Dozer.tres" id="51_ykis7"]
+[ext_resource type="Resource" uid="uid://cm5jwu4jjx5mj" path="res://pages/page_adventure/skills/skill_data/Billboard.tres" id="52_v6t13"]
+[ext_resource type="Resource" uid="uid://cl808wg0grtc" path="res://pages/page_adventure/skills/skill_data/Black Ice.tres" id="53_akwdy"]
+[ext_resource type="Resource" uid="uid://dxc5p21j46rdh" path="res://pages/page_adventure/skills/skill_data/Black Pepper.tres" id="54_2qvuj"]
+[ext_resource type="Resource" uid="uid://chqdup6nu40ga" path="res://pages/page_adventure/skills/skill_data/Black Rose.tres" id="55_bw781"]
+[ext_resource type="Resource" uid="uid://b7ifep6jcm4xk" path="res://pages/page_adventure/skills/skill_data/Blast Doors.tres" id="56_mqrcp"]
+[ext_resource type="Resource" uid="uid://dcwvp5lanuqtx" path="res://pages/page_adventure/skills/skill_data/Blow Torch.tres" id="57_053w4"]
+[ext_resource type="Resource" uid="uid://bdiii2w1ndpvr" path="res://pages/page_adventure/skills/skill_data/Blowgun.tres" id="58_lrk3k"]
+[ext_resource type="Resource" uid="uid://bo12gya8hemep" path="res://pages/page_adventure/skills/skill_data/Blue Gumball.tres" id="59_an4j2"]
+[ext_resource type="Resource" uid="uid://ckplghjoxekpd" path="res://pages/page_adventure/skills/skill_data/Blue Piggles A.tres" id="60_wvtkd"]
+[ext_resource type="Resource" uid="uid://ctrphsg7po5ui" path="res://pages/page_adventure/skills/skill_data/Blue Piggles L.tres" id="61_gjkqq"]
+[ext_resource type="Resource" uid="uid://c8tfbjd407ih7" path="res://pages/page_adventure/skills/skill_data/Blue Piggles R.tres" id="62_juw84"]
+[ext_resource type="Resource" uid="uid://ddpepddbs8jb3" path="res://pages/page_adventure/skills/skill_data/Blue Piggles X.tres" id="63_4vlep"]
+[ext_resource type="Resource" uid="uid://cilrs6v3c8n0y" path="res://pages/page_adventure/skills/skill_data/Bluenanas.tres" id="64_a5q7g"]
+[ext_resource type="Resource" uid="uid://cybnt5w6scnoj" path="res://pages/page_adventure/skills/skill_data/Blunderbuss.tres" id="65_7gd03"]
+[ext_resource type="Resource" uid="uid://waqmeyb86b1j" path="res://pages/page_adventure/skills/skill_data/Boiling Flask.tres" id="66_vcut8"]
+[ext_resource type="Resource" uid="uid://bhact07pymmwy" path="res://pages/page_adventure/skills/skill_data/Bolas.tres" id="67_q55l0"]
+[ext_resource type="Resource" uid="uid://b68fw1tdmjev3" path="res://pages/page_adventure/skills/skill_data/Bomb Squad.tres" id="68_q4x41"]
+[ext_resource type="Resource" uid="uid://b875vwifuocvb" path="res://pages/page_adventure/skills/skill_data/Booby Trap.tres" id="69_2vxq3"]
+[ext_resource type="Resource" uid="uid://oekq88ygle8f" path="res://pages/page_adventure/skills/skill_data/Boomerang.tres" id="70_insh8"]
+[ext_resource type="Resource" uid="uid://t21abxlee15e" path="res://pages/page_adventure/skills/skill_data/Bootstraps.tres" id="71_wunjs"]
+[ext_resource type="Resource" uid="uid://gam1idqdi0e4" path="res://pages/page_adventure/skills/skill_data/Bottled Explosion.tres" id="72_1m3vg"]
+[ext_resource type="Resource" uid="uid://w6ox5v0lnuck" path="res://pages/page_adventure/skills/skill_data/Bottled Lightning.tres" id="73_g1lw0"]
+[ext_resource type="Resource" uid="uid://bsgh4rr52j4nt" path="res://pages/page_adventure/skills/skill_data/Bottled Tornado.tres" id="74_ud875"]
+[ext_resource type="Resource" uid="uid://ddbuy6ehqyci2" path="res://pages/page_adventure/skills/skill_data/Brass Knuckles.tres" id="75_lg3c6"]
+[ext_resource type="Resource" uid="uid://dtcp534ajoo11" path="res://pages/page_adventure/skills/skill_data/Brick Buddy.tres" id="76_4ywyp"]
+[ext_resource type="Resource" uid="uid://bwfsenj7pnxr7" path="res://pages/page_adventure/skills/skill_data/Briefcase.tres" id="77_hgfxq"]
+[ext_resource type="Resource" uid="uid://d0ftcmkjmg6cg" path="res://pages/page_adventure/skills/skill_data/Broken Shackles.tres" id="78_38coo"]
+[ext_resource type="Resource" uid="uid://cpbw0nmhkua87" path="res://pages/page_adventure/skills/skill_data/Bunker.tres" id="79_dfnb5"]
+[ext_resource type="Resource" uid="uid://bh7vkvgv4q7cq" path="res://pages/page_adventure/skills/skill_data/Bushel.tres" id="80_pbafm"]
+[ext_resource type="Resource" uid="uid://b8yngpu475jr1" path="res://pages/page_adventure/skills/skill_data/Business Card.tres" id="81_n0ack"]
+[ext_resource type="Resource" uid="uid://c4xk662inmpmt" path="res://pages/page_adventure/skills/skill_data/Busy Bee.tres" id="82_snai3"]
+[ext_resource type="Resource" uid="uid://bws6ab4e0nrat" path="res://pages/page_adventure/skills/skill_data/Butter.tres" id="83_3slgd"]
+[ext_resource type="Resource" uid="uid://yoyk1d42xxs7" path="res://pages/page_adventure/skills/skill_data/Butterfly Swords.tres" id="84_8wbxr"]
+[ext_resource type="Resource" uid="uid://n0w0s7nrkprj" path="res://pages/page_adventure/skills/skill_data/Calcinator.tres" id="85_o07j8"]
+[ext_resource type="Resource" uid="uid://dy4gsbqacb80k" path="res://pages/page_adventure/skills/skill_data/Calico.tres" id="86_u1js3"]
+[ext_resource type="Resource" uid="uid://dlo84unxsu6n" path="res://pages/page_adventure/skills/skill_data/Caltrops.tres" id="87_15vod"]
+[ext_resource type="Resource" uid="uid://d2j0y5r5ax5xk" path="res://pages/page_adventure/skills/skill_data/Candles.tres" id="88_vvrri"]
+[ext_resource type="Resource" uid="uid://ct7o3aoxiqwfk" path="res://pages/page_adventure/skills/skill_data/Candy Mail.tres" id="89_236vy"]
+[ext_resource type="Resource" uid="uid://6ahrnesh6ul7" path="res://pages/page_adventure/skills/skill_data/Cannon.tres" id="90_653o4"]
+[ext_resource type="Resource" uid="uid://kbgu6vq8ixgt" path="res://pages/page_adventure/skills/skill_data/Cannonade.tres" id="91_umeg1"]
+[ext_resource type="Resource" uid="uid://1ac1h88y0q7y" path="res://pages/page_adventure/skills/skill_data/Cannonball.tres" id="92_7u46o"]
+[ext_resource type="Resource" uid="uid://c4ymfoper277n" path="res://pages/page_adventure/skills/skill_data/Capacitor.tres" id="93_ta3s1"]
+[ext_resource type="Resource" uid="uid://dd0743e28idr3" path="res://pages/page_adventure/skills/skill_data/Captains Quarters.tres" id="94_e0qyd"]
+[ext_resource type="Resource" uid="uid://dekdprliuxeux" path="res://pages/page_adventure/skills/skill_data/Captains Wheel.tres" id="95_6chhc"]
+[ext_resource type="Resource" uid="uid://c1rb0qjq6j6vb" path="res://pages/page_adventure/skills/skill_data/Card Table.tres" id="96_vbj0e"]
+[ext_resource type="Resource" uid="uid://c15amqptnbsr3" path="res://pages/page_adventure/skills/skill_data/Cargo Shorts.tres" id="97_mmgb3"]
+[ext_resource type="Resource" uid="uid://c56a8klg1keah" path="res://pages/page_adventure/skills/skill_data/Cash Cannon.tres" id="98_prti2"]
+[ext_resource type="Resource" uid="uid://dgxmv70tnv8up" path="res://pages/page_adventure/skills/skill_data/Cash Register.tres" id="99_6t6r5"]
+[ext_resource type="Resource" uid="uid://cvaim658fy2o1" path="res://pages/page_adventure/skills/skill_data/Catalyst.tres" id="100_ugmox"]
+[ext_resource type="Resource" uid="uid://bplpvmog3y687" path="res://pages/page_adventure/skills/skill_data/Catfish.tres" id="101_tqm66"]
+[ext_resource type="Resource" uid="uid://oh6y2qb4eryc" path="res://pages/page_adventure/skills/skill_data/Cauldron.tres" id="102_13jum"]
+[ext_resource type="Resource" uid="uid://cdedh8aktjgvh" path="res://pages/page_adventure/skills/skill_data/Cellar.tres" id="103_tixv7"]
+[ext_resource type="Resource" uid="uid://c1osdv3qgymk2" path="res://pages/page_adventure/skills/skill_data/Char Cole.tres" id="104_k7dr1"]
+[ext_resource type="Resource" uid="uid://h8vhjfb0y7dx" path="res://pages/page_adventure/skills/skill_data/Charging Station.tres" id="105_8wmsn"]
+[ext_resource type="Resource" uid="uid://dp4l5skkma5fq" path="res://pages/page_adventure/skills/skill_data/Chemsnail.tres" id="106_m8am2"]
+[ext_resource type="Resource" uid="uid://dw1jokwron13w" path="res://pages/page_adventure/skills/skill_data/Chocolate Bar.tres" id="107_gr5ri"]
+[ext_resource type="Resource" uid="uid://kif8uho661vq" path="res://pages/page_adventure/skills/skill_data/Chris Army Knife.tres" id="108_icau8"]
+[ext_resource type="Resource" uid="uid://bh8le4tl8qwlg" path="res://pages/page_adventure/skills/skill_data/Chronobarrier.tres" id="109_r3vm3"]
+[ext_resource type="Resource" uid="uid://bbbcgqdy5omcb" path="res://pages/page_adventure/skills/skill_data/Chum.tres" id="110_51wam"]
+[ext_resource type="Resource" uid="uid://dwvkoobvyjruc" path="res://pages/page_adventure/skills/skill_data/Chunk of Gold.tres" id="111_0t28l"]
+[ext_resource type="Resource" uid="uid://d367xlmfptj" path="res://pages/page_adventure/skills/skill_data/Chunk of Lead.tres" id="112_gnpjj"]
+[ext_resource type="Resource" uid="uid://bg0pkgj0cmoo1" path="res://pages/page_adventure/skills/skill_data/Cinders.tres" id="113_pjf6h"]
+[ext_resource type="Resource" uid="uid://bgafsjya1spw1" path="res://pages/page_adventure/skills/skill_data/Citrus.tres" id="114_8oha4"]
+[ext_resource type="Resource" uid="uid://douu355ysu65h" path="res://pages/page_adventure/skills/skill_data/Clamera.tres" id="115_87pw6"]
+[ext_resource type="Resource" uid="uid://b80t5npfa4qiv" path="res://pages/page_adventure/skills/skill_data/Claw Arm.tres" id="116_wb7ir"]
+[ext_resource type="Resource" uid="uid://yldslhwotky4" path="res://pages/page_adventure/skills/skill_data/Clawrence.tres" id="117_p8xyq"]
+[ext_resource type="Resource" uid="uid://2d4h20voeygb" path="res://pages/page_adventure/skills/skill_data/Claws.tres" id="118_4ugfj"]
+[ext_resource type="Resource" uid="uid://c7gx8qimcoeob" path="res://pages/page_adventure/skills/skill_data/Clockwork Blades.tres" id="119_mg7w7"]
+[ext_resource type="Resource" uid="uid://3pmmrkbp2elg" path="res://pages/page_adventure/skills/skill_data/Closed Sign.tres" id="120_8i7qd"]
+[ext_resource type="Resource" uid="uid://cauiit4nh2tls" path="res://pages/page_adventure/skills/skill_data/Coconut.tres" id="121_mx0wi"]
+[ext_resource type="Resource" uid="uid://td2wxbh87sbh" path="res://pages/page_adventure/skills/skill_data/Cog.tres" id="122_jdmlo"]
+[ext_resource type="Resource" uid="uid://nyc34plw4yxi" path="res://pages/page_adventure/skills/skill_data/Coincure.tres" id="123_cwur4"]
+[ext_resource type="Resource" uid="uid://blcgslbyjwm16" path="res://pages/page_adventure/skills/skill_data/Cold Room.tres" id="124_qyvgc"]
+[ext_resource type="Resource" uid="uid://co6qkxr5b7bcq" path="res://pages/page_adventure/skills/skill_data/Colossal Popsicle.tres" id="125_pkf5d"]
+[ext_resource type="Resource" uid="uid://civgeor3mooad" path="res://pages/page_adventure/skills/skill_data/Combat Core.tres" id="126_xqrcl"]
+[ext_resource type="Resource" uid="uid://dvup3o8dnvv4i" path="res://pages/page_adventure/skills/skill_data/Companion Core.tres" id="127_tvvb1"]
+[ext_resource type="Resource" uid="uid://cugeabsdr48d8" path="res://pages/page_adventure/skills/skill_data/Concealed Dagger.tres" id="128_lqqsx"]
+[ext_resource type="Resource" uid="uid://cnernpbnxleym" path="res://pages/page_adventure/skills/skill_data/Cool LEDs.tres" id="129_vb0sa"]
+[ext_resource type="Resource" uid="uid://ber5roobbvuvf" path="res://pages/page_adventure/skills/skill_data/Coolant.tres" id="130_xlhww"]
+[ext_resource type="Resource" uid="uid://vttr3mw6w62s" path="res://pages/page_adventure/skills/skill_data/Cooling Fan.tres" id="131_2gkeo"]
+[ext_resource type="Resource" uid="uid://38pw4x48btuq" path="res://pages/page_adventure/skills/skill_data/Copper Ed.tres" id="132_el7mp"]
+[ext_resource type="Resource" uid="uid://bb24ix7cfcr1m" path="res://pages/page_adventure/skills/skill_data/Coral.tres" id="133_cuh1k"]
+[ext_resource type="Resource" uid="uid://bdyfvenerbqrb" path="res://pages/page_adventure/skills/skill_data/Coral Armor.tres" id="134_rikp6"]
+[ext_resource type="Resource" uid="uid://bpn62unsgxa15" path="res://pages/page_adventure/skills/skill_data/Cosmic Amulet.tres" id="135_aw60q"]
+[ext_resource type="Resource" uid="uid://nm5s51xjmrrd" path="res://pages/page_adventure/skills/skill_data/Cosmic Plumage.tres" id="136_y2lfq"]
+[ext_resource type="Resource" uid="uid://cb55r2qcjlani" path="res://pages/page_adventure/skills/skill_data/Cove.tres" id="137_y4f7o"]
+[ext_resource type="Resource" uid="uid://dh5h3o4ijohh3" path="res://pages/page_adventure/skills/skill_data/Covetous Raven.tres" id="138_t5w0m"]
+[ext_resource type="Resource" uid="uid://cka75trng1tk3" path="res://pages/page_adventure/skills/skill_data/Crane.tres" id="139_blqo2"]
+[ext_resource type="Resource" uid="uid://b4niaqvtf5klg" path="res://pages/page_adventure/skills/skill_data/Critical Core.tres" id="140_xx0ei"]
+[ext_resource type="Resource" uid="uid://cw85gibe7cajk" path="res://pages/page_adventure/skills/skill_data/Crocodile Tears.tres" id="141_d5oqt"]
+[ext_resource type="Resource" uid="uid://4sc01xta8q44" path="res://pages/page_adventure/skills/skill_data/Crook.tres" id="142_333xf"]
+[ext_resource type="Resource" uid="uid://b0k0wskxpu8wp" path="res://pages/page_adventure/skills/skill_data/Crows Nest.tres" id="143_b4ypn"]
+[ext_resource type="Resource" uid="uid://b6xj35yuc7jxd" path="res://pages/page_adventure/skills/skill_data/Crusher Claw.tres" id="144_7nsq7"]
+[ext_resource type="Resource" uid="uid://bjpffiysa8d8w" path="res://pages/page_adventure/skills/skill_data/Cryosleeve.tres" id="145_y3lq8"]
+[ext_resource type="Resource" uid="uid://bxtrmy4i7wle" path="res://pages/page_adventure/skills/skill_data/Cryosphere.tres" id="146_ou6c0"]
+[ext_resource type="Resource" uid="uid://dunlm5cekwlm4" path="res://pages/page_adventure/skills/skill_data/Crypto.tres" id="147_r7hw8"]
+[ext_resource type="Resource" uid="uid://optnylqm8hs0" path="res://pages/page_adventure/skills/skill_data/Crystal Bonsai.tres" id="148_tuc5n"]
+[ext_resource type="Resource" uid="uid://bhcg7u4jk2xhb" path="res://pages/page_adventure/skills/skill_data/Curry.tres" id="149_7vlpp"]
+[ext_resource type="Resource" uid="uid://cjkae7oitv2r7" path="res://pages/page_adventure/skills/skill_data/Custom Scope.tres" id="150_qf4eo"]
+[ext_resource type="Resource" uid="uid://djnowtyw6yh0n" path="res://pages/page_adventure/skills/skill_data/Cutlass.tres" id="151_m0f88"]
+[ext_resource type="Resource" uid="uid://cocou2xfn63gw" path="res://pages/page_adventure/skills/skill_data/Cybersecurity.tres" id="152_eeacn"]
+[ext_resource type="Resource" uid="uid://b8fjxossweqip" path="res://pages/page_adventure/skills/skill_data/DJ Rob0t.tres" id="153_kynye"]
+[ext_resource type="Resource" uid="uid://brrnreytlyrw8" path="res://pages/page_adventure/skills/skill_data/Dam.tres" id="154_swcyi"]
+[ext_resource type="Resource" uid="uid://dby8w1qk7202f" path="res://pages/page_adventure/skills/skill_data/Darkwater Anglerfish.tres" id="155_7pa2p"]
+[ext_resource type="Resource" uid="uid://b5vlas3uu8yo4" path="res://pages/page_adventure/skills/skill_data/Death Caps.tres" id="156_px5gc"]
+[ext_resource type="Resource" uid="uid://cbaut8n2lgs6b" path="res://pages/page_adventure/skills/skill_data/Defense Matrix.tres" id="157_tf5qe"]
+[ext_resource type="Resource" uid="uid://boxdrobmb8eyg" path="res://pages/page_adventure/skills/skill_data/Diana-Saur.tres" id="158_2jr0t"]
+[ext_resource type="Resource" uid="uid://bxqjickq57d80" path="res://pages/page_adventure/skills/skill_data/Disguise.tres" id="159_s3tn2"]
+[ext_resource type="Resource" uid="uid://cmr0i0wsurbyf" path="res://pages/page_adventure/skills/skill_data/Dishwasher.tres" id="160_q2hb1"]
+[ext_resource type="Resource" uid="uid://dmafhk15aymdj" path="res://pages/page_adventure/skills/skill_data/Dive Weights.tres" id="161_3i13e"]
+[ext_resource type="Resource" uid="uid://d3eem7c8tmqcb" path="res://pages/page_adventure/skills/skill_data/Diving Helmet.tres" id="162_cvw7o"]
+[ext_resource type="Resource" uid="uid://drs6wlbuihg1r" path="res://pages/page_adventure/skills/skill_data/Dock Lines.tres" id="163_4oh3f"]
+[ext_resource type="Resource" uid="uid://bq7nkywl0ekg6" path="res://pages/page_adventure/skills/skill_data/Dog.tres" id="164_cg2fx"]
+[ext_resource type="Resource" uid="uid://bhdleo0hvnjid" path="res://pages/page_adventure/skills/skill_data/Dooleys Scarf.tres" id="165_o53um"]
+[ext_resource type="Resource" uid="uid://dawfemkhpseiu" path="res://pages/page_adventure/skills/skill_data/Dooltron.tres" id="166_8neqw"]
+[ext_resource type="Resource" uid="uid://r0xsbdt57q78" path="res://pages/page_adventure/skills/skill_data/Dooltron Mainframe.tres" id="167_wl1b4"]
+[ext_resource type="Resource" uid="uid://bs1fl4df343x3" path="res://pages/page_adventure/skills/skill_data/Double Barrel.tres" id="168_pemw4"]
+[ext_resource type="Resource" uid="uid://bfaqjujpip1wf" path="res://pages/page_adventure/skills/skill_data/Double Whammy.tres" id="169_eiih8"]
+[ext_resource type="Resource" uid="uid://cycrunvdkywk1" path="res://pages/page_adventure/skills/skill_data/Dragon Heart.tres" id="170_yy6ya"]
+[ext_resource type="Resource" uid="uid://buwauw5u85lk6" path="res://pages/page_adventure/skills/skill_data/Dragon Tooth.tres" id="171_i0wet"]
+[ext_resource type="Resource" uid="uid://djortkw1luxso" path="res://pages/page_adventure/skills/skill_data/Dragon Whelp.tres" id="172_g6dpp"]
+[ext_resource type="Resource" uid="uid://d2inisg1jndki" path="res://pages/page_adventure/skills/skill_data/Dragon Wing.tres" id="173_dcjye"]
+[ext_resource type="Resource" uid="uid://dsevhwcjq0d8q" path="res://pages/page_adventure/skills/skill_data/Dragons Breath.tres" id="174_o5qpo"]
+[ext_resource type="Resource" uid="uid://dd6t7473fpr1b" path="res://pages/page_adventure/skills/skill_data/Duct Tape.tres" id="175_5g2r7"]
+[ext_resource type="Resource" uid="uid://kg7g5fl50u8y" path="res://pages/page_adventure/skills/skill_data/Eagle Talisman.tres" id="176_g3aqu"]
+[ext_resource type="Resource" uid="uid://bjsleterwkvgt" path="res://pages/page_adventure/skills/skill_data/Earrings.tres" id="177_t5l8x"]
+[ext_resource type="Resource" uid="uid://cqkcs43mcvv6b" path="res://pages/page_adventure/skills/skill_data/Ectoplasm.tres" id="178_lop0h"]
+[ext_resource type="Resource" uid="uid://boh5x4nt1reia" path="res://pages/page_adventure/skills/skill_data/Electric Eels.tres" id="179_c7ll6"]
+[ext_resource type="Resource" uid="uid://v078v0l1ymra" path="res://pages/page_adventure/skills/skill_data/Elemental Depth Charge.tres" id="180_4lvho"]
+[ext_resource type="Resource" uid="uid://dsn70nobap6xq" path="res://pages/page_adventure/skills/skill_data/Emerald.tres" id="181_pigli"]
+[ext_resource type="Resource" uid="uid://1hnho05md830" path="res://pages/page_adventure/skills/skill_data/Energy Potion.tres" id="182_5hjy4"]
+[ext_resource type="Resource" uid="uid://chjafxq3p13u1" path="res://pages/page_adventure/skills/skill_data/Epicurean Chocolate.tres" id="183_6qed3"]
+[ext_resource type="Resource" uid="uid://bt0vduli7ql5k" path="res://pages/page_adventure/skills/skill_data/Exoskeleton.tres" id="184_27iqd"]
+[ext_resource type="Resource" uid="uid://bkrt36ue2v51m" path="res://pages/page_adventure/skills/skill_data/Extract.tres" id="185_ki5qn"]
+[ext_resource type="Resource" uid="uid://d2kikvkw1vhrp" path="res://pages/page_adventure/skills/skill_data/Eye of the Colossus.tres" id="186_wdvrn"]
+[ext_resource type="Resource" uid="uid://doq8tydejkb7c" path="res://pages/page_adventure/skills/skill_data/Fang.tres" id="187_ubw4c"]
+[ext_resource type="Resource" uid="uid://bg8qqrvq53jaf" path="res://pages/page_adventure/skills/skill_data/Feather.tres" id="188_bx0sn"]
+[ext_resource type="Resource" uid="uid://dun5l7ivy632k" path="res://pages/page_adventure/skills/skill_data/Fiber Optics.tres" id="189_6m4v0"]
+[ext_resource type="Resource" uid="uid://cw6d743v1xpsv" path="res://pages/page_adventure/skills/skill_data/Figurehead.tres" id="190_tm6xo"]
+[ext_resource type="Resource" uid="uid://bt1ahbmtfontx" path="res://pages/page_adventure/skills/skill_data/Fire Claw.tres" id="191_kimf6"]
+[ext_resource type="Resource" uid="uid://4ypa1e3yqdfb" path="res://pages/page_adventure/skills/skill_data/Fire Potion.tres" id="192_76r3s"]
+[ext_resource type="Resource" uid="uid://buppln4axgfsb" path="res://pages/page_adventure/skills/skill_data/Fireflies.tres" id="193_hhnds"]
+[ext_resource type="Resource" uid="uid://buw3tw2cfumar" path="res://pages/page_adventure/skills/skill_data/First Aiden.tres" id="194_nq7q6"]
+[ext_resource type="Resource" uid="uid://bflrer7d663qk" path="res://pages/page_adventure/skills/skill_data/Fishing Net.tres" id="195_65sq5"]
+[ext_resource type="Resource" uid="uid://bgbr31be1st7m" path="res://pages/page_adventure/skills/skill_data/Fishing Rod.tres" id="196_6rfx0"]
+[ext_resource type="Resource" uid="uid://bl5t2x5iekqrg" path="res://pages/page_adventure/skills/skill_data/Fixer Upper.tres" id="197_jroms"]
+[ext_resource type="Resource" uid="uid://b0p6ioqypete6" path="res://pages/page_adventure/skills/skill_data/Flagship.tres" id="198_quban"]
+[ext_resource type="Resource" uid="uid://ci501sjfaoot5" path="res://pages/page_adventure/skills/skill_data/Flail.tres" id="199_fak61"]
+[ext_resource type="Resource" uid="uid://c1lxsw0nnc8tf" path="res://pages/page_adventure/skills/skill_data/Flamberge.tres" id="200_ya0am"]
+[ext_resource type="Resource" uid="uid://bhfox76667kng" path="res://pages/page_adventure/skills/skill_data/Flamethrower.tres" id="201_av4lg"]
+[ext_resource type="Resource" uid="uid://cs03i6nfey72u" path="res://pages/page_adventure/skills/skill_data/Flashbang.tres" id="202_1rbcd"]
+[ext_resource type="Resource" uid="uid://boq3q1db0f7j1" path="res://pages/page_adventure/skills/skill_data/Floor Spike.tres" id="203_04int"]
+[ext_resource type="Resource" uid="uid://culjhxcw3qw3x" path="res://pages/page_adventure/skills/skill_data/Force Field.tres" id="204_x3107"]
+[ext_resource type="Resource" uid="uid://ptsfa3ocea4" path="res://pages/page_adventure/skills/skill_data/Forklift.tres" id="205_ybt0g"]
+[ext_resource type="Resource" uid="uid://b0webpbuacma8" path="res://pages/page_adventure/skills/skill_data/Fort.tres" id="206_650hi"]
+[ext_resource type="Resource" uid="uid://crl8jjx77dci6" path="res://pages/page_adventure/skills/skill_data/Frost Potion.tres" id="207_wd54g"]
+[ext_resource type="Resource" uid="uid://ddyndq0uf67qu" path="res://pages/page_adventure/skills/skill_data/Frozen Bludgeon.tres" id="208_35c6g"]
+[ext_resource type="Resource" uid="uid://d2t7bbx3wmd1n" path="res://pages/page_adventure/skills/skill_data/Frozen Flame.tres" id="209_py0v8"]
+[ext_resource type="Resource" uid="uid://bgr4o3ho5d5j6" path="res://pages/page_adventure/skills/skill_data/Fungal Spores.tres" id="210_adys4"]
+[ext_resource type="Resource" uid="uid://cohc0ykdl1idp" path="res://pages/page_adventure/skills/skill_data/GPU.tres" id="211_tf8ih"]
+[ext_resource type="Resource" uid="uid://c7jdomxdj5xm3" path="res://pages/page_adventure/skills/skill_data/GRN-W4SP.tres" id="212_t83ay"]
+[ext_resource type="Resource" uid="uid://bibrjvbfdl3us" path="res://pages/page_adventure/skills/skill_data/Gamma Ray.tres" id="213_qwcya"]
+[ext_resource type="Resource" uid="uid://7ilpp06wiyk7" path="res://pages/page_adventure/skills/skill_data/Ganjo.tres" id="214_qqhep"]
+[ext_resource type="Resource" uid="uid://cbyrcc4ghvxse" path="res://pages/page_adventure/skills/skill_data/Gatling Gun.tres" id="215_6qtar"]
+[ext_resource type="Resource" uid="uid://dseq3y7g8m3ys" path="res://pages/page_adventure/skills/skill_data/Gavel.tres" id="216_7hvlc"]
+[ext_resource type="Resource" uid="uid://b1wdt4wwijr5o" path="res://pages/page_adventure/skills/skill_data/Gearnola Bar.tres" id="217_yj3g1"]
+[ext_resource type="Resource" uid="uid://n1j2ukxwg7sd" path="res://pages/page_adventure/skills/skill_data/Genie Lamp.tres" id="218_5s4t2"]
+[ext_resource type="Resource" uid="uid://bceeir50skpwj" path="res://pages/page_adventure/skills/skill_data/Giant Ice Club.tres" id="219_vpc2p"]
+[ext_resource type="Resource" uid="uid://obphm0q4std5" path="res://pages/page_adventure/skills/skill_data/Gland.tres" id="220_o38g8"]
+[ext_resource type="Resource" uid="uid://bulouyu35pf13" path="res://pages/page_adventure/skills/skill_data/Globe.tres" id="221_1lu6q"]
+[ext_resource type="Resource" uid="uid://4ic275phhf30" path="res://pages/page_adventure/skills/skill_data/Goggles.tres" id="222_h40lt"]
+[ext_resource type="Resource" uid="uid://hlw5hyvle6w" path="res://pages/page_adventure/skills/skill_data/Golf Clubs.tres" id="223_0kf8k"]
+[ext_resource type="Resource" uid="uid://blwyt3i5dkfqj" path="res://pages/page_adventure/skills/skill_data/Goop Flail.tres" id="224_ef4i0"]
+[ext_resource type="Resource" uid="uid://di6td1icccroe" path="res://pages/page_adventure/skills/skill_data/Grapeshot.tres" id="225_vo8yt"]
+[ext_resource type="Resource" uid="uid://4lwwcg14m7qy" path="res://pages/page_adventure/skills/skill_data/Grappling Hook.tres" id="226_h0kbq"]
+[ext_resource type="Resource" uid="uid://dkok43d46l02g" path="res://pages/page_adventure/skills/skill_data/Green Gumball.tres" id="227_h0iyu"]
+[ext_resource type="Resource" uid="uid://bn1a8ud7xn7qf" path="res://pages/page_adventure/skills/skill_data/Grenade.tres" id="228_oemts"]
+[ext_resource type="Resource" uid="uid://dnw65mhnro3kd" path="res://pages/page_adventure/skills/skill_data/Grindstone.tres" id="229_mjaxa"]
+[ext_resource type="Resource" uid="uid://xdfthsy6y8tj" path="res://pages/page_adventure/skills/skill_data/Gumball Machine.tres" id="230_2xsl4"]
+[ext_resource type="Resource" uid="uid://bxs4jslxkem04" path="res://pages/page_adventure/skills/skill_data/Gunpowder.tres" id="231_moyj4"]
+[ext_resource type="Resource" uid="uid://bwc3wtb6pyscj" path="res://pages/page_adventure/skills/skill_data/Hacksaw.tres" id="232_ocdew"]
+[ext_resource type="Resource" uid="uid://xt0u1q3m2o4i" path="res://pages/page_adventure/skills/skill_data/Hakurvian Launcher.tres" id="233_luap6"]
+[ext_resource type="Resource" uid="uid://dsf3xers44bkl" path="res://pages/page_adventure/skills/skill_data/Haladie.tres" id="234_6aaci"]
+[ext_resource type="Resource" uid="uid://d4g2r4foggwxt" path="res://pages/page_adventure/skills/skill_data/Hammer.tres" id="235_mchgn"]
+[ext_resource type="Resource" uid="uid://bn2ji78s5ltsl" path="res://pages/page_adventure/skills/skill_data/Hammlet.tres" id="236_5dth4"]
+[ext_resource type="Resource" uid="uid://b54sw84710t5d" path="res://pages/page_adventure/skills/skill_data/Hammock.tres" id="237_b6lew"]
+[ext_resource type="Resource" uid="uid://cnfrfysbpy81q" path="res://pages/page_adventure/skills/skill_data/Handaxe.tres" id="238_1lcnx"]
+[ext_resource type="Resource" uid="uid://dq0q3v302slfn" path="res://pages/page_adventure/skills/skill_data/Harmadillo.tres" id="239_igh3s"]
+[ext_resource type="Resource" uid="uid://c8vjklo7dwrlm" path="res://pages/page_adventure/skills/skill_data/Harpoon.tres" id="240_pxmne"]
+[ext_resource type="Resource" uid="uid://yt68b4vhsj8w" path="res://pages/page_adventure/skills/skill_data/Hatchet.tres" id="241_foylm"]
+[ext_resource type="Resource" uid="uid://bbpane6po6ciu" path="res://pages/page_adventure/skills/skill_data/Hemlock.tres" id="242_hubev"]
+[ext_resource type="Resource" uid="uid://b3jpqnie4k54t" path="res://pages/page_adventure/skills/skill_data/Hogwash.tres" id="243_4vtir"]
+[ext_resource type="Resource" uid="uid://fx3chtyxi7u4" path="res://pages/page_adventure/skills/skill_data/Hologram Projector.tres" id="244_2shfl"]
+[ext_resource type="Resource" uid="uid://clvn1mncsuuh7" path="res://pages/page_adventure/skills/skill_data/Holsters.tres" id="245_6lugx"]
+[ext_resource type="Resource" uid="uid://ccdcqg1d0roqi" path="res://pages/page_adventure/skills/skill_data/Honing Steel.tres" id="246_pfamo"]
+[ext_resource type="Resource" uid="uid://ckk88qrk6iw60" path="res://pages/page_adventure/skills/skill_data/Hot Sauce.tres" id="247_u2n8a"]
+[ext_resource type="Resource" uid="uid://bd2avvi4vdhrh" path="res://pages/page_adventure/skills/skill_data/Hot Springs.tres" id="248_eudvq"]
+[ext_resource type="Resource" uid="uid://cxx7l4w20n8oe" path="res://pages/page_adventure/skills/skill_data/Hot Stones.tres" id="249_ne8i4"]
+[ext_resource type="Resource" uid="uid://ccijkvfkw8io" path="res://pages/page_adventure/skills/skill_data/Hourglass.tres" id="250_d8in0"]
+[ext_resource type="Resource" uid="uid://cp8ugpycwqu1v" path="res://pages/page_adventure/skills/skill_data/Hydraulic Squeezer.tres" id="251_qhiny"]
+[ext_resource type="Resource" uid="uid://dsdbw32rdvpqi" path="res://pages/page_adventure/skills/skill_data/Hypergreens.tres" id="252_ancga"]
+[ext_resource type="Resource" uid="uid://b2kcqv5tef40c" path="res://pages/page_adventure/skills/skill_data/Ice 9000.tres" id="253_bbntn"]
+[ext_resource type="Resource" uid="uid://hy8ljbj4ulau" path="res://pages/page_adventure/skills/skill_data/Ice Claw.tres" id="254_4ijs4"]
+[ext_resource type="Resource" uid="uid://bf1ln8iiocf0k" path="res://pages/page_adventure/skills/skill_data/Ice Cream Truck.tres" id="255_r1nvw"]
+[ext_resource type="Resource" uid="uid://c0h5tj1cppw4w" path="res://pages/page_adventure/skills/skill_data/Ice Cubes.tres" id="256_xaq47"]
+[ext_resource type="Resource" uid="uid://diigvb5golxkm" path="res://pages/page_adventure/skills/skill_data/Ice Luge.tres" id="257_dt7c6"]
+[ext_resource type="Resource" uid="uid://cv4sdc0jc0ec4" path="res://pages/page_adventure/skills/skill_data/Ice Pick.tres" id="258_0bt8p"]
+[ext_resource type="Resource" uid="uid://ddwg5c2e3xqu6" path="res://pages/page_adventure/skills/skill_data/Iceberg.tres" id="259_n85vf"]
+[ext_resource type="Resource" uid="uid://3x184pje2kkh" path="res://pages/page_adventure/skills/skill_data/Icebreaker.tres" id="260_ypnoe"]
+[ext_resource type="Resource" uid="uid://b476fckx1dyoi" path="res://pages/page_adventure/skills/skill_data/Icicle.tres" id="261_8urkf"]
+[ext_resource type="Resource" uid="uid://bwid7knmsyyov" path="res://pages/page_adventure/skills/skill_data/Igloo.tres" id="262_hpbjm"]
+[ext_resource type="Resource" uid="uid://w6myajjp4oaw" path="res://pages/page_adventure/skills/skill_data/Ignition Core.tres" id="263_dy8js"]
+[ext_resource type="Resource" uid="uid://c6ho4gjwxkxye" path="res://pages/page_adventure/skills/skill_data/IllusoRay.tres" id="264_0pmtk"]
+[ext_resource type="Resource" uid="uid://bn7jwe6gklyp6" path="res://pages/page_adventure/skills/skill_data/Improvised Bludgeon.tres" id="265_3ps2l"]
+[ext_resource type="Resource" uid="uid://b38hd8rvq6wls" path="res://pages/page_adventure/skills/skill_data/Incendiary Rounds.tres" id="266_nlyd5"]
+[ext_resource type="Resource" uid="uid://cihgfolt7sr57" path="res://pages/page_adventure/skills/skill_data/Incense.tres" id="267_3dnci"]
+[ext_resource type="Resource" uid="uid://dpind4ud6qx42" path="res://pages/page_adventure/skills/skill_data/Induction Aegis.tres" id="268_kltiw"]
+[ext_resource type="Resource" uid="uid://mfalvu8850l2" path="res://pages/page_adventure/skills/skill_data/Infernal Greatsword.tres" id="269_6rgaa"]
+[ext_resource type="Resource" uid="uid://dynyybebklmsh" path="res://pages/page_adventure/skills/skill_data/Infinite Potion.tres" id="270_igwfu"]
+[ext_resource type="Resource" uid="uid://c467lf2buw0la" path="res://pages/page_adventure/skills/skill_data/Infused Bracers.tres" id="271_vjc70"]
+[ext_resource type="Resource" uid="uid://cur20eqhj71t7" path="res://pages/page_adventure/skills/skill_data/Insect Wing.tres" id="272_3demi"]
+[ext_resource type="Resource" uid="uid://cv61hnjqjvp0g" path="res://pages/page_adventure/skills/skill_data/Invulnerability Potion.tres" id="273_erpwi"]
+[ext_resource type="Resource" uid="uid://ccp26on4qn3r5" path="res://pages/page_adventure/skills/skill_data/Isochoric Freezer.tres" id="274_67fd6"]
+[ext_resource type="Resource" uid="uid://2gkja66ukako" path="res://pages/page_adventure/skills/skill_data/Jabalian Drum.tres" id="275_phuw0"]
+[ext_resource type="Resource" uid="uid://brg84qb21p05t" path="res://pages/page_adventure/skills/skill_data/Jaballian Longbow.tres" id="276_tl7q1"]
+[ext_resource type="Resource" uid="uid://b5h8s1vm3hj3s" path="res://pages/page_adventure/skills/skill_data/Javelin.tres" id="277_8ovrv"]
+[ext_resource type="Resource" uid="uid://dgv3xykecdvxp" path="res://pages/page_adventure/skills/skill_data/Jellyfish.tres" id="278_oqeuf"]
+[ext_resource type="Resource" uid="uid://bdprfrjslc6nd" path="res://pages/page_adventure/skills/skill_data/Jewelry.tres" id="279_ieqia"]
+[ext_resource type="Resource" uid="uid://dtco1hicfpt75" path="res://pages/page_adventure/skills/skill_data/Jitte.tres" id="280_xv01q"]
+[ext_resource type="Resource" uid="uid://cbnujt5on1npn" path="res://pages/page_adventure/skills/skill_data/Junkyard Catapult.tres" id="281_gbg8n"]
+[ext_resource type="Resource" uid="uid://bnij5dgr5kxpe" path="res://pages/page_adventure/skills/skill_data/Junkyard Club.tres" id="282_c1t68"]
+[ext_resource type="Resource" uid="uid://x1ogaignb7vl" path="res://pages/page_adventure/skills/skill_data/Junkyard Lance.tres" id="283_k86hu"]
+[ext_resource type="Resource" uid="uid://cnwffh4147cpg" path="res://pages/page_adventure/skills/skill_data/Junkyard Repairbot.tres" id="284_qfsob"]
+[ext_resource type="Resource" uid="uid://c76xrg3kfql35" path="res://pages/page_adventure/skills/skill_data/Katana.tres" id="285_vhd41"]
+[ext_resource type="Resource" uid="uid://bu3h487uu7bs7" path="res://pages/page_adventure/skills/skill_data/Keychain.tres" id="286_kbist"]
+[ext_resource type="Resource" uid="uid://c7gbg5g14h5l5" path="res://pages/page_adventure/skills/skill_data/Kinetic Cannon.tres" id="287_anw5r"]
+[ext_resource type="Resource" uid="uid://242irg5kx3hx" path="res://pages/page_adventure/skills/skill_data/Knee Brace.tres" id="288_bcj1v"]
+[ext_resource type="Resource" uid="uid://jggenobov7j" path="res://pages/page_adventure/skills/skill_data/Knife Set.tres" id="289_0fvs3"]
+[ext_resource type="Resource" uid="uid://bgvg8xyd14yyb" path="res://pages/page_adventure/skills/skill_data/Kukri.tres" id="290_yjjo5"]
+[ext_resource type="Resource" uid="uid://cfkrngencojso" path="res://pages/page_adventure/skills/skill_data/Laboratory.tres" id="291_iuetc"]
+[ext_resource type="Resource" uid="uid://crof4udrt7w0c" path="res://pages/page_adventure/skills/skill_data/Landscraper.tres" id="292_6kl8g"]
+[ext_resource type="Resource" uid="uid://d2b5vjcwd3cf1" path="res://pages/page_adventure/skills/skill_data/Langxian.tres" id="293_lvfqt"]
+[ext_resource type="Resource" uid="uid://cd6xi78d0ji2n" path="res://pages/page_adventure/skills/skill_data/Laser Pistol.tres" id="294_fpgmr"]
+[ext_resource type="Resource" uid="uid://j0jwoox70s5d" path="res://pages/page_adventure/skills/skill_data/Laser Security System.tres" id="295_uvgvx"]
+[ext_resource type="Resource" uid="uid://b2cnwrrijbukd" path="res://pages/page_adventure/skills/skill_data/Ledger.tres" id="296_40qmb"]
+[ext_resource type="Resource" uid="uid://di0qev6jnncqi" path="res://pages/page_adventure/skills/skill_data/Leeches.tres" id="297_7dttr"]
+[ext_resource type="Resource" uid="uid://bilfeg5w5vmcd" path="res://pages/page_adventure/skills/skill_data/Lemonade Stand.tres" id="298_i3rcm"]
+[ext_resource type="Resource" uid="uid://yvmbu1ynxwcs" path="res://pages/page_adventure/skills/skill_data/Lens.tres" id="299_b0s4e"]
+[ext_resource type="Resource" uid="uid://2n5tsvb0jofy" path="res://pages/page_adventure/skills/skill_data/Letter Opener.tres" id="300_3xgy5"]
+[ext_resource type="Resource" uid="uid://5feq4rd4k6k6" path="res://pages/page_adventure/skills/skill_data/Library.tres" id="301_jj6r8"]
+[ext_resource type="Resource" uid="uid://chbkrvb1ubpyn" path="res://pages/page_adventure/skills/skill_data/Life Preserver.tres" id="302_gvnn1"]
+[ext_resource type="Resource" uid="uid://buno46o6oxqg" path="res://pages/page_adventure/skills/skill_data/Lifting Gloves.tres" id="303_o3lb1"]
+[ext_resource type="Resource" uid="uid://2c117ph7qfva" path="res://pages/page_adventure/skills/skill_data/Lightbulb.tres" id="304_qwst6"]
+[ext_resource type="Resource" uid="uid://b8liyln0yrwux" path="res://pages/page_adventure/skills/skill_data/Lighter.tres" id="305_xfaon"]
+[ext_resource type="Resource" uid="uid://jqpq5sf3mhdo" path="res://pages/page_adventure/skills/skill_data/Lighthouse.tres" id="306_furbh"]
+[ext_resource type="Resource" uid="uid://c5kac4r0k45pj" path="res://pages/page_adventure/skills/skill_data/Lightning Rod.tres" id="307_4cutd"]
+[ext_resource type="Resource" uid="uid://dhu3rj1h2bvdb" path="res://pages/page_adventure/skills/skill_data/Lion Cane.tres" id="308_ckugm"]
+[ext_resource type="Resource" uid="uid://cpcydpvcflqas" path="res://pages/page_adventure/skills/skill_data/Lockbox.tres" id="309_6npa5"]
+[ext_resource type="Resource" uid="uid://8xje14yp3p6h" path="res://pages/page_adventure/skills/skill_data/Loupe.tres" id="310_x5d65"]
+[ext_resource type="Resource" uid="uid://dow01ed82fye1" path="res://pages/page_adventure/skills/skill_data/Lumboars.tres" id="311_24req"]
+[ext_resource type="Resource" uid="uid://gymbsevgr82y" path="res://pages/page_adventure/skills/skill_data/Luxury Kiuas.tres" id="312_eg5ot"]
+[ext_resource type="Resource" uid="uid://dpxe56v6d0y8l" path="res://pages/page_adventure/skills/skill_data/Luxury Tents.tres" id="313_qs6ys"]
+[ext_resource type="Resource" uid="uid://5adetm6x0cnr" path="res://pages/page_adventure/skills/skill_data/Magic Carpet.tres" id="314_t4edv"]
+[ext_resource type="Resource" uid="uid://brrqs0512v734" path="res://pages/page_adventure/skills/skill_data/Magicians Top Hat.tres" id="315_f26mi"]
+[ext_resource type="Resource" uid="uid://d0gxwidh3b7hi" path="res://pages/page_adventure/skills/skill_data/Magma Core.tres" id="316_byacp"]
+[ext_resource type="Resource" uid="uid://c4j7l08ojxo7r" path="res://pages/page_adventure/skills/skill_data/Magnifying Glass.tres" id="317_h3nso"]
+[ext_resource type="Resource" uid="uid://42dtg23xx1r8" path="res://pages/page_adventure/skills/skill_data/Magnus Femur.tres" id="318_8vcso"]
+[ext_resource type="Resource" uid="uid://b6gh8njqj0eg8" path="res://pages/page_adventure/skills/skill_data/Makeshift Barricade.tres" id="319_v4t6e"]
+[ext_resource type="Resource" uid="uid://chf7w4gwvpls7" path="res://pages/page_adventure/skills/skill_data/Mantis Shrimp.tres" id="320_2ynmu"]
+[ext_resource type="Resource" uid="uid://dgums177p8qvi" path="res://pages/page_adventure/skills/skill_data/Marble Scalemail.tres" id="321_q5ymu"]
+[ext_resource type="Resource" uid="uid://c1maaoyr84cgk" path="res://pages/page_adventure/skills/skill_data/Marbles.tres" id="322_fcqvw"]
+[ext_resource type="Resource" uid="uid://dr7ucqwwnchr2" path="res://pages/page_adventure/skills/skill_data/Masterpiece.tres" id="323_g8c1f"]
+[ext_resource type="Resource" uid="uid://c1mqnp4uuismp" path="res://pages/page_adventure/skills/skill_data/Matchbox.tres" id="324_mtsj1"]
+[ext_resource type="Resource" uid="uid://djnenjxelqsic" path="res://pages/page_adventure/skills/skill_data/Mech-Moles.tres" id="325_ita8x"]
+[ext_resource type="Resource" uid="uid://dgtcqeetfo46x" path="res://pages/page_adventure/skills/skill_data/Med Kit.tres" id="326_y1td2"]
+[ext_resource type="Resource" uid="uid://bg1lglalwodcx" path="res://pages/page_adventure/skills/skill_data/Memento Mori.tres" id="327_m2wm8"]
+[ext_resource type="Resource" uid="uid://bbjcl4rj7dsdx" path="res://pages/page_adventure/skills/skill_data/Memory Card.tres" id="328_dr5k7"]
+[ext_resource type="Resource" uid="uid://con5giwj2ycxd" path="res://pages/page_adventure/skills/skill_data/Metronome.tres" id="329_52e7p"]
+[ext_resource type="Resource" uid="uid://lq117tk7034a" path="res://pages/page_adventure/skills/skill_data/Micro Dave.tres" id="330_y0ewl"]
+[ext_resource type="Resource" uid="uid://bnm70v1bd88xi" path="res://pages/page_adventure/skills/skill_data/Mirror.tres" id="331_gpusc"]
+[ext_resource type="Resource" uid="uid://ceh16whc3p7i0" path="res://pages/page_adventure/skills/skill_data/Miss Isles.tres" id="332_5obb2"]
+[ext_resource type="Resource" uid="uid://djrsdhocigm6w" path="res://pages/page_adventure/skills/skill_data/Model Ship.tres" id="333_3lx7t"]
+[ext_resource type="Resource" uid="uid://dfkckxeg5oj26" path="res://pages/page_adventure/skills/skill_data/Momma-Saur.tres" id="334_n7et7"]
+[ext_resource type="Resource" uid="uid://hak70yc8hl30" path="res://pages/page_adventure/skills/skill_data/Money Tree.tres" id="335_csh3u"]
+[ext_resource type="Resource" uid="uid://djlcrg4as70x1" path="res://pages/page_adventure/skills/skill_data/Monitor Lizard.tres" id="336_t74o7"]
+[ext_resource type="Resource" uid="uid://cxte3orgm1ssc" path="res://pages/page_adventure/skills/skill_data/Monocle.tres" id="337_6y63n"]
+[ext_resource type="Resource" uid="uid://caausiandugmu" path="res://pages/page_adventure/skills/skill_data/Mortal Coil.tres" id="338_kwl84"]
+[ext_resource type="Resource" uid="uid://bvlsq8nijcaln" path="res://pages/page_adventure/skills/skill_data/Mortar Pestle.tres" id="339_vte37"]
+[ext_resource type="Resource" uid="uid://np6f0uvxlmoy" path="res://pages/page_adventure/skills/skill_data/Motherboard.tres" id="340_b8kkl"]
+[ext_resource type="Resource" uid="uid://d2no0xsky1cd5" path="res://pages/page_adventure/skills/skill_data/Mothmeal.tres" id="341_vq0gn"]
+[ext_resource type="Resource" uid="uid://dxicbrnauto7r" path="res://pages/page_adventure/skills/skill_data/Mr. Richardson.tres" id="342_4nms1"]
+[ext_resource type="Resource" uid="uid://d0is1olg6ohqp" path="res://pages/page_adventure/skills/skill_data/Multitool.tres" id="343_fahom"]
+[ext_resource type="Resource" uid="uid://c65sojj08dy2i" path="res://pages/page_adventure/skills/skill_data/Musket.tres" id="344_c3fts"]
+[ext_resource type="Resource" uid="uid://2f6o5iqn7f8d" path="res://pages/page_adventure/skills/skill_data/Myrrh.tres" id="345_jroph"]
+[ext_resource type="Resource" uid="uid://s2oev7tm3y2g" path="res://pages/page_adventure/skills/skill_data/Nanobots.tres" id="346_4ma3c"]
+[ext_resource type="Resource" uid="uid://cykt1omj0lxpm" path="res://pages/page_adventure/skills/skill_data/Nargile.tres" id="347_ggqha"]
+[ext_resource type="Resource" uid="uid://c0byxtpucgjsj" path="res://pages/page_adventure/skills/skill_data/Narwhal.tres" id="348_kw4nq"]
+[ext_resource type="Resource" uid="uid://cjpnje4hvs8x5" path="res://pages/page_adventure/skills/skill_data/Necronomicon.tres" id="349_jece2"]
+[ext_resource type="Resource" uid="uid://2q801exxht41" path="res://pages/page_adventure/skills/skill_data/Nesting Doll.tres" id="350_1s1k6"]
+[ext_resource type="Resource" uid="uid://bsrmskuj0fhcd" path="res://pages/page_adventure/skills/skill_data/Neural Toxin.tres" id="351_5qwlv"]
+[ext_resource type="Resource" uid="uid://cqiqodiirv1vi" path="res://pages/page_adventure/skills/skill_data/Nightshade.tres" id="352_60iq5"]
+[ext_resource type="Resource" uid="uid://cegjpe5s7jwtr" path="res://pages/page_adventure/skills/skill_data/Nitro.tres" id="353_80yhq"]
+[ext_resource type="Resource" uid="uid://b2408a1d4310i" path="res://pages/page_adventure/skills/skill_data/Nitrogen Hammer.tres" id="354_au310"]
+[ext_resource type="Resource" uid="uid://cqyecritn4mkm" path="res://pages/page_adventure/skills/skill_data/Noxious Potion.tres" id="355_umhfq"]
+[ext_resource type="Resource" uid="uid://tqhx41jyc2if" path="res://pages/page_adventure/skills/skill_data/Octopus.tres" id="356_op77u"]
+[ext_resource type="Resource" uid="uid://bafpiao5lb1wj" path="res://pages/page_adventure/skills/skill_data/Oil Lantern.tres" id="357_kw7v6"]
+[ext_resource type="Resource" uid="uid://bu3whwhy6s7ys" path="res://pages/page_adventure/skills/skill_data/Oinkment.tres" id="358_ch4u8"]
+[ext_resource type="Resource" uid="uid://cmk033tfpmfig" path="res://pages/page_adventure/skills/skill_data/Old Saltclaw.tres" id="359_vl4oy"]
+[ext_resource type="Resource" uid="uid://rtkppgnnphnx" path="res://pages/page_adventure/skills/skill_data/Old Sword.tres" id="360_2fia0"]
+[ext_resource type="Resource" uid="uid://b0imqhq3sktka" path="res://pages/page_adventure/skills/skill_data/Omega Ray.tres" id="361_3c7x8"]
+[ext_resource type="Resource" uid="uid://b16pka2yf888q" path="res://pages/page_adventure/skills/skill_data/Open Sign.tres" id="362_siwad"]
+[ext_resource type="Resource" uid="uid://bqbxj6o0inbsq" path="res://pages/page_adventure/skills/skill_data/Optical Augment.tres" id="363_adlb3"]
+[ext_resource type="Resource" uid="uid://d1nduq8ud27mb" path="res://pages/page_adventure/skills/skill_data/Orange Julian.tres" id="364_wryqi"]
+[ext_resource type="Resource" uid="uid://c8g7q6jkdyi1u" path="res://pages/page_adventure/skills/skill_data/Orbital Polisher.tres" id="365_26go7"]
+[ext_resource type="Resource" uid="uid://dduc8j2lf8la7" path="res://pages/page_adventure/skills/skill_data/Ouroboros Statue.tres" id="366_rpalc"]
+[ext_resource type="Resource" uid="uid://ducp5dh8bc5d8" path="res://pages/page_adventure/skills/skill_data/Oven Mitts.tres" id="367_vbcgm"]
+[ext_resource type="Resource" uid="uid://bcrtlwyj6i4im" path="res://pages/page_adventure/skills/skill_data/Palanquin.tres" id="368_2dbyd"]
+[ext_resource type="Resource" uid="uid://bmlhq3b2oyvlp" path="res://pages/page_adventure/skills/skill_data/Pawn Shop.tres" id="369_rt6hq"]
+[ext_resource type="Resource" uid="uid://disgm3fuwnl8f" path="res://pages/page_adventure/skills/skill_data/Peacewrought.tres" id="370_p6csb"]
+[ext_resource type="Resource" uid="uid://cmgsbanagett2" path="res://pages/page_adventure/skills/skill_data/Pearl.tres" id="371_fg1ac"]
+[ext_resource type="Resource" uid="uid://bfkvm1rysyjad" path="res://pages/page_adventure/skills/skill_data/Pelt.tres" id="372_18nxg"]
+[ext_resource type="Resource" uid="uid://ckwssn1h41u4h" path="res://pages/page_adventure/skills/skill_data/PenFT.tres" id="373_fhqth"]
+[ext_resource type="Resource" uid="uid://b8eay7cy5g8x2" path="res://pages/page_adventure/skills/skill_data/Pendulum.tres" id="374_vnkkr"]
+[ext_resource type="Resource" uid="uid://2f7opyobnc2u" path="res://pages/page_adventure/skills/skill_data/Pepper Spray.tres" id="375_wljrw"]
+[ext_resource type="Resource" uid="uid://srog6fnogxld" path="res://pages/page_adventure/skills/skill_data/Pesky Pete.tres" id="376_onrg7"]
+[ext_resource type="Resource" uid="uid://dhhgiu7kh28pp" path="res://pages/page_adventure/skills/skill_data/Pet Rock.tres" id="377_id7jm"]
+[ext_resource type="Resource" uid="uid://b4fd1ei6vpya4" path="res://pages/page_adventure/skills/skill_data/Philosophers Stone.tres" id="378_f1bcc"]
+[ext_resource type="Resource" uid="uid://cjmvqq66ywthi" path="res://pages/page_adventure/skills/skill_data/Phonograph.tres" id="379_j3xfd"]
+[ext_resource type="Resource" uid="uid://drl111jlur8n4" path="res://pages/page_adventure/skills/skill_data/Piano.tres" id="380_mfbma"]
+[ext_resource type="Resource" uid="uid://bbtqhjp01ofuy" path="res://pages/page_adventure/skills/skill_data/Pickled Peppers.tres" id="381_sbxih"]
+[ext_resource type="Resource" uid="uid://yfk84b48apd5" path="res://pages/page_adventure/skills/skill_data/Pierre Conditioner.tres" id="382_5pcsj"]
+[ext_resource type="Resource" uid="uid://llwxqouu5jvw" path="res://pages/page_adventure/skills/skill_data/Piggles.tres" id="383_u2wxb"]
+[ext_resource type="Resource" uid="uid://c6xhvab1l0b1" path="res://pages/page_adventure/skills/skill_data/Piggy Bank.tres" id="384_w4kv6"]
+[ext_resource type="Resource" uid="uid://cbww0g40bcehy" path="res://pages/page_adventure/skills/skill_data/Pinata.tres" id="385_7qlf7"]
+[ext_resource type="Resource" uid="uid://tqexck873y61" path="res://pages/page_adventure/skills/skill_data/Piranha.tres" id="386_bnq2m"]
+[ext_resource type="Resource" uid="uid://3sexb5xwrt33" path="res://pages/page_adventure/skills/skill_data/Pistol Sword.tres" id="387_s1jph"]
+[ext_resource type="Resource" uid="uid://bvlgo0rproj3p" path="res://pages/page_adventure/skills/skill_data/Pitchfork.tres" id="388_o76tb"]
+[ext_resource type="Resource" uid="uid://b0pmes24me5al" path="res://pages/page_adventure/skills/skill_data/Plague Glaive.tres" id="389_l1vn4"]
+[ext_resource type="Resource" uid="uid://doa5ygl3stcgb" path="res://pages/page_adventure/skills/skill_data/Plasma Grenade.tres" id="390_nsj8r"]
+[ext_resource type="Resource" uid="uid://clt16kaqh1ho6" path="res://pages/page_adventure/skills/skill_data/Plasma Rifle.tres" id="391_0qjie"]
+[ext_resource type="Resource" uid="uid://bg6gr30tnmqpv" path="res://pages/page_adventure/skills/skill_data/Pop Snappers.tres" id="392_dxpoy"]
+[ext_resource type="Resource" uid="uid://c5d2rfufa76da" path="res://pages/page_adventure/skills/skill_data/Poppy Field.tres" id="393_ov0v2"]
+[ext_resource type="Resource" uid="uid://b0y7hno5axy0e" path="res://pages/page_adventure/skills/skill_data/Port.tres" id="394_3eb8p"]
+[ext_resource type="Resource" uid="uid://ck6sqktnji6jf" path="res://pages/page_adventure/skills/skill_data/Potion Distillery.tres" id="395_88hh0"]
+[ext_resource type="Resource" uid="uid://b1jv3h1k2xe00" path="res://pages/page_adventure/skills/skill_data/Potion Potion.tres" id="396_jp40y"]
+[ext_resource type="Resource" uid="uid://ve3pl467jd2o" path="res://pages/page_adventure/skills/skill_data/Powder Flask.tres" id="397_t00ri"]
+[ext_resource type="Resource" uid="uid://bcr7yt7wjmmr6" path="res://pages/page_adventure/skills/skill_data/Powder Keg.tres" id="398_0kv0j"]
+[ext_resource type="Resource" uid="uid://6ysgjfikquvl" path="res://pages/page_adventure/skills/skill_data/Power Drill.tres" id="399_7vjm8"]
+[ext_resource type="Resource" uid="uid://btyaqxw0mxxqq" path="res://pages/page_adventure/skills/skill_data/Power Sander.tres" id="400_o6hkw"]
+[ext_resource type="Resource" uid="uid://806p20yfbwei" path="res://pages/page_adventure/skills/skill_data/Private Hot Springs.tres" id="401_wyq4t"]
+[ext_resource type="Resource" uid="uid://b2up5jx1ifbup" path="res://pages/page_adventure/skills/skill_data/Proboscis.tres" id="402_qfdtl"]
+[ext_resource type="Resource" uid="uid://c65y3am5n0uy1" path="res://pages/page_adventure/skills/skill_data/Propane Tank.tres" id="403_w1ywy"]
+[ext_resource type="Resource" uid="uid://brtlhnn2qm5nc" path="res://pages/page_adventure/skills/skill_data/Pufferfish.tres" id="404_tgc2a"]
+[ext_resource type="Resource" uid="uid://dho6aq6sw33lq" path="res://pages/page_adventure/skills/skill_data/Pulse Rifle.tres" id="405_me73r"]
+[ext_resource type="Resource" uid="uid://crue4ej5a6c8x" path="res://pages/page_adventure/skills/skill_data/Pygmaliens Dagger.tres" id="406_nktl1"]
+[ext_resource type="Resource" uid="uid://e6pn5c3rlcaa" path="res://pages/page_adventure/skills/skill_data/Pygs Gym.tres" id="407_3tgai"]
+[ext_resource type="Resource" uid="uid://b2pie613258rg" path="res://pages/page_adventure/skills/skill_data/Pylon.tres" id="408_m1q7u"]
+[ext_resource type="Resource" uid="uid://bp2wgk5mx7grl" path="res://pages/page_adventure/skills/skill_data/Pyrocarbon.tres" id="409_epwxx"]
+[ext_resource type="Resource" uid="uid://qpx4kb2wvmkx" path="res://pages/page_adventure/skills/skill_data/Quicksilver.tres" id="410_i2qfh"]
+[ext_resource type="Resource" uid="uid://bsrnru1ore8bc" path="res://pages/page_adventure/skills/skill_data/Quill and Ink.tres" id="411_h4cwg"]
+[ext_resource type="Resource" uid="uid://bfa6ujk1xongt" path="res://pages/page_adventure/skills/skill_data/RED-F1R3FLY.tres" id="412_5s7q1"]
+[ext_resource type="Resource" uid="uid://dtffpmgyntl3t" path="res://pages/page_adventure/skills/skill_data/Race Carl.tres" id="413_8y5hn"]
+[ext_resource type="Resource" uid="uid://cr15hobhn1x4d" path="res://pages/page_adventure/skills/skill_data/Railgun.tres" id="414_8x4ve"]
+[ext_resource type="Resource" uid="uid://vjew0murh5kn" path="res://pages/page_adventure/skills/skill_data/Rainbow Potion.tres" id="415_7210s"]
+[ext_resource type="Resource" uid="uid://b1xm5mijt2hxb" path="res://pages/page_adventure/skills/skill_data/Ramrod.tres" id="416_wkl30"]
+[ext_resource type="Resource" uid="uid://buwv55kjj4krb" path="res://pages/page_adventure/skills/skill_data/Rapid Injection System.tres" id="417_ppli2"]
+[ext_resource type="Resource" uid="uid://cnj0btxlclqkh" path="res://pages/page_adventure/skills/skill_data/Recycling Bin.tres" id="418_qenkr"]
+[ext_resource type="Resource" uid="uid://bty23gv0qgd8h" path="res://pages/page_adventure/skills/skill_data/Red Button.tres" id="419_xn27m"]
+[ext_resource type="Resource" uid="uid://dtbsvjdb4ws7u" path="res://pages/page_adventure/skills/skill_data/Red Gumball.tres" id="420_qi35d"]
+[ext_resource type="Resource" uid="uid://bmwhl2c5i53oi" path="res://pages/page_adventure/skills/skill_data/Red Piggles A.tres" id="421_bshnn"]
+[ext_resource type="Resource" uid="uid://chpaw3l47wuua" path="res://pages/page_adventure/skills/skill_data/Red Piggles L.tres" id="422_gwfvh"]
+[ext_resource type="Resource" uid="uid://3awu8w0nreyi" path="res://pages/page_adventure/skills/skill_data/Red Piggles R.tres" id="423_srgkp"]
+[ext_resource type="Resource" uid="uid://bx50beepb44ww" path="res://pages/page_adventure/skills/skill_data/Red Piggles X.tres" id="424_8yidx"]
+[ext_resource type="Resource" uid="uid://bfyrm6673k81d" path="res://pages/page_adventure/skills/skill_data/Refractor.tres" id="425_nftpe"]
+[ext_resource type="Resource" uid="uid://bjw4k3saj3jso" path="res://pages/page_adventure/skills/skill_data/Regal Blade.tres" id="426_hvhoj"]
+[ext_resource type="Resource" uid="uid://dqhg2l5npwh5y" path="res://pages/page_adventure/skills/skill_data/Regeneration Potion.tres" id="427_6dmgf"]
+[ext_resource type="Resource" uid="uid://hk4r8r8gs1jl" path="res://pages/page_adventure/skills/skill_data/Remote Control.tres" id="428_n5wue"]
+[ext_resource type="Resource" uid="uid://binrwiqjb8p1f" path="res://pages/page_adventure/skills/skill_data/Repeater.tres" id="429_5c7i1"]
+[ext_resource type="Resource" uid="uid://b02p1nfjmukki" path="res://pages/page_adventure/skills/skill_data/Retort.tres" id="430_jyqii"]
+[ext_resource type="Resource" uid="uid://chtxh4w4hu7qa" path="res://pages/page_adventure/skills/skill_data/Revolver.tres" id="431_sy307"]
+[ext_resource type="Resource" uid="uid://i8ftwbnnejga" path="res://pages/page_adventure/skills/skill_data/Rewards Card.tres" id="432_jai1t"]
+[ext_resource type="Resource" uid="uid://i8raply2jibj" path="res://pages/page_adventure/skills/skill_data/Riceballer.tres" id="433_d4ru0"]
+[ext_resource type="Resource" uid="uid://bkyid4och1dl7" path="res://pages/page_adventure/skills/skill_data/Rifle.tres" id="434_eu42a"]
+[ext_resource type="Resource" uid="uid://dxf8n44t2fi3t" path="res://pages/page_adventure/skills/skill_data/Ring King Gauntlets.tres" id="435_064ap"]
+[ext_resource type="Resource" uid="uid://buq0p2ptshtbx" path="res://pages/page_adventure/skills/skill_data/Ritual Dagger.tres" id="436_ri20m"]
+[ext_resource type="Resource" uid="uid://bji7pchove08o" path="res://pages/page_adventure/skills/skill_data/Rivet Gun.tres" id="437_kqf2o"]
+[ext_resource type="Resource" uid="uid://cq0yks1oge2e7" path="res://pages/page_adventure/skills/skill_data/Robe.tres" id="438_rbg1y"]
+[ext_resource type="Resource" uid="uid://bq2s6gx4ej42c" path="res://pages/page_adventure/skills/skill_data/Robotic Factory.tres" id="439_e3ivc"]
+[ext_resource type="Resource" uid="uid://b7281t4qjfwcv" path="res://pages/page_adventure/skills/skill_data/Rocket Boots.tres" id="440_ih3tu"]
+[ext_resource type="Resource" uid="uid://bafs4crafr167" path="res://pages/page_adventure/skills/skill_data/Rocket Launcher.tres" id="441_2jklt"]
+[ext_resource type="Resource" uid="uid://cjo4833mnbki8" path="res://pages/page_adventure/skills/skill_data/Rolling Pin.tres" id="442_28vjs"]
+[ext_resource type="Resource" uid="uid://ck1dpnyk4m0h1" path="res://pages/page_adventure/skills/skill_data/Rowboat.tres" id="443_eomye"]
+[ext_resource type="Resource" uid="uid://bagppjlsdq1cr" path="res://pages/page_adventure/skills/skill_data/Ruby.tres" id="444_lwh1m"]
+[ext_resource type="Resource" uid="uid://b888ycgbj1kkt" path="res://pages/page_adventure/skills/skill_data/Rune Axe.tres" id="445_m4wvw"]
+[ext_resource type="Resource" uid="uid://bvo1dxqe3qslp" path="res://pages/page_adventure/skills/skill_data/Runic Blade.tres" id="446_052be"]
+[ext_resource type="Resource" uid="uid://dcbcdjyec3yuh" path="res://pages/page_adventure/skills/skill_data/Runic Daggers.tres" id="447_a516p"]
+[ext_resource type="Resource" uid="uid://bfyfxgi7ts0ku" path="res://pages/page_adventure/skills/skill_data/Runic Double Bow.tres" id="448_vo2lx"]
+[ext_resource type="Resource" uid="uid://bub8iqa1ki3qk" path="res://pages/page_adventure/skills/skill_data/Runic Great Axe.tres" id="449_da8xi"]
+[ext_resource type="Resource" uid="uid://cnpgvmbw7gk1m" path="res://pages/page_adventure/skills/skill_data/Runic Potion.tres" id="450_x00au"]
+[ext_resource type="Resource" uid="uid://c0rkdxr5j52ce" path="res://pages/page_adventure/skills/skill_data/Safe.tres" id="451_jwu8u"]
+[ext_resource type="Resource" uid="uid://de23p453x6e4b" path="res://pages/page_adventure/skills/skill_data/Salamander Pup.tres" id="452_tjgpu"]
+[ext_resource type="Resource" uid="uid://cxqlsoa1v0mt2" path="res://pages/page_adventure/skills/skill_data/Salt.tres" id="453_5h2y2"]
+[ext_resource type="Resource" uid="uid://bn31btacmjppf" path="res://pages/page_adventure/skills/skill_data/Sapphire.tres" id="454_ouacw"]
+[ext_resource type="Resource" uid="uid://gcopbp2ds0b3" path="res://pages/page_adventure/skills/skill_data/Sat-Comm.tres" id="455_twu5y"]
+[ext_resource type="Resource" uid="uid://ddlawqnjb4fq7" path="res://pages/page_adventure/skills/skill_data/Satchel.tres" id="456_5tas3"]
+[ext_resource type="Resource" uid="uid://bddeub6igx6uy" path="res://pages/page_adventure/skills/skill_data/Sauna.tres" id="457_h4ffo"]
+[ext_resource type="Resource" uid="uid://n62dwbb0p7jt" path="res://pages/page_adventure/skills/skill_data/Scales.tres" id="458_fdykh"]
+[ext_resource type="Resource" uid="uid://d22xifxqhxoau" path="res://pages/page_adventure/skills/skill_data/Schematics.tres" id="459_lormo"]
+[ext_resource type="Resource" uid="uid://k3iqsd1msaha" path="res://pages/page_adventure/skills/skill_data/Scrap.tres" id="460_hupun"]
+[ext_resource type="Resource" uid="uid://cjhuf0m7lmvk" path="res://pages/page_adventure/skills/skill_data/Scrap Metal.tres" id="461_0xkp7"]
+[ext_resource type="Resource" uid="uid://m2dhbynspgnu" path="res://pages/page_adventure/skills/skill_data/Scythe.tres" id="462_0qy2u"]
+[ext_resource type="Resource" uid="uid://bd2hfxj1prxdr" path="res://pages/page_adventure/skills/skill_data/Sea Shell.tres" id="463_r7xf5"]
+[ext_resource type="Resource" uid="uid://cncfablhexakn" path="res://pages/page_adventure/skills/skill_data/Seadogs Saloon.tres" id="464_5jksx"]
+[ext_resource type="Resource" uid="uid://efsy6i37neaf" path="res://pages/page_adventure/skills/skill_data/Seashadow.tres" id="465_6o8ku"]
+[ext_resource type="Resource" uid="uid://c8ea0m31vytrc" path="res://pages/page_adventure/skills/skill_data/Seaweed.tres" id="466_jnfu5"]
+[ext_resource type="Resource" uid="uid://bghsxxe8pec34" path="res://pages/page_adventure/skills/skill_data/Secret Formula.tres" id="467_fogo0"]
+[ext_resource type="Resource" uid="uid://xsbldsst4smb" path="res://pages/page_adventure/skills/skill_data/Security Camera.tres" id="468_loc1s"]
+[ext_resource type="Resource" uid="uid://dljcxqdyrmliq" path="res://pages/page_adventure/skills/skill_data/Sextant.tres" id="469_satl6"]
+[ext_resource type="Resource" uid="uid://clt04phkviv3e" path="res://pages/page_adventure/skills/skill_data/Shadowed Cloak.tres" id="470_hb14i"]
+[ext_resource type="Resource" uid="uid://c68uw0kcmw542" path="res://pages/page_adventure/skills/skill_data/Shard of Obsidian.tres" id="471_5xs5j"]
+[ext_resource type="Resource" uid="uid://b631qravy0pwu" path="res://pages/page_adventure/skills/skill_data/Sharkclaws.tres" id="472_akdwq"]
+[ext_resource type="Resource" uid="uid://bubitmpngm3lm" path="res://pages/page_adventure/skills/skill_data/Sharkray.tres" id="473_rg2bq"]
+[ext_resource type="Resource" uid="uid://t0wrmik3ql4x" path="res://pages/page_adventure/skills/skill_data/Sharpening Stone.tres" id="474_ye02m"]
+[ext_resource type="Resource" uid="uid://oukamw3m35in" path="res://pages/page_adventure/skills/skill_data/Shipment.tres" id="475_uuvjh"]
+[ext_resource type="Resource" uid="uid://uipubtf1asbp" path="res://pages/page_adventure/skills/skill_data/Shipwreck.tres" id="476_6fkw5"]
+[ext_resource type="Resource" uid="uid://b17e1fc47moi8" path="res://pages/page_adventure/skills/skill_data/Shoe Blade.tres" id="477_1w2uv"]
+[ext_resource type="Resource" uid="uid://cd5483iexyx4x" path="res://pages/page_adventure/skills/skill_data/Shot Glasses.tres" id="478_47847"]
+[ext_resource type="Resource" uid="uid://0hl5m2pstrtm" path="res://pages/page_adventure/skills/skill_data/Shovel.tres" id="479_ddlk2"]
+[ext_resource type="Resource" uid="uid://ccyhqfta3j35l" path="res://pages/page_adventure/skills/skill_data/Show Globe.tres" id="480_hjwiq"]
+[ext_resource type="Resource" uid="uid://rnulojo417bi" path="res://pages/page_adventure/skills/skill_data/Showcase.tres" id="481_ygovo"]
+[ext_resource type="Resource" uid="uid://bmkwnf7bg3uxs" path="res://pages/page_adventure/skills/skill_data/Shrinking Potion.tres" id="482_3hjl3"]
+[ext_resource type="Resource" uid="uid://u7102u1oyyi2" path="res://pages/page_adventure/skills/skill_data/Sifting Pan.tres" id="483_ai8gx"]
+[ext_resource type="Resource" uid="uid://cs20clxo23crp" path="res://pages/page_adventure/skills/skill_data/Signet Ring.tres" id="484_22wsc"]
+[ext_resource type="Resource" uid="uid://bi2251hj567l5" path="res://pages/page_adventure/skills/skill_data/Silencer.tres" id="485_fh0jn"]
+[ext_resource type="Resource" uid="uid://bbi7gxfbl7o6w" path="res://pages/page_adventure/skills/skill_data/Silk Scarf.tres" id="486_efcek"]
+[ext_resource type="Resource" uid="uid://bhi3nx7xyvddc" path="res://pages/page_adventure/skills/skill_data/Singularity.tres" id="487_aptkw"]
+[ext_resource type="Resource" uid="uid://cd51wxngb221i" path="res://pages/page_adventure/skills/skill_data/Sirens.tres" id="488_btvtn"]
+[ext_resource type="Resource" uid="uid://cfnfglmtnlayy" path="res://pages/page_adventure/skills/skill_data/Skillet.tres" id="489_k2ail"]
+[ext_resource type="Resource" uid="uid://ci3cu7dkv5rmg" path="res://pages/page_adventure/skills/skill_data/Skyscraper.tres" id="490_tnmm6"]
+[ext_resource type="Resource" uid="uid://cyuimbh41vqw2" path="res://pages/page_adventure/skills/skill_data/Sleeping Potion.tres" id="491_jfgkg"]
+[ext_resource type="Resource" uid="uid://cvekwyon1rfdb" path="res://pages/page_adventure/skills/skill_data/Slingshot.tres" id="492_6hirm"]
+[ext_resource type="Resource" uid="uid://bb1qrjn23qo63" path="res://pages/page_adventure/skills/skill_data/Slumbering Primordial.tres" id="493_p1sgs"]
+[ext_resource type="Resource" uid="uid://kyir6susfjih" path="res://pages/page_adventure/skills/skill_data/Smelling Salts.tres" id="494_7cso5"]
+[ext_resource type="Resource" uid="uid://b700vvpvmwd2o" path="res://pages/page_adventure/skills/skill_data/Sniper Rifle.tres" id="495_qk063"]
+[ext_resource type="Resource" uid="uid://bo0f4rpvui5mt" path="res://pages/page_adventure/skills/skill_data/Snow Globe.tres" id="496_c17mx"]
+[ext_resource type="Resource" uid="uid://gru2knrb4rov" path="res://pages/page_adventure/skills/skill_data/Snowflake.tres" id="497_bjysw"]
+[ext_resource type="Resource" uid="uid://bp1g6bnp7voo8" path="res://pages/page_adventure/skills/skill_data/Snowmobile.tres" id="498_nhi62"]
+[ext_resource type="Resource" uid="uid://dxeny4uafxon4" path="res://pages/page_adventure/skills/skill_data/Solar Farm.tres" id="499_o2scu"]
+[ext_resource type="Resource" uid="uid://ds60lus0kc5hn" path="res://pages/page_adventure/skills/skill_data/Soldering Gun.tres" id="500_kan7i"]
+[ext_resource type="Resource" uid="uid://c0src3lujd3uu" path="res://pages/page_adventure/skills/skill_data/Soul Ring.tres" id="501_47t1l"]
+[ext_resource type="Resource" uid="uid://psnh5atln0c1" path="res://pages/page_adventure/skills/skill_data/Soul of the District.tres" id="502_2x6fx"]
+[ext_resource type="Resource" uid="uid://7kgvxql1h48g" path="res://pages/page_adventure/skills/skill_data/Spacescraper.tres" id="503_k26ac"]
+[ext_resource type="Resource" uid="uid://bs80s6erhva4q" path="res://pages/page_adventure/skills/skill_data/Spare Change.tres" id="504_mqjdu"]
+[ext_resource type="Resource" uid="uid://bnbscccl6qp65" path="res://pages/page_adventure/skills/skill_data/Speedrunner.tres" id="505_dm6r8"]
+[ext_resource type="Resource" uid="uid://fqbcau51cqs2" path="res://pages/page_adventure/skills/skill_data/Spices.tres" id="506_6mwwp"]
+[ext_resource type="Resource" uid="uid://dai1gkdwpjvif" path="res://pages/page_adventure/skills/skill_data/Spider Mace.tres" id="507_8g0lu"]
+[ext_resource type="Resource" uid="uid://bcj4vrgawgtvs" path="res://pages/page_adventure/skills/skill_data/Spiked Buckler.tres" id="508_hxll6"]
+[ext_resource type="Resource" uid="uid://bemiip4djiodg" path="res://pages/page_adventure/skills/skill_data/Spiky Shield.tres" id="509_n0qbx"]
+[ext_resource type="Resource" uid="uid://5jfq4sasviqu" path="res://pages/page_adventure/skills/skill_data/Spyglass.tres" id="510_rcudu"]
+[ext_resource type="Resource" uid="uid://dwjm1tjabrdh1" path="res://pages/page_adventure/skills/skill_data/Staff of the Moose.tres" id="511_o2f67"]
+[ext_resource type="Resource" uid="uid://cc5tpg0st3emf" path="res://pages/page_adventure/skills/skill_data/Stained Glass Window.tres" id="512_vm4wv"]
+[ext_resource type="Resource" uid="uid://bxtncelwspbld" path="res://pages/page_adventure/skills/skill_data/Star Chart.tres" id="513_jvqqn"]
+[ext_resource type="Resource" uid="uid://dpaicmwhv1ebq" path="res://pages/page_adventure/skills/skill_data/Steam Ladle.tres" id="514_tf8r1"]
+[ext_resource type="Resource" uid="uid://b87x47qvw4cou" path="res://pages/page_adventure/skills/skill_data/Stinger.tres" id="515_elh64"]
+[ext_resource type="Resource" uid="uid://bpfhtdle5738q" path="res://pages/page_adventure/skills/skill_data/Stopwatch.tres" id="516_rs7ov"]
+[ext_resource type="Resource" uid="uid://y3axc2gxd6cg" path="res://pages/page_adventure/skills/skill_data/Strength Potion.tres" id="517_kc34x"]
+[ext_resource type="Resource" uid="uid://dowvy3ftd7a72" path="res://pages/page_adventure/skills/skill_data/Submarine.tres" id="518_5ehto"]
+[ext_resource type="Resource" uid="uid://0yrnclr5peec" path="res://pages/page_adventure/skills/skill_data/Submersible.tres" id="519_mkdgt"]
+[ext_resource type="Resource" uid="uid://bnda621mjhkuk" path="res://pages/page_adventure/skills/skill_data/Subscraper.tres" id="520_34p37"]
+[ext_resource type="Resource" uid="uid://cd3x00cj8vxgk" path="res://pages/page_adventure/skills/skill_data/Succulents.tres" id="521_kuu65"]
+[ext_resource type="Resource" uid="uid://b0h4wks1dmt0q" path="res://pages/page_adventure/skills/skill_data/Sulphur.tres" id="522_yt10o"]
+[ext_resource type="Resource" uid="uid://bptrhkaku8cer" path="res://pages/page_adventure/skills/skill_data/Sunderer.tres" id="523_6dwnt"]
+[ext_resource type="Resource" uid="uid://eqiw3qi5xo7c" path="res://pages/page_adventure/skills/skill_data/Sunlight Spear.tres" id="524_qayon"]
+[ext_resource type="Resource" uid="uid://qwr7jl2s1u8s" path="res://pages/page_adventure/skills/skill_data/Super Syrup.tres" id="525_aqvvu"]
+[ext_resource type="Resource" uid="uid://bljhj1i8atxi" path="res://pages/page_adventure/skills/skill_data/Swash Buckle.tres" id="526_v7n3s"]
+[ext_resource type="Resource" uid="uid://bjq37ro505usn" path="res://pages/page_adventure/skills/skill_data/Switchblade.tres" id="527_27hvb"]
+[ext_resource type="Resource" uid="uid://dvsy7vl0j1lwa" path="res://pages/page_adventure/skills/skill_data/Sword Cane.tres" id="528_djmkr"]
+[ext_resource type="Resource" uid="uid://cr81qpo4sj0cs" path="res://pages/page_adventure/skills/skill_data/Tazidian Dagger.tres" id="529_x5wq3"]
+[ext_resource type="Resource" uid="uid://cxlukrakht8yo" path="res://pages/page_adventure/skills/skill_data/Tea Set.tres" id="530_vhsvj"]
+[ext_resource type="Resource" uid="uid://nfxu2kdasfj0" path="res://pages/page_adventure/skills/skill_data/Teddy.tres" id="531_gdeby"]
+[ext_resource type="Resource" uid="uid://br6ncy4nw17a8" path="res://pages/page_adventure/skills/skill_data/Temporary Shelter.tres" id="532_7q10j"]
+[ext_resource type="Resource" uid="uid://jtu1a1avosb5" path="res://pages/page_adventure/skills/skill_data/Tesla Coil.tres" id="533_2x5r6"]
+[ext_resource type="Resource" uid="uid://cfv6ujbj67ju2" path="res://pages/page_adventure/skills/skill_data/Test Subject Alpha.tres" id="534_da2x4"]
+[ext_resource type="Resource" uid="uid://c0ecfqc15sssq" path="res://pages/page_adventure/skills/skill_data/Textiles.tres" id="535_e8x58"]
+[ext_resource type="Resource" uid="uid://bujyufrc84av4" path="res://pages/page_adventure/skills/skill_data/The Boulder.tres" id="536_ipt32"]
+[ext_resource type="Resource" uid="uid://c33ok20dqvwcp" path="res://pages/page_adventure/skills/skill_data/The Core.tres" id="537_omknv"]
+[ext_resource type="Resource" uid="uid://bco113jwmtun4" path="res://pages/page_adventure/skills/skill_data/The Eclipse.tres" id="538_ukj1o"]
+[ext_resource type="Resource" uid="uid://bbxm2gk6rsttg" path="res://pages/page_adventure/skills/skill_data/The Tome of Yyahan.tres" id="539_u6cpf"]
+[ext_resource type="Resource" uid="uid://dbchijvnyvb5w" path="res://pages/page_adventure/skills/skill_data/Thermal Lance.tres" id="540_ljp70"]
+[ext_resource type="Resource" uid="uid://b6oaeac36pqt0" path="res://pages/page_adventure/skills/skill_data/Thieves Guild Medallion.tres" id="541_8gsi6"]
+[ext_resource type="Resource" uid="uid://be354jwbcho0o" path="res://pages/page_adventure/skills/skill_data/Throwing Knives.tres" id="542_u3ixw"]
+[ext_resource type="Resource" uid="uid://cix63ambjj10w" path="res://pages/page_adventure/skills/skill_data/Thrown Net.tres" id="543_33e8f"]
+[ext_resource type="Resource" uid="uid://d2p8ypq8gwf3k" path="res://pages/page_adventure/skills/skill_data/Thrusters.tres" id="544_e4ey6"]
+[ext_resource type="Resource" uid="uid://b32bkltq3mbd4" path="res://pages/page_adventure/skills/skill_data/Thurible.tres" id="545_445uy"]
+[ext_resource type="Resource" uid="uid://chiqjii7ssf1k" path="res://pages/page_adventure/skills/skill_data/Tiny Cutlass.tres" id="546_ik6q4"]
+[ext_resource type="Resource" uid="uid://0qqr8byhnkr1" path="res://pages/page_adventure/skills/skill_data/Tommoo Gun.tres" id="547_dac05"]
+[ext_resource type="Resource" uid="uid://cn4bi51xf03g6" path="res://pages/page_adventure/skills/skill_data/Toolbox.tres" id="548_0sjev"]
+[ext_resource type="Resource" uid="uid://bnn7h3w37d4pm" path="res://pages/page_adventure/skills/skill_data/Torpedo.tres" id="549_0gt11"]
+[ext_resource type="Resource" uid="uid://v5fyedbty1hx" path="res://pages/page_adventure/skills/skill_data/Tortuga.tres" id="550_cvtxi"]
+[ext_resource type="Resource" uid="uid://d4j38tqy54iyb" path="res://pages/page_adventure/skills/skill_data/Tourist Chariot.tres" id="551_l25p1"]
+[ext_resource type="Resource" uid="uid://b5vibj3mg4uu0" path="res://pages/page_adventure/skills/skill_data/Trained Spider.tres" id="552_arbad"]
+[ext_resource type="Resource" uid="uid://bv0dxtcv6jf4d" path="res://pages/page_adventure/skills/skill_data/Trebuchet.tres" id="553_yihoo"]
+[ext_resource type="Resource" uid="uid://cq0strjsktrdt" path="res://pages/page_adventure/skills/skill_data/Tripwire.tres" id="554_3vqb2"]
+[ext_resource type="Resource" uid="uid://d4ejih02k5k70" path="res://pages/page_adventure/skills/skill_data/Tropical Island.tres" id="555_cem4j"]
+[ext_resource type="Resource" uid="uid://rkkh1uxpvmlb" path="res://pages/page_adventure/skills/skill_data/Truffles.tres" id="556_tb1q1"]
+[ext_resource type="Resource" uid="uid://b02s101t5c8s6" path="res://pages/page_adventure/skills/skill_data/Turtle Shell.tres" id="557_66a8b"]
+[ext_resource type="Resource" uid="uid://dw7quqwovlqyw" path="res://pages/page_adventure/skills/skill_data/Tusked Helm.tres" id="558_0a3m8"]
+[ext_resource type="Resource" uid="uid://bm7ulo2l4afvt" path="res://pages/page_adventure/skills/skill_data/Upgrade Hammer.tres" id="559_mqx7t"]
+[ext_resource type="Resource" uid="uid://c205ckh5vg5mc" path="res://pages/page_adventure/skills/skill_data/Uwashiwali Bird.tres" id="560_g5t7d"]
+[ext_resource type="Resource" uid="uid://cu177ugyyc1hx" path="res://pages/page_adventure/skills/skill_data/Uzi.tres" id="561_56iq3"]
+[ext_resource type="Resource" uid="uid://bryknp02tvoac" path="res://pages/page_adventure/skills/skill_data/VIP Pass.tres" id="562_xmuuv"]
+[ext_resource type="Resource" uid="uid://1ehxq12u0aqw" path="res://pages/page_adventure/skills/skill_data/Vanessa's Amulet.tres" id="563_uuklf"]
+[ext_resource type="Resource" uid="uid://dd2cag5s8ighg" path="res://pages/page_adventure/skills/skill_data/Vat of Acid.tres" id="564_044u7"]
+[ext_resource type="Resource" uid="uid://ccl7k41gutmrn" path="res://pages/page_adventure/skills/skill_data/Vending Machine.tres" id="565_73jp5"]
+[ext_resource type="Resource" uid="uid://c14jn4e0cya1i" path="res://pages/page_adventure/skills/skill_data/Venom.tres" id="566_hu40y"]
+[ext_resource type="Resource" uid="uid://dau70t5wcq1ra" path="res://pages/page_adventure/skills/skill_data/Venomander.tres" id="567_tg1dl"]
+[ext_resource type="Resource" uid="uid://bjwd2wgj6xpl6" path="res://pages/page_adventure/skills/skill_data/Venomous Dose.tres" id="568_2jg2e"]
+[ext_resource type="Resource" uid="uid://5t05mpmou340" path="res://pages/page_adventure/skills/skill_data/Vial Launcher.tres" id="569_aynhr"]
+[ext_resource type="Resource" uid="uid://dgoufg5hyaptn" path="res://pages/page_adventure/skills/skill_data/Vial of Blood.tres" id="570_84jfn"]
+[ext_resource type="Resource" uid="uid://m4h1apsr6oi7" path="res://pages/page_adventure/skills/skill_data/Vineyard.tres" id="571_h7f82"]
+[ext_resource type="Resource" uid="uid://bdko2tck3xucj" path="res://pages/page_adventure/skills/skill_data/Viper Cane.tres" id="572_pp5n4"]
+[ext_resource type="Resource" uid="uid://bedu52juj30q4" path="res://pages/page_adventure/skills/skill_data/Virus.tres" id="573_teysj"]
+[ext_resource type="Resource" uid="uid://brffrach6v4ed" path="res://pages/page_adventure/skills/skill_data/Vitality Potion.tres" id="574_jd638"]
+[ext_resource type="Resource" uid="uid://bymauuk2coims" path="res://pages/page_adventure/skills/skill_data/Void Ray.tres" id="575_o03cj"]
+[ext_resource type="Resource" uid="uid://blyr1u8rr4lse" path="res://pages/page_adventure/skills/skill_data/Void Shield.tres" id="576_eplfq"]
+[ext_resource type="Resource" uid="uid://o8ptneut02hm" path="res://pages/page_adventure/skills/skill_data/Volcanic Vents.tres" id="577_xcfn4"]
+[ext_resource type="Resource" uid="uid://dsyduibgcrajy" path="res://pages/page_adventure/skills/skill_data/Wallace.tres" id="578_uwy5m"]
+[ext_resource type="Resource" uid="uid://c68jgro1id6nj" path="res://pages/page_adventure/skills/skill_data/Walter Cooler.tres" id="579_awvij"]
+[ext_resource type="Resource" uid="uid://p28w02bd483y" path="res://pages/page_adventure/skills/skill_data/Wand.tres" id="580_nosop"]
+[ext_resource type="Resource" uid="uid://fkeggupylb18" path="res://pages/page_adventure/skills/skill_data/Wanted Poster.tres" id="581_asekh"]
+[ext_resource type="Resource" uid="uid://cnas2uwd2afoy" path="res://pages/page_adventure/skills/skill_data/Water Wheel.tres" id="582_lyihq"]
+[ext_resource type="Resource" uid="uid://b6cbsiafvvxtd" path="res://pages/page_adventure/skills/skill_data/Weakpoint Detector.tres" id="583_0pyio"]
+[ext_resource type="Resource" uid="uid://bqrlird0k4h3e" path="res://pages/page_adventure/skills/skill_data/Weaponized Core.tres" id="584_v32y7"]
+[ext_resource type="Resource" uid="uid://co16mff6flsg0" path="res://pages/page_adventure/skills/skill_data/Weaselpede.tres" id="585_swre0"]
+[ext_resource type="Resource" uid="uid://bgfep0u7bypem" path="res://pages/page_adventure/skills/skill_data/Weather Glass.tres" id="586_qyrl8"]
+[ext_resource type="Resource" uid="uid://bx5kuj365t4w7" path="res://pages/page_adventure/skills/skill_data/Weather Machine.tres" id="587_k10fp"]
+[ext_resource type="Resource" uid="uid://tlkkj84xa84r" path="res://pages/page_adventure/skills/skill_data/Weights.tres" id="588_3sqhi"]
+[ext_resource type="Resource" uid="uid://bm8jub6hbdmva" path="res://pages/page_adventure/skills/skill_data/Welding Helmet.tres" id="589_ymipq"]
+[ext_resource type="Resource" uid="uid://d1c6m7i7hw6fn" path="res://pages/page_adventure/skills/skill_data/Welding Torch.tres" id="590_16bhf"]
+[ext_resource type="Resource" uid="uid://byyu6tjaer3ew" path="res://pages/page_adventure/skills/skill_data/Wild Quillback.tres" id="591_rhn5l"]
+[ext_resource type="Resource" uid="uid://cj5xc26g8yvsh" path="res://pages/page_adventure/skills/skill_data/Windmill.tres" id="592_hv2in"]
+[ext_resource type="Resource" uid="uid://7086a4yo223u" path="res://pages/page_adventure/skills/skill_data/Wrench.tres" id="593_tm8pt"]
+[ext_resource type="Resource" uid="uid://diaf15q71cj1c" path="res://pages/page_adventure/skills/skill_data/Wrist Warrior.tres" id="594_nhmqm"]
+[ext_resource type="Resource" uid="uid://cjvpewq5rsfbp" path="res://pages/page_adventure/skills/skill_data/YLW-M4NT1S.tres" id="595_lkkyh"]
+[ext_resource type="Resource" uid="uid://dltbwsn75lmq8" path="res://pages/page_adventure/skills/skill_data/Yellow Gumball.tres" id="596_3o8vl"]
+[ext_resource type="Resource" uid="uid://by4vjq12y37rc" path="res://pages/page_adventure/skills/skill_data/Yellow Piggles A.tres" id="597_5bhhd"]
+[ext_resource type="Resource" uid="uid://b7iru2wi66gs8" path="res://pages/page_adventure/skills/skill_data/Yellow Piggles L.tres" id="598_trf4g"]
+[ext_resource type="Resource" uid="uid://c57fulafc1j4" path="res://pages/page_adventure/skills/skill_data/Yellow Piggles R.tres" id="599_3gcwu"]
+[ext_resource type="Resource" uid="uid://csbqiglut3y8j" path="res://pages/page_adventure/skills/skill_data/Yellow Piggles X.tres" id="600_51u71"]
+[ext_resource type="Resource" uid="uid://cn2wh8kfvqja6" path="res://pages/page_adventure/skills/skill_data/Yeti Crab.tres" id="601_ebfw5"]
+[ext_resource type="Resource" uid="uid://bmpgr7hxi6o3w" path="res://pages/page_adventure/skills/skill_data/Yo-Yo.tres" id="602_oso3r"]
+[ext_resource type="Resource" uid="uid://c7i0g1abudd11" path="res://pages/page_adventure/skills/skill_data/Z-Sword.tres" id="603_hhyeu"]
+[ext_resource type="Resource" uid="uid://dnemjptkahvqx" path="res://pages/page_adventure/skills/skill_data/Zhield.tres" id="604_dpxqu"]
+[ext_resource type="Resource" uid="uid://cy2b6psjyiyvc" path="res://pages/page_adventure/skills/skill_data/Zoarcid.tres" id="605_khor7"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_v0yg7")
+data = ExtResource("2_v0yg7")
+skills = Dictionary[String, ExtResource("3_en2yo")]({
+"28 Hour Fitness": ExtResource("4_x5lox"),
+"3D Printer": ExtResource("5_o3iww"),
+"ATM": ExtResource("6_ebk2n"),
+"Abacus": ExtResource("7_558ng"),
+"Adrenal Converter": ExtResource("8_6qpo8"),
+"Agility Boots": ExtResource("9_p0qm1"),
+"Alembic": ExtResource("10_wc7o0"),
+"Alpha Ray": ExtResource("11_45g7i"),
+"Aludel": ExtResource("12_kva4d"),
+"Amber": ExtResource("13_jbrpy"),
+"Ambergris": ExtResource("14_0o2gw"),
+"Anchor": ExtResource("15_iuik1"),
+"Angry Balloon Bot": ExtResource("16_noon4"),
+"Antimatter Chamber": ExtResource("17_ntoia"),
+"Apothecary": ExtResource("18_vue16"),
+"Apropos Chapeau": ExtResource("19_omg7g"),
+"Arbalest": ExtResource("20_s7pyx"),
+"Arc Blaster": ExtResource("21_qqidw"),
+"Arkens Ring": ExtResource("22_ffg14"),
+"Armored Core": ExtResource("23_ljntb"),
+"Astrolabe": ExtResource("24_a3ps1"),
+"Athanor": ExtResource("25_dtm7x"),
+"Atlas Stone": ExtResource("26_crxef"),
+"Atlatl": ExtResource("27_live0"),
+"Atomic Clock": ExtResource("28_nqxny"),
+"Aurora Dome": ExtResource("29_prty6"),
+"BLK-SP1D3R": ExtResource("30_5nokn"),
+"BLU-B33TL3": ExtResource("31_x7ljx"),
+"Badblocker": ExtResource("32_fo5en"),
+"Bag of Jewels": ExtResource("33_83eo1"),
+"Balcony": ExtResource("34_btcyi"),
+"Ballista": ExtResource("35_erepu"),
+"Balloon Bot": ExtResource("36_ai3yu"),
+"Bandages": ExtResource("37_tqo8y"),
+"Bar of Gold": ExtResource("38_gmkws"),
+"Barbed Claws": ExtResource("39_dhpby"),
+"Barbed Wire": ExtResource("40_f1dy4"),
+"Barrel": ExtResource("41_cjtq1"),
+"Basilisk Fang": ExtResource("42_5f5it"),
+"Battery": ExtResource("43_8eefd"),
+"Bayonet": ExtResource("44_kh6dw"),
+"Beach Ball": ExtResource("45_vs8ue"),
+"Beast of Burden": ExtResource("46_kh1t0"),
+"Beehive": ExtResource("47_42dkv"),
+"Bellelista": ExtResource("48_w7gyo"),
+"Belt": ExtResource("49_k7iyc"),
+"Beta Ray": ExtResource("50_g750r"),
+"Bill Dozer": ExtResource("51_ykis7"),
+"Billboard": ExtResource("52_v6t13"),
+"Black Ice": ExtResource("53_akwdy"),
+"Black Pepper": ExtResource("54_2qvuj"),
+"Black Rose": ExtResource("55_bw781"),
+"Blast Doors": ExtResource("56_mqrcp"),
+"Blow Torch": ExtResource("57_053w4"),
+"Blowgun": ExtResource("58_lrk3k"),
+"Blue Gumball": ExtResource("59_an4j2"),
+"Blue Piggles A": ExtResource("60_wvtkd"),
+"Blue Piggles L": ExtResource("61_gjkqq"),
+"Blue Piggles R": ExtResource("62_juw84"),
+"Blue Piggles X": ExtResource("63_4vlep"),
+"Bluenanas": ExtResource("64_a5q7g"),
+"Blunderbuss": ExtResource("65_7gd03"),
+"Boiling Flask": ExtResource("66_vcut8"),
+"Bolas": ExtResource("67_q55l0"),
+"Bomb Squad": ExtResource("68_q4x41"),
+"Booby Trap": ExtResource("69_2vxq3"),
+"Boomerang": ExtResource("70_insh8"),
+"Bootstraps": ExtResource("71_wunjs"),
+"Bottled Explosion": ExtResource("72_1m3vg"),
+"Bottled Lightning": ExtResource("73_g1lw0"),
+"Bottled Tornado": ExtResource("74_ud875"),
+"Brass Knuckles": ExtResource("75_lg3c6"),
+"Brick Buddy": ExtResource("76_4ywyp"),
+"Briefcase": ExtResource("77_hgfxq"),
+"Broken Shackles": ExtResource("78_38coo"),
+"Bunker": ExtResource("79_dfnb5"),
+"Bushel": ExtResource("80_pbafm"),
+"Business Card": ExtResource("81_n0ack"),
+"Busy Bee": ExtResource("82_snai3"),
+"Butter": ExtResource("83_3slgd"),
+"Butterfly Swords": ExtResource("84_8wbxr"),
+"Calcinator": ExtResource("85_o07j8"),
+"Calico": ExtResource("86_u1js3"),
+"Caltrops": ExtResource("87_15vod"),
+"Candles": ExtResource("88_vvrri"),
+"Candy Mail": ExtResource("89_236vy"),
+"Cannon": ExtResource("90_653o4"),
+"Cannonade": ExtResource("91_umeg1"),
+"Cannonball": ExtResource("92_7u46o"),
+"Capacitor": ExtResource("93_ta3s1"),
+"Captains Quarters": ExtResource("94_e0qyd"),
+"Captains Wheel": ExtResource("95_6chhc"),
+"Card Table": ExtResource("96_vbj0e"),
+"Cargo Shorts": ExtResource("97_mmgb3"),
+"Cash Cannon": ExtResource("98_prti2"),
+"Cash Register": ExtResource("99_6t6r5"),
+"Catalyst": ExtResource("100_ugmox"),
+"Catfish": ExtResource("101_tqm66"),
+"Cauldron": ExtResource("102_13jum"),
+"Cellar": ExtResource("103_tixv7"),
+"Char Cole": ExtResource("104_k7dr1"),
+"Charging Station": ExtResource("105_8wmsn"),
+"Chemsnail": ExtResource("106_m8am2"),
+"Chocolate Bar": ExtResource("107_gr5ri"),
+"Chris Army Knife": ExtResource("108_icau8"),
+"Chronobarrier": ExtResource("109_r3vm3"),
+"Chum": ExtResource("110_51wam"),
+"Chunk of Gold": ExtResource("111_0t28l"),
+"Chunk of Lead": ExtResource("112_gnpjj"),
+"Cinders": ExtResource("113_pjf6h"),
+"Citrus": ExtResource("114_8oha4"),
+"Clamera": ExtResource("115_87pw6"),
+"Claw Arm": ExtResource("116_wb7ir"),
+"Clawrence": ExtResource("117_p8xyq"),
+"Claws": ExtResource("118_4ugfj"),
+"Clockwork Blades": ExtResource("119_mg7w7"),
+"Closed Sign": ExtResource("120_8i7qd"),
+"Coconut": ExtResource("121_mx0wi"),
+"Cog": ExtResource("122_jdmlo"),
+"Coincure": ExtResource("123_cwur4"),
+"Cold Room": ExtResource("124_qyvgc"),
+"Colossal Popsicle": ExtResource("125_pkf5d"),
+"Combat Core": ExtResource("126_xqrcl"),
+"Companion Core": ExtResource("127_tvvb1"),
+"Concealed Dagger": ExtResource("128_lqqsx"),
+"Cool LEDs": ExtResource("129_vb0sa"),
+"Coolant": ExtResource("130_xlhww"),
+"Cooling Fan": ExtResource("131_2gkeo"),
+"Copper Ed": ExtResource("132_el7mp"),
+"Coral": ExtResource("133_cuh1k"),
+"Coral Armor": ExtResource("134_rikp6"),
+"Cosmic Amulet": ExtResource("135_aw60q"),
+"Cosmic Plumage": ExtResource("136_y2lfq"),
+"Cove": ExtResource("137_y4f7o"),
+"Covetous Raven": ExtResource("138_t5w0m"),
+"Crane": ExtResource("139_blqo2"),
+"Critical Core": ExtResource("140_xx0ei"),
+"Crocodile Tears": ExtResource("141_d5oqt"),
+"Crook": ExtResource("142_333xf"),
+"Crows Nest": ExtResource("143_b4ypn"),
+"Crusher Claw": ExtResource("144_7nsq7"),
+"Cryosleeve": ExtResource("145_y3lq8"),
+"Cryosphere": ExtResource("146_ou6c0"),
+"Crypto": ExtResource("147_r7hw8"),
+"Crystal Bonsai": ExtResource("148_tuc5n"),
+"Curry": ExtResource("149_7vlpp"),
+"Custom Scope": ExtResource("150_qf4eo"),
+"Cutlass": ExtResource("151_m0f88"),
+"Cybersecurity": ExtResource("152_eeacn"),
+"DJ Rob0t": ExtResource("153_kynye"),
+"Dam": ExtResource("154_swcyi"),
+"Darkwater Anglerfish": ExtResource("155_7pa2p"),
+"Death Caps": ExtResource("156_px5gc"),
+"Defense Matrix": ExtResource("157_tf5qe"),
+"Diana-Saur": ExtResource("158_2jr0t"),
+"Disguise": ExtResource("159_s3tn2"),
+"Dishwasher": ExtResource("160_q2hb1"),
+"Dive Weights": ExtResource("161_3i13e"),
+"Diving Helmet": ExtResource("162_cvw7o"),
+"Dock Lines": ExtResource("163_4oh3f"),
+"Dog": ExtResource("164_cg2fx"),
+"Dooleys Scarf": ExtResource("165_o53um"),
+"Dooltron": ExtResource("166_8neqw"),
+"Dooltron Mainframe": ExtResource("167_wl1b4"),
+"Double Barrel": ExtResource("168_pemw4"),
+"Double Whammy": ExtResource("169_eiih8"),
+"Dragon Heart": ExtResource("170_yy6ya"),
+"Dragon Tooth": ExtResource("171_i0wet"),
+"Dragon Whelp": ExtResource("172_g6dpp"),
+"Dragon Wing": ExtResource("173_dcjye"),
+"Dragons Breath": ExtResource("174_o5qpo"),
+"Duct Tape": ExtResource("175_5g2r7"),
+"Eagle Talisman": ExtResource("176_g3aqu"),
+"Earrings": ExtResource("177_t5l8x"),
+"Ectoplasm": ExtResource("178_lop0h"),
+"Electric Eels": ExtResource("179_c7ll6"),
+"Elemental Depth Charge": ExtResource("180_4lvho"),
+"Emerald": ExtResource("181_pigli"),
+"Energy Potion": ExtResource("182_5hjy4"),
+"Epicurean Chocolate": ExtResource("183_6qed3"),
+"Exoskeleton": ExtResource("184_27iqd"),
+"Extract": ExtResource("185_ki5qn"),
+"Eye of the Colossus": ExtResource("186_wdvrn"),
+"Fang": ExtResource("187_ubw4c"),
+"Feather": ExtResource("188_bx0sn"),
+"Fiber Optics": ExtResource("189_6m4v0"),
+"Figurehead": ExtResource("190_tm6xo"),
+"Fire Claw": ExtResource("191_kimf6"),
+"Fire Potion": ExtResource("192_76r3s"),
+"Fireflies": ExtResource("193_hhnds"),
+"First Aiden": ExtResource("194_nq7q6"),
+"Fishing Net": ExtResource("195_65sq5"),
+"Fishing Rod": ExtResource("196_6rfx0"),
+"Fixer Upper": ExtResource("197_jroms"),
+"Flagship": ExtResource("198_quban"),
+"Flail": ExtResource("199_fak61"),
+"Flamberge": ExtResource("200_ya0am"),
+"Flamethrower": ExtResource("201_av4lg"),
+"Flashbang": ExtResource("202_1rbcd"),
+"Floor Spike": ExtResource("203_04int"),
+"Force Field": ExtResource("204_x3107"),
+"Forklift": ExtResource("205_ybt0g"),
+"Fort": ExtResource("206_650hi"),
+"Frost Potion": ExtResource("207_wd54g"),
+"Frozen Bludgeon": ExtResource("208_35c6g"),
+"Frozen Flame": ExtResource("209_py0v8"),
+"Fungal Spores": ExtResource("210_adys4"),
+"GPU": ExtResource("211_tf8ih"),
+"GRN-W4SP": ExtResource("212_t83ay"),
+"Gamma Ray": ExtResource("213_qwcya"),
+"Ganjo": ExtResource("214_qqhep"),
+"Gatling Gun": ExtResource("215_6qtar"),
+"Gavel": ExtResource("216_7hvlc"),
+"Gearnola Bar": ExtResource("217_yj3g1"),
+"Genie Lamp": ExtResource("218_5s4t2"),
+"Giant Ice Club": ExtResource("219_vpc2p"),
+"Gland": ExtResource("220_o38g8"),
+"Globe": ExtResource("221_1lu6q"),
+"Goggles": ExtResource("222_h40lt"),
+"Golf Clubs": ExtResource("223_0kf8k"),
+"Goop Flail": ExtResource("224_ef4i0"),
+"Grapeshot": ExtResource("225_vo8yt"),
+"Grappling Hook": ExtResource("226_h0kbq"),
+"Green Gumball": ExtResource("227_h0iyu"),
+"Grenade": ExtResource("228_oemts"),
+"Grindstone": ExtResource("229_mjaxa"),
+"Gumball Machine": ExtResource("230_2xsl4"),
+"Gunpowder": ExtResource("231_moyj4"),
+"Hacksaw": ExtResource("232_ocdew"),
+"Hakurvian Launcher": ExtResource("233_luap6"),
+"Haladie": ExtResource("234_6aaci"),
+"Hammer": ExtResource("235_mchgn"),
+"Hammlet": ExtResource("236_5dth4"),
+"Hammock": ExtResource("237_b6lew"),
+"Handaxe": ExtResource("238_1lcnx"),
+"Harmadillo": ExtResource("239_igh3s"),
+"Harpoon": ExtResource("240_pxmne"),
+"Hatchet": ExtResource("241_foylm"),
+"Hemlock": ExtResource("242_hubev"),
+"Hogwash": ExtResource("243_4vtir"),
+"Hologram Projector": ExtResource("244_2shfl"),
+"Holsters": ExtResource("245_6lugx"),
+"Honing Steel": ExtResource("246_pfamo"),
+"Hot Sauce": ExtResource("247_u2n8a"),
+"Hot Springs": ExtResource("248_eudvq"),
+"Hot Stones": ExtResource("249_ne8i4"),
+"Hourglass": ExtResource("250_d8in0"),
+"Hydraulic Squeezer": ExtResource("251_qhiny"),
+"Hypergreens": ExtResource("252_ancga"),
+"Ice 9000": ExtResource("253_bbntn"),
+"Ice Claw": ExtResource("254_4ijs4"),
+"Ice Cream Truck": ExtResource("255_r1nvw"),
+"Ice Cubes": ExtResource("256_xaq47"),
+"Ice Luge": ExtResource("257_dt7c6"),
+"Ice Pick": ExtResource("258_0bt8p"),
+"Iceberg": ExtResource("259_n85vf"),
+"Icebreaker": ExtResource("260_ypnoe"),
+"Icicle": ExtResource("261_8urkf"),
+"Igloo": ExtResource("262_hpbjm"),
+"Ignition Core": ExtResource("263_dy8js"),
+"IllusoRay": ExtResource("264_0pmtk"),
+"Improvised Bludgeon": ExtResource("265_3ps2l"),
+"Incendiary Rounds": ExtResource("266_nlyd5"),
+"Incense": ExtResource("267_3dnci"),
+"Induction Aegis": ExtResource("268_kltiw"),
+"Infernal Greatsword": ExtResource("269_6rgaa"),
+"Infinite Potion": ExtResource("270_igwfu"),
+"Infused Bracers": ExtResource("271_vjc70"),
+"Insect Wing": ExtResource("272_3demi"),
+"Invulnerability Potion": ExtResource("273_erpwi"),
+"Isochoric Freezer": ExtResource("274_67fd6"),
+"Jabalian Drum": ExtResource("275_phuw0"),
+"Jaballian Longbow": ExtResource("276_tl7q1"),
+"Javelin": ExtResource("277_8ovrv"),
+"Jellyfish": ExtResource("278_oqeuf"),
+"Jewelry": ExtResource("279_ieqia"),
+"Jitte": ExtResource("280_xv01q"),
+"Junkyard Catapult": ExtResource("281_gbg8n"),
+"Junkyard Club": ExtResource("282_c1t68"),
+"Junkyard Lance": ExtResource("283_k86hu"),
+"Junkyard Repairbot": ExtResource("284_qfsob"),
+"Katana": ExtResource("285_vhd41"),
+"Keychain": ExtResource("286_kbist"),
+"Kinetic Cannon": ExtResource("287_anw5r"),
+"Knee Brace": ExtResource("288_bcj1v"),
+"Knife Set": ExtResource("289_0fvs3"),
+"Kukri": ExtResource("290_yjjo5"),
+"Laboratory": ExtResource("291_iuetc"),
+"Landscraper": ExtResource("292_6kl8g"),
+"Langxian": ExtResource("293_lvfqt"),
+"Laser Pistol": ExtResource("294_fpgmr"),
+"Laser Security System": ExtResource("295_uvgvx"),
+"Ledger": ExtResource("296_40qmb"),
+"Leeches": ExtResource("297_7dttr"),
+"Lemonade Stand": ExtResource("298_i3rcm"),
+"Lens": ExtResource("299_b0s4e"),
+"Letter Opener": ExtResource("300_3xgy5"),
+"Library": ExtResource("301_jj6r8"),
+"Life Preserver": ExtResource("302_gvnn1"),
+"Lifting Gloves": ExtResource("303_o3lb1"),
+"Lightbulb": ExtResource("304_qwst6"),
+"Lighter": ExtResource("305_xfaon"),
+"Lighthouse": ExtResource("306_furbh"),
+"Lightning Rod": ExtResource("307_4cutd"),
+"Lion Cane": ExtResource("308_ckugm"),
+"Lockbox": ExtResource("309_6npa5"),
+"Loupe": ExtResource("310_x5d65"),
+"Lumboars": ExtResource("311_24req"),
+"Luxury Kiuas": ExtResource("312_eg5ot"),
+"Luxury Tents": ExtResource("313_qs6ys"),
+"Magic Carpet": ExtResource("314_t4edv"),
+"Magicians Top Hat": ExtResource("315_f26mi"),
+"Magma Core": ExtResource("316_byacp"),
+"Magnifying Glass": ExtResource("317_h3nso"),
+"Magnus Femur": ExtResource("318_8vcso"),
+"Makeshift Barricade": ExtResource("319_v4t6e"),
+"Mantis Shrimp": ExtResource("320_2ynmu"),
+"Marble Scalemail": ExtResource("321_q5ymu"),
+"Marbles": ExtResource("322_fcqvw"),
+"Masterpiece": ExtResource("323_g8c1f"),
+"Matchbox": ExtResource("324_mtsj1"),
+"Mech-Moles": ExtResource("325_ita8x"),
+"Med Kit": ExtResource("326_y1td2"),
+"Memento Mori": ExtResource("327_m2wm8"),
+"Memory Card": ExtResource("328_dr5k7"),
+"Metronome": ExtResource("329_52e7p"),
+"Micro Dave": ExtResource("330_y0ewl"),
+"Mirror": ExtResource("331_gpusc"),
+"Miss Isles": ExtResource("332_5obb2"),
+"Model Ship": ExtResource("333_3lx7t"),
+"Momma-Saur": ExtResource("334_n7et7"),
+"Money Tree": ExtResource("335_csh3u"),
+"Monitor Lizard": ExtResource("336_t74o7"),
+"Monocle": ExtResource("337_6y63n"),
+"Mortal Coil": ExtResource("338_kwl84"),
+"Mortar Pestle": ExtResource("339_vte37"),
+"Motherboard": ExtResource("340_b8kkl"),
+"Mothmeal": ExtResource("341_vq0gn"),
+"Mr. Richardson": ExtResource("342_4nms1"),
+"Multitool": ExtResource("343_fahom"),
+"Musket": ExtResource("344_c3fts"),
+"Myrrh": ExtResource("345_jroph"),
+"Nanobots": ExtResource("346_4ma3c"),
+"Nargile": ExtResource("347_ggqha"),
+"Narwhal": ExtResource("348_kw4nq"),
+"Necronomicon": ExtResource("349_jece2"),
+"Nesting Doll": ExtResource("350_1s1k6"),
+"Neural Toxin": ExtResource("351_5qwlv"),
+"Nightshade": ExtResource("352_60iq5"),
+"Nitro": ExtResource("353_80yhq"),
+"Nitrogen Hammer": ExtResource("354_au310"),
+"Noxious Potion": ExtResource("355_umhfq"),
+"Octopus": ExtResource("356_op77u"),
+"Oil Lantern": ExtResource("357_kw7v6"),
+"Oinkment": ExtResource("358_ch4u8"),
+"Old Saltclaw": ExtResource("359_vl4oy"),
+"Old Sword": ExtResource("360_2fia0"),
+"Omega Ray": ExtResource("361_3c7x8"),
+"Open Sign": ExtResource("362_siwad"),
+"Optical Augment": ExtResource("363_adlb3"),
+"Orange Julian": ExtResource("364_wryqi"),
+"Orbital Polisher": ExtResource("365_26go7"),
+"Ouroboros Statue": ExtResource("366_rpalc"),
+"Oven Mitts": ExtResource("367_vbcgm"),
+"Palanquin": ExtResource("368_2dbyd"),
+"Pawn Shop": ExtResource("369_rt6hq"),
+"Peacewrought": ExtResource("370_p6csb"),
+"Pearl": ExtResource("371_fg1ac"),
+"Pelt": ExtResource("372_18nxg"),
+"PenFT": ExtResource("373_fhqth"),
+"Pendulum": ExtResource("374_vnkkr"),
+"Pepper Spray": ExtResource("375_wljrw"),
+"Pesky Pete": ExtResource("376_onrg7"),
+"Pet Rock": ExtResource("377_id7jm"),
+"Philosophers Stone": ExtResource("378_f1bcc"),
+"Phonograph": ExtResource("379_j3xfd"),
+"Piano": ExtResource("380_mfbma"),
+"Pickled Peppers": ExtResource("381_sbxih"),
+"Pierre Conditioner": ExtResource("382_5pcsj"),
+"Piggles": ExtResource("383_u2wxb"),
+"Piggy Bank": ExtResource("384_w4kv6"),
+"Pinata": ExtResource("385_7qlf7"),
+"Piranha": ExtResource("386_bnq2m"),
+"Pistol Sword": ExtResource("387_s1jph"),
+"Pitchfork": ExtResource("388_o76tb"),
+"Plague Glaive": ExtResource("389_l1vn4"),
+"Plasma Grenade": ExtResource("390_nsj8r"),
+"Plasma Rifle": ExtResource("391_0qjie"),
+"Pop Snappers": ExtResource("392_dxpoy"),
+"Poppy Field": ExtResource("393_ov0v2"),
+"Port": ExtResource("394_3eb8p"),
+"Potion Distillery": ExtResource("395_88hh0"),
+"Potion Potion": ExtResource("396_jp40y"),
+"Powder Flask": ExtResource("397_t00ri"),
+"Powder Keg": ExtResource("398_0kv0j"),
+"Power Drill": ExtResource("399_7vjm8"),
+"Power Sander": ExtResource("400_o6hkw"),
+"Private Hot Springs": ExtResource("401_wyq4t"),
+"Proboscis": ExtResource("402_qfdtl"),
+"Propane Tank": ExtResource("403_w1ywy"),
+"Pufferfish": ExtResource("404_tgc2a"),
+"Pulse Rifle": ExtResource("405_me73r"),
+"Pygmaliens Dagger": ExtResource("406_nktl1"),
+"Pygs Gym": ExtResource("407_3tgai"),
+"Pylon": ExtResource("408_m1q7u"),
+"Pyrocarbon": ExtResource("409_epwxx"),
+"Quicksilver": ExtResource("410_i2qfh"),
+"Quill and Ink": ExtResource("411_h4cwg"),
+"RED-F1R3FLY": ExtResource("412_5s7q1"),
+"Race Carl": ExtResource("413_8y5hn"),
+"Railgun": ExtResource("414_8x4ve"),
+"Rainbow Potion": ExtResource("415_7210s"),
+"Ramrod": ExtResource("416_wkl30"),
+"Rapid Injection System": ExtResource("417_ppli2"),
+"Recycling Bin": ExtResource("418_qenkr"),
+"Red Button": ExtResource("419_xn27m"),
+"Red Gumball": ExtResource("420_qi35d"),
+"Red Piggles A": ExtResource("421_bshnn"),
+"Red Piggles L": ExtResource("422_gwfvh"),
+"Red Piggles R": ExtResource("423_srgkp"),
+"Red Piggles X": ExtResource("424_8yidx"),
+"Refractor": ExtResource("425_nftpe"),
+"Regal Blade": ExtResource("426_hvhoj"),
+"Regeneration Potion": ExtResource("427_6dmgf"),
+"Remote Control": ExtResource("428_n5wue"),
+"Repeater": ExtResource("429_5c7i1"),
+"Retort": ExtResource("430_jyqii"),
+"Revolver": ExtResource("431_sy307"),
+"Rewards Card": ExtResource("432_jai1t"),
+"Riceballer": ExtResource("433_d4ru0"),
+"Rifle": ExtResource("434_eu42a"),
+"Ring King Gauntlets": ExtResource("435_064ap"),
+"Ritual Dagger": ExtResource("436_ri20m"),
+"Rivet Gun": ExtResource("437_kqf2o"),
+"Robe": ExtResource("438_rbg1y"),
+"Robotic Factory": ExtResource("439_e3ivc"),
+"Rocket Boots": ExtResource("440_ih3tu"),
+"Rocket Launcher": ExtResource("441_2jklt"),
+"Rolling Pin": ExtResource("442_28vjs"),
+"Rowboat": ExtResource("443_eomye"),
+"Ruby": ExtResource("444_lwh1m"),
+"Rune Axe": ExtResource("445_m4wvw"),
+"Runic Blade": ExtResource("446_052be"),
+"Runic Daggers": ExtResource("447_a516p"),
+"Runic Double Bow": ExtResource("448_vo2lx"),
+"Runic Great Axe": ExtResource("449_da8xi"),
+"Runic Potion": ExtResource("450_x00au"),
+"Safe": ExtResource("451_jwu8u"),
+"Salamander Pup": ExtResource("452_tjgpu"),
+"Salt": ExtResource("453_5h2y2"),
+"Sapphire": ExtResource("454_ouacw"),
+"Sat-Comm": ExtResource("455_twu5y"),
+"Satchel": ExtResource("456_5tas3"),
+"Sauna": ExtResource("457_h4ffo"),
+"Scales": ExtResource("458_fdykh"),
+"Schematics": ExtResource("459_lormo"),
+"Scrap": ExtResource("460_hupun"),
+"Scrap Metal": ExtResource("461_0xkp7"),
+"Scythe": ExtResource("462_0qy2u"),
+"Sea Shell": ExtResource("463_r7xf5"),
+"Seadogs Saloon": ExtResource("464_5jksx"),
+"Seashadow": ExtResource("465_6o8ku"),
+"Seaweed": ExtResource("466_jnfu5"),
+"Secret Formula": ExtResource("467_fogo0"),
+"Security Camera": ExtResource("468_loc1s"),
+"Sextant": ExtResource("469_satl6"),
+"Shadowed Cloak": ExtResource("470_hb14i"),
+"Shard of Obsidian": ExtResource("471_5xs5j"),
+"Sharkclaws": ExtResource("472_akdwq"),
+"Sharkray": ExtResource("473_rg2bq"),
+"Sharpening Stone": ExtResource("474_ye02m"),
+"Shipment": ExtResource("475_uuvjh"),
+"Shipwreck": ExtResource("476_6fkw5"),
+"Shoe Blade": ExtResource("477_1w2uv"),
+"Shot Glasses": ExtResource("478_47847"),
+"Shovel": ExtResource("479_ddlk2"),
+"Show Globe": ExtResource("480_hjwiq"),
+"Showcase": ExtResource("481_ygovo"),
+"Shrinking Potion": ExtResource("482_3hjl3"),
+"Sifting Pan": ExtResource("483_ai8gx"),
+"Signet Ring": ExtResource("484_22wsc"),
+"Silencer": ExtResource("485_fh0jn"),
+"Silk Scarf": ExtResource("486_efcek"),
+"Singularity": ExtResource("487_aptkw"),
+"Sirens": ExtResource("488_btvtn"),
+"Skillet": ExtResource("489_k2ail"),
+"Skyscraper": ExtResource("490_tnmm6"),
+"Sleeping Potion": ExtResource("491_jfgkg"),
+"Slingshot": ExtResource("492_6hirm"),
+"Slumbering Primordial": ExtResource("493_p1sgs"),
+"Smelling Salts": ExtResource("494_7cso5"),
+"Sniper Rifle": ExtResource("495_qk063"),
+"Snow Globe": ExtResource("496_c17mx"),
+"Snowflake": ExtResource("497_bjysw"),
+"Snowmobile": ExtResource("498_nhi62"),
+"Solar Farm": ExtResource("499_o2scu"),
+"Soldering Gun": ExtResource("500_kan7i"),
+"Soul Ring": ExtResource("501_47t1l"),
+"Soul of the District": ExtResource("502_2x6fx"),
+"Spacescraper": ExtResource("503_k26ac"),
+"Spare Change": ExtResource("504_mqjdu"),
+"Speedrunner": ExtResource("505_dm6r8"),
+"Spices": ExtResource("506_6mwwp"),
+"Spider Mace": ExtResource("507_8g0lu"),
+"Spiked Buckler": ExtResource("508_hxll6"),
+"Spiky Shield": ExtResource("509_n0qbx"),
+"Spyglass": ExtResource("510_rcudu"),
+"Staff of the Moose": ExtResource("511_o2f67"),
+"Stained Glass Window": ExtResource("512_vm4wv"),
+"Star Chart": ExtResource("513_jvqqn"),
+"Steam Ladle": ExtResource("514_tf8r1"),
+"Stinger": ExtResource("515_elh64"),
+"Stopwatch": ExtResource("516_rs7ov"),
+"Strength Potion": ExtResource("517_kc34x"),
+"Submarine": ExtResource("518_5ehto"),
+"Submersible": ExtResource("519_mkdgt"),
+"Subscraper": ExtResource("520_34p37"),
+"Succulents": ExtResource("521_kuu65"),
+"Sulphur": ExtResource("522_yt10o"),
+"Sunderer": ExtResource("523_6dwnt"),
+"Sunlight Spear": ExtResource("524_qayon"),
+"Super Syrup": ExtResource("525_aqvvu"),
+"Swash Buckle": ExtResource("526_v7n3s"),
+"Switchblade": ExtResource("527_27hvb"),
+"Sword Cane": ExtResource("528_djmkr"),
+"Tazidian Dagger": ExtResource("529_x5wq3"),
+"Tea Set": ExtResource("530_vhsvj"),
+"Teddy": ExtResource("531_gdeby"),
+"Temporary Shelter": ExtResource("532_7q10j"),
+"Tesla Coil": ExtResource("533_2x5r6"),
+"Test Subject Alpha": ExtResource("534_da2x4"),
+"Textiles": ExtResource("535_e8x58"),
+"The Boulder": ExtResource("536_ipt32"),
+"The Core": ExtResource("537_omknv"),
+"The Eclipse": ExtResource("538_ukj1o"),
+"The Tome of Yyahan": ExtResource("539_u6cpf"),
+"Thermal Lance": ExtResource("540_ljp70"),
+"Thieves Guild Medallion": ExtResource("541_8gsi6"),
+"Throwing Knives": ExtResource("542_u3ixw"),
+"Thrown Net": ExtResource("543_33e8f"),
+"Thrusters": ExtResource("544_e4ey6"),
+"Thurible": ExtResource("545_445uy"),
+"Tiny Cutlass": ExtResource("546_ik6q4"),
+"Tommoo Gun": ExtResource("547_dac05"),
+"Toolbox": ExtResource("548_0sjev"),
+"Torpedo": ExtResource("549_0gt11"),
+"Tortuga": ExtResource("550_cvtxi"),
+"Tourist Chariot": ExtResource("551_l25p1"),
+"Trained Spider": ExtResource("552_arbad"),
+"Trebuchet": ExtResource("553_yihoo"),
+"Tripwire": ExtResource("554_3vqb2"),
+"Tropical Island": ExtResource("555_cem4j"),
+"Truffles": ExtResource("556_tb1q1"),
+"Turtle Shell": ExtResource("557_66a8b"),
+"Tusked Helm": ExtResource("558_0a3m8"),
+"Upgrade Hammer": ExtResource("559_mqx7t"),
+"Uwashiwali Bird": ExtResource("560_g5t7d"),
+"Uzi": ExtResource("561_56iq3"),
+"VIP Pass": ExtResource("562_xmuuv"),
+"Vanessa's Amulet": ExtResource("563_uuklf"),
+"Vat of Acid": ExtResource("564_044u7"),
+"Vending Machine": ExtResource("565_73jp5"),
+"Venom": ExtResource("566_hu40y"),
+"Venomander": ExtResource("567_tg1dl"),
+"Venomous Dose": ExtResource("568_2jg2e"),
+"Vial Launcher": ExtResource("569_aynhr"),
+"Vial of Blood": ExtResource("570_84jfn"),
+"Vineyard": ExtResource("571_h7f82"),
+"Viper Cane": ExtResource("572_pp5n4"),
+"Virus": ExtResource("573_teysj"),
+"Vitality Potion": ExtResource("574_jd638"),
+"Void Ray": ExtResource("575_o03cj"),
+"Void Shield": ExtResource("576_eplfq"),
+"Volcanic Vents": ExtResource("577_xcfn4"),
+"Wallace": ExtResource("578_uwy5m"),
+"Walter Cooler": ExtResource("579_awvij"),
+"Wand": ExtResource("580_nosop"),
+"Wanted Poster": ExtResource("581_asekh"),
+"Water Wheel": ExtResource("582_lyihq"),
+"Weakpoint Detector": ExtResource("583_0pyio"),
+"Weaponized Core": ExtResource("584_v32y7"),
+"Weaselpede": ExtResource("585_swre0"),
+"Weather Glass": ExtResource("586_qyrl8"),
+"Weather Machine": ExtResource("587_k10fp"),
+"Weights": ExtResource("588_3sqhi"),
+"Welding Helmet": ExtResource("589_ymipq"),
+"Welding Torch": ExtResource("590_16bhf"),
+"Wild Quillback": ExtResource("591_rhn5l"),
+"Windmill": ExtResource("592_hv2in"),
+"Wrench": ExtResource("593_tm8pt"),
+"Wrist Warrior": ExtResource("594_nhmqm"),
+"YLW-M4NT1S": ExtResource("595_lkkyh"),
+"Yellow Gumball": ExtResource("596_3o8vl"),
+"Yellow Piggles A": ExtResource("597_5bhhd"),
+"Yellow Piggles L": ExtResource("598_trf4g"),
+"Yellow Piggles R": ExtResource("599_3gcwu"),
+"Yellow Piggles X": ExtResource("600_51u71"),
+"Yeti Crab": ExtResource("601_ebfw5"),
+"Yo-Yo": ExtResource("602_oso3r"),
+"Z-Sword": ExtResource("603_hhyeu"),
+"Zhield": ExtResource("604_dpxqu"),
+"Zoarcid": ExtResource("605_khor7")
+})
