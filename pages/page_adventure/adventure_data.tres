@@ -1,0 +1,133 @@
+[gd_resource type="Resource" script_class="AdventureData" load_steps=53 format=3 uid="uid://b7kbibmnhimhg"]
+
+[ext_resource type="Script" uid="uid://chgjm5gksn63c" path="res://pages/page_adventure/adventure_data.gd" id="1_e8y1w"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="1_s2djw"]
+[ext_resource type="Resource" uid="uid://jmpekh3htlub" path="res://pages/page_adventure/skills/skill_data/Bandages.tres" id="35_ot3wo"]
+[ext_resource type="Script" uid="uid://hmol4xn55wyj" path="res://pages/page_adventure/skills/data/item_filter.gd" id="36_jcjwv"]
+[ext_resource type="Resource" uid="uid://ckplghjoxekpd" path="res://pages/page_adventure/skills/skill_data/Blue Piggles A.tres" id="58_sicef"]
+[ext_resource type="Resource" uid="uid://ctrphsg7po5ui" path="res://pages/page_adventure/skills/skill_data/Blue Piggles L.tres" id="59_wecy5"]
+[ext_resource type="Resource" uid="uid://c8tfbjd407ih7" path="res://pages/page_adventure/skills/skill_data/Blue Piggles R.tres" id="60_5yln5"]
+[ext_resource type="Resource" uid="uid://ddpepddbs8jb3" path="res://pages/page_adventure/skills/skill_data/Blue Piggles X.tres" id="61_iov3k"]
+[ext_resource type="Resource" uid="uid://ddbuy6ehqyci2" path="res://pages/page_adventure/skills/skill_data/Brass Knuckles.tres" id="73_cb7a0"]
+[ext_resource type="Resource" uid="uid://dsf3xers44bkl" path="res://pages/page_adventure/skills/skill_data/Haladie.tres" id="232_mpt1l"]
+[ext_resource type="Resource" uid="uid://yt68b4vhsj8w" path="res://pages/page_adventure/skills/skill_data/Hatchet.tres" id="239_vv07j"]
+[ext_resource type="Resource" uid="uid://cxx7l4w20n8oe" path="res://pages/page_adventure/skills/skill_data/Hot Stones.tres" id="247_e67b4"]
+[ext_resource type="Resource" uid="uid://bdprfrjslc6nd" path="res://pages/page_adventure/skills/skill_data/Jewelry.tres" id="277_0sypb"]
+[ext_resource type="Resource" uid="uid://bgvg8xyd14yyb" path="res://pages/page_adventure/skills/skill_data/Kukri.tres" id="288_qiuyp"]
+[ext_resource type="Resource" uid="uid://j0jwoox70s5d" path="res://pages/page_adventure/skills/skill_data/Laser Security System.tres" id="293_enyvq"]
+[ext_resource type="Resource" uid="uid://c1maaoyr84cgk" path="res://pages/page_adventure/skills/skill_data/Marbles.tres" id="320_3vp2w"]
+[ext_resource type="Resource" uid="uid://c1mqnp4uuismp" path="res://pages/page_adventure/skills/skill_data/Matchbox.tres" id="322_fkq7l"]
+[ext_resource type="Resource" uid="uid://2f7opyobnc2u" path="res://pages/page_adventure/skills/skill_data/Pepper Spray.tres" id="373_f12h1"]
+[ext_resource type="Resource" uid="uid://llwxqouu5jvw" path="res://pages/page_adventure/skills/skill_data/Piggles.tres" id="381_n22eq"]
+[ext_resource type="Resource" uid="uid://c6xhvab1l0b1" path="res://pages/page_adventure/skills/skill_data/Piggy Bank.tres" id="382_vl7bv"]
+[ext_resource type="Resource" uid="uid://bmwhl2c5i53oi" path="res://pages/page_adventure/skills/skill_data/Red Piggles A.tres" id="419_j6nh5"]
+[ext_resource type="Resource" uid="uid://chpaw3l47wuua" path="res://pages/page_adventure/skills/skill_data/Red Piggles L.tres" id="420_3881j"]
+[ext_resource type="Resource" uid="uid://3awu8w0nreyi" path="res://pages/page_adventure/skills/skill_data/Red Piggles R.tres" id="421_ngmu7"]
+[ext_resource type="Resource" uid="uid://bx50beepb44ww" path="res://pages/page_adventure/skills/skill_data/Red Piggles X.tres" id="422_4sbki"]
+[ext_resource type="Resource" uid="uid://i8ftwbnnejga" path="res://pages/page_adventure/skills/skill_data/Rewards Card.tres" id="430_iajfm"]
+[ext_resource type="Resource" uid="uid://dxf8n44t2fi3t" path="res://pages/page_adventure/skills/skill_data/Ring King Gauntlets.tres" id="433_ch5qt"]
+[ext_resource type="Resource" uid="uid://cvekwyon1rfdb" path="res://pages/page_adventure/skills/skill_data/Slingshot.tres" id="490_8y4by"]
+[ext_resource type="Resource" uid="uid://dpaicmwhv1ebq" path="res://pages/page_adventure/skills/skill_data/Steam Ladle.tres" id="512_3cxi0"]
+[ext_resource type="Resource" uid="uid://cd3x00cj8vxgk" path="res://pages/page_adventure/skills/skill_data/Succulents.tres" id="519_mdraf"]
+[ext_resource type="Resource" uid="uid://dw7quqwovlqyw" path="res://pages/page_adventure/skills/skill_data/Tusked Helm.tres" id="556_1glx3"]
+[ext_resource type="Resource" uid="uid://c205ckh5vg5mc" path="res://pages/page_adventure/skills/skill_data/Uwashiwali Bird.tres" id="558_g7qcj"]
+[ext_resource type="Resource" uid="uid://diaf15q71cj1c" path="res://pages/page_adventure/skills/skill_data/Wrist Warrior.tres" id="592_r3lir"]
+[ext_resource type="Resource" uid="uid://by4vjq12y37rc" path="res://pages/page_adventure/skills/skill_data/Yellow Piggles A.tres" id="595_4022d"]
+[ext_resource type="Resource" uid="uid://b7iru2wi66gs8" path="res://pages/page_adventure/skills/skill_data/Yellow Piggles L.tres" id="596_hh5qx"]
+[ext_resource type="Resource" uid="uid://c57fulafc1j4" path="res://pages/page_adventure/skills/skill_data/Yellow Piggles R.tres" id="597_csybw"]
+[ext_resource type="Resource" uid="uid://csbqiglut3y8j" path="res://pages/page_adventure/skills/skill_data/Yellow Piggles X.tres" id="598_1fpah"]
+[ext_resource type="Resource" uid="uid://bmpgr7hxi6o3w" path="res://pages/page_adventure/skills/skill_data/Yo-Yo.tres" id="600_b0nw8"]
+[ext_resource type="Texture2D" uid="uid://bmwcwwunigx8n" path="res://BazzarDBParser/events_images/merchants/Pygmalien.PNG" id="604_omjmp"]
+[ext_resource type="Texture2D" uid="uid://u4vm1n2doqa7" path="res://BazzarDBParser/events_images/merchants/Vanessa.PNG" id="605_n8ojj"]
+[ext_resource type="Texture2D" uid="uid://b2ju23tqss3ll" path="res://BazzarDBParser/events_images/merchants/Dooley.PNG" id="606_yita7"]
+[ext_resource type="Texture2D" uid="uid://dkudflq2gun0y" path="res://BazzarDBParser/events_images/merchants/mak.png" id="607_7y07q"]
+
+[sub_resource type="Resource" id="Resource_5dtj4"]
+script = ExtResource("36_jcjwv")
+filter_collection = true
+collections = Array[int]([1])
+filter_size = true
+sizes = Array[int]([1])
+filter_type = false
+types = Array[int]([])
+filter_except_type = false
+except_types = Array[int]([])
+filter_by_tier = true
+minimum_tier = 1
+metadata/_custom_type_script = "uid://hmol4xn55wyj"
+
+[sub_resource type="Gradient" id="Gradient_s2djw"]
+resource_local_to_scene = true
+offsets = PackedFloat32Array(0.684211, 0.868958, 0.987111, 1)
+colors = PackedColorArray(0, 0, 0, 0, 0.33976, 0.157138, 0.0767636, 1, 0.490078, 0.278128, 4.81308e-08, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_7cy0p"]
+resource_local_to_scene = true
+gradient = SubResource("Gradient_s2djw")
+fill = 2
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="Gradient" id="Gradient_e8y1w"]
+resource_local_to_scene = true
+offsets = PackedFloat32Array(0.684211, 0.868958, 0.987111, 1)
+colors = PackedColorArray(0, 0, 0, 0, 0.440431, 0.426152, 0.399869, 1, 0.790181, 0.793793, 0.784364, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_fcd30"]
+resource_local_to_scene = true
+gradient = SubResource("Gradient_e8y1w")
+fill = 2
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="Gradient" id="Gradient_ij145"]
+resource_local_to_scene = true
+offsets = PackedFloat32Array(0.684211, 0.868958, 0.987111, 1)
+colors = PackedColorArray(0, 0, 0, 0, 0.633056, 0.342565, 2.88785e-07, 1, 0.938103, 0.77864, 0, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_pij4a"]
+resource_local_to_scene = true
+gradient = SubResource("Gradient_ij145")
+fill = 2
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="Gradient" id="Gradient_omjmp"]
+resource_local_to_scene = true
+offsets = PackedFloat32Array(0.684211, 0.868958, 0.987111, 1)
+colors = PackedColorArray(0, 0, 0, 0, 0.606009, 0.904999, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_n8ojj"]
+resource_local_to_scene = true
+gradient = SubResource("Gradient_omjmp")
+fill = 2
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="Gradient" id="Gradient_yita7"]
+resource_local_to_scene = true
+offsets = PackedFloat32Array(0.684211, 0.868958, 0.987111, 1)
+colors = PackedColorArray(0, 0, 0, 0, 0.328446, 0, 0.0775431, 1, 0.930872, 0.307219, 0, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_7y07q"]
+resource_local_to_scene = true
+gradient = SubResource("Gradient_yita7")
+fill = 2
+fill_from = Vector2(0.5, 0.5)
+
+[resource]
+script = ExtResource("1_e8y1w")
+item_rarity_borders = Dictionary[int, Texture2D]({
+0: null,
+1: SubResource("GradientTexture2D_7cy0p"),
+2: SubResource("GradientTexture2D_fcd30"),
+3: SubResource("GradientTexture2D_pij4a"),
+4: SubResource("GradientTexture2D_n8ojj"),
+5: SubResource("GradientTexture2D_7y07q")
+})
+player_portraits = Dictionary[int, Texture2D]({
+1: ExtResource("604_omjmp"),
+2: ExtResource("605_n8ojj"),
+3: ExtResource("606_yita7"),
+4: ExtResource("607_7y07q")
+})
+load_only_items = 0
+filter = SubResource("Resource_5dtj4")
+all_items = Array[ExtResource("1_s2djw")]([ExtResource("35_ot3wo"), ExtResource("58_sicef"), ExtResource("59_wecy5"), ExtResource("60_5yln5"), ExtResource("61_iov3k"), ExtResource("73_cb7a0"), ExtResource("232_mpt1l"), ExtResource("239_vv07j"), ExtResource("247_e67b4"), ExtResource("277_0sypb"), ExtResource("288_qiuyp"), ExtResource("293_enyvq"), ExtResource("320_3vp2w"), ExtResource("322_fkq7l"), ExtResource("373_f12h1"), ExtResource("381_n22eq"), ExtResource("382_vl7bv"), ExtResource("419_j6nh5"), ExtResource("420_3881j"), ExtResource("421_ngmu7"), ExtResource("422_4sbki"), ExtResource("430_iajfm"), ExtResource("433_ch5qt"), ExtResource("490_8y4by"), ExtResource("512_3cxi0"), ExtResource("519_mdraf"), ExtResource("556_1glx3"), ExtResource("558_g7qcj"), ExtResource("592_r3lir"), ExtResource("595_4022d"), ExtResource("596_hh5qx"), ExtResource("597_csybw"), ExtResource("598_1fpah"), ExtResource("600_b0nw8")])
+metadata/_custom_type_script = "uid://chgjm5gksn63c"

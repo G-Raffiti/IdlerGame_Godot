@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="Adventure_EventData_Shop" load_steps=6 format=3 uid="uid://bsbghqrbq0x8w"]
+
+[ext_resource type="Script" uid="uid://bfea02iatpq4c" path="res://pages/page_adventure/skills/data/item_current_data.gd" id="1_6ly7r"]
+[ext_resource type="Texture2D" uid="uid://dw7dgxp84ub4d" path="res://BazzarDBParser/events_images/merchants/Weapons.PNG" id="2_4c0eb"]
+[ext_resource type="Script" uid="uid://hmol4xn55wyj" path="res://pages/page_adventure/skills/data/item_filter.gd" id="3_s0efj"]
+[ext_resource type="Script" uid="uid://b218jetgcvgy1" path="res://pages/page_adventure/events/event_shop.gd" id="4_4kml4"]
+
+[sub_resource type="Resource" id="Resource_5tgns"]
+script = ExtResource("3_s0efj")
+filter_collection = false
+collections = Array[int]([])
+filter_size = false
+sizes = Array[int]([])
+filter_type = true
+types = Array[int]([1])
+filter_except_type = false
+except_types = Array[int]([])
+filter_by_tier = true
+minimum_tier = 1
+metadata/_custom_type_script = "uid://hmol4xn55wyj"
+
+[resource]
+script = ExtResource("4_4kml4")
+item_filter = SubResource("Resource_5tgns")
+use_character_collection_filter = true
+force_avaible_and_ignore_filter = false
+tier_upgrade = 0
+available_items = Array[ExtResource("1_6ly7r")]([])
+rerol_num = 1
+items_per_rerol = 3
+rerol_cost = 2
+icon = ExtResource("2_4c0eb")
+title = "Aila"
+tooltip_text = "Sells [b][color=steel_blue]Weapon[/color][/b] items."
+character_played = Array[int]([1, 3, 2, 4, 6])
+metadata/_custom_type_script = "uid://b218jetgcvgy1"

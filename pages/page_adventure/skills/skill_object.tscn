@@ -1,34 +1,93 @@
-[gd_scene load_steps=5 format=3 uid="uid://d1hlfk3rlejcs"]
+[gd_scene load_steps=12 format=3 uid="uid://d1hlfk3rlejcs"]
 
 [ext_resource type="Script" uid="uid://cksxoesbegkyi" path="res://pages/page_adventure/skills/skill_object.gd" id="1_giy63"]
-[ext_resource type="Texture2D" uid="uid://bb77k2xukqibn" path="res://icon.svg" id="2_giy63"]
+[ext_resource type="Script" uid="uid://bfea02iatpq4c" path="res://pages/page_adventure/skills/data/item_current_data.gd" id="2_esycx"]
+[ext_resource type="Texture2D" uid="uid://fxlvepa01ku1" path="res://BazzarDBParser/Items_001-500_files/180px-Bar_of_Gold.png" id="3_i0rwt"]
+[ext_resource type="PackedScene" uid="uid://d324dod50be46" path="res://pages/page_adventure/skills/visual/num.tscn" id="4_esycx"]
+
+[sub_resource type="Resource" id="Resource_i0rwt"]
+script = ExtResource("2_esycx")
+outside_combat_stats = {}
+tier = 0
+cooldown = -1.0
+ammo = -1
+max_ammo = -1
+cost = -1
+damage = -1
+heal = -1
+shield = -1
+burn = -1
+poison = -1
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_es63s"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i0rwt"]
-bg_color = Color(0, 1, 1, 0.141176)
+[sub_resource type="Gradient" id="Gradient_6wgbn"]
+offsets = PackedFloat32Array(0, 0.885428, 0.968854, 1)
+colors = PackedColorArray(0, 0.738754, 0.738754, 0.152941, 1, 1, 1, 0.909804, 0, 1, 1, 1, 0, 0, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_jcr1p"]
+gradient = SubResource("Gradient_6wgbn")
+fill_from = Vector2(0, 1)
+fill_to = Vector2(0, 0)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tkhdf"]
+texture = SubResource("GradientTexture2D_jcr1p")
+
+[sub_resource type="Gradient" id="Gradient_esycx"]
+offsets = PackedFloat32Array(0, 0.662728, 0.982814, 1)
+colors = PackedColorArray(0.0856589, 0.0626536, 0, 1, 1, 0.72549, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_k2wxq"]
+gradient = SubResource("Gradient_esycx")
+width = 12
+height = 12
+fill = 2
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.58547)
 
 [node name="SkillObject" type="Button"]
-custom_minimum_size = Vector2(0, 158)
-anchors_preset = 10
-anchor_right = 1.0
-offset_bottom = 158.0
-grow_horizontal = 2
+custom_minimum_size = Vector2(69, 131)
+offset_right = 69.0
+offset_bottom = 131.0
+size_flags_vertical = 3
 mouse_filter = 2
 script = ExtResource("1_giy63")
+current = SubResource("Resource_i0rwt")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
-texture = ExtResource("2_giy63")
-expand_mode = 3
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
 
-[node name="time_bar" type="ProgressBar" parent="."]
+[node name="TextureRect" type="TextureRect" parent="MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("3_i0rwt")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="time_bar" type="ProgressBar" parent="MarginContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_vertical = 1
+mouse_filter = 2
+theme_override_styles/background = SubResource("StyleBoxEmpty_es63s")
+theme_override_styles/fill = SubResource("StyleBoxTexture_tkhdf")
+max_value = 0.0
+step = 0.001
+fill_mode = 3
+show_percentage = false
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
@@ -36,9 +95,136 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
-theme_override_styles/background = SubResource("StyleBoxEmpty_es63s")
-theme_override_styles/fill = SubResource("StyleBoxFlat_i0rwt")
-max_value = 1.0
-step = 0.001
-show_percentage = false
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="TopNums" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TopNums"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="NumDamage" parent="TopNums/HBoxContainer" instance=ExtResource("4_esycx")]
+unique_name_in_owner = true
+layout_mode = 2
+color = Color(0.788235, 0, 0, 1)
+
+[node name="NumShield" parent="TopNums/HBoxContainer" instance=ExtResource("4_esycx")]
+unique_name_in_owner = true
+layout_mode = 2
+color = Color(0.988235, 0.858824, 0, 1)
+
+[node name="NumBurn" parent="TopNums/HBoxContainer" instance=ExtResource("4_esycx")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="NumPoison" parent="TopNums/HBoxContainer" instance=ExtResource("4_esycx")]
+unique_name_in_owner = true
+layout_mode = 2
+color = Color(2.49678e-07, 0.251874, 5.53504e-07, 1)
+
+[node name="NumHeal" parent="TopNums/HBoxContainer" instance=ExtResource("4_esycx")]
+unique_name_in_owner = true
+layout_mode = 2
+color = Color(0.396111, 0.526657, 0, 1)
+
+[node name="CenterNums" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterNums"]
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+
+[node name="NumHaste" parent="CenterNums/CenterContainer" instance=ExtResource("4_esycx")]
+unique_name_in_owner = true
+layout_mode = 2
+color = Color(1.2514e-06, 0.637996, 0.672559, 1)
+
+[node name="CenterContainer3" type="CenterContainer" parent="CenterNums"]
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+
+[node name="NumFreez" parent="CenterNums/CenterContainer3" instance=ExtResource("4_esycx")]
+unique_name_in_owner = true
+layout_mode = 2
+color = Color(0.304945, 0.517204, 1, 1)
+
+[node name="CenterContainer2" type="CenterContainer" parent="CenterNums"]
+custom_minimum_size = Vector2(0, 27)
+layout_mode = 2
+
+[node name="NumSlow" parent="CenterNums/CenterContainer2" instance=ExtResource("4_esycx")]
+unique_name_in_owner = true
+layout_mode = 2
+color = Color(0.431507, 0.202894, 0.116361, 1)
+
+[node name="Ammo" type="Control" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -13.0
+offset_right = -8.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Ammunitions" type="HBoxContainer" parent="Ammo"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Ammo" type="TextureRect" parent="Ammo/Ammunitions"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("GradientTexture2D_k2wxq")
+
+[node name="NumCost" parent="." instance=ExtResource("4_esycx")]
+unique_name_in_owner = true
+visible = true
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 9.0
+offset_bottom = 11.5
+grow_horizontal = 0
+grow_vertical = 2
+color = Color(0.960665, 0.832123, 0.353566, 1)
+is_allways_visible = true

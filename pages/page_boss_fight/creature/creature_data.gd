@@ -1,5 +1,5 @@
 @tool
-extends AutoSaveRes
+extends Resource
 class_name Creature_Data
 
 @export var name: String = ""

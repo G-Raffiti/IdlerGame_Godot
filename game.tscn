@@ -21,7 +21,7 @@
 [ext_resource type="Resource" uid="uid://pmnduqpkyr24" path="res://pages/page_the_mine/auto_click_max_gold_data.tres" id="15_f1jbl"]
 [ext_resource type="Resource" uid="uid://c443py5ab3jvy" path="res://pages/page_the_mine/improve_click_add_data.tres" id="16_vaj68"]
 [ext_resource type="Resource" uid="uid://d3x6pv0iy754t" path="res://pages/page_the_mine/improve_click_mult_data.tres" id="17_i2p71"]
-[ext_resource type="PackedScene" uid="uid://dds5iy8lo2hgg" path="res://save/test_scene.tscn" id="18_rvswv"]
+[ext_resource type="Script" uid="uid://du68brvoxc0yr" path="res://save/save_load_system.gd" id="22_x5p1p"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7sc4i"]
 bg_color = Color(0.210507, 0.210507, 0.210507, 1)
@@ -1619,9 +1619,8 @@ attack_duration_start_amount = Vector2(5, 0)
 defense_start_amount = Vector2(2, 0)
 defense_duration_start_amount = Vector2(5, 0)
 
-[node name="SaveTest" parent="." instance=ExtResource("18_rvswv")]
-layout_mode = 1
-mouse_filter = 2
+[node name="SaveLoadSystem" type="Node" parent="."]
+script = ExtResource("22_x5p1p")
 
-[connection signal="pressed" from="PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer/Button" to="SaveTest" method="call_save"]
+[connection signal="pressed" from="PanelsContainer/MainPanel/TopSection/VBoxContainer/HBoxContainer/Button" to="SaveLoadSystem" method="call_save"]
 [connection signal="pressed" from="PanelsContainer/MainPanel/MainSection/Pages/TheMine/TheButton/TheMineButton" to="PanelsContainer/MainPanel/MainSection/Pages/TheMine/TheButton/TheMineButton/AnimationPlayer" method="play" binds= ["click"]]

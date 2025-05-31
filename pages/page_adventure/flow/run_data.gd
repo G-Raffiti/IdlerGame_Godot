@@ -22,22 +22,19 @@ class_name Adventure_RunData
 var run_data: Array[Array]
 
 func get_run() -> Array[Array]:
-    if not run_data.is_empty():
-        return run_data
-    seed(randi())
-    for day_index: int in range(0, 16):
-        run_data.append([])
-        var day: Adventure_DayData = get("day_" + str(day_index))
-        for hour_index: int in range(0, 7):
-            var hours: Array[Adventure_EventData] = day.get("hour_" + str(hour_index)).duplicate()
-            var selected_hours: Array[Adventure_EventData] = []
-            if hours.is_empty():
-                printerr("Could not create complete Run: day ", str(day_index), " hour ", str(hour_index), " is empty")
-                return run_data
-            for i: int in 3:
-                selected_hours.append(hours.pick_random())
-                hours.remove_at(hours.find(selected_hours[i]))
-                if hours.is_empty():
-                    break
-            run_data[day_index].append(selected_hours)
-    return run_data
+	if not run_data.is_empty():
+		return run_data
+	seed(randi())
+	for day_index: int in range(0, 16):
+		run_data.append([])
+		var day: Adventure_DayData = get("day_" + str(day_index))
+		if day == null:
+			printerr("Could not create complete Run: day ", str(day_index), " is not set")
+			return run_data
+		for hour_index: int in range(0, 7):
+			var hour: Adventure_HourData = day.get("hour_" + str(hour_index))
+			if hour == null:
+				printerr("Could not create complete Run: day ", str(day_index), " hour ", str(hour_index), " is empty")
+				return run_data
+			run_data[day_index].append(hour.get_events(AdventureResources.character))
+	return run_data

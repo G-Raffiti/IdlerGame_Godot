@@ -1,22 +1,25 @@
 extends Resource
 class_name Adventure_EventData
 
-const TAB_INDEX_CHEST: int = 0
-const TAB_INDEX_MONSTER_BOARD: int = 1
-const TAB_INDEX_SHOP: int = 2
-const TAB_INDEX_EVENT_CHOICE: int = 3
-const TAB_INDEX_EVENT_BUTTON_CONTAINER: int = 4
-
-var page_adventure: PageAdventure = null
+var page_adventure: Adventure = null
 var combat_manger: Combat = null
 
 @export_group("Display") 
-@export var title: String
+@export var icon: Texture2D
+@export_multiline  var title: String
 @export_multiline var tooltip_text: String
 
-func inject_dependencies(in_page_adventure: PageAdventure, in_combat_manger: Combat) -> void:
+@export_group("Conditions")
+@export var character_played: Array[SkillData.Collection] = [SkillData.Collection.PYGMALIEN, SkillData.Collection.DOOLEY, SkillData.Collection.VANESSA, SkillData.Collection.MAK, SkillData.Collection.JULES]
+
+func inject_dependencies(in_page_adventure: Adventure, in_combat_manger: Combat) -> void:
     page_adventure = in_page_adventure
     combat_manger = in_combat_manger
 
 func initialize(in_tabs: TabContainer, in_interact_button: ButtonRich, in_leave_button: ButtonRich) -> void:
     pass
+
+func customise_event_button(in_button: ButtonImage) -> void:
+    in_button.text_tooltip = tooltip_text
+    in_button.image = icon
+    in_button.text = title

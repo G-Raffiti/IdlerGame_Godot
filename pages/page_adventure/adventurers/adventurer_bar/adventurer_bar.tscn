@@ -1,0 +1,447 @@
+[gd_scene load_steps=21 format=3 uid="uid://dfhoko00mi04c"]
+
+[ext_resource type="Script" uid="uid://brn1lbsgvs6cy" path="res://pages/page_adventure/adventurers/adventurer_bar/adventurer_bar.gd" id="1_f4ejq"]
+
+[sub_resource type="Gradient" id="Gradient_vl5e6"]
+colors = PackedColorArray(0.282353, 0.00784314, 0, 0.784314, 0, 0, 0, 0.784314)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_6c8d6"]
+gradient = SubResource("Gradient_vl5e6")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l6q62"]
+texture = SubResource("GradientTexture2D_6c8d6")
+
+[sub_resource type="Gradient" id="Gradient_gc830"]
+offsets = PackedFloat32Array(0, 0.710769, 0.98, 1)
+colors = PackedColorArray(0.131796, 0.0825762, 0, 1, 0.512547, 0.376045, 9.62615e-08, 1, 0.996259, 0.882815, 0, 1, 0.964607, 0.897134, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_h4ryb"]
+gradient = SubResource("Gradient_gc830")
+fill_to = Vector2(1.015, 0)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yu3ir"]
+texture = SubResource("GradientTexture2D_h4ryb")
+
+[sub_resource type="Gradient" id="Gradient_mkded"]
+offsets = PackedFloat32Array(0.848974, 0.985337)
+colors = PackedColorArray(0, 0, 0, 0, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_7yjtu"]
+gradient = SubResource("Gradient_mkded")
+width = 32
+height = 32
+fill = 2
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="Gradient" id="Gradient_emrtw"]
+colors = PackedColorArray(0.284269, 0.00861387, 2.40654e-08, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_2ox7r"]
+gradient = SubResource("Gradient_emrtw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tx21k"]
+texture = SubResource("GradientTexture2D_2ox7r")
+
+[sub_resource type="Gradient" id="Gradient_66wkd"]
+offsets = PackedFloat32Array(0, 0.710769, 0.98, 1)
+colors = PackedColorArray(0.0453285, 0.113515, 0, 1, 0.193189, 0.47614, 3.85046e-07, 1, 0.590594, 1, 0.422262, 1, 0.592157, 1, 0.423529, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_m65t4"]
+gradient = SubResource("Gradient_66wkd")
+fill_to = Vector2(1.015, 0)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j6cxy"]
+texture = SubResource("GradientTexture2D_m65t4")
+
+[sub_resource type="Animation" id="Animation_uxr15"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(234, -37)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_2au7r"]
+resource_name = "animate_number_0"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.133333, 1),
+"transitions": PackedFloat32Array(1, 1, 0.307786),
+"update": 0,
+"values": [Vector2(234, -37), Vector2(234, -49.87), Vector2(400.01, -37)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.19, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1e-05, 1e-05), Vector2(1.2, 1.2), Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:self_modulate")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.6, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_amic7"]
+resource_name = "animate_number_1"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.133333, 0.5),
+"transitions": PackedFloat32Array(1, 1, 4.59479),
+"update": 0,
+"values": [Vector2(35.855, -37), Vector2(139.105, -49.87), Vector2(134.515, -82.905)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.19, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1e-05, 1e-05), Vector2(1.2, 1.2), Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:self_modulate")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.6, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_s44ku"]
+resource_name = "animate_number_2"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.133333, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(134, -50), Vector2(154, -70), Vector2(200, -37)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.19, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1e-05, 1e-05), Vector2(1.2, 1.2), Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:self_modulate")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.6, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_figr2"]
+_data = {
+&"RESET": SubResource("Animation_uxr15"),
+&"animate_number_0": SubResource("Animation_2au7r"),
+&"animate_number_1": SubResource("Animation_amic7"),
+&"animate_number_2": SubResource("Animation_s44ku")
+}
+
+[node name="AdventurerBar" type="VBoxContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 26.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 2
+script = ExtResource("1_f4ejq")
+
+[node name="ShieldBar" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxTexture_l6q62")
+theme_override_styles/fill = SubResource("StyleBoxTexture_yu3ir")
+value = 100.0
+show_percentage = false
+
+[node name="NinePatchRect" type="NinePatchRect" parent="ShieldBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_7yjtu")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="HPBar" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxTexture_tx21k")
+theme_override_styles/fill = SubResource("StyleBoxTexture_j6cxy")
+value = 100.0
+show_percentage = false
+
+[node name="NinePatchRect" type="NinePatchRect" parent="HPBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_7yjtu")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="Container" type="Control" parent="HPBar"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HPBar/Container"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -18.5
+offset_bottom = 18.5
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="BurnLabel" type="RichTextLabel" parent="HPBar/Container/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.25
+theme_override_constants/outline_size = 6
+bbcode_enabled = true
+text = "[color=orange_red][b]10586[/b][/color]"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PoisonLabel" type="RichTextLabel" parent="HPBar/Container/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.25
+theme_override_constants/outline_size = 6
+bbcode_enabled = true
+text = "[color=dark_green][b]10586[/b][/color]"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HPLabel" type="RichTextLabel" parent="HPBar/Container/HBoxContainer"]
+unique_name_in_owner = true
+clip_contents = false
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/outline_size = 6
+bbcode_enabled = true
+text = "[font_size=27
+][color=yellow_green][b]10586[/b][/color][/font_size] / [color=yellow_green]10586[/color]"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RegenLabel" type="RichTextLabel" parent="HPBar/Container/HBoxContainer/HPLabel"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -93.0
+offset_top = -18.0
+offset_right = 286.0
+offset_bottom = 19.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+theme_override_constants/outline_size = 6
+bbcode_enabled = true
+text = "[color=yellow_green]+150/s[/color]"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ShieldLabel" type="RichTextLabel" parent="HPBar/Container/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+theme_override_constants/outline_size = 6
+bbcode_enabled = true
+text = "[font_size=27][color=goldenrod][b]10586[/b][/color][/font_size]"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimatedNumber" type="RichTextLabel" parent="HPBar/Container"]
+unique_name_in_owner = true
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(40.16, 32.705)
+layout_mode = 0
+offset_left = 234.0
+offset_top = -37.0
+offset_right = 410.0
+offset_bottom = -2.0
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/normal_font_size = 25
+theme_override_font_sizes/bold_font_size = 30
+bbcode_enabled = true
+text = "hkjhsakjdhewf"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="HPBar/Container/AnimatedNumber"]
+libraries = {
+&"": SubResource("AnimationLibrary_figr2")
+}
+autoplay = "RESET"

@@ -1,74 +1,258 @@
-[gd_scene load_steps=35 format=3 uid="uid://blox1wlvp41h0"]
+[gd_scene load_steps=82 format=3 uid="uid://blox1wlvp41h0"]
 
 [ext_resource type="PackedScene" uid="uid://coh24q5vdlgfx" path="res://ui/left_bar/title/title.tscn" id="1_gv8j7"]
 [ext_resource type="Script" uid="uid://bb7pxhly3d8os" path="res://pages/page_adventure/page_adventure.gd" id="1_xiccb"]
+[ext_resource type="Script" uid="uid://bffaqrqorrnfg" path="res://pages/page_adventure/events/event_data.gd" id="2_dyp05"]
 [ext_resource type="Script" uid="uid://dk6usv8gjmop6" path="res://pages/page_adventure/containers/skill_slot.gd" id="2_fw84d"]
-[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/skill_data.gd" id="3_0n8nl"]
-[ext_resource type="PackedScene" uid="uid://d1hlfk3rlejcs" path="res://pages/page_adventure/skills/skill_object.tscn" id="3_m47tj"]
-[ext_resource type="Texture2D" uid="uid://bb77k2xukqibn" path="res://icon.svg" id="4_0n8nl"]
-[ext_resource type="Script" uid="uid://boq0osg5lpa6f" path="res://pages/page_adventure/combat_manager.gd" id="4_qtvhb"]
-[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_we66y"]
+[ext_resource type="Resource" uid="uid://bscc7gseo7k1w" path="res://pages/page_adventure/events/resources/0_0_first_item.tres" id="3_2w04l"]
+[ext_resource type="Script" uid="uid://v03oxnfhxn16" path="res://pages/page_adventure/flow/day_data.gd" id="3_y74qm"]
+[ext_resource type="Script" uid="uid://bfd3wgv5n8mi1" path="res://pages/page_adventure/flow/hour_data.gd" id="4_eaqa3"]
+[ext_resource type="Script" uid="uid://btxq40hbv5iiq" path="res://pages/page_adventure/flow/run_data.gd" id="4_mud3a"]
+[ext_resource type="Script" uid="uid://boq0osg5lpa6f" path="res://pages/page_adventure/combat/combat_manager.gd" id="4_qtvhb"]
 [ext_resource type="Script" uid="uid://b0bcypx457ih1" path="res://pages/page_adventure/adventurers/adventurer.gd" id="5_57kq1"]
-[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="7_nq4st"]
+[ext_resource type="Resource" uid="uid://bsbghqrbq0x8w" path="res://pages/page_adventure/events/resources/0_1_merchant_weapon_bronze.tres" id="5_r645r"]
+[ext_resource type="Resource" uid="uid://cxrhoc74f1o41" path="res://pages/page_adventure/events/resources/0_1_merchant_no_weapon_bronze.tres" id="6_070me"]
+[ext_resource type="Resource" uid="uid://djmhwgfrmwtww" path="res://pages/page_adventure/events/resources/0_1_merchant_all_bronze.tres" id="7_5tgns"]
+[ext_resource type="Resource" uid="uid://duiem7pk7we2s" path="res://pages/page_adventure/events/resources/merchant_curio.tres" id="8_r645r"]
 [ext_resource type="Script" uid="uid://cwij2ehsjkpx7" path="res://pages/page_adventure/containers/board.gd" id="9_b0qb6"]
+[ext_resource type="Script" uid="uid://cq8dqmy517p8l" path="res://pages/page_adventure/adventurers/item_ref.gd" id="9_vp0hs"]
 [ext_resource type="Script" uid="uid://ecwf33rek60r" path="res://pages/page_adventure/containers/chest_drop_slot.gd" id="9_we66y"]
+[ext_resource type="Resource" uid="uid://dgtcqeetfo46x" path="res://pages/page_adventure/skills/skill_data/Med Kit.tres" id="10_gbb06"]
 [ext_resource type="PackedScene" uid="uid://5nf1vaxtrp84" path="res://ui/button_rich/button.tscn" id="11_3g4aq"]
+[ext_resource type="Resource" uid="uid://cilrs6v3c8n0y" path="res://pages/page_adventure/skills/skill_data/Bluenanas.tres" id="11_m1pe2"]
+[ext_resource type="Script" uid="uid://dyp170v0b376f" path="res://pages/page_adventure/events/event_combat.gd" id="12_gbb06"]
+[ext_resource type="Resource" uid="uid://dd6t7473fpr1b" path="res://pages/page_adventure/skills/skill_data/Duct Tape.tres" id="12_rmd31"]
+[ext_resource type="Texture2D" uid="uid://r0x4wg8soltf" path="res://BazzarDBParser/events_images/monsters/0100.PNG" id="14_f81c4"]
+[ext_resource type="Resource" uid="uid://bfkvm1rysyjad" path="res://pages/page_adventure/skills/skill_data/Pelt.tres" id="16_m1pe2"]
+[ext_resource type="Resource" uid="uid://doq8tydejkb7c" path="res://pages/page_adventure/skills/skill_data/Fang.tres" id="17_rmd31"]
+[ext_resource type="Texture2D" uid="uid://bqildp01wqpbm" path="res://BazzarDBParser/events_images/monsters/0101.PNG" id="18_vlty3"]
+[ext_resource type="PackedScene" uid="uid://f06wiq7ftwh" path="res://ui/button_image/button_image_round.tscn" id="19_2w04l"]
+[ext_resource type="Resource" uid="uid://k3iqsd1msaha" path="res://pages/page_adventure/skills/skill_data/Scrap.tres" id="19_fkk4r"]
+[ext_resource type="Resource" uid="uid://bbi7gxfbl7o6w" path="res://pages/page_adventure/skills/skill_data/Silk Scarf.tres" id="20_ldfca"]
+[ext_resource type="Script" uid="uid://dy5653sa0fmfb" path="res://pages/page_adventure/adventurers/player_stats_display/player_stats_display.gd" id="20_y6e4m"]
+[ext_resource type="Texture2D" uid="uid://rhqqtvybw3ei" path="res://BazzarDBParser/events_images/monsters/0103.PNG" id="21_yjsma"]
+[ext_resource type="Texture2D" uid="uid://b77gk2n4cvr8t" path="res://BazzarDBParser/events_images/125px-The_Docks.png" id="22_r645r"]
+[ext_resource type="Texture2D" uid="uid://bmwcwwunigx8n" path="res://BazzarDBParser/events_images/merchants/Pygmalien.PNG" id="23_pc5es"]
+[ext_resource type="Texture2D" uid="uid://b2ju23tqss3ll" path="res://BazzarDBParser/events_images/merchants/Dooley.PNG" id="24_070me"]
+[ext_resource type="Texture2D" uid="uid://u4vm1n2doqa7" path="res://BazzarDBParser/events_images/merchants/Vanessa.PNG" id="25_5tgns"]
+[ext_resource type="Texture2D" uid="uid://dkudflq2gun0y" path="res://BazzarDBParser/events_images/merchants/mak.png" id="26_vp0hs"]
+[ext_resource type="PackedScene" uid="uid://dfhoko00mi04c" path="res://pages/page_adventure/adventurers/adventurer_bar/adventurer_bar.tscn" id="29_yjsma"]
+[ext_resource type="Texture2D" uid="uid://cv2psrvsoerc4" path="res://BazzarDBParser/bg.webp" id="38_yjsma"]
 
-[sub_resource type="Resource" id="Resource_b0qb6"]
-script = ExtResource("3_0n8nl")
-size = 1
-type = Array[int]([])
-time = 0.0
-active_effects = Array[ExtResource("7_nq4st")]([])
-triggered_effects = Dictionary[int, ExtResource("4_we66y")]({})
-cost = 0
-metadata/_custom_type_script = "uid://bjjugwsaftjka"
+[sub_resource type="Resource" id="Resource_070me"]
+script = ExtResource("4_eaqa3")
+forced_event_pool = Array[ExtResource("2_dyp05")]([ExtResource("3_2w04l")])
+other_event_pool = Array[ExtResource("2_dyp05")]([])
+number_of_event = 3
+number_of_forced_event = 3
+metadata/_custom_type_script = "uid://bfd3wgv5n8mi1"
 
-[sub_resource type="Resource" id="Resource_7j37x"]
-script = ExtResource("3_0n8nl")
-size = 1
-type = Array[int]([])
-time = 0.0
-active_effects = Array[ExtResource("7_nq4st")]([])
-triggered_effects = Dictionary[int, ExtResource("4_we66y")]({})
-cost = 0
-metadata/_custom_type_script = "uid://bjjugwsaftjka"
+[sub_resource type="Resource" id="Resource_36jjt"]
+script = ExtResource("4_eaqa3")
+forced_event_pool = Array[ExtResource("2_dyp05")]([ExtResource("5_r645r"), ExtResource("6_070me"), ExtResource("7_5tgns"), ExtResource("8_r645r")])
+other_event_pool = Array[ExtResource("2_dyp05")]([])
+number_of_event = 3
+number_of_forced_event = 1
+metadata/_custom_type_script = "uid://bfd3wgv5n8mi1"
+
+[sub_resource type="Resource" id="Resource_vlty3"]
+script = ExtResource("9_vp0hs")
+item = ExtResource("10_gbb06")
+tier = 1
+metadata/_custom_type_script = "uid://cq8dqmy517p8l"
+
+[sub_resource type="Resource" id="Resource_fkk4r"]
+script = ExtResource("9_vp0hs")
+item = ExtResource("11_m1pe2")
+tier = 1
+metadata/_custom_type_script = "uid://cq8dqmy517p8l"
+
+[sub_resource type="Resource" id="Resource_ldfca"]
+script = ExtResource("9_vp0hs")
+item = ExtResource("12_rmd31")
+tier = 2
+metadata/_custom_type_script = "uid://cq8dqmy517p8l"
+
+[sub_resource type="Resource" id="Resource_yjsma"]
+script = ExtResource("5_57kq1")
+max_hp = 100
+level = 1
+reward = Dictionary[int, int]({
+0: 2,
+1: 1
+})
+board = Array[ExtResource("9_vp0hs")]([SubResource("Resource_vlty3"), SubResource("Resource_fkk4r"), SubResource("Resource_ldfca")])
+passifs = Array[Resource]([])
+metadata/_custom_type_script = "uid://b0bcypx457ih1"
+
+[sub_resource type="Resource" id="Resource_f81c4"]
+script = ExtResource("12_gbb06")
+adventurer = SubResource("Resource_yjsma")
+icon = ExtResource("14_f81c4")
+title = "Banannabal"
+tooltip_text = ""
+character_played = Array[int]([1, 3, 2, 4, 6])
+metadata/_custom_type_script = "uid://dyp170v0b376f"
+
+[sub_resource type="Resource" id="Resource_m75k2"]
+script = ExtResource("9_vp0hs")
+item = ExtResource("16_m1pe2")
+tier = 1
+metadata/_custom_type_script = "uid://cq8dqmy517p8l"
+
+[sub_resource type="Resource" id="Resource_pvloj"]
+script = ExtResource("9_vp0hs")
+item = ExtResource("17_rmd31")
+tier = 1
+metadata/_custom_type_script = "uid://cq8dqmy517p8l"
+
+[sub_resource type="Resource" id="Resource_cc4ac"]
+script = ExtResource("9_vp0hs")
+item = ExtResource("17_rmd31")
+tier = 1
+metadata/_custom_type_script = "uid://cq8dqmy517p8l"
+
+[sub_resource type="Resource" id="Resource_6jv8j"]
+script = ExtResource("9_vp0hs")
+item = ExtResource("16_m1pe2")
+tier = 1
+metadata/_custom_type_script = "uid://cq8dqmy517p8l"
+
+[sub_resource type="Resource" id="Resource_borh0"]
+script = ExtResource("5_57kq1")
+max_hp = 150
+level = 1
+reward = Dictionary[int, int]({
+0: 2,
+1: 2
+})
+board = Array[ExtResource("9_vp0hs")]([SubResource("Resource_m75k2"), SubResource("Resource_pvloj"), SubResource("Resource_cc4ac"), SubResource("Resource_6jv8j")])
+passifs = Array[Resource]([])
+metadata/_custom_type_script = "uid://b0bcypx457ih1"
+
+[sub_resource type="Resource" id="Resource_2d5p7"]
+script = ExtResource("12_gbb06")
+adventurer = SubResource("Resource_borh0")
+icon = ExtResource("18_vlty3")
+title = ""
+tooltip_text = ""
+character_played = Array[int]([1, 3, 2, 4, 6])
+metadata/_custom_type_script = "uid://dyp170v0b376f"
+
+[sub_resource type="Resource" id="Resource_7hs2p"]
+script = ExtResource("9_vp0hs")
+item = ExtResource("19_fkk4r")
+tier = 1
+metadata/_custom_type_script = "uid://cq8dqmy517p8l"
+
+[sub_resource type="Resource" id="Resource_t340h"]
+script = ExtResource("9_vp0hs")
+item = ExtResource("20_ldfca")
+tier = 1
+metadata/_custom_type_script = "uid://cq8dqmy517p8l"
+
+[sub_resource type="Resource" id="Resource_vgbpb"]
+script = ExtResource("9_vp0hs")
+item = ExtResource("19_fkk4r")
+tier = 1
+metadata/_custom_type_script = "uid://cq8dqmy517p8l"
+
+[sub_resource type="Resource" id="Resource_qbpfg"]
+script = ExtResource("5_57kq1")
+max_hp = 150
+level = 1
+reward = Dictionary[int, int]({
+0: 2,
+1: 2
+})
+board = Array[ExtResource("9_vp0hs")]([SubResource("Resource_7hs2p"), SubResource("Resource_t340h"), SubResource("Resource_vgbpb")])
+passifs = Array[Resource]([])
+metadata/_custom_type_script = "uid://b0bcypx457ih1"
+
+[sub_resource type="Resource" id="Resource_v4kwe"]
+script = ExtResource("12_gbb06")
+adventurer = SubResource("Resource_qbpfg")
+icon = ExtResource("21_yjsma")
+title = ""
+tooltip_text = ""
+character_played = Array[int]([1, 3, 2, 4, 6])
+metadata/_custom_type_script = "uid://dyp170v0b376f"
+
+[sub_resource type="Resource" id="Resource_pc5es"]
+script = ExtResource("4_eaqa3")
+forced_event_pool = Array[ExtResource("2_dyp05")]([])
+other_event_pool = Array[ExtResource("2_dyp05")]([SubResource("Resource_f81c4"), SubResource("Resource_2d5p7"), SubResource("Resource_v4kwe")])
+number_of_event = 3
+number_of_forced_event = 0
+metadata/_custom_type_script = "uid://bfd3wgv5n8mi1"
+
+[sub_resource type="Resource" id="Resource_y6e4m"]
+script = ExtResource("3_y74qm")
+hour_0 = SubResource("Resource_070me")
+hour_1 = SubResource("Resource_36jjt")
+hour_2 = SubResource("Resource_pc5es")
+metadata/_custom_type_script = "uid://v03oxnfhxn16"
+
+[sub_resource type="Resource" id="Resource_2w04l"]
+script = ExtResource("4_mud3a")
+day_0 = SubResource("Resource_y6e4m")
+metadata/_custom_type_script = "uid://btxq40hbv5iiq"
 
 [sub_resource type="Resource" id="Resource_2mfnk"]
-script = ExtResource("3_0n8nl")
-size = 1
-type = Array[int]([])
-time = 0.0
-active_effects = Array[ExtResource("7_nq4st")]([])
-triggered_effects = Dictionary[int, ExtResource("4_we66y")]({})
-cost = 0
-metadata/_custom_type_script = "uid://bjjugwsaftjka"
+script = ExtResource("5_57kq1")
+max_hp = 300
+level = 1
+reward = Dictionary[int, int]({
+0: 12,
+1: 0,
+2: 5
+})
+board = Array[ExtResource("9_vp0hs")]([])
+passifs = Array[Resource]([])
+metadata/_custom_type_script = "uid://b0bcypx457ih1"
 
 [sub_resource type="Resource" id="Resource_dyp05"]
 script = ExtResource("5_57kq1")
-max_hp = 250.0
+max_hp = 250
 level = 1
 reward = Dictionary[int, int]({
-0: 4,
-1: 2
+0: 8,
+1: 2,
+2: 5
 })
-board = Array[ExtResource("3_0n8nl")]([])
+board = Array[ExtResource("9_vp0hs")]([])
+passifs = Array[Resource]([])
 metadata/_custom_type_script = "uid://b0bcypx457ih1"
 
 [sub_resource type="Resource" id="Resource_y74qm"]
 script = ExtResource("5_57kq1")
-max_hp = 0.0
+max_hp = 250
 level = 1
 reward = Dictionary[int, int]({
-0: 4,
-1: 2
+0: 10,
+1: 0,
+2: 5
 })
-board = Array[ExtResource("3_0n8nl")]([])
+board = Array[ExtResource("9_vp0hs")]([])
+passifs = Array[Resource]([])
+metadata/_custom_type_script = "uid://b0bcypx457ih1"
+
+[sub_resource type="Resource" id="Resource_mud3a"]
+script = ExtResource("5_57kq1")
+max_hp = 200
+level = 1
+reward = Dictionary[int, int]({
+0: 12,
+1: 1,
+2: 5
+})
+board = Array[ExtResource("9_vp0hs")]([])
+passifs = Array[Resource]([])
 metadata/_custom_type_script = "uid://b0bcypx457ih1"
 
 [sub_resource type="Gradient" id="Gradient_m47tj"]
-offsets = PackedFloat32Array(0, 0.457571, 1)
-colors = PackedColorArray(0, 0, 0, 1, 0.839216, 0, 0.352941, 1, 1, 1, 1, 0)
+offsets = PackedFloat32Array(0, 0.695015, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_0n8nl"]
 gradient = SubResource("Gradient_m47tj")
@@ -78,21 +262,7 @@ fill = 1
 fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(1, 0.5)
 
-[sub_resource type="Gradient" id="Gradient_57kq1"]
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_3g4aq"]
-gradient = SubResource("Gradient_57kq1")
-
-[sub_resource type="Resource" id="Resource_pu657"]
-script = ExtResource("3_0n8nl")
-size = 2
-icon = SubResource("GradientTexture2D_3g4aq")
-type = Array[int]([])
-time = 0.0
-active_effects = Array[ExtResource("7_nq4st")]([])
-triggered_effects = Dictionary[int, ExtResource("4_we66y")]({})
-cost = 0
-metadata/_custom_type_script = "uid://bjjugwsaftjka"
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m75k2"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pu657"]
 
@@ -108,229 +278,137 @@ metadata/_custom_type_script = "uid://bjjugwsaftjka"
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mud3a"]
 
-[sub_resource type="Gradient" id="Gradient_b0qb6"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y6e4m"]
+bg_color = Color(0.101961, 0.0588235, 0.0117647, 0.694118)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_7j37x"]
-gradient = SubResource("Gradient_b0qb6")
-width = 128
-height = 128
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pvloj"]
 
-[sub_resource type="Gradient" id="Gradient_we66y"]
-offsets = PackedFloat32Array(0.888715, 1)
-colors = PackedColorArray(0, 0, 0, 0, 1, 0.788235, 0, 1)
+[sub_resource type="Gradient" id="Gradient_ldfca"]
+offsets = PackedFloat32Array(0, 0.707692, 0.984615, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.268633, 3.65493e-07, 0, 1, 0.821911, 2.62313e-06, 7.70092e-07, 1, 0, 0, 0, 0)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_57kq1"]
-gradient = SubResource("Gradient_we66y")
-width = 200
-height = 50
-fill = 2
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_yjsma"]
+gradient = SubResource("Gradient_ldfca")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m75k2"]
+texture = SubResource("GradientTexture2D_yjsma")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6jv8j"]
+
+[sub_resource type="Gradient" id="Gradient_gbb06"]
+offsets = PackedFloat32Array(0.413534, 0.730397)
+colors = PackedColorArray(0, 0, 0, 0, 1, 0.890196, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_m1pe2"]
+gradient = SubResource("Gradient_gbb06")
+fill = 1
 fill_from = Vector2(0.5, 0.5)
 
-[node name="PageAdventure" type="VBoxContainer" node_paths=PackedStringArray("intro", "skill_choice_1_btn", "skill_choice_2_btn", "skill_choice_3_btn", "start", "combat", "chest_button", "player_board", "player_chest", "monster_board")]
-custom_minimum_size = Vector2(728, 566)
+[node name="PageAdventure" type="VBoxContainer" node_paths=PackedStringArray("intro", "character_choice_1", "character_choice_2", "character_choice_3", "character_choice_4", "start", "event_portrait", "player_portrait", "combat", "chest_button", "interact_button", "next_button", "tabs", "player_board", "player_chest", "monster_board", "shop_board", "event_button_container", "event_choice_container")]
 offset_right = 728.0
 offset_bottom = 566.0
 script = ExtResource("1_xiccb")
-skill_choices = Array[ExtResource("3_0n8nl")]([SubResource("Resource_b0qb6"), SubResource("Resource_7j37x"), SubResource("Resource_2mfnk")])
-player = SubResource("Resource_dyp05")
-fights = Array[ExtResource("5_57kq1")]([SubResource("Resource_y74qm")])
+run_data = SubResource("Resource_2w04l")
+character_choices = Array[int]([1, 3, 2, 4])
+starting_stats = Dictionary[int, ExtResource("5_57kq1")]({
+1: SubResource("Resource_2mfnk"),
+2: SubResource("Resource_dyp05"),
+3: SubResource("Resource_y74qm"),
+4: SubResource("Resource_mud3a")
+})
+event_button_ps = ExtResource("19_2w04l")
 intro = NodePath("Intro")
-skill_choice_1_btn = NodePath("Intro/VBoxContainer/VBoxContainer/SkillChoice1")
-skill_choice_2_btn = NodePath("Intro/VBoxContainer/VBoxContainer/SkillChoice2")
-skill_choice_3_btn = NodePath("Intro/VBoxContainer/VBoxContainer/SkillChoice3")
+character_choice_1 = NodePath("Intro/VBoxContainer/VBoxContainer/Pygmalien")
+character_choice_2 = NodePath("Intro/VBoxContainer/VBoxContainer/Dooley")
+character_choice_3 = NodePath("Intro/VBoxContainer/VBoxContainer/Vanessa")
+character_choice_4 = NodePath("Intro/VBoxContainer/VBoxContainer/Mak")
 start = NodePath("Intro/VBoxContainer/Start")
+event_portrait = NodePath("Combat/MarginContainer/EventProfile/VBoxContainer/MonsterProfile/TextureRect/EventPortrait")
+player_portrait = NodePath("Combat/MarginContainer2/PlayerProfile/VBoxContainer/CenterContainer/TextureRect/PlayerPortrait")
 combat = NodePath("Combat")
-chest_button = NodePath("Combat/PlayerProfile/OpenChest")
+chest_button = NodePath("Combat/MarginContainer2/PlayerProfile/OpenChest")
+interact_button = NodePath("Combat/MarginContainer/EventProfile/Interact")
+next_button = NodePath("Combat/MarginContainer/EventProfile/Next")
+tabs = NodePath("Combat/Tabs")
 player_board = NodePath("Combat/Board")
 player_chest = NodePath("Combat/Tabs/Chest")
 monster_board = NodePath("Combat/Tabs/MonsterBoard")
+shop_board = NodePath("Combat/Tabs/Shop")
+event_button_container = NodePath("Combat/Tabs/EventButtonContainer/CenterContainer/VBoxContainer")
+event_choice_container = NodePath("Combat/Tabs/EventChoice/CenterContainer/EventChoiceContainer")
 
 [node name="Title" parent="." instance=ExtResource("1_gv8j7")]
+visible = false
 layout_mode = 2
 text = "Adventure"
 
-[node name="Combat" type="HBoxContainer" parent="."]
+[node name="Combat" type="VBoxContainer" parent="." node_paths=PackedStringArray("player_hp_bar", "enemy_hp_bar", "sand_storm_bar")]
+custom_minimum_size = Vector2(0, 560)
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_constants/separation = 0
 script = ExtResource("4_qtvhb")
+player_hp_bar = NodePath("MarginContainer2/PlayerProfile/VBoxContainer/PanelContainer/PlayerBar")
+enemy_hp_bar = NodePath("MarginContainer/EventProfile/VBoxContainer/PanelContainer/EnemyBar")
+sand_storm_bar = NodePath("Control/SandStormBar")
 
-[node name="PlayerProfile" type="VBoxContainer" parent="Combat"]
+[node name="MarginContainer" type="MarginContainer" parent="Combat"]
 layout_mode = 2
-alignment = 1
+theme_override_constants/margin_bottom = 3
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Combat/PlayerProfile"]
-custom_minimum_size = Vector2(0, 128)
+[node name="EventProfile" type="HBoxContainer" parent="Combat/MarginContainer"]
 layout_mode = 2
-text = "The Player"
-fit_content = true
-autowrap_mode = 0
-horizontal_alignment = 1
-vertical_alignment = 1
 
-[node name="CenterContainer" type="CenterContainer" parent="Combat/PlayerProfile"]
+[node name="Interact" parent="Combat/MarginContainer/EventProfile" instance=ExtResource("11_3g4aq")]
+custom_minimum_size = Vector2(128, 128)
 layout_mode = 2
+size_flags_vertical = 8
+button_text = "Interact"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Combat/MarginContainer/EventProfile"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = -16
+
+[node name="MonsterProfile" type="CenterContainer" parent="Combat/MarginContainer/EventProfile/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="TextureRect" type="TextureRect" parent="Combat/PlayerProfile/CenterContainer"]
+[node name="TextureRect" type="TextureRect" parent="Combat/MarginContainer/EventProfile/VBoxContainer/MonsterProfile"]
+clip_children = 1
 layout_mode = 2
 texture = SubResource("GradientTexture2D_0n8nl")
 
-[node name="OpenChest" type="Button" parent="Combat/PlayerProfile" node_paths=PackedStringArray("chest")]
-custom_minimum_size = Vector2(0, 128)
-layout_mode = 2
-toggle_mode = true
-text = "Chest"
-script = ExtResource("9_we66y")
-chest = NodePath("../../Tabs/Chest/ChestSlots")
+[node name="EventPortrait" type="TextureRect" parent="Combat/MarginContainer/EventProfile/VBoxContainer/MonsterProfile/TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
 
-[node name="Board" type="PanelContainer" parent="Combat" node_paths=PackedStringArray("slots")]
+[node name="PanelContainer" type="PanelContainer" parent="Combat/MarginContainer/EventProfile/VBoxContainer"]
+custom_minimum_size = Vector2(0, 26)
 layout_mode = 2
-size_flags_horizontal = 3
-script = ExtResource("9_b0qb6")
-slots = NodePath("PlayerSlots")
+theme_override_styles/panel = SubResource("StyleBoxEmpty_m75k2")
 
-[node name="Background" type="VBoxContainer" parent="Combat/Board"]
+[node name="EnemyBar" parent="Combat/MarginContainer/EventProfile/VBoxContainer/PanelContainer" instance=ExtResource("29_yjsma")]
+visible = false
 layout_mode = 2
-size_flags_horizontal = 3
 
-[node name="PanelContainer" type="PanelContainer" parent="Combat/Board/Background"]
+[node name="Next" parent="Combat/MarginContainer/EventProfile" instance=ExtResource("11_3g4aq")]
+custom_minimum_size = Vector2(128, 128)
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="PanelContainer2" type="PanelContainer" parent="Combat/Board/Background"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="PanelContainer3" type="PanelContainer" parent="Combat/Board/Background"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="PanelContainer4" type="PanelContainer" parent="Combat/Board/Background"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="PanelContainer5" type="PanelContainer" parent="Combat/Board/Background"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="PanelContainer6" type="PanelContainer" parent="Combat/Board/Background"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="PanelContainer7" type="PanelContainer" parent="Combat/Board/Background"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="PanelContainer8" type="PanelContainer" parent="Combat/Board/Background"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="PanelContainer9" type="PanelContainer" parent="Combat/Board/Background"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="PanelContainer10" type="PanelContainer" parent="Combat/Board/Background"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="PlayerSlots" type="VBoxContainer" parent="Combat/Board"]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_constants/separation = 0
-
-[node name="PanelContainer" type="Control" parent="Combat/Board/PlayerSlots"]
-custom_minimum_size = Vector2(0, 54)
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-script = ExtResource("2_fw84d")
-
-[node name="PanelContainer2" type="Control" parent="Combat/Board/PlayerSlots"]
-custom_minimum_size = Vector2(0, 54)
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-script = ExtResource("2_fw84d")
-
-[node name="PanelContainer3" type="Control" parent="Combat/Board/PlayerSlots"]
-custom_minimum_size = Vector2(0, 54)
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-script = ExtResource("2_fw84d")
-
-[node name="PanelContainer4" type="Control" parent="Combat/Board/PlayerSlots"]
-custom_minimum_size = Vector2(0, 54)
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-script = ExtResource("2_fw84d")
-
-[node name="SkillObject" parent="Combat/Board/PlayerSlots/PanelContainer4" instance=ExtResource("3_m47tj")]
-custom_minimum_size = Vector2(0, 104)
-layout_mode = 0
-anchors_preset = 0
-anchor_right = 0.0
-offset_right = 231.0
-offset_bottom = 104.0
-grow_horizontal = 1
-data = SubResource("Resource_pu657")
-
-[node name="PanelContainer5" type="Control" parent="Combat/Board/PlayerSlots"]
-custom_minimum_size = Vector2(0, 54)
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-script = ExtResource("2_fw84d")
-
-[node name="PanelContainer6" type="Control" parent="Combat/Board/PlayerSlots"]
-custom_minimum_size = Vector2(0, 54)
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-script = ExtResource("2_fw84d")
-
-[node name="PanelContainer7" type="Control" parent="Combat/Board/PlayerSlots"]
-custom_minimum_size = Vector2(0, 54)
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-script = ExtResource("2_fw84d")
-
-[node name="PanelContainer8" type="Control" parent="Combat/Board/PlayerSlots"]
-custom_minimum_size = Vector2(0, 54)
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-script = ExtResource("2_fw84d")
-
-[node name="PanelContainer9" type="Control" parent="Combat/Board/PlayerSlots"]
-custom_minimum_size = Vector2(0, 54)
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-script = ExtResource("2_fw84d")
-
-[node name="PanelContainer10" type="Control" parent="Combat/Board/PlayerSlots"]
-custom_minimum_size = Vector2(0, 54)
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-script = ExtResource("2_fw84d")
+size_flags_vertical = 8
+button_text = "Next Event"
 
 [node name="Tabs" type="TabContainer" parent="Combat"]
+custom_minimum_size = Vector2(0, 138)
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 3
 theme_override_styles/tab_focus = SubResource("StyleBoxEmpty_pu657")
 theme_override_styles/tab_disabled = SubResource("StyleBoxEmpty_b0qb6")
 theme_override_styles/tabbar_background = SubResource("StyleBoxEmpty_7j37x")
@@ -338,18 +416,17 @@ theme_override_styles/panel = SubResource("StyleBoxEmpty_2mfnk")
 theme_override_styles/tab_selected = SubResource("StyleBoxEmpty_dyp05")
 theme_override_styles/tab_hovered = SubResource("StyleBoxEmpty_y74qm")
 theme_override_styles/tab_unselected = SubResource("StyleBoxEmpty_mud3a")
-current_tab = 3
+current_tab = 0
 tabs_visible = false
 
 [node name="Chest" type="PanelContainer" parent="Combat/Tabs" node_paths=PackedStringArray("slots")]
-visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 script = ExtResource("9_b0qb6")
-slots = NodePath("ChestSlots")
+slots = NodePath("MarginContainer/ChestSlots")
 metadata/_tab_index = 0
 
-[node name="Background" type="VBoxContainer" parent="Combat/Tabs/Chest"]
+[node name="Background" type="HBoxContainer" parent="Combat/Tabs/Chest"]
 layout_mode = 2
 size_flags_horizontal = 3
 
@@ -357,121 +434,135 @@ size_flags_horizontal = 3
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_y6e4m")
 
 [node name="PanelContainer2" type="PanelContainer" parent="Combat/Tabs/Chest/Background"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_y6e4m")
 
 [node name="PanelContainer3" type="PanelContainer" parent="Combat/Tabs/Chest/Background"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_y6e4m")
 
 [node name="PanelContainer4" type="PanelContainer" parent="Combat/Tabs/Chest/Background"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_y6e4m")
 
 [node name="PanelContainer5" type="PanelContainer" parent="Combat/Tabs/Chest/Background"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_y6e4m")
 
 [node name="PanelContainer6" type="PanelContainer" parent="Combat/Tabs/Chest/Background"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_y6e4m")
 
 [node name="PanelContainer7" type="PanelContainer" parent="Combat/Tabs/Chest/Background"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_y6e4m")
 
 [node name="PanelContainer8" type="PanelContainer" parent="Combat/Tabs/Chest/Background"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_y6e4m")
 
 [node name="PanelContainer9" type="PanelContainer" parent="Combat/Tabs/Chest/Background"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_y6e4m")
 
 [node name="PanelContainer10" type="PanelContainer" parent="Combat/Tabs/Chest/Background"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_y6e4m")
 
-[node name="ChestSlots" type="VBoxContainer" parent="Combat/Tabs/Chest"]
+[node name="MarginContainer" type="MarginContainer" parent="Combat/Tabs/Chest"]
+layout_mode = 2
+theme_override_constants/margin_top = 5
+
+[node name="ChestSlots" type="HBoxContainer" parent="Combat/Tabs/Chest/MarginContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 0
 
-[node name="PanelContainer" type="Control" parent="Combat/Tabs/Chest/ChestSlots"]
+[node name="PanelContainer" type="Control" parent="Combat/Tabs/Chest/MarginContainer/ChestSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("2_fw84d")
 
-[node name="PanelContainer2" type="Control" parent="Combat/Tabs/Chest/ChestSlots"]
+[node name="PanelContainer2" type="Control" parent="Combat/Tabs/Chest/MarginContainer/ChestSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("2_fw84d")
 
-[node name="PanelContainer3" type="Control" parent="Combat/Tabs/Chest/ChestSlots"]
+[node name="PanelContainer3" type="Control" parent="Combat/Tabs/Chest/MarginContainer/ChestSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("2_fw84d")
 
-[node name="PanelContainer4" type="Control" parent="Combat/Tabs/Chest/ChestSlots"]
+[node name="PanelContainer4" type="Control" parent="Combat/Tabs/Chest/MarginContainer/ChestSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("2_fw84d")
 
-[node name="PanelContainer5" type="Control" parent="Combat/Tabs/Chest/ChestSlots"]
+[node name="PanelContainer5" type="Control" parent="Combat/Tabs/Chest/MarginContainer/ChestSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("2_fw84d")
 
-[node name="PanelContainer6" type="Control" parent="Combat/Tabs/Chest/ChestSlots"]
+[node name="PanelContainer6" type="Control" parent="Combat/Tabs/Chest/MarginContainer/ChestSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("2_fw84d")
 
-[node name="PanelContainer7" type="Control" parent="Combat/Tabs/Chest/ChestSlots"]
+[node name="PanelContainer7" type="Control" parent="Combat/Tabs/Chest/MarginContainer/ChestSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("2_fw84d")
 
-[node name="PanelContainer8" type="Control" parent="Combat/Tabs/Chest/ChestSlots"]
+[node name="PanelContainer8" type="Control" parent="Combat/Tabs/Chest/MarginContainer/ChestSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("2_fw84d")
 
-[node name="PanelContainer9" type="Control" parent="Combat/Tabs/Chest/ChestSlots"]
+[node name="PanelContainer9" type="Control" parent="Combat/Tabs/Chest/MarginContainer/ChestSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("2_fw84d")
 
-[node name="PanelContainer10" type="Control" parent="Combat/Tabs/Chest/ChestSlots"]
+[node name="PanelContainer10" type="Control" parent="Combat/Tabs/Chest/MarginContainer/ChestSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -483,12 +574,12 @@ visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 script = ExtResource("9_b0qb6")
-slots = NodePath("MonsterSlots")
+slots = NodePath("MarginContainer/MonsterSlots")
 drag_disabled = true
 drop_disabled = true
 metadata/_tab_index = 1
 
-[node name="Background" type="VBoxContainer" parent="Combat/Tabs/MonsterBoard"]
+[node name="Background" type="HBoxContainer" parent="Combat/Tabs/MonsterBoard"]
 layout_mode = 2
 size_flags_horizontal = 3
 
@@ -542,12 +633,16 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="MonsterSlots" type="VBoxContainer" parent="Combat/Tabs/MonsterBoard"]
+[node name="MarginContainer" type="MarginContainer" parent="Combat/Tabs/MonsterBoard"]
+layout_mode = 2
+theme_override_constants/margin_top = 5
+
+[node name="MonsterSlots" type="HBoxContainer" parent="Combat/Tabs/MonsterBoard/MarginContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 0
 
-[node name="PanelContainer" type="Control" parent="Combat/Tabs/MonsterBoard/MonsterSlots"]
+[node name="PanelContainer" type="Control" parent="Combat/Tabs/MonsterBoard/MarginContainer/MonsterSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -556,7 +651,7 @@ script = ExtResource("2_fw84d")
 drag_disabled = true
 drop_disabled = true
 
-[node name="PanelContainer2" type="Control" parent="Combat/Tabs/MonsterBoard/MonsterSlots"]
+[node name="PanelContainer2" type="Control" parent="Combat/Tabs/MonsterBoard/MarginContainer/MonsterSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -565,7 +660,7 @@ script = ExtResource("2_fw84d")
 drag_disabled = true
 drop_disabled = true
 
-[node name="PanelContainer3" type="Control" parent="Combat/Tabs/MonsterBoard/MonsterSlots"]
+[node name="PanelContainer3" type="Control" parent="Combat/Tabs/MonsterBoard/MarginContainer/MonsterSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -574,7 +669,7 @@ script = ExtResource("2_fw84d")
 drag_disabled = true
 drop_disabled = true
 
-[node name="PanelContainer4" type="Control" parent="Combat/Tabs/MonsterBoard/MonsterSlots"]
+[node name="PanelContainer4" type="Control" parent="Combat/Tabs/MonsterBoard/MarginContainer/MonsterSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -583,7 +678,7 @@ script = ExtResource("2_fw84d")
 drag_disabled = true
 drop_disabled = true
 
-[node name="PanelContainer5" type="Control" parent="Combat/Tabs/MonsterBoard/MonsterSlots"]
+[node name="PanelContainer5" type="Control" parent="Combat/Tabs/MonsterBoard/MarginContainer/MonsterSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -592,7 +687,7 @@ script = ExtResource("2_fw84d")
 drag_disabled = true
 drop_disabled = true
 
-[node name="PanelContainer6" type="Control" parent="Combat/Tabs/MonsterBoard/MonsterSlots"]
+[node name="PanelContainer6" type="Control" parent="Combat/Tabs/MonsterBoard/MarginContainer/MonsterSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -601,7 +696,7 @@ script = ExtResource("2_fw84d")
 drag_disabled = true
 drop_disabled = true
 
-[node name="PanelContainer7" type="Control" parent="Combat/Tabs/MonsterBoard/MonsterSlots"]
+[node name="PanelContainer7" type="Control" parent="Combat/Tabs/MonsterBoard/MarginContainer/MonsterSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -610,7 +705,7 @@ script = ExtResource("2_fw84d")
 drag_disabled = true
 drop_disabled = true
 
-[node name="PanelContainer8" type="Control" parent="Combat/Tabs/MonsterBoard/MonsterSlots"]
+[node name="PanelContainer8" type="Control" parent="Combat/Tabs/MonsterBoard/MarginContainer/MonsterSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -619,7 +714,7 @@ script = ExtResource("2_fw84d")
 drag_disabled = true
 drop_disabled = true
 
-[node name="PanelContainer9" type="Control" parent="Combat/Tabs/MonsterBoard/MonsterSlots"]
+[node name="PanelContainer9" type="Control" parent="Combat/Tabs/MonsterBoard/MarginContainer/MonsterSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -628,7 +723,7 @@ script = ExtResource("2_fw84d")
 drag_disabled = true
 drop_disabled = true
 
-[node name="PanelContainer10" type="Control" parent="Combat/Tabs/MonsterBoard/MonsterSlots"]
+[node name="PanelContainer10" type="Control" parent="Combat/Tabs/MonsterBoard/MarginContainer/MonsterSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -640,11 +735,11 @@ visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 script = ExtResource("9_b0qb6")
-slots = NodePath("ShopSlots")
+slots = NodePath("MarginContainer/ShopSlots")
 drop_disabled = true
 metadata/_tab_index = 2
 
-[node name="Background" type="VBoxContainer" parent="Combat/Tabs/Shop"]
+[node name="Background" type="HBoxContainer" parent="Combat/Tabs/Shop"]
 layout_mode = 2
 size_flags_horizontal = 3
 
@@ -698,12 +793,16 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="ShopSlots" type="VBoxContainer" parent="Combat/Tabs/Shop"]
+[node name="MarginContainer" type="MarginContainer" parent="Combat/Tabs/Shop"]
+layout_mode = 2
+theme_override_constants/margin_top = 5
+
+[node name="ShopSlots" type="HBoxContainer" parent="Combat/Tabs/Shop/MarginContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 0
 
-[node name="PanelContainer" type="Control" parent="Combat/Tabs/Shop/ShopSlots"]
+[node name="PanelContainer" type="Control" parent="Combat/Tabs/Shop/MarginContainer/ShopSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -711,7 +810,7 @@ size_flags_vertical = 3
 script = ExtResource("2_fw84d")
 drop_disabled = true
 
-[node name="PanelContainer2" type="Control" parent="Combat/Tabs/Shop/ShopSlots"]
+[node name="PanelContainer2" type="Control" parent="Combat/Tabs/Shop/MarginContainer/ShopSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -719,7 +818,7 @@ size_flags_vertical = 3
 script = ExtResource("2_fw84d")
 drop_disabled = true
 
-[node name="PanelContainer3" type="Control" parent="Combat/Tabs/Shop/ShopSlots"]
+[node name="PanelContainer3" type="Control" parent="Combat/Tabs/Shop/MarginContainer/ShopSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -727,7 +826,7 @@ size_flags_vertical = 3
 script = ExtResource("2_fw84d")
 drop_disabled = true
 
-[node name="PanelContainer4" type="Control" parent="Combat/Tabs/Shop/ShopSlots"]
+[node name="PanelContainer4" type="Control" parent="Combat/Tabs/Shop/MarginContainer/ShopSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -735,7 +834,7 @@ size_flags_vertical = 3
 script = ExtResource("2_fw84d")
 drop_disabled = true
 
-[node name="PanelContainer5" type="Control" parent="Combat/Tabs/Shop/ShopSlots"]
+[node name="PanelContainer5" type="Control" parent="Combat/Tabs/Shop/MarginContainer/ShopSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -743,7 +842,7 @@ size_flags_vertical = 3
 script = ExtResource("2_fw84d")
 drop_disabled = true
 
-[node name="PanelContainer6" type="Control" parent="Combat/Tabs/Shop/ShopSlots"]
+[node name="PanelContainer6" type="Control" parent="Combat/Tabs/Shop/MarginContainer/ShopSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -751,7 +850,7 @@ size_flags_vertical = 3
 script = ExtResource("2_fw84d")
 drop_disabled = true
 
-[node name="PanelContainer7" type="Control" parent="Combat/Tabs/Shop/ShopSlots"]
+[node name="PanelContainer7" type="Control" parent="Combat/Tabs/Shop/MarginContainer/ShopSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -759,7 +858,7 @@ size_flags_vertical = 3
 script = ExtResource("2_fw84d")
 drop_disabled = true
 
-[node name="PanelContainer8" type="Control" parent="Combat/Tabs/Shop/ShopSlots"]
+[node name="PanelContainer8" type="Control" parent="Combat/Tabs/Shop/MarginContainer/ShopSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -767,7 +866,7 @@ size_flags_vertical = 3
 script = ExtResource("2_fw84d")
 drop_disabled = true
 
-[node name="PanelContainer9" type="Control" parent="Combat/Tabs/Shop/ShopSlots"]
+[node name="PanelContainer9" type="Control" parent="Combat/Tabs/Shop/MarginContainer/ShopSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -775,7 +874,7 @@ size_flags_vertical = 3
 script = ExtResource("2_fw84d")
 drop_disabled = true
 
-[node name="PanelContainer10" type="Control" parent="Combat/Tabs/Shop/ShopSlots"]
+[node name="PanelContainer10" type="Control" parent="Combat/Tabs/Shop/MarginContainer/ShopSlots"]
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -783,6 +882,7 @@ size_flags_vertical = 3
 script = ExtResource("2_fw84d")
 
 [node name="EventChoice" type="PanelContainer" parent="Combat/Tabs"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 metadata/_tab_index = 3
@@ -790,42 +890,18 @@ metadata/_tab_index = 3
 [node name="CenterContainer" type="CenterContainer" parent="Combat/Tabs/EventChoice"]
 layout_mode = 2
 
-[node name="EventChoiceContainer" type="VBoxContainer" parent="Combat/Tabs/EventChoice/CenterContainer"]
+[node name="EventChoiceContainer" type="HBoxContainer" parent="Combat/Tabs/EventChoice/CenterContainer"]
 layout_mode = 2
 theme_override_constants/separation = 16
 
-[node name="EventButton" type="PanelContainer" parent="Combat/Tabs/EventChoice/CenterContainer/EventChoiceContainer"]
+[node name="ButtonImageRound" parent="Combat/Tabs/EventChoice/CenterContainer/EventChoiceContainer" instance=ExtResource("19_2w04l")]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="Combat/Tabs/EventChoice/CenterContainer/EventChoiceContainer/EventButton"]
-layout_mode = 2
-texture = SubResource("GradientTexture2D_7j37x")
-
-[node name="Event1" type="Button" parent="Combat/Tabs/EventChoice/CenterContainer/EventChoiceContainer/EventButton"]
-layout_mode = 2
-text = "Event 1"
-
-[node name="EventButton2" type="PanelContainer" parent="Combat/Tabs/EventChoice/CenterContainer/EventChoiceContainer"]
+[node name="ButtonImageRound2" parent="Combat/Tabs/EventChoice/CenterContainer/EventChoiceContainer" instance=ExtResource("19_2w04l")]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="Combat/Tabs/EventChoice/CenterContainer/EventChoiceContainer/EventButton2"]
+[node name="ButtonImageRound3" parent="Combat/Tabs/EventChoice/CenterContainer/EventChoiceContainer" instance=ExtResource("19_2w04l")]
 layout_mode = 2
-texture = SubResource("GradientTexture2D_7j37x")
-
-[node name="Event1" type="Button" parent="Combat/Tabs/EventChoice/CenterContainer/EventChoiceContainer/EventButton2"]
-layout_mode = 2
-text = "Event 1"
-
-[node name="EventButton3" type="PanelContainer" parent="Combat/Tabs/EventChoice/CenterContainer/EventChoiceContainer"]
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="Combat/Tabs/EventChoice/CenterContainer/EventChoiceContainer/EventButton3"]
-layout_mode = 2
-texture = SubResource("GradientTexture2D_7j37x")
-
-[node name="Event1" type="Button" parent="Combat/Tabs/EventChoice/CenterContainer/EventChoiceContainer/EventButton3"]
-layout_mode = 2
-text = "Event 1"
 
 [node name="EventButtonContainer" type="PanelContainer" parent="Combat/Tabs"]
 visible = false
@@ -836,63 +912,312 @@ metadata/_tab_index = 4
 [node name="CenterContainer" type="CenterContainer" parent="Combat/Tabs/EventButtonContainer"]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Combat/Tabs/EventButtonContainer/CenterContainer"]
+[node name="VBoxContainer" type="HBoxContainer" parent="Combat/Tabs/EventButtonContainer/CenterContainer"]
 layout_mode = 2
 theme_override_constants/separation = 16
 
-[node name="EventButton" type="PanelContainer" parent="Combat/Tabs/EventButtonContainer/CenterContainer/VBoxContainer"]
+[node name="ButtonImageRound" parent="Combat/Tabs/EventButtonContainer/CenterContainer/VBoxContainer" instance=ExtResource("19_2w04l")]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="Combat/Tabs/EventButtonContainer/CenterContainer/VBoxContainer/EventButton"]
-layout_mode = 2
-texture = SubResource("GradientTexture2D_7j37x")
-
-[node name="Event1" type="Button" parent="Combat/Tabs/EventButtonContainer/CenterContainer/VBoxContainer/EventButton"]
-layout_mode = 2
-text = "Event 1"
-
-[node name="EventButton2" type="PanelContainer" parent="Combat/Tabs/EventButtonContainer/CenterContainer/VBoxContainer"]
+[node name="ButtonImageRound2" parent="Combat/Tabs/EventButtonContainer/CenterContainer/VBoxContainer" instance=ExtResource("19_2w04l")]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="Combat/Tabs/EventButtonContainer/CenterContainer/VBoxContainer/EventButton2"]
-layout_mode = 2
-texture = SubResource("GradientTexture2D_7j37x")
-
-[node name="Event1" type="Button" parent="Combat/Tabs/EventButtonContainer/CenterContainer/VBoxContainer/EventButton2"]
-layout_mode = 2
-text = "Event 1"
-
-[node name="EventButton3" type="PanelContainer" parent="Combat/Tabs/EventButtonContainer/CenterContainer/VBoxContainer"]
+[node name="ButtonImageRound3" parent="Combat/Tabs/EventButtonContainer/CenterContainer/VBoxContainer" instance=ExtResource("19_2w04l")]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="Combat/Tabs/EventButtonContainer/CenterContainer/VBoxContainer/EventButton3"]
-layout_mode = 2
-texture = SubResource("GradientTexture2D_7j37x")
-
-[node name="Event1" type="Button" parent="Combat/Tabs/EventButtonContainer/CenterContainer/VBoxContainer/EventButton3"]
-layout_mode = 2
-text = "Event 1"
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Combat"]
+[node name="Control" type="Control" parent="Combat"]
+custom_minimum_size = Vector2(0, 5)
 layout_mode = 2
 
-[node name="Interact" parent="Combat/VBoxContainer" instance=ExtResource("11_3g4aq")]
-custom_minimum_size = Vector2(100, 128)
-layout_mode = 2
-button_text = "Interact"
+[node name="SandStormBar" type="ProgressBar" parent="Combat/Control"]
+visible = false
+custom_minimum_size = Vector2(0, 3.3)
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -0.5
+offset_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/background = SubResource("StyleBoxEmpty_pvloj")
+theme_override_styles/fill = SubResource("StyleBoxTexture_m75k2")
+value = 14.82
+show_percentage = false
 
-[node name="MonsterProfile" type="CenterContainer" parent="Combat/VBoxContainer"]
+[node name="Board" type="PanelContainer" parent="Combat" node_paths=PackedStringArray("slots")]
+custom_minimum_size = Vector2(0, 138)
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("9_b0qb6")
+slots = NodePath("MarginContainer/PlayerSlots")
+
+[node name="Background" type="HBoxContainer" parent="Combat/Board"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="Combat/Board/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="TextureRect" type="TextureRect" parent="Combat/VBoxContainer/MonsterProfile"]
+[node name="PanelContainer2" type="PanelContainer" parent="Combat/Board/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer3" type="PanelContainer" parent="Combat/Board/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer4" type="PanelContainer" parent="Combat/Board/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer5" type="PanelContainer" parent="Combat/Board/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer6" type="PanelContainer" parent="Combat/Board/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer7" type="PanelContainer" parent="Combat/Board/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer8" type="PanelContainer" parent="Combat/Board/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer9" type="PanelContainer" parent="Combat/Board/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer10" type="PanelContainer" parent="Combat/Board/Background"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="Combat/Board"]
+layout_mode = 2
+theme_override_constants/margin_top = 5
+
+[node name="PlayerSlots" type="HBoxContainer" parent="Combat/Board/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 0
+
+[node name="PanelContainer" type="Control" parent="Combat/Board/MarginContainer/PlayerSlots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer2" type="Control" parent="Combat/Board/MarginContainer/PlayerSlots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer3" type="Control" parent="Combat/Board/MarginContainer/PlayerSlots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer4" type="Control" parent="Combat/Board/MarginContainer/PlayerSlots"]
+custom_minimum_size = Vector2(69, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer5" type="Control" parent="Combat/Board/MarginContainer/PlayerSlots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer6" type="Control" parent="Combat/Board/MarginContainer/PlayerSlots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer7" type="Control" parent="Combat/Board/MarginContainer/PlayerSlots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer8" type="Control" parent="Combat/Board/MarginContainer/PlayerSlots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer9" type="Control" parent="Combat/Board/MarginContainer/PlayerSlots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="PanelContainer10" type="Control" parent="Combat/Board/MarginContainer/PlayerSlots"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_fw84d")
+
+[node name="MarginContainer2" type="MarginContainer" parent="Combat"]
+layout_mode = 2
+theme_override_constants/margin_top = 3
+
+[node name="PlayerProfile" type="HBoxContainer" parent="Combat/MarginContainer2"]
+layout_mode = 2
+alignment = 1
+
+[node name="OpenChest" type="Button" parent="Combat/MarginContainer2/PlayerProfile" node_paths=PackedStringArray("chest")]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+size_flags_vertical = 0
+toggle_mode = true
+text = "Chest"
+script = ExtResource("9_we66y")
+chest = NodePath("../../../Tabs/Chest/MarginContainer/ChestSlots")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Combat/MarginContainer2/PlayerProfile"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = -16
+
+[node name="PanelContainer" type="PanelContainer" parent="Combat/MarginContainer2/PlayerProfile/VBoxContainer"]
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_6jv8j")
+
+[node name="PlayerBar" parent="Combat/MarginContainer2/PlayerProfile/VBoxContainer/PanelContainer" instance=ExtResource("29_yjsma")]
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="Combat/MarginContainer2/PlayerProfile/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureRect" type="TextureRect" parent="Combat/MarginContainer2/PlayerProfile/VBoxContainer/CenterContainer"]
+clip_children = 1
 layout_mode = 2
 texture = SubResource("GradientTexture2D_0n8nl")
 
-[node name="Next" parent="Combat/VBoxContainer" instance=ExtResource("11_3g4aq")]
-custom_minimum_size = Vector2(100, 128)
+[node name="TextureRect" type="TextureRect" parent="Combat/MarginContainer2/PlayerProfile/VBoxContainer/CenterContainer/TextureRect"]
+self_modulate = Color(0.179561, 0.36057, 0.324405, 1)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("22_r645r")
+
+[node name="PlayerPortrait" type="TextureRect" parent="Combat/MarginContainer2/PlayerProfile/VBoxContainer/CenterContainer/TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 11.0
+offset_bottom = 11.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("25_5tgns")
+expand_mode = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="Combat/MarginContainer2/PlayerProfile"]
+custom_minimum_size = Vector2(128, 128)
 layout_mode = 2
-button_text = "Next Event"
+size_flags_vertical = 0
+script = ExtResource("20_y6e4m")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Combat/MarginContainer2/PlayerProfile/PanelContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="CoinsLabel" type="RichTextLabel" parent="Combat/MarginContainer2/PlayerProfile/PanelContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+bbcode_enabled = true
+text = "[b]45[/b] [color=gold][b]Coins[/b][/color]"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="IncomeLabel" type="RichTextLabel" parent="Combat/MarginContainer2/PlayerProfile/PanelContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+bbcode_enabled = true
+text = "+3 [color=gold][b]Coins[/b][/color] / [b]Day[/b]"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="XpLabel" type="RichTextLabel" parent="Combat/MarginContainer2/PlayerProfile/PanelContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+bbcode_enabled = true
+text = "[b]4[/b] / 10 [color=plum][b]XP[/b]"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Combat/MarginContainer2/PlayerProfile/PanelContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="CoinsLabel" type="RichTextLabel" parent="Combat/MarginContainer2/PlayerProfile/PanelContainer/VBoxContainer2"]
+layout_mode = 2
+bbcode_enabled = true
+text = "[b]45[/b] [color=gold][b]Coins[/b][/color]"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="IncomeLabel" type="RichTextLabel" parent="Combat/MarginContainer2/PlayerProfile/PanelContainer/VBoxContainer2"]
+layout_mode = 2
+bbcode_enabled = true
+text = "+3 [color=gold][b]Coins[/b][/color] / [b]Day[/b]"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="XpLabel" type="RichTextLabel" parent="Combat/MarginContainer2/PlayerProfile/PanelContainer/VBoxContainer2"]
+layout_mode = 2
+bbcode_enabled = true
+text = "[b]4[/b] / 10 [color=plum][b]XP[/b]"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Intro" type="CenterContainer" parent="."]
 visible = false
@@ -920,98 +1245,86 @@ layout_mode = 2
 [node name="RichTextLabel" type="RichTextLabel" parent="Intro/VBoxContainer"]
 layout_mode = 2
 bbcode_enabled = true
-text = "Please choose your starting Skill:"
+text = "Chose your Adventurer:"
 fit_content = true
 autowrap_mode = 0
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Intro/VBoxContainer"]
+[node name="VBoxContainer" type="GridContainer" parent="Intro/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+columns = 2
 
-[node name="SkillChoice1" type="Button" parent="Intro/VBoxContainer/VBoxContainer"]
-custom_minimum_size = Vector2(200, 54)
+[node name="Pygmalien" parent="Intro/VBoxContainer/VBoxContainer" instance=ExtResource("19_2w04l")]
 layout_mode = 2
+image = ExtResource("22_r645r")
 
-[node name="Icon" type="TextureRect" parent="Intro/VBoxContainer/VBoxContainer/SkillChoice1"]
+[node name="Select" type="TextureRect" parent="Intro/VBoxContainer/VBoxContainer/Pygmalien"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
-texture = ExtResource("4_0n8nl")
-expand_mode = 3
-stretch_mode = 5
+texture = SubResource("GradientTexture2D_m1pe2")
 
-[node name="Select" type="TextureRect" parent="Intro/VBoxContainer/VBoxContainer/SkillChoice1"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-texture = SubResource("GradientTexture2D_57kq1")
+[node name="Pygmalien" type="Sprite2D" parent="Intro/VBoxContainer/VBoxContainer/Pygmalien"]
+position = Vector2(65, 134)
+texture = ExtResource("23_pc5es")
 
-[node name="SkillChoice2" type="Button" parent="Intro/VBoxContainer/VBoxContainer"]
-custom_minimum_size = Vector2(200, 54)
+[node name="Dooley" parent="Intro/VBoxContainer/VBoxContainer" instance=ExtResource("19_2w04l")]
 layout_mode = 2
+image = ExtResource("22_r645r")
 
-[node name="Icon" type="TextureRect" parent="Intro/VBoxContainer/VBoxContainer/SkillChoice2"]
+[node name="Select" type="TextureRect" parent="Intro/VBoxContainer/VBoxContainer/Dooley"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
-texture = ExtResource("4_0n8nl")
-expand_mode = 3
-stretch_mode = 5
+texture = SubResource("GradientTexture2D_m1pe2")
 
-[node name="Select" type="TextureRect" parent="Intro/VBoxContainer/VBoxContainer/SkillChoice2"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-texture = SubResource("GradientTexture2D_57kq1")
+[node name="Dooley" type="Sprite2D" parent="Intro/VBoxContainer/VBoxContainer/Dooley"]
+position = Vector2(68, 70)
+scale = Vector2(0.671875, 0.671875)
+texture = ExtResource("24_070me")
 
-[node name="SkillChoice3" type="Button" parent="Intro/VBoxContainer/VBoxContainer"]
-custom_minimum_size = Vector2(200, 54)
+[node name="Vanessa" parent="Intro/VBoxContainer/VBoxContainer" instance=ExtResource("19_2w04l")]
 layout_mode = 2
+image = ExtResource("22_r645r")
 
-[node name="Icon" type="TextureRect" parent="Intro/VBoxContainer/VBoxContainer/SkillChoice3"]
+[node name="Select" type="TextureRect" parent="Intro/VBoxContainer/VBoxContainer/Vanessa"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
-texture = ExtResource("4_0n8nl")
-expand_mode = 3
-stretch_mode = 5
+texture = SubResource("GradientTexture2D_m1pe2")
 
-[node name="Select" type="TextureRect" parent="Intro/VBoxContainer/VBoxContainer/SkillChoice3"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-texture = SubResource("GradientTexture2D_57kq1")
+[node name="Vanessa" type="Sprite2D" parent="Intro/VBoxContainer/VBoxContainer/Vanessa"]
+position = Vector2(78, 137)
+texture = ExtResource("25_5tgns")
 
-[node name="Control2" type="Control" parent="Intro/VBoxContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 50)
+[node name="Mak" parent="Intro/VBoxContainer/VBoxContainer" instance=ExtResource("19_2w04l")]
 layout_mode = 2
+image = ExtResource("22_r645r")
+
+[node name="Select" type="TextureRect" parent="Intro/VBoxContainer/VBoxContainer/Mak"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_m1pe2")
+
+[node name="Mak" type="Sprite2D" parent="Intro/VBoxContainer/VBoxContainer/Mak"]
+position = Vector2(53, 212)
+texture = ExtResource("26_vp0hs")
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="Intro/VBoxContainer"]
 layout_mode = 2
@@ -1030,3 +1343,11 @@ layout_mode = 2
 [node name="Start" type="Button" parent="Intro/VBoxContainer"]
 layout_mode = 2
 text = "Start Your Adventure"
+
+[node name="Bg" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.317647)
+show_behind_parent = true
+position = Vector2(559.333, 299.75)
+scale = Vector2(0.600463, 0.600463)
+texture = ExtResource("38_yjsma")
+metadata/_edit_lock_ = true

@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="Adventure_EventData_GainOneItem" load_steps=6 format=3 uid="uid://bscc7gseo7k1w"]
+
+[ext_resource type="Script" uid="uid://bfea02iatpq4c" path="res://pages/page_adventure/skills/data/item_current_data.gd" id="1_0qu2d"]
+[ext_resource type="Texture2D" uid="uid://b77gk2n4cvr8t" path="res://BazzarDBParser/events_images/125px-The_Docks.png" id="2_6k3j1"]
+[ext_resource type="Script" uid="uid://hmol4xn55wyj" path="res://pages/page_adventure/skills/data/item_filter.gd" id="3_r3kqk"]
+[ext_resource type="Script" uid="uid://2qlnvqpadnho" path="res://pages/page_adventure/events/event_gain_one_item.gd" id="4_nfp82"]
+
+[sub_resource type="Resource" id="Resource_4k2jo"]
+script = ExtResource("3_r3kqk")
+filter_collection = false
+collections = Array[int]([])
+filter_size = true
+sizes = Array[int]([1])
+filter_type = false
+types = Array[int]([])
+filter_except_type = false
+except_types = Array[int]([])
+filter_by_tier = true
+minimum_tier = 1
+metadata/_custom_type_script = "uid://hmol4xn55wyj"
+
+[resource]
+script = ExtResource("4_nfp82")
+item_filter = SubResource("Resource_4k2jo")
+use_character_collection_filter = true
+force_avaible_and_ignore_filter = false
+tier_upgrade = 0
+available_items = Array[ExtResource("1_0qu2d")]([])
+items_per_rerol = 3
+rerol_starting_cost = 1
+can_rerol = false
+icon = ExtResource("2_6k3j1")
+title = "Welcome's
+[b][color=yellow_green]Gift[/color][/b]"
+tooltip_text = "Welcome to the [color=lemon_chiffon]Raffi[/color]'s Copy of  \"[b][color=orange]The Bazaar[/color][/b]\"
+
+Have a nice [b]Game[/b] !"
+character_played = Array[int]([1, 3, 2, 4, 6])
+metadata/_custom_type_script = "uid://2qlnvqpadnho"
