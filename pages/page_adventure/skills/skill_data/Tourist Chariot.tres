@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://d4j38tqy54iyb"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_kfo4d"]
+[ext_resource type="Texture2D" uid="uid://bf4nonarslho2" path="res://BazzarDBParser/Items_501-603_files/180px-Tourist_Chariot.png" id="2_m6bpr"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_o2j0h"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_utdsm"]
+
+[resource]
+script = ExtResource("3_o2j0h")
+name = "Tourist Chariot"
+icon = ExtResource("2_m6bpr")
+description = "[color=f4cf21]Shield[/color] [color=f4cf21][b]20[/b]/[b]40[/b]/[b]80[/b]/[b]160[/b][/color]. When you sell this, give your items +1/2/3/4 value."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([6, 12, 24, 48])
+active_effects = Array[ExtResource("1_kfo4d")]([])
+triggered_effects = Dictionary[int, ExtResource("4_utdsm")]({})
+size = 3
+starting_tier = 1
+collection = 5
+type = Array[int]([6, 19, 28])
+dev_state = 1

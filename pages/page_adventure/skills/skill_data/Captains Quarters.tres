@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dd0743e28idr3"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_fhhaj"]
+[ext_resource type="Texture2D" uid="uid://cebx024d3psb" path="res://BazzarDBParser/Items_001-500_files/180px-Captain's_Quarters.jpeg" id="2_ahn4b"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_ydsl2"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_rl4o3"]
+
+[resource]
+script = ExtResource("3_ydsl2")
+name = "Captains Quarters"
+icon = ExtResource("2_ahn4b")
+description = "[color=00ffce]Haste[/color] 1 [color=9aabff]Vehicle[/color] for [color=00ffce][b]2[/b]/[b]3[/b]/[b]4[/b][/color] second(s). [color=00eac1][b]Charge[/b][/color] 1 [color=9aabff]Tool[/color] [color=00eac1][b]1[/b]/[b]2[/b]/[b]3[/b][/color] second(s). [b][color=f9923c]Reload[/color][/b] 1 [color=f9923c]Ammo[/color] item [color=f9923c][b]1[/b]/[b]2[/b]/[b]3[/b][/color] [color=f9923c]Ammo[/color]. A [color=9aabff]Weapon[/color] gains +[color=fa5436][b]20[/b]/[b]30[/b]/[b]40[/b][/color] [color=fa5436]Damage[/color] for the fight."
+cooldown = Array[float]([4.0])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_fhhaj")]([])
+triggered_effects = Dictionary[int, ExtResource("4_rl4o3")]({})
+size = 3
+starting_tier = 2
+collection = 2
+type = Array[int]([9, 14, 31, 11, 16, 23])
+dev_state = 1

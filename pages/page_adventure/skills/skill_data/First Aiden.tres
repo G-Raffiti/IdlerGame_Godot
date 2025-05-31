@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://buw3tw2cfumar"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_owoaw"]
+[ext_resource type="Texture2D" uid="uid://nlq4q7c4bfql" path="res://BazzarDBParser/Items_001-500_files/180px-First_Aiden.png" id="2_ncgru"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_eipah"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_adtxc"]
+
+[resource]
+script = ExtResource("3_eipah")
+name = "First Aiden"
+icon = ExtResource("2_ncgru")
+description = "[color=8fe930]Heal[/color] [color=8fe930][b]20[/b]/[b]30[/b]/[b]40[/b]/[b]50[/b][/color]. [color=00ffce]Haste[/color] 1 item for [color=00ffce][b]1[/b]/[b]2[/b]/[b]3[/b]/[b]4[/b][/color] second(s)."
+cooldown = Array[float]([4.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_owoaw")]([])
+triggered_effects = Dictionary[int, ExtResource("4_adtxc")]({})
+size = 1
+starting_tier = 1
+collection = 3
+type = Array[int]([12, 23, 27])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://fkeggupylb18"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_ohmvo"]
+[ext_resource type="Texture2D" uid="uid://d3kyxmmy6qj4r" path="res://BazzarDBParser/Items_501-603_files/180px-Wanted_Poster.png" id="2_c6che"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_gfnrj"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_3rpko"]
+
+[resource]
+script = ExtResource("3_gfnrj")
+name = "Wanted Poster"
+icon = ExtResource("2_c6che")
+description = "When you win a fight against a Hero, gain [color=63ceec][b]1[/b][/color] [color=63ceec]XP[/color]. If you had Wanted Poster on your board, gain [color=63ceec][b]1[/b][/color] additional [color=63ceec]XP[/color]. Your items have [color=f75139][b]10 / 20 / 30[/b][/color]% [color=f75139]Crit Chance[/color]."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_ohmvo")]([])
+triggered_effects = Dictionary[int, ExtResource("4_3rpko")]({})
+size = 2
+starting_tier = 2
+collection = 2
+type = Array[int]([24, 54])
+dev_state = 1

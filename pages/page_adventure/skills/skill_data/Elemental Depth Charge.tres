@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://v078v0l1ymra"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_pgasn"]
+[ext_resource type="Texture2D" uid="uid://cwedqweibv6tb" path="res://BazzarDBParser/Items_001-500_files/180px-Elemental_Depth_Charge.png" id="2_3iae6"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_l5dyn"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_iu2f8"]
+
+[resource]
+script = ExtResource("3_l5dyn")
+name = "Elemental Depth Charge"
+icon = ExtResource("2_3iae6")
+description = "[color=0fb54b]Poison[/color] [color=0fb54b][b]4[/b][/color], [color=fc933e]Burn[/color] [color=fc933e][b]4[/b][/color], and [color=3fcfff]Freeze[/color] 1 [color=e79b54]Medium[/color] or [color=e79b54]Small[/color] item for [color=3fcfff][b]0.5[/b][/color] second(s). This has +1 Multicast for each other [color=9aabff]Aquatic[/color] item you have."
+cooldown = Array[float]([12.0, 10.0, 8.0])
+ammo = Array[int]([1])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_pgasn")]([])
+triggered_effects = Dictionary[int, ExtResource("4_iu2f8")]({})
+size = 2
+starting_tier = 2
+collection = 2
+type = Array[int]([9, 32, 8, 40, 21, 17])
+dev_state = 1

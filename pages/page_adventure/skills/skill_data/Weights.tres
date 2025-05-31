@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://tlkkj84xa84r"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_3rlc1"]
+[ext_resource type="Texture2D" uid="uid://bbbkwreepacg7" path="res://BazzarDBParser/Items_501-603_files/180px-Weights.png" id="2_qh3v7"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_cvjfm"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_u82gn"]
+
+[resource]
+script = ExtResource("3_cvjfm")
+name = "Weights"
+icon = ExtResource("2_qh3v7")
+description = "Your [color=9aabff]Weapons[/color] gain [color=fa5436][b]10[/b]/[b]15[/b]/[b]20[/b]/[b]25 [/b][/color] [color=fa5436]Damage[/color] and your [color=8fe930]Heal[/color] items gain [color=8fe930]Heal[/color] [color=8fe930][b]10[/b]/[b]15[/b]/[b]20[/b]/[b]25 [/b][/color] for the fight. When you Over [color=8fe930]Heal[/color], [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1[/b][/color] seconds."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_3rlc1")]([])
+triggered_effects = Dictionary[int, ExtResource("4_u82gn")]({})
+size = 2
+starting_tier = 1
+collection = 1
+type = Array[int]([2, 16, 29])
+dev_state = 1

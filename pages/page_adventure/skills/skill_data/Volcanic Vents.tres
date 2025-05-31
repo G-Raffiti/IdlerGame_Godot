@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://o8ptneut02hm"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_wv88g"]
+[ext_resource type="Texture2D" uid="uid://be2smur4ei0k3" path="res://BazzarDBParser/Items_501-603_files/180px-Volcanic_Vents.png" id="2_sebsi"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_xpwg2"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_7wh23"]
+
+[resource]
+script = ExtResource("3_xpwg2")
+name = "Volcanic Vents"
+icon = ExtResource("2_sebsi")
+description = "[color=fc933e]Burn[/color] [color=fc933e][b]3[/b]/[b]6[/b]/[b]9[/b]/[b]12 [/b][/color]. Multicast: 3"
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_wv88g")]([])
+triggered_effects = Dictionary[int, ExtResource("4_7wh23")]({})
+size = 2
+starting_tier = 1
+collection = 2
+type = Array[int]([9, 32])
+dev_state = 1

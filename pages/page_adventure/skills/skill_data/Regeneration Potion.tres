@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dqhg2l5npwh5y"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_nkfbg"]
+[ext_resource type="Texture2D" uid="uid://dyla82htnekxm" path="res://BazzarDBParser/Items_001-500_files/180px-Regeneration_Potion.jpeg" id="2_maroa"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_mi4sj"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_enij5"]
+
+[resource]
+script = ExtResource("3_mi4sj")
+name = "Regeneration Potion"
+icon = ExtResource("2_maroa")
+description = "Gain [color=8fe930][b]8[/b]/[b]16[/b]/[b]24[/b][/color] [color=8fe930]Regen[/color] for the fight."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([1])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_nkfbg")]([])
+triggered_effects = Dictionary[int, ExtResource("4_enij5")]({})
+size = 1
+starting_tier = 2
+collection = 4
+type = Array[int]([42, 8, 22])
+dev_state = 1

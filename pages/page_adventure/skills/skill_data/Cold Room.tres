@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://blcgslbyjwm16"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_a0se3"]
+[ext_resource type="Texture2D" uid="uid://ccru0kmlk8sve" path="res://BazzarDBParser/Items_001-500_files/180px-Cold_Room.png" id="2_wxxgw"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_8mr06"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_a1hxn"]
+
+[resource]
+script = ExtResource("3_8mr06")
+name = "Cold Room"
+icon = ExtResource("2_wxxgw")
+description = "[color=3fcfff]Freeze[/color] 1/2/3 item(s) for [color=3fcfff][b]1[/b][/color] second(s). When you [color=3fcfff]Freeze[/color], gain [color=8fe930][b]3[/b]/[b]6[/b]/[b]9[/b][/color] [color=8fe930]Regen[/color] for the fight. When your enemy uses an item, [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1[/b][/color] second(s)."
+cooldown = Array[float]([12.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_a0se3")]([])
+triggered_effects = Dictionary[int, ExtResource("4_a1hxn")]({})
+size = 2
+starting_tier = 2
+collection = 1
+type = Array[int]([40, 14, 22])
+dev_state = 1

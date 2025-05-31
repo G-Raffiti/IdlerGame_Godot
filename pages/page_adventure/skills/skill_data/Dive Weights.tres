@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dmafhk15aymdj"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_vs4bh"]
+[ext_resource type="Texture2D" uid="uid://c2khxbtcn85tb" path="res://BazzarDBParser/Items_001-500_files/Dive_Weights.webp" id="2_y1mme"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_gju0t"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_ux2vv"]
+
+[resource]
+script = ExtResource("3_gju0t")
+name = "Dive Weights"
+icon = ExtResource("2_y1mme")
+description = "[color=00ffce]Haste[/color] 1 item(s) for [color=00ffce][b]1[/b]/[b]2[/b]/[b]3[/b][/color] second(s). For each adjacent [color=9aabff]Aquatic[/color] item, reduce this item's [b][color=00ffce]Cooldown[/color][/b] by 1 second. This has + Multicast equal to its [color=f9923c]Ammo[/color]."
+cooldown = Array[float]([8.0])
+ammo = Array[int]([4])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_vs4bh")]([])
+triggered_effects = Dictionary[int, ExtResource("4_ux2vv")]({})
+size = 1
+starting_tier = 2
+collection = 2
+type = Array[int]([8, 9, 33, 23, 2, 20])
+dev_state = 1

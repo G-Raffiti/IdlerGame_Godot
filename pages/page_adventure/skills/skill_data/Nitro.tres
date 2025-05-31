@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cegjpe5s7jwtr"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_fcuwv"]
+[ext_resource type="Texture2D" uid="uid://drcfr6ef8jp5k" path="res://BazzarDBParser/Items_001-500_files/180px-Nitro.png" id="2_nj82s"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_eu4i2"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_1vj81"]
+
+[resource]
+script = ExtResource("3_eu4i2")
+name = "Nitro"
+icon = ExtResource("2_nj82s")
+description = "[color=fc933e]Burn[/color] both players [color=fc933e][b]4 / 6 / 8[/b][/color]. [color=00eac1][b]Charge[/b][/color] 1 item [color=00eac1][b]1[/b]/[b]2[/b]/[b]3[/b][/color] second(s)."
+cooldown = Array[float]([4.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_fcuwv")]([])
+triggered_effects = Dictionary[int, ExtResource("4_1vj81")]({})
+size = 1
+starting_tier = 2
+collection = 3
+type = Array[int]([17, 11, 32])
+dev_state = 1

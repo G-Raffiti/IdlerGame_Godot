@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://b2cnwrrijbukd"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_f0sfm"]
+[ext_resource type="Texture2D" uid="uid://dr6katkmjopmk" path="res://BazzarDBParser/Items_001-500_files/180px-Ledger.png" id="2_30lkb"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_c5ldt"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_he44u"]
+
+[resource]
+script = ExtResource("3_c5ldt")
+name = "Ledger"
+icon = ExtResource("2_30lkb")
+description = "When you sell 10 items, adjacent items gain [color=f4d021][b]3[/b]/[b]5[/b]/[b]7[/b][/color] value."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_f0sfm")]([])
+triggered_effects = Dictionary[int, ExtResource("4_he44u")]({})
+size = 2
+starting_tier = 2
+collection = 1
+type = Array[int]([28])
+dev_state = 1

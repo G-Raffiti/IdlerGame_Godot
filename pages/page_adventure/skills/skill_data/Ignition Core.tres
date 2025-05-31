@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://w6myajjp4oaw"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_tjygp"]
+[ext_resource type="Texture2D" uid="uid://c065vpctst5mu" path="res://BazzarDBParser/Items_001-500_files/180px-Ignition_Core.png" id="2_7px13"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_nemrh"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_h8d6c"]
+
+[resource]
+script = ExtResource("3_nemrh")
+name = "Ignition Core"
+icon = ExtResource("2_7px13")
+description = "[color=fc933e]Burn[/color] [color=fc933e][b]4[/b][/color]. This and [color=fc933e]Burn[/color] items to the right of this gain [color=fc933e][b]2[/b]/[b]4[/b]/[b]8[/b][/color] for the rest of the fight. When you use any item to the left of this, [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1[/b][/color]."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([0])
+active_effects = Array[ExtResource("1_tjygp")]([])
+triggered_effects = Dictionary[int, ExtResource("4_h8d6c")]({})
+size = 2
+starting_tier = 2
+collection = 3
+type = Array[int]([30, 17, 11, 32])
+dev_state = 1

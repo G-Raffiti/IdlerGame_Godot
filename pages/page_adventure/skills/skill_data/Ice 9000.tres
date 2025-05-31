@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://b2kcqv5tef40c"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_358n8"]
+[ext_resource type="Texture2D" uid="uid://m7wtkno23myo" path="res://BazzarDBParser/Items_001-500_files/180px-Ice_9000.png" id="2_ul7qo"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_xw4xv"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_5nrp4"]
+
+[resource]
+script = ExtResource("3_xw4xv")
+name = "Ice 9000"
+icon = ExtResource("2_ul7qo")
+description = "[color=0fb54b]Poison[/color] [color=0fb54b][b]9[/b][/color]. [color=3fcfff]Freeze[/color] 1/2/3 item for [color=3fcfff][b]1[/b][/color] second(s). When you [color=3fcfff]Freeze[/color], this gains [color=0fb54b][b]3[/b]/[b]6[/b]/[b]9[/b][/color] [color=0fb54b]Poison[/color] for the fight."
+cooldown = Array[float]([9.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_358n8")]([])
+triggered_effects = Dictionary[int, ExtResource("4_5nrp4")]({})
+size = 2
+starting_tier = 2
+collection = 3
+type = Array[int]([12, 40, 21])
+dev_state = 1

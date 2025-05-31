@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bo12gya8hemep"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_rkgn8"]
+[ext_resource type="Texture2D" uid="uid://bpy05pjmi2ik3" path="res://BazzarDBParser/Items_001-500_files/180px-Blue_Gumball.png" id="2_bnlui"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_nx5v4"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_1hadu"]
+
+[resource]
+script = ExtResource("3_nx5v4")
+name = "Blue Gumball"
+icon = ExtResource("2_bnlui")
+description = "When you sell this, give your items [color=f75139][b]1[/b]/[b]2[/b]/[b]3[/b]/[b]4 [/b][/color]% [color=f75139]Crit Chance[/color]. This has no base value."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 6, 8])
+active_effects = Array[ExtResource("1_rkgn8")]([])
+triggered_effects = Dictionary[int, ExtResource("4_1hadu")]({})
+size = 1
+starting_tier = 1
+collection = 7
+type = Array[int]([43])
+dev_state = 1

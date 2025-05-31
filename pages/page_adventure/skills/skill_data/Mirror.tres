@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bnm70v1bd88xi"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_187ll"]
+[ext_resource type="Texture2D" uid="uid://copcftkuyrvhp" path="res://BazzarDBParser/Items_001-500_files/180px-Mirror.jpeg" id="2_xuvef"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_wg3cm"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_xe5jv"]
+
+[resource]
+script = ExtResource("3_wg3cm")
+name = "Mirror"
+icon = ExtResource("2_xuvef")
+description = "Transform into a [color=C1992F]Gold[/color]/[color=69BDD7]Diamond[/color] copy of the medium, non-legendary item to the left of this for the fight."
+cooldown = Array[float]([4.0])
+ammo = Array[int]([])
+cost = Array[int]([16, 32])
+active_effects = Array[ExtResource("1_187ll")]([])
+triggered_effects = Dictionary[int, ExtResource("4_xe5jv")]({})
+size = 2
+starting_tier = 3
+collection = 4
+type = Array[int]([])
+dev_state = 1

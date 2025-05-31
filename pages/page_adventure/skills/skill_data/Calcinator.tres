@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://n0w0s7nrkprj"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_mfwu1"]
+[ext_resource type="Texture2D" uid="uid://cbsdtk4jf6yr5" path="res://BazzarDBParser/Items_001-500_files/180px-Calcinator.jpeg" id="2_6uljl"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_6rhdn"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_xuan8"]
+
+[resource]
+script = ExtResource("3_6rhdn")
+name = "Calcinator"
+icon = ExtResource("2_6uljl")
+description = "[color=fc933e]Burn[/color] [color=fc933e][b]6[/b][/color]. When you transform a Reagent, this permanently gains + [color=fc933e][b]3[/b]/[b]5[/b]/[b]7[/b]/[b]9[/b][/color] [color=fc933e]Burn[/color]. At the start of each day, spend [color=f4d021][b]3[/b][/color] gold to get a Chunk of Lead."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_mfwu1")]([])
+triggered_effects = Dictionary[int, ExtResource("4_xuan8")]({})
+size = 2
+starting_tier = 1
+collection = 4
+type = Array[int]([2])
+dev_state = 1

@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=9 format=3 uid="uid://jmpekh3htlub"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_mb3fe"]
+[ext_resource type="Texture2D" uid="uid://cvfat1abe4mxd" path="res://BazzarDBParser/Items_001-500_files/180px-Bandages.png" id="2_87xsw"]
+[ext_resource type="Script" uid="uid://bovjdw02n8qwy" path="res://pages/page_adventure/skills/effects/se_heal.gd" id="2_k7jbt"]
+[ext_resource type="Script" uid="uid://cohnf24y0220" path="res://pages/page_adventure/skills/effects/se_shield.gd" id="3_bykl0"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_k7jbt"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_bykl0"]
+
+[sub_resource type="Resource" id="Resource_l37tr"]
+script = ExtResource("2_k7jbt")
+heal_at_tier = Dictionary[int, int]({
+1: 5,
+2: 10,
+3: 20,
+4: 40
+})
+target = 0
+target_number = 0
+metadata/_custom_type_script = "uid://bovjdw02n8qwy"
+
+[sub_resource type="Resource" id="Resource_clpn2"]
+script = ExtResource("3_bykl0")
+shield_at_tier = Dictionary[int, int]({
+1: 5,
+2: 10,
+3: 20,
+4: 40
+})
+target = 0
+target_number = 0
+metadata/_custom_type_script = "uid://cohnf24y0220"
+
+[resource]
+script = ExtResource("3_k7jbt")
+name = "Bandages"
+icon = ExtResource("2_87xsw")
+description = "[color=8fe930]Heal[/color] [color=8fe930][b]5[/b]/[b]10[/b]/[b]20[/b]/[b]40[/b][/color]
+[color=f4cf21]Shield[/color] [color=f4cf21][b]5[/b]/[b]10[/b]/[b]20[/b]/[b]40[/b][/color]"
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_mb3fe")]([SubResource("Resource_l37tr"), SubResource("Resource_clpn2")])
+triggered_effects = Dictionary[int, ExtResource("4_bykl0")]({})
+size = 1
+starting_tier = 1
+collection = 1
+type = Array[int]([27, 19])
+is_generated_item = false
+dev_state = 3

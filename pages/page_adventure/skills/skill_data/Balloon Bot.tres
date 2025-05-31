@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dqfxfeahv0hd1"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_r0jdd"]
+[ext_resource type="Texture2D" uid="uid://rqk8k8ebn3my" path="res://BazzarDBParser/Items_001-500_files/180px-Balloon_Bot.png" id="2_npi2n"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_w7omm"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_3k8k7"]
+
+[resource]
+script = ExtResource("3_w7omm")
+name = "Balloon Bot"
+icon = ExtResource("2_npi2n")
+description = "[color=f4cf21]Shield[/color] [color=f4cf21][b]20[/b][/color]. When you use a [color=9aabff]Weapon[/color], this gains [color=f4cf21][b]10[/b]/[b]15[/b]/[b]20[/b][/color] [color=f4cf21]Shield[/color] for the fight."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_r0jdd")]([])
+triggered_effects = Dictionary[int, ExtResource("4_3k8k7")]({})
+size = 2
+starting_tier = 2
+collection = 3
+type = Array[int]([12, 19])
+dev_state = 1

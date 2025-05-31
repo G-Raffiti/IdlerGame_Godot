@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dtffpmgyntl3t"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_v1vha"]
+[ext_resource type="Texture2D" uid="uid://bc0ia1kmuxyci" path="res://BazzarDBParser/Items_001-500_files/180px-Race_Carl.png" id="2_uwwqv"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_ilh44"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_s0f6n"]
+
+[resource]
+script = ExtResource("3_ilh44")
+name = "Race Carl"
+icon = ExtResource("2_uwwqv")
+description = "Deal [color=fa5436][b]90/120/150[/b][/color] [color=fa5436]Damage[/color]. When you [color=00ffce]Haste[/color], [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]2[/b][/color] seconds."
+cooldown = Array[float]([9.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_v1vha")]([])
+triggered_effects = Dictionary[int, ExtResource("4_s0f6n")]({})
+size = 2
+starting_tier = 2
+collection = 3
+type = Array[int]([12, 1, 6, 3, 5])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://ceh16whc3p7i0"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_xeurs"]
+[ext_resource type="Texture2D" uid="uid://bhkdebtg7naty" path="res://BazzarDBParser/Items_001-500_files/180px-Miss_Isles.png" id="2_yu6ck"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_bxudj"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_bbm4v"]
+
+[resource]
+script = ExtResource("3_bxudj")
+name = "Miss Isles"
+icon = ExtResource("2_yu6ck")
+description = "Deal [color=fa5436][b]10/20/40[/b][/color] damage. Multicast: 2. When you use the Core, reload this."
+cooldown = Array[float]([4.0])
+ammo = Array[int]([1])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_xeurs")]([])
+triggered_effects = Dictionary[int, ExtResource("4_bbm4v")]({})
+size = 2
+starting_tier = 2
+collection = 3
+type = Array[int]([1, 12, 8, 3])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://ccp26on4qn3r5"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_a0gy5"]
+[ext_resource type="Texture2D" uid="uid://cvu8hbrb7fg3r" path="res://BazzarDBParser/Items_001-500_files/180px-Isochoric_Freezer.png" id="2_exo2h"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_2imb8"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_7qpsp"]
+
+[resource]
+script = ExtResource("3_2imb8")
+name = "Isochoric Freezer"
+icon = ExtResource("2_exo2h")
+description = "[color=3fcfff]Freeze[/color] an item with a cooldown of 5 seconds or less for [color=3fcfff][b]1/2/3[/b][/color] seconds."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_a0gy5")]([])
+triggered_effects = Dictionary[int, ExtResource("4_7qpsp")]({})
+size = 1
+starting_tier = 2
+collection = 3
+type = Array[int]([17, 40])
+dev_state = 1

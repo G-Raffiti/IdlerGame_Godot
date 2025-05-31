@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://ddbuy6ehqyci2"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_vf777"]
+[ext_resource type="Texture2D" uid="uid://bt4estplioodn" path="res://BazzarDBParser/Items_001-500_files/180px-Brass_Knuckles.png" id="2_pli0k"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_vix6o"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_aav4m"]
+
+[resource]
+script = ExtResource("3_vix6o")
+name = "Brass Knuckles"
+icon = ExtResource("2_pli0k")
+description = "Deal [color=fa5436][b]8/16/24/32[/b][/color] damage. This has double [color=fa5436]Damage[/color]."
+cooldown = Array[float]([8.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_vf777")]([])
+triggered_effects = Dictionary[int, ExtResource("4_aav4m")]({})
+size = 1
+starting_tier = 1
+collection = 1
+type = Array[int]([1, 3])
+is_generated_item = false
+dev_state = 1

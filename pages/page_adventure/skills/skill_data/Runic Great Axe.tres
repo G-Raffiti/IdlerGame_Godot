@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bub8iqa1ki3qk"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_etqhs"]
+[ext_resource type="Texture2D" uid="uid://brj1tllk0octs" path="res://BazzarDBParser/Items_001-500_files/180px-Runic_Great_Axe.png" id="2_730tg"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_s67jj"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_kav75"]
+
+[resource]
+script = ExtResource("3_s67jj")
+name = "Runic Great Axe"
+icon = ExtResource("2_730tg")
+description = "Deal [color=fa5436][b]80/120/160[/b][/color] [color=fa5436]Damage[/color]. Your Lifesteal [color=9aabff]Weapons[/color] have +[color=f75139][b]100[/b][/color]% [color=f75139]Crit Chance[/color].  Lifesteal."
+cooldown = Array[float]([11.0])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_etqhs")]([])
+triggered_effects = Dictionary[int, ExtResource("4_kav75")]({})
+size = 3
+starting_tier = 2
+collection = 4
+type = Array[int]([1, 3])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dwjm1tjabrdh1"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_u4au3"]
+[ext_resource type="Texture2D" uid="uid://drl2lemw5mt4g" path="res://BazzarDBParser/Items_501-603_files/180px-Staff_of_the_Moose.jpeg" id="2_7lldp"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_swblj"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_yq1kl"]
+
+[resource]
+script = ExtResource("3_swblj")
+name = "Staff of the Moose"
+icon = ExtResource("2_7lldp")
+description = "Deal [color=fa5436][b]200[/b][/color] [color=fa5436]Damage[/color]. The first time you fall below half Health each fight, take no [color=fa5436]Damage[/color] for 1/2 second(s) and gain [color=8fe930][b]25[/b]/[b]50[/b][/color] [color=8fe930]Regen[/color] for the fight. Your [color=9aabff][b]Weapons[/b][/color] have +[color=fa5436]Damage[/color] equal to your [color=8fe930]Regen[/color]. Multicast: 2"
+cooldown = Array[float]([10.0])
+ammo = Array[int]([])
+cost = Array[int]([24, 48])
+active_effects = Array[ExtResource("1_u4au3")]([])
+triggered_effects = Dictionary[int, ExtResource("4_yq1kl")]({})
+size = 3
+starting_tier = 3
+collection = 4
+type = Array[int]([1, 22, 3])
+dev_state = 1

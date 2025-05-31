@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bg1lglalwodcx"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_fvud0"]
+[ext_resource type="Texture2D" uid="uid://bxk0l4wn8m2ei" path="res://BazzarDBParser/Items_001-500_files/180px-Memento_Mori.png" id="2_5rrh4"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_y6j3n"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_bts3i"]
+
+[resource]
+script = ExtResource("3_y6j3n")
+name = "Memento Mori"
+icon = ExtResource("2_5rrh4")
+description = "The first time you would die each fight, [color=8fe930]Heal[/color] for [color=8fe930][b]1[/b][/color] and become Invulnerable for 1/2 second(s)."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([16, 32])
+active_effects = Array[ExtResource("1_fvud0")]([])
+triggered_effects = Dictionary[int, ExtResource("4_bts3i")]({})
+size = 2
+starting_tier = 3
+collection = 4
+type = Array[int]([27])
+dev_state = 1

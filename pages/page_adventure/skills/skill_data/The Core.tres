@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://c33ok20dqvwcp"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_rslje"]
+[ext_resource type="Texture2D" uid="uid://crtrugrfr2nmh" path="res://BazzarDBParser/Items_501-603_files/180px-The_Core.png" id="2_usvjp"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_5m6ds"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_85okl"]
+
+[resource]
+script = ExtResource("3_5m6ds")
+name = "The Core"
+icon = ExtResource("2_usvjp")
+description = "Deal [color=fa5436][b]50[/b][/color] [color=fa5436]Damage[/color]. [color=00eac1][b]Charge[/b][/color] all items to the right of this [color=00eac1][b]1[/b][/color] second. When you use any item to the left of this, [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1[/b][/color] second."
+cooldown = Array[float]([6.0, 5.0, 4.0])
+ammo = Array[int]([])
+cost = Array[int]([0])
+active_effects = Array[ExtResource("1_rslje")]([])
+triggered_effects = Dictionary[int, ExtResource("4_85okl")]({})
+size = 2
+starting_tier = 2
+collection = 3
+type = Array[int]([30, 1, 17, 11, 3])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bpn62unsgxa15"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_ntgla"]
+[ext_resource type="Texture2D" uid="uid://dmfvmhl72qhs7" path="res://BazzarDBParser/Items_001-500_files/180px-Cosmic_Amulet.png" id="2_na4ut"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_0usfu"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_nrgao"]
+
+[resource]
+script = ExtResource("3_0usfu")
+name = "Cosmic Amulet"
+icon = ExtResource("2_na4ut")
+description = "[color=f4cf21]Shield[/color] [color=f4cf21][b]50/100[/b][/color]. When this gains [color=00ffce]Haste[/color], give your items [color=f75139][b]3/5[/b][/color]% [color=f75139]Crit Chance[/color]."
+cooldown = Array[float]([9.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16])
+active_effects = Array[ExtResource("1_ntgla")]([])
+triggered_effects = Dictionary[int, ExtResource("4_nrgao")]({})
+size = 1
+starting_tier = 3
+collection = 7
+type = Array[int]([24, 5, 19])
+dev_state = 1

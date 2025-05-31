@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bnda621mjhkuk"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_1ts8b"]
+[ext_resource type="Texture2D" uid="uid://bjtk5vn1sukvk" path="res://BazzarDBParser/Items_501-603_files/180px-Subscraper.png" id="2_4iwoi"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_4nvyc"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_ly3gx"]
+
+[resource]
+script = ExtResource("3_4nvyc")
+name = "Subscraper"
+icon = ExtResource("2_4iwoi")
+description = "[color=8fe930]Heal[/color] equal to 4 / 6 times the value of your items. At the start of each fight, your other items gain Value equal to this item's Value for the fight."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([24, 48])
+active_effects = Array[ExtResource("1_1ts8b")]([])
+triggered_effects = Dictionary[int, ExtResource("4_ly3gx")]({})
+size = 3
+starting_tier = 3
+collection = 1
+type = Array[int]([14, 27, 18, 28])
+dev_state = 1

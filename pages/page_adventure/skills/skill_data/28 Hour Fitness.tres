@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://btt8ankr3w4o5"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_1onoa"]
+[ext_resource type="Texture2D" uid="uid://cud5eii7skj7d" path="res://BazzarDBParser/Items_001-500_files/180px-28_Hour_Fitness.webp" id="2_6lrxg"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_c21ts"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_n715s"]
+
+[resource]
+script = ExtResource("3_c21ts")
+name = "28 Hour Fitness"
+icon = ExtResource("2_6lrxg")
+description = "When you use a [color=9aabff]Weapon[/color], your items with [color=f4cf21]Shield[/color] gain +[color=f4cf21][b]10[/b]/[b]20[/b]/[b]30[/b][/color] [color=f4cf21]Shield[/color] for the fight. When you use a [color=f4cf21]Shield[/color] item, your [color=9aabff]Weapons[/color] gain +[color=fa5436][b]10[/b]/[b]20[/b]/[b]30[/b][/color] [color=fa5436]Damage[/color] for the fight."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_1onoa")]([])
+triggered_effects = Dictionary[int, ExtResource("4_n715s")]({})
+size = 3
+starting_tier = 2
+collection = 1
+type = Array[int]([14, 15, 16])
+is_generated_item = false
+dev_state = 1

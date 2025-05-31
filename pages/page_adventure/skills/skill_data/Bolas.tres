@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bhact07pymmwy"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_pnmfx"]
+[ext_resource type="Texture2D" uid="uid://exb8qk5ofudt" path="res://BazzarDBParser/Items_001-500_files/180px-Bolas.png" id="2_l5x0u"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_8sa66"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_436hr"]
+
+[resource]
+script = ExtResource("3_8sa66")
+name = "Bolas"
+icon = ExtResource("2_l5x0u")
+description = "Deal [color=fa5436][b]40[/b]/[b]60[/b]/[b]80[/b]/[b]100 [/b][/color] [color=fa5436]Damage[/color]. [color=cb9f6d]Slow[/color] 1 item for [color=cb9f6d][b]2/3/4/5[/b][/color] seconds."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([2])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_pnmfx")]([])
+triggered_effects = Dictionary[int, ExtResource("4_436hr")]({})
+size = 1
+starting_tier = 1
+collection = 2
+type = Array[int]([1, 8, 3, 26])
+dev_state = 1

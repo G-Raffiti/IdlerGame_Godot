@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://ck6sqktnji6jf"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_uxhmt"]
+[ext_resource type="Texture2D" uid="uid://dllns18hsqu57" path="res://BazzarDBParser/Items_001-500_files/180px-Potion_Distillery.jpeg" id="2_c11ev"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_7uq5x"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_0srlg"]
+
+[resource]
+script = ExtResource("3_7uq5x")
+name = "Potion Distillery"
+icon = ExtResource("2_c11ev")
+description = "Your [color=9aabff]Potions[/color] have +[color=f9923c][b]1[/b]/[b]2[/b]/[b]3[/b][/color] [color=f9923c]Ammo[/color]. Your [color=9aabff]Potions[/color] have their [b][color=00ffce]Cooldowns[/color][/b] reduced by 10/15/20%. When you visit a Merchant, transform the small item to the left of this into a random [color=9aabff]Potion[/color]."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_uxhmt")]([])
+triggered_effects = Dictionary[int, ExtResource("4_0srlg")]({})
+size = 3
+starting_tier = 2
+collection = 4
+type = Array[int]([2, 31, 33])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://brtlhnn2qm5nc"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_wppt8"]
+[ext_resource type="Texture2D" uid="uid://db7npl1i7mmgh" path="res://BazzarDBParser/Items_001-500_files/180px-Pufferfish.png" id="2_floni"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_an1l0"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_ogwmi"]
+
+[resource]
+script = ExtResource("3_an1l0")
+name = "Pufferfish"
+icon = ExtResource("2_floni")
+description = "[color=0fb54b]Poison[/color] [color=0fb54b][b]10[/b]/[b]20[/b]/[b]30[/b][/color].  When you [color=00ffce]Haste[/color], [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]2[/b][/color] seconds."
+cooldown = Array[float]([8.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_wppt8")]([])
+triggered_effects = Dictionary[int, ExtResource("4_ogwmi")]({})
+size = 2
+starting_tier = 2
+collection = 2
+type = Array[int]([9, 12, 5, 21])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://d2j0y5r5ax5xk"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_kv4tb"]
+[ext_resource type="Texture2D" uid="uid://deul4i71pob2y" path="res://BazzarDBParser/Items_001-500_files/180px-Candles.png" id="2_n4h3n"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_4kbi0"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_1hkek"]
+
+[resource]
+script = ExtResource("3_4kbi0")
+name = "Candles"
+icon = ExtResource("2_n4h3n")
+description = "[color=fc933e]Burn[/color] [color=fc933e][b]8/12/16/20[/b][/color] When you use a small item, [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]2[/b][/color] second(s)."
+cooldown = Array[float]([9.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_kv4tb")]([])
+triggered_effects = Dictionary[int, ExtResource("4_1hkek")]({})
+size = 2
+starting_tier = 1
+collection = 4
+type = Array[int]([32])
+dev_state = 1

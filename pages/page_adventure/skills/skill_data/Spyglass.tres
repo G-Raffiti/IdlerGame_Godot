@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://5jfq4sasviqu"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_xrbu7"]
+[ext_resource type="Texture2D" uid="uid://urot2wetthf3" path="res://BazzarDBParser/Items_501-603_files/180px-Spyglass.png" id="2_4qovx"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_owkd8"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_yf0ta"]
+
+[resource]
+script = ExtResource("3_owkd8")
+name = "Spyglass"
+icon = ExtResource("2_4qovx")
+description = "Adjacent items have + [color=f75139][b]25 / 50[/b][/color]% [color=f75139]Crit Chance[/color]. At the start of each fight, a random enemy item has its [b][color=00ffce]Cooldown[/color][/b] increased by [color=00ffce][b]3 / 6[/b][/color] seconds."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([16, 32])
+active_effects = Array[ExtResource("1_xrbu7")]([])
+triggered_effects = Dictionary[int, ExtResource("4_yf0ta")]({})
+size = 2
+starting_tier = 3
+collection = 2
+type = Array[int]([2, 24, 33])
+dev_state = 1

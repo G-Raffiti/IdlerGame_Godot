@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://p28w02bd483y"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_8so40"]
+[ext_resource type="Texture2D" uid="uid://fge2ja1ylao6" path="res://BazzarDBParser/Items_501-603_files/180px-Wand.png" id="2_nnuqn"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_vaa8g"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_270bh"]
+
+[resource]
+script = ExtResource("3_vaa8g")
+name = "Wand"
+icon = ExtResource("2_nnuqn")
+description = "[color=00eac1][b]Charge[/b][/color] your other non-weapon items [color=00eac1][b]1[/b]/[b]2[/b][/color] seconds."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16])
+active_effects = Array[ExtResource("1_8so40")]([])
+triggered_effects = Dictionary[int, ExtResource("4_270bh")]({})
+size = 1
+starting_tier = 3
+collection = 7
+type = Array[int]([11, 7])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cm5jwu4jjx5mj"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_x451r"]
+[ext_resource type="Texture2D" uid="uid://cfup7k8mtp55i" path="res://BazzarDBParser/Items_001-500_files/180px-Billboard.png" id="2_detgn"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_fabsb"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_5q14e"]
+
+[resource]
+script = ExtResource("3_fabsb")
+name = "Billboard"
+icon = ExtResource("2_detgn")
+description = "When you [color=f4cf21]Shield[/color] or [color=8fe930]Heal[/color], give your items +[color=f4d021][b]1[/b][/color][color=f4d021]/[b]2[/b][/color] value for the fight. This item's [b][color=00ffce]Cooldown[/color][/b] is reduced by 1% for every value it has."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([24, 48])
+active_effects = Array[ExtResource("1_x451r")]([])
+triggered_effects = Dictionary[int, ExtResource("4_5q14e")]({})
+size = 3
+starting_tier = 3
+collection = 1
+type = Array[int]([14, 24, 18, 28, 19])
+dev_state = 1

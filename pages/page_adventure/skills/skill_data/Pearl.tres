@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cmgsbanagett2"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_2mmtq"]
+[ext_resource type="Texture2D" uid="uid://pdgtiifjhw1y" path="res://BazzarDBParser/Items_001-500_files/180px-Pearl.png" id="2_kmt6x"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_gooet"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_pjswg"]
+
+[resource]
+script = ExtResource("3_gooet")
+name = "Pearl"
+icon = ExtResource("2_kmt6x")
+description = "[color=f4cf21]Shield[/color] [color=f4cf21][b]10[/b]/[b]20[/b]/[b]30[/b]/[b]40 [/b][/color]. When you use another [color=9aabff]Aquatic[/color] item, [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1[/b][/color] second."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16])
+active_effects = Array[ExtResource("1_2mmtq")]([])
+triggered_effects = Dictionary[int, ExtResource("4_pjswg")]({})
+size = 1
+starting_tier = 1
+collection = 2
+type = Array[int]([9, 19])
+dev_state = 1

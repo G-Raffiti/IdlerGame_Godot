@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://c1maaoyr84cgk"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_tnpel"]
+[ext_resource type="Texture2D" uid="uid://dtk2cno2di6hk" path="res://BazzarDBParser/Items_001-500_files/180px-Marbles.png" id="2_15r20"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_kr0cc"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_5sb3w"]
+
+[resource]
+script = ExtResource("3_kr0cc")
+name = "Marbles"
+icon = ExtResource("2_15r20")
+description = "[color=cb9f6d]Slow[/color] 1 item(s) for [color=cb9f6d][b]1 / 2 / 3 / 4[/b][/color] seconds. When you use an adjacent item, [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1[/b][/color] second."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_tnpel")]([])
+triggered_effects = Dictionary[int, ExtResource("4_5sb3w")]({})
+size = 1
+starting_tier = 1
+collection = 1
+type = Array[int]([7, 26])
+dev_state = 1

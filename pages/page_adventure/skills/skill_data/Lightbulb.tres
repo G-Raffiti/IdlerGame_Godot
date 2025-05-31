@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://2c117ph7qfva"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_jilrg"]
+[ext_resource type="Texture2D" uid="uid://c7qlckw6icjis" path="res://BazzarDBParser/Items_001-500_files/180px-Lightbulb.png" id="2_6kfrn"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_7xuxh"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_wpikq"]
+
+[resource]
+script = ExtResource("3_7xuxh")
+name = "Lightbulb"
+icon = ExtResource("2_6kfrn")
+description = "[color=00eac1][b]Charge[/b][/color] the [color=9aabff]Tech[/color] item to the right of this [color=00eac1][b]1[/b][/color] second(s). When you buy this, get a small [color=9aabff]Tech[/color] item."
+cooldown = Array[float]([5.0, 4.0, 3.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_jilrg")]([])
+triggered_effects = Dictionary[int, ExtResource("4_wpikq")]({})
+size = 1
+starting_tier = 2
+collection = 3
+type = Array[int]([17, 11])
+dev_state = 1

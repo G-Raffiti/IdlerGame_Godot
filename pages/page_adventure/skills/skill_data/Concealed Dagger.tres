@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cugeabsdr48d8"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_aaxdl"]
+[ext_resource type="Texture2D" uid="uid://783olex3ei2" path="res://BazzarDBParser/Items_001-500_files/180px-Concealed_Dagger.png" id="2_3jmdb"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_11rgm"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_3ytls"]
+
+[resource]
+script = ExtResource("3_11rgm")
+name = "Concealed Dagger"
+icon = ExtResource("2_3jmdb")
+description = "Deal [color=fa5436][b]30[/b]/[b]40[/b]/[b]50[/b][/color] [color=fa5436]Damage[/color]. Gain [color=f4d021][b]1/2/3[/b][/color] [color=f4d021]Gold[/color]."
+cooldown = Array[float]([9.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_aaxdl")]([])
+triggered_effects = Dictionary[int, ExtResource("4_3ytls")]({})
+size = 1
+starting_tier = 2
+collection = 2
+type = Array[int]([1, 47, 3])
+dev_state = 1

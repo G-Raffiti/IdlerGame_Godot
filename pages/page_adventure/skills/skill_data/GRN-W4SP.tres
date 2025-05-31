@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://c7jdomxdj5xm3"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_2gidi"]
+[ext_resource type="Texture2D" uid="uid://cwf1x4b3mduxw" path="res://BazzarDBParser/Items_001-500_files/180px-GRN-W4SP.jpeg" id="2_brj2d"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_xlagr"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_50qpk"]
+
+[resource]
+script = ExtResource("3_xlagr")
+name = "GRN-W4SP"
+icon = ExtResource("2_brj2d")
+description = "[color=0fb54b]Poison[/color] [color=0fb54b][b]4[/b]/[b]6[/b]/[b]8[/b]/[b]10 [/b][/color]. When an adjacent item [color=cb9f6d]Slows[/color] or [b][color=3fcfff]Freezes[/color][/b], [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1[/b][/color] second(s)."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_2gidi")]([])
+triggered_effects = Dictionary[int, ExtResource("4_50qpk")]({})
+size = 1
+starting_tier = 1
+collection = 3
+type = Array[int]([12, 21, 4, 48])
+dev_state = 1

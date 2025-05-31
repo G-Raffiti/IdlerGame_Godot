@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://tqexck873y61"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_7tl14"]
+[ext_resource type="Texture2D" uid="uid://dw70y5otcfym" path="res://BazzarDBParser/Items_001-500_files/180px-Piranha.png" id="2_jp2px"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_tcjgh"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_3phyn"]
+
+[resource]
+script = ExtResource("3_tcjgh")
+name = "Piranha"
+icon = ExtResource("2_jp2px")
+description = "Deal [color=fa5436][b]6[/b]/[b]12[/b]/[b]18[/b]/[b]24 [/b][/color] [color=fa5436]Damage[/color]. This deals double Crit [color=fa5436]Damage[/color]. [color=f75139]Crit Chance[/color] [color=f75139][b]20[/b][/color]%"
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_7tl14")]([])
+triggered_effects = Dictionary[int, ExtResource("4_3phyn")]({})
+size = 1
+starting_tier = 1
+collection = 2
+type = Array[int]([9, 1, 43, 3, 12])
+dev_state = 1

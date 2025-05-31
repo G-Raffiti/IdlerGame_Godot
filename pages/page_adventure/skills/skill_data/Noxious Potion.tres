@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cqyecritn4mkm"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_wrrls"]
+[ext_resource type="Texture2D" uid="uid://bbliv6k38ehap" path="res://BazzarDBParser/Items_001-500_files/180px-Noxious_Potion.png" id="2_aailr"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_svxsl"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_wa1wj"]
+
+[resource]
+script = ExtResource("3_svxsl")
+name = "Noxious Potion"
+icon = ExtResource("2_aailr")
+description = "[color=0fb54b]Poison[/color] [color=0fb54b][b]3[/b]/[b]6[/b]/[b]9[/b]/[b]12[/b][/color]."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([1])
+cost = Array[int]([])
+active_effects = Array[ExtResource("1_wrrls")]([])
+triggered_effects = Dictionary[int, ExtResource("4_wa1wj")]({})
+size = 1
+starting_tier = 1
+collection = 4
+type = Array[int]([42, 8, 21])
+dev_state = 1

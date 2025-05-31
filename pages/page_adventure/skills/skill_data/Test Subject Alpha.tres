@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cfv6ujbj67ju2"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_sry2h"]
+[ext_resource type="Texture2D" uid="uid://daax3cyus1726" path="res://BazzarDBParser/Items_501-603_files/180px-Test_Subject_Alpha.webp" id="2_guejl"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_5pv2v"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_nrrfq"]
+
+[resource]
+script = ExtResource("3_5pv2v")
+name = "Test Subject Alpha"
+icon = ExtResource("2_guejl")
+description = "Deal [color=fa5436][b]50[/b][/color] [color=fa5436]Damage[/color]. When you use an adjacent item, [color=0fb54b]Poison[/color] both players [color=0fb54b][b]15[/b]/[b]30[/b]/[b]45[/b][/color]. When you [color=0fb54b]Poison[/color], this gains +[color=fa5436]Damage[/color] for the fight equal to the amount Poisoned."
+cooldown = Array[float]([9.0, 7.0, 5.0])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_sry2h")]([])
+triggered_effects = Dictionary[int, ExtResource("4_nrrfq")]({})
+size = 3
+starting_tier = 2
+collection = 4
+type = Array[int]([1, 12, 3, 21])
+dev_state = 1

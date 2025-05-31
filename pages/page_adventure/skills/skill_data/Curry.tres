@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bhcg7u4jk2xhb"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_k0uxr"]
+[ext_resource type="Texture2D" uid="uid://cgug2xer81dxy" path="res://BazzarDBParser/Items_001-500_files/180px-Curry.png" id="2_pc72n"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_a8ue5"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_u4tn8"]
+
+[resource]
+script = ExtResource("3_a8ue5")
+name = "Curry"
+icon = ExtResource("2_pc72n")
+description = "[color=fc933e]Burn[/color] [color=fc933e][b]4[/b]/[b]6[/b]/[b]8[/b][/color]. [color=00eac1][b]Charge[/b][/color] another small item [color=00eac1][b]3[/b]/[b]4[/b]/[b]5[/b][/color] second(s)"
+cooldown = Array[float]([9.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_k0uxr")]([])
+triggered_effects = Dictionary[int, ExtResource("4_u4tn8")]({})
+size = 1
+starting_tier = 2
+collection = 6
+type = Array[int]([41, 32, 11])
+dev_state = 1

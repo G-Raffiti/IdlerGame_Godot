@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bm8jub6hbdmva"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_ymipq"]
+[ext_resource type="Texture2D" uid="uid://cyyhhlirot6iv" path="res://BazzarDBParser/Items_501-603_files/180px-Welding_Helmet.png" id="2_f7t11"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_lgh3e"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_xc5na"]
+
+[resource]
+script = ExtResource("3_lgh3e")
+name = "Welding Helmet"
+icon = ExtResource("2_f7t11")
+description = "[color=f4cf21]Shield[/color] [color=f4cf21][b]10[/b]/[b]20[/b]/[b]30[/b]/[b]40 [/b][/color] [color=fc933e]Burn[/color] [color=fc933e][b]2[/b]/[b]4[/b]/[b]6[/b]/[b]8 [/b][/color]"
+cooldown = Array[float]([4.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_ymipq")]([])
+triggered_effects = Dictionary[int, ExtResource("4_xc5na")]({})
+size = 2
+starting_tier = 1
+collection = 3
+type = Array[int]([20, 32, 19])
+dev_state = 1

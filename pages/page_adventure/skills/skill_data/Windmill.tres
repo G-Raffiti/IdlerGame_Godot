@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cj5xc26g8yvsh"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_iohi2"]
+[ext_resource type="Texture2D" uid="uid://0k3pfxw3j08u" path="res://BazzarDBParser/Items_501-603_files/180px-Windmill.png" id="2_c20iw"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_q7lm8"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_id5d6"]
+
+[resource]
+script = ExtResource("3_q7lm8")
+name = "Windmill"
+icon = ExtResource("2_c20iw")
+description = "[color=00eac1][b]Charge[/b][/color] adjacent items [color=00eac1][b]1[/b][/color] second(s). When you use another item, [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1[/b][/color] second."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([48])
+active_effects = Array[ExtResource("1_iohi2")]([])
+triggered_effects = Dictionary[int, ExtResource("4_id5d6")]({})
+size = 3
+starting_tier = 4
+collection = 1
+type = Array[int]([14, 11])
+dev_state = 1

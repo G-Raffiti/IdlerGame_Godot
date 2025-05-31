@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://qpx4kb2wvmkx"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_abenc"]
+[ext_resource type="Texture2D" uid="uid://cv1mj6nhw0lpq" path="res://BazzarDBParser/Items_001-500_files/180px-Quicksilver.jpeg" id="2_yru0p"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_xvldn"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_nyw2j"]
+
+[resource]
+script = ExtResource("3_xvldn")
+name = "Quicksilver"
+icon = ExtResource("2_yru0p")
+description = "Transform into a [color=AFB1C3]Silver[/color]/[color=C1992F]Gold[/color]/[color=69BDD7]Diamond[/color] copy of another small, non-legendary item you have for the fight."
+cooldown = Array[float]([3.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_abenc")]([])
+triggered_effects = Dictionary[int, ExtResource("4_nyw2j")]({})
+size = 1
+starting_tier = 2
+collection = 4
+type = Array[int]([])
+dev_state = 1

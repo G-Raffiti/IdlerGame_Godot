@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://806p20yfbwei"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_0kbkg"]
+[ext_resource type="Texture2D" uid="uid://bd80ae435k2uk" path="res://BazzarDBParser/Items_001-500_files/180px-Private_Hot_Springs.webp" id="2_i5ia4"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_mjlhv"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_opex3"]
+
+[resource]
+script = ExtResource("3_mjlhv")
+name = "Private Hot Springs"
+icon = ExtResource("2_i5ia4")
+description = "[color=fc933e]Burn[/color] [color=fc933e][b]8[/b]/[b]12[/b][/color]. Gain [color=8fe930][b]8[/b]/[b]12[/b][/color] [color=8fe930]Regen[/color] for the fight. The first time you fall below half health each fight, [color=3fcfff]Freeze[/color] ALL other items for [color=3fcfff][b]3[/b][/color] seconds. When you [color=3fcfff]Freeze[/color], [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]4[/b][/color] second(s)."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([24, 48])
+active_effects = Array[ExtResource("1_0kbkg")]([])
+triggered_effects = Dictionary[int, ExtResource("4_opex3")]({})
+size = 3
+starting_tier = 3
+collection = 1
+type = Array[int]([32, 40, 14, 22])
+dev_state = 1

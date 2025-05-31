@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://brffrach6v4ed"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_3ujsu"]
+[ext_resource type="Texture2D" uid="uid://ctnoo2tbcw1vr" path="res://BazzarDBParser/Items_501-603_files/180px-Vitality_Potion.jpeg" id="2_snio4"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_if8dm"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_edskq"]
+
+[resource]
+script = ExtResource("3_if8dm")
+name = "Vitality Potion"
+icon = ExtResource("2_snio4")
+description = "[color=8fe930]Heal[/color] equal to 50/100% of your [color=8fe930]Max Health[/color]."
+cooldown = Array[float]([11.0])
+ammo = Array[int]([1])
+cost = Array[int]([8, 16])
+active_effects = Array[ExtResource("1_3ujsu")]([])
+triggered_effects = Dictionary[int, ExtResource("4_edskq")]({})
+size = 1
+starting_tier = 3
+collection = 4
+type = Array[int]([42, 27, 8, 39])
+dev_state = 1

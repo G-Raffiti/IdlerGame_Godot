@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dhhgiu7kh28pp"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_dn3hh"]
+[ext_resource type="Texture2D" uid="uid://cw4h5ol5obgvy" path="res://BazzarDBParser/Items_001-500_files/180px-Pet_Rock.png" id="2_qnmjl"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_2ar81"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_iihx0"]
+
+[resource]
+script = ExtResource("3_2ar81")
+name = "Pet Rock"
+icon = ExtResource("2_qnmjl")
+description = "Deal [color=fa5436][b]8[/b]/[b]16[/b]/[b]24[/b]/[b]32 [/b][/color] [color=fa5436]Damage[/color]. If this is your only [color=9aabff]Friend[/color], your items have [color=f75139][b]10 / 15 / 20 / 25[/b][/color]% [color=f75139]Crit Chance[/color]."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_dn3hh")]([])
+triggered_effects = Dictionary[int, ExtResource("4_iihx0")]({})
+size = 1
+starting_tier = 1
+collection = 2
+type = Array[int]([1, 12, 7, 24, 3])
+dev_state = 1

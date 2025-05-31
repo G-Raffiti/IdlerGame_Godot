@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://t0wrmik3ql4x"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_3ajkj"]
+[ext_resource type="Texture2D" uid="uid://h7j8gw3wy7uk" path="res://BazzarDBParser/Items_001-500_files/180px-Sharpening_Stone.png" id="2_0t0li"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_8401t"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_g5ut4"]
+
+[resource]
+script = ExtResource("3_8401t")
+name = "Sharpening Stone"
+icon = ExtResource("2_0t0li")
+description = "When you sell this, your leftmost [color=9aabff]Weapon[/color] gains [color=fa5436][b]5/10/15/20[/b][/color] [color=fa5436]Damage[/color]."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_3ajkj")]([])
+triggered_effects = Dictionary[int, ExtResource("4_g5ut4")]({})
+size = 1
+starting_tier = 1
+collection = 10
+type = Array[int]([35, 16])
+dev_state = 1

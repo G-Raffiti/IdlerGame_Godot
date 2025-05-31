@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://vttr3mw6w62s"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_y2r4e"]
+[ext_resource type="Texture2D" uid="uid://b1jyp2kyujj6p" path="res://BazzarDBParser/Items_001-500_files/180px-Cooling_Fan.png" id="2_34a8s"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_es1o6"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_lpa04"]
+
+[resource]
+script = ExtResource("3_es1o6")
+name = "Cooling Fan"
+icon = ExtResource("2_34a8s")
+description = "The [color=9aabff]Core[/color] gains +[color=f75139][b]5[/b]/[b]10[/b]/[b]15[/b][/color]% [color=f75139]Crit Chance[/color]. While either player has [color=fc933e]Burn[/color], reduce this item's cooldown by 50%."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 12])
+active_effects = Array[ExtResource("1_y2r4e")]([])
+triggered_effects = Dictionary[int, ExtResource("4_lpa04")]({})
+size = 1
+starting_tier = 2
+collection = 3
+type = Array[int]([17, 24, 10])
+dev_state = 1

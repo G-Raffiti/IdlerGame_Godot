@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bhdleo0hvnjid"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_3goxs"]
+[ext_resource type="Texture2D" uid="uid://bc1aklowdcc0m" path="res://BazzarDBParser/Items_001-500_files/180px-Dooley's_Scarf.png" id="2_x1ibe"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_b2nrw"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_f7f5b"]
+
+[resource]
+script = ExtResource("3_b2nrw")
+name = "Dooleys Scarf"
+icon = ExtResource("2_x1ibe")
+description = "[color=f4cf21]Shield[/color] [color=f4cf21][b]75/100/125[/b][/color]. When this or an adjacent item gains [color=3fcfff]Freeze[/color], remove it."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_3goxs")]([])
+triggered_effects = Dictionary[int, ExtResource("4_f7f5b")]({})
+size = 2
+starting_tier = 2
+collection = 3
+type = Array[int]([20, 19, 4])
+dev_state = 1

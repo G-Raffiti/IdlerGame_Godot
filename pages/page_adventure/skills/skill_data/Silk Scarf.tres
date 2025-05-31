@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bbi7gxfbl7o6w"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_4nxnb"]
+[ext_resource type="Texture2D" uid="uid://dva31kdjb2np5" path="res://BazzarDBParser/Items_001-500_files/180px-Silk_Scarf.png" id="2_71okf"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_taxle"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_mcgdh"]
+
+[resource]
+script = ExtResource("3_taxle")
+name = "Silk Scarf"
+icon = ExtResource("2_71okf")
+description = "[color=f4cf21]Shield[/color] [color=f4cf21][b]10[/b]/[b]20[/b]/[b]40[/b]/[b]80 [/b][/color] When you sell another non [color=9aabff]Weapon[/color] item, this gains +[color=f4cf21]Shield[/color] [color=f4cf21][b]6[/b]/[b]12[/b]/[b]18[/b]/[b]24 [/b][/color]."
+cooldown = Array[float]([8.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_4nxnb")]([])
+triggered_effects = Dictionary[int, ExtResource("4_mcgdh")]({})
+size = 2
+starting_tier = 1
+collection = 1
+type = Array[int]([20, 19])
+is_generated_item = false
+dev_state = 1

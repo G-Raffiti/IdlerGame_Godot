@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cnas2uwd2afoy"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_yq8lj"]
+[ext_resource type="Texture2D" uid="uid://dsojn1nxxwti2" path="res://BazzarDBParser/Items_501-603_files/180px-Water_Wheel.png" id="2_c4x1m"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_6beij"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_tq2lo"]
+
+[resource]
+script = ExtResource("3_6beij")
+name = "Water Wheel"
+icon = ExtResource("2_c4x1m")
+description = "[color=00ffce]Haste[/color] your other items [color=00ffce][b]2[/b][/color] second(s). When you use an adjacent item, [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]2[/b][/color] second(s)."
+cooldown = Array[float]([8.0, 7.0, 6.0])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_yq8lj")]([])
+triggered_effects = Dictionary[int, ExtResource("4_tq2lo")]({})
+size = 3
+starting_tier = 2
+collection = 2
+type = Array[int]([9, 14, 23])
+dev_state = 1

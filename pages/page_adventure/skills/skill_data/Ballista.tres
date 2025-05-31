@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bc2or0yumcb71"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_58gne"]
+[ext_resource type="Texture2D" uid="uid://il5cv65wm6qu" path="res://BazzarDBParser/Items_001-500_files/180px-Ballista.png" id="2_y3mrn"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_k4u22"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_ooqrf"]
+
+[resource]
+script = ExtResource("3_k4u22")
+name = "Ballista"
+icon = ExtResource("2_y3mrn")
+description = "Deal [color=fa5436][b]150[/b]/[b]200[/b][/color] [color=fa5436]Damage[/color]. When you use another [color=f9923c]Ammo[/color] item, this gains 1 Multicast for the fight."
+cooldown = Array[float]([11.0])
+ammo = Array[int]([2])
+cost = Array[int]([24, 48])
+active_effects = Array[ExtResource("1_58gne")]([])
+triggered_effects = Dictionary[int, ExtResource("4_ooqrf")]({})
+size = 3
+starting_tier = 3
+collection = 2
+type = Array[int]([1, 8, 3])
+dev_state = 1

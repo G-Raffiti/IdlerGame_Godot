@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://c7i0g1abudd11"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_gd2fs"]
+[ext_resource type="Texture2D" uid="uid://df7pdqnchq6jt" path="res://BazzarDBParser/Items_501-603_files/180px-Z-Sword.jpeg" id="2_k5613"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_m7f7b"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_tmv1f"]
+
+[resource]
+script = ExtResource("3_m7f7b")
+name = "Z-Sword"
+icon = ExtResource("2_k5613")
+description = "Deal [color=fa5436][b]75[/b]/[b]100[/b]/[b]125[/b][/color] [color=fa5436]Damage[/color]. [color=fc933e]Burn[/color] [color=fc933e][b]12[/b]/[b]16[/b]/[b]20[/b][/color]. Adjacent items have their [b][color=00ffce]Cooldown[/color][/b] reduced by 10/15/20%. This has +1 Multicast if you have a Large item."
+cooldown = Array[float]([8.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_gd2fs")]([])
+triggered_effects = Dictionary[int, ExtResource("4_tmv1f")]({})
+size = 2
+starting_tier = 2
+collection = 3
+type = Array[int]([1, 17, 32])
+dev_state = 1

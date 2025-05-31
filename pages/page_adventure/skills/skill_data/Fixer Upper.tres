@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bl5t2x5iekqrg"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_bfy31"]
+[ext_resource type="Texture2D" uid="uid://d2newywoniihm" path="res://BazzarDBParser/Items_001-500_files/180px-Fixer_Upper.png" id="2_kfq26"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_4pfup"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_x0uan"]
+
+[resource]
+script = ExtResource("3_4pfup")
+name = "Fixer Upper"
+icon = ExtResource("2_kfq26")
+description = "[color=f4cf21]Shield[/color] 1x/2x/3x/4x this item's value. Every [color=f4d021][b]50[/b][/color] [color=f4d021]Gold[/color] you spend, upgrade this."
+cooldown = Array[float]([4.0])
+ammo = Array[int]([])
+cost = Array[int]([6, 12, 24, 48])
+active_effects = Array[ExtResource("1_bfy31")]([])
+triggered_effects = Dictionary[int, ExtResource("4_x0uan")]({})
+size = 3
+starting_tier = 1
+collection = 1
+type = Array[int]([14, 18, 19])
+dev_state = 1

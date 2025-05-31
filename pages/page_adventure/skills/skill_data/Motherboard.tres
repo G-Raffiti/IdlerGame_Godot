@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://np6f0uvxlmoy"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_bilkt"]
+[ext_resource type="Texture2D" uid="uid://sygm0w8ujjd1" path="res://BazzarDBParser/Items_001-500_files/180px-Motherboard.png" id="2_0mtvo"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_4yes3"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_poe8y"]
+
+[resource]
+script = ExtResource("3_4yes3")
+name = "Motherboard"
+icon = ExtResource("2_0mtvo")
+description = "[color=00ffce]Haste[/color] adjacent items for [color=00ffce][b]1/2/3[/b][/color] seconds. When you use an adjacent [color=9aabff]Tech[/color] item, [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1[/b][/color] second(s)."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_bilkt")]([])
+triggered_effects = Dictionary[int, ExtResource("4_poe8y")]({})
+size = 2
+starting_tier = 2
+collection = 3
+type = Array[int]([17, 23, 16])
+dev_state = 1

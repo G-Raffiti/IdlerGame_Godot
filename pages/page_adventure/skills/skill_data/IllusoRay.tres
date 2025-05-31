@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://c6ho4gjwxkxye"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_pyp4a"]
+[ext_resource type="Texture2D" uid="uid://dpfkkp6jq0p3u" path="res://BazzarDBParser/Items_001-500_files/180px-IllusoRay.png" id="2_e6tno"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_m0eb8"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_r7l2i"]
+
+[resource]
+script = ExtResource("3_m0eb8")
+name = "IllusoRay"
+icon = ExtResource("2_e6tno")
+description = "[color=cb9f6d]Slow[/color] 1 item(s) for [color=cb9f6d][b]1[/b]/[b]2[/b]/[b]3[/b]/[b]4[/b][/color] seconds. For each adjacent [color=9aabff]Friend[/color] or [color=9aabff]Ray[/color], this gains +1 Multicast."
+cooldown = Array[float]([8.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_pyp4a")]([])
+triggered_effects = Dictionary[int, ExtResource("4_r7l2i")]({})
+size = 1
+starting_tier = 1
+collection = 2
+type = Array[int]([9, 12, 25, 26])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://n8dmcsurbiqw"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_10g0w"]
+[ext_resource type="Texture2D" uid="uid://bw2xqtipe8p3b" path="res://BazzarDBParser/Items_001-500_files/180px-BLU-B33TL3.jpeg" id="2_fuu1g"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_v4bwp"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_3j6ms"]
+
+[resource]
+script = ExtResource("3_v4bwp")
+name = "BLU-B33TL3"
+icon = ExtResource("2_fuu1g")
+description = "[color=3fcfff]Freeze[/color] 1/2/3 item(s) for [color=3fcfff][b]0.5[/b][/color] second(s). When an adjacent item [b][color=0fb54b]Poisons[/color][/b], [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1[/b][/color] second(s)."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_10g0w")]([])
+triggered_effects = Dictionary[int, ExtResource("4_3j6ms")]({})
+size = 1
+starting_tier = 2
+collection = 3
+type = Array[int]([12, 40, 13])
+dev_state = 1

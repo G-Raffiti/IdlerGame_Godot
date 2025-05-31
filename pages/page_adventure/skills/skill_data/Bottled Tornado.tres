@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bsgh4rr52j4nt"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_yf4bx"]
+[ext_resource type="Texture2D" uid="uid://dwdqfr57f6dvs" path="res://BazzarDBParser/Items_001-500_files/180px-Bottled_Tornado.jpeg" id="2_j6rjl"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_lt61n"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_pxmos"]
+
+[resource]
+script = ExtResource("3_lt61n")
+name = "Bottled Tornado"
+icon = ExtResource("2_j6rjl")
+description = "The Sandstorm begins! [color=cb9f6d]Slow[/color] 1/2/3 item(s) for [color=cb9f6d][b]3[/b][/color] second(s)."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([1])
+cost = Array[int]([4, 6, 8])
+active_effects = Array[ExtResource("1_yf4bx")]([])
+triggered_effects = Dictionary[int, ExtResource("4_pxmos")]({})
+size = 1
+starting_tier = 2
+collection = 4
+type = Array[int]([42, 8, 26])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bxs4jslxkem04"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_qv5rx"]
+[ext_resource type="Texture2D" uid="uid://bpbcds714qfo5" path="res://BazzarDBParser/Items_001-500_files/180px-Gunpowder.png" id="2_nyg7n"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_yjbhe"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_8g0mn"]
+
+[resource]
+script = ExtResource("3_yjbhe")
+name = "Gunpowder"
+icon = ExtResource("2_nyg7n")
+description = "When you sell this, your leftmost Ammo item gains [color=f9923c][b]1/2/3[/b][/color] Max [color=f9923c]Ammo[/color]."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_qv5rx")]([])
+triggered_effects = Dictionary[int, ExtResource("4_8g0mn")]({})
+size = 1
+starting_tier = 2
+collection = 10
+type = Array[int]([35, 31])
+dev_state = 1

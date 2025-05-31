@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://3x184pje2kkh"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_pvwk1"]
+[ext_resource type="Texture2D" uid="uid://chqj8vaa6cklx" path="res://BazzarDBParser/Items_001-500_files/180px-Icebreaker.png" id="2_lo1x8"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_7i17q"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_uh4f1"]
+
+[resource]
+script = ExtResource("3_7i17q")
+name = "Icebreaker"
+icon = ExtResource("2_lo1x8")
+description = "Deal [color=fa5436][b]100/200/300[/b][/color] damage. Remove [color=3fcfff]Freeze[/color] from your items. When any item gains [color=3fcfff]Freeze[/color], [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1/2/3[/b][/color] second(s). When this item gains [color=3fcfff]Freeze[/color], remove [color=3fcfff]Freeze[/color] from it."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_pvwk1")]([])
+triggered_effects = Dictionary[int, ExtResource("4_uh4f1")]({})
+size = 2
+starting_tier = 2
+collection = 7
+type = Array[int]([1, 2, 3, 4])
+dev_state = 1

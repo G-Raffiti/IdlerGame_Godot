@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://ccyhqfta3j35l"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_2mre1"]
+[ext_resource type="Texture2D" uid="uid://dxerb0s8p14go" path="res://BazzarDBParser/Items_001-500_files/180px-Show_Globe.jpeg" id="2_3lis5"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_tj3wi"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_fgc2d"]
+
+[resource]
+script = ExtResource("3_tj3wi")
+name = "Show Globe"
+icon = ExtResource("2_3lis5")
+description = "[color=fc933e]Burn[/color] [color=fc933e][b]3[/b]/[b]4[/b]/[b]5[/b][/color]. Gain [color=8fe930][b]3[/b]/[b]4[/b]/[b]5[/b][/color] [color=8fe930]Regeneration[/color] for the fight. When you use a [color=9aabff]Potion[/color], your items gain +[color=fc933e][b]3[/b]/[b]6[/b]/[b]9[/b][/color] [color=fc933e]Burn[/color] and [color=8fe930][b]3[/b]/[b]6[/b]/[b]9[/b][/color] [color=8fe930]Regeneration[/color] for the fight."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 6, 8])
+active_effects = Array[ExtResource("1_2mre1")]([])
+triggered_effects = Dictionary[int, ExtResource("4_fgc2d")]({})
+size = 2
+starting_tier = 2
+collection = 4
+type = Array[int]([22, 32])
+dev_state = 1

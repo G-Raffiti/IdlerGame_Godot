@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bu3whwhy6s7ys"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_cfo4g"]
+[ext_resource type="Texture2D" uid="uid://jk6pfk0gqs1e" path="res://BazzarDBParser/Items_001-500_files/180px-Oinkment.png" id="2_xvm45"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_md876"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_1he27"]
+
+[resource]
+script = ExtResource("3_md876")
+name = "Oinkment"
+icon = ExtResource("2_xvm45")
+description = "[color=8fe930]Heal[/color] equal to 1x / 2x / 3x your [color=f4d021]Gold[/color]. Cleanse half your [color=fc933e]Burn[/color] and [color=0fb54b]Poison[/color]."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_cfo4g")]([])
+triggered_effects = Dictionary[int, ExtResource("4_1he27")]({})
+size = 1
+starting_tier = 2
+collection = 1
+type = Array[int]([27, 18])
+dev_state = 1

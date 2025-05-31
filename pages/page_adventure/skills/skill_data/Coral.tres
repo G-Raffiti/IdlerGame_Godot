@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bb24ix7cfcr1m"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_iw0f3"]
+[ext_resource type="Texture2D" uid="uid://bwxwm7co1fcs7" path="res://BazzarDBParser/Items_001-500_files/180px-Coral.png" id="2_lak3c"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_5ypyb"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_h7trq"]
+
+[resource]
+script = ExtResource("3_5ypyb")
+name = "Coral"
+icon = ExtResource("2_lak3c")
+description = "[color=8fe930]Heal[/color] [color=8fe930][b]20[/b][/color]. When you buy an [color=9aabff]Aquatic[/color] item, this gains [color=8fe930]Heal[/color] [color=8fe930][b]3[/b]/[b]6[/b]/[b]9[/b]/[b]12[/b][/color]."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 6, 8])
+active_effects = Array[ExtResource("1_iw0f3")]([])
+triggered_effects = Dictionary[int, ExtResource("4_h7trq")]({})
+size = 1
+starting_tier = 1
+collection = 2
+type = Array[int]([9, 27])
+dev_state = 1

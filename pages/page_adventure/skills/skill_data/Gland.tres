@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://obphm0q4std5"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_deilc"]
+[ext_resource type="Texture2D" uid="uid://dml6tv62c6je5" path="res://BazzarDBParser/Items_001-500_files/180px-Gland.png" id="2_hrwh4"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_jrniu"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_2y1vo"]
+
+[resource]
+script = ExtResource("3_jrniu")
+name = "Gland"
+icon = ExtResource("2_hrwh4")
+description = "When you sell this, you gain [color=8fe930][b]1[/b]/[b]2[/b]/[b]3[/b]/[b]4[/b][/color] [color=8fe930]Regen[/color]."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_deilc")]([])
+triggered_effects = Dictionary[int, ExtResource("4_2y1vo")]({})
+size = 1
+starting_tier = 1
+collection = 10
+type = Array[int]([35, 22])
+dev_state = 1

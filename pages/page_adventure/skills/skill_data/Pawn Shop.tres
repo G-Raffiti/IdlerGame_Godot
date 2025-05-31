@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bmlhq3b2oyvlp"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_u0xr7"]
+[ext_resource type="Texture2D" uid="uid://bj7e6a4skd5go" path="res://BazzarDBParser/Items_001-500_files/180px-Pawn_Shop.png" id="2_150o5"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_5ioco"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_3wenx"]
+
+[resource]
+script = ExtResource("3_5ioco")
+name = "Pawn Shop"
+icon = ExtResource("2_150o5")
+description = "When you sell an item, this gains [color=f4d021][b]1/2/3[/b][/color] value. You have increased [color=8fe930]Max Health[/color] equal to 10/15/20 times this item's value."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([6, 12, 24, 48])
+active_effects = Array[ExtResource("1_u0xr7")]([])
+triggered_effects = Dictionary[int, ExtResource("4_3wenx")]({})
+size = 3
+starting_tier = 2
+collection = 1
+type = Array[int]([14, 18, 39, 28])
+dev_state = 1

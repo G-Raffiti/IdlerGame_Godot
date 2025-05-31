@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cjpnje4hvs8x5"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_j4nxh"]
+[ext_resource type="Texture2D" uid="uid://bbap8hfut7ggi" path="res://BazzarDBParser/Items_001-500_files/180px-Necronomicon.png" id="2_hrng0"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_phbo4"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_o2hwd"]
+
+[resource]
+script = ExtResource("3_phbo4")
+name = "Necronomicon"
+icon = ExtResource("2_hrng0")
+description = "[color=0fb54b]Poison[/color] [color=0fb54b][b]10[/b][/color]. gain [color=8fe930][b]10[/b][/color] [color=8fe930]Regen[/color] for the fight. When any non [color=9aabff]Weapon[/color] is used, [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1[/b][/color] second(s)."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([100])
+active_effects = Array[ExtResource("1_j4nxh")]([])
+triggered_effects = Dictionary[int, ExtResource("4_o2hwd")]({})
+size = 2
+starting_tier = 5
+collection = 7
+type = Array[int]([21, 22])
+dev_state = 1

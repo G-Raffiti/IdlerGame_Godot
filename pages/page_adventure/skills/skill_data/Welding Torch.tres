@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://d1c6m7i7hw6fn"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_lqwkl"]
+[ext_resource type="Texture2D" uid="uid://cx05ymrock8nw" path="res://BazzarDBParser/Items_501-603_files/180px-Welding_Torch.png" id="2_jtte8"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_teej5"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_uoyr3"]
+
+[resource]
+script = ExtResource("3_teej5")
+name = "Welding Torch"
+icon = ExtResource("2_jtte8")
+description = "[color=fc933e]Burn[/color] [color=fc933e][b]8[/b][/color]. While you have [color=f4cf21]Shield[/color], this item's [b][color=00ffce]Cooldown[/color][/b] is reduced by 50%."
+cooldown = Array[float]([7.0, 6.0, 5.0, 4.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_lqwkl")]([])
+triggered_effects = Dictionary[int, ExtResource("4_uoyr3")]({})
+size = 2
+starting_tier = 1
+collection = 3
+type = Array[int]([2, 32, 15])
+dev_state = 1

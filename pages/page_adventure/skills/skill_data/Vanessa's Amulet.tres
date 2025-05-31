@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://1ehxq12u0aqw"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_ikt70"]
+[ext_resource type="Texture2D" uid="uid://cds7n5lfc0yav" path="res://BazzarDBParser/Items_501-603_files/Vanessa_s_Amulet.png" id="2_vcm2x"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_80fns"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_7qk4d"]
+
+[resource]
+script = ExtResource("3_80fns")
+name = "Vanessa's Amulet"
+icon = ExtResource("2_vcm2x")
+description = "Your items have +[color=f75139][b]10 / 20 / 30 / 40[/b][/color]% [color=f75139]Crit Chance[/color]."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_ikt70")]([])
+triggered_effects = Dictionary[int, ExtResource("4_7qk4d")]({})
+size = 1
+starting_tier = 1
+collection = 2
+type = Array[int]([20, 24])
+dev_state = 1

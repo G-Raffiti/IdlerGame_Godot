@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://7ilpp06wiyk7"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_xyhvw"]
+[ext_resource type="Texture2D" uid="uid://bj1hc1idhpkkw" path="res://BazzarDBParser/Items_001-500_files/180px-Ganjo.png" id="2_w2vu8"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_ny3a7"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_3ewxc"]
+
+[resource]
+script = ExtResource("3_ny3a7")
+name = "Ganjo"
+icon = ExtResource("2_w2vu8")
+description = "Adjacent [color=9aabff]Weapons[/color] gain [color=fa5436][b]10[/b]/[b]15[/b]/[b]20[/b]/[b]25 [/b][/color] [color=fa5436]Damage[/color] for the fight. Adjacent [color=8fe930]Heal[/color] items gain [color=8fe930][b]10[/b]/[b]15[/b]/[b]20[/b]/[b]25[/b][/color] [color=8fe930]Heal[/color] for the fight. Adjacent [color=f4cf21]Shield[/color] items gain [color=f4cf21][b]10[/b]/[b]15[/b]/[b]20[/b]/[b]25[/b][/color] [color=f4cf21]Shield[/color] for the fight."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_xyhvw")]([])
+triggered_effects = Dictionary[int, ExtResource("4_3ewxc")]({})
+size = 2
+starting_tier = 1
+collection = 1
+type = Array[int]([16, 29, 15])
+dev_state = 1

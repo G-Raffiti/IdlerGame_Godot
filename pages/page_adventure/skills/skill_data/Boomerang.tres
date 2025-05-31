@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://oekq88ygle8f"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_i23tf"]
+[ext_resource type="Texture2D" uid="uid://ju5yvap1vj1f" path="res://BazzarDBParser/Items_001-500_files/180px-Boomerang.png" id="2_ti7ng"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_gsf2a"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_ec1v0"]
+
+[resource]
+script = ExtResource("3_gsf2a")
+name = "Boomerang"
+icon = ExtResource("2_ti7ng")
+description = "Deal [color=fa5436][b]20[/b]/[b]30[/b]/[b]40[/b]/[b]50[/b][/color] damage. When you win a fight against a Monster with this, get a random Loot item."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_i23tf")]([])
+triggered_effects = Dictionary[int, ExtResource("4_ec1v0")]({})
+size = 2
+starting_tier = 1
+collection = 1
+type = Array[int]([1, 7, 18, 3])
+dev_state = 1

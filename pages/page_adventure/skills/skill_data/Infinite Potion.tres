@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dynyybebklmsh"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_p6lui"]
+[ext_resource type="Texture2D" uid="uid://b8qublj4s6m7r" path="res://BazzarDBParser/Items_001-500_files/180px-Infinite_Potion.jpeg" id="2_x8cgb"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_r1661"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_f3wrj"]
+
+[resource]
+script = ExtResource("3_r1661")
+name = "Infinite Potion"
+icon = ExtResource("2_x8cgb")
+description = "Gain [color=8fe930][b]1[/b]/[b]2[/b]/[b]3[/b][/color] [color=8fe930]Regen[/color] for the fight. [b][color=f9923c]Reload[/color][/b] this."
+cooldown = Array[float]([4.0])
+ammo = Array[int]([1])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_p6lui")]([])
+triggered_effects = Dictionary[int, ExtResource("4_f3wrj")]({})
+size = 1
+starting_tier = 2
+collection = 4
+type = Array[int]([42, 22, 8])
+dev_state = 1

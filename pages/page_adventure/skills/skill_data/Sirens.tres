@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cd51wxngb221i"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_qa5kg"]
+[ext_resource type="Texture2D" uid="uid://b80i86dpoh25w" path="res://BazzarDBParser/Items_001-500_files/180px-Sirens.png" id="2_mnpbh"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_vnqsu"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_15s78"]
+
+[resource]
+script = ExtResource("3_vnqsu")
+name = "Sirens"
+icon = ExtResource("2_mnpbh")
+description = "[color=cb9f6d]Slow[/color] 1 item(s) for [color=cb9f6d][b]1/2/3[/b][/color] seconds.  [color=00ffce]Haste[/color] 1 item for [color=00ffce][b]1/2/3[/b][/color] seconds. For each adjacent [color=9aabff]Vehicle[/color], this has +1 Multicast."
+cooldown = Array[float]([8.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_qa5kg")]([])
+triggered_effects = Dictionary[int, ExtResource("4_15s78")]({})
+size = 2
+starting_tier = 2
+collection = 8
+type = Array[int]([23, 26])
+dev_state = 1

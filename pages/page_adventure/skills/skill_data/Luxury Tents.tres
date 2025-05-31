@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dpxe56v6d0y8l"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_hc84a"]
+[ext_resource type="Texture2D" uid="uid://dld4x4no8k8ck" path="res://BazzarDBParser/Items_001-500_files/180px-Luxury_Tents.png" id="2_40x1r"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_cyyy0"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_78cwb"]
+
+[resource]
+script = ExtResource("3_cyyy0")
+name = "Luxury Tents"
+icon = ExtResource("2_40x1r")
+description = "The first time you would die each fight, [color=8fe930]Heal[/color] for 25 / 50% of your [color=8fe930]Max Health[/color]. Your [color=8fe930]Heal[/color] and [color=8fe930]Regen[/color] items have +1 Multicast."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([24, 48])
+active_effects = Array[ExtResource("1_hc84a")]([])
+triggered_effects = Dictionary[int, ExtResource("4_78cwb")]({})
+size = 3
+starting_tier = 3
+collection = 1
+type = Array[int]([14, 27, 50])
+dev_state = 1

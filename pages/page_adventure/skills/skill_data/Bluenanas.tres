@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cilrs6v3c8n0y"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_41q0k"]
+[ext_resource type="Texture2D" uid="uid://b335jlqtuskdh" path="res://BazzarDBParser/Items_001-500_files/180px-Bluenanas.png" id="2_2dq78"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_t86ot"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_ogtcc"]
+
+[resource]
+script = ExtResource("3_t86ot")
+name = "Bluenanas"
+icon = ExtResource("2_2dq78")
+description = "[color=8fe930]Heal[/color] [color=8fe930][b]10[/b]/[b]20[/b]/[b]40[/b]/[b]80[/b][/color]. When you sell this, gain 20/60/120/200 [color=8fe930]Max Health[/color]"
+cooldown = Array[float]([10.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_41q0k")]([])
+triggered_effects = Dictionary[int, ExtResource("4_ogtcc")]({})
+size = 1
+starting_tier = 1
+collection = 5
+type = Array[int]([41, 27, 39])
+dev_state = 1

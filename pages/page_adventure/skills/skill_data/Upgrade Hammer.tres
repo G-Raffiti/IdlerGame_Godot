@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bm7ulo2l4afvt"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_imkak"]
+[ext_resource type="Texture2D" uid="uid://gruh6w8o420o" path="res://BazzarDBParser/Items_501-603_files/180px-Upgrade_Hammer.png" id="2_rymrw"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_r535j"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_t8txl"]
+
+[resource]
+script = ExtResource("3_r535j")
+name = "Upgrade Hammer"
+icon = ExtResource("2_rymrw")
+description = "When you sell this, upgrade your leftmost Bronze/Silver/Gold (or lower) tier item."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_imkak")]([])
+triggered_effects = Dictionary[int, ExtResource("4_t8txl")]({})
+size = 1
+starting_tier = 2
+collection = 7
+type = Array[int]([35])
+dev_state = 1

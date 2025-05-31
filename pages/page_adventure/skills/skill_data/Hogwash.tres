@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://b3jpqnie4k54t"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_qjk3b"]
+[ext_resource type="Texture2D" uid="uid://chk3djhdiq1ax" path="res://BazzarDBParser/Items_001-500_files/180px-Hogwash.png" id="2_l3ide"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_tobqq"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_ipxwo"]
+
+[resource]
+script = ExtResource("3_tobqq")
+name = "Hogwash"
+icon = ExtResource("2_l3ide")
+description = "[color=8fe930]Heal[/color] equal to 10% of your Max Health. When you [color=8fe930]Heal[/color] or gain [color=8fe930]Regen[/color], gain [color=8fe930][b]50[/b]/[b]75[/b]/[b]100[/b][/color] Max Health for the fight."
+cooldown = Array[float]([7.0, 6.0, 5.0])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_qjk3b")]([])
+triggered_effects = Dictionary[int, ExtResource("4_ipxwo")]({})
+size = 3
+starting_tier = 2
+collection = 1
+type = Array[int]([14, 27, 39, 52])
+dev_state = 1

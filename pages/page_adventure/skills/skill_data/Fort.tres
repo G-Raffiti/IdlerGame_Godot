@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://b0webpbuacma8"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_63f4s"]
+[ext_resource type="Texture2D" uid="uid://h0t11ak4aijx" path="res://BazzarDBParser/Items_001-500_files/180px-Fort.png" id="2_0kfu2"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_4d37e"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_anwu7"]
+
+[resource]
+script = ExtResource("3_4d37e")
+name = "Fort"
+icon = ExtResource("2_0kfu2")
+description = "[color=f4cf21]Shield[/color] [color=f4cf21][b]100/150[/b][/color]. All item [b][color=00ffce]Cooldowns[/color][/b] are increased by 1 / 2 second(s). Your items with a [b][color=00ffce]Cooldown[/color][/b] of 8 seconds or greater have +1 Multicast."
+cooldown = Array[float]([8.0])
+ammo = Array[int]([])
+cost = Array[int]([24, 48])
+active_effects = Array[ExtResource("1_63f4s")]([])
+triggered_effects = Dictionary[int, ExtResource("4_anwu7")]({})
+size = 3
+starting_tier = 3
+collection = 1
+type = Array[int]([14, 19])
+dev_state = 1

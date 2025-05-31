@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bkrt36ue2v51m"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_f0b1n"]
+[ext_resource type="Texture2D" uid="uid://yxn1bfcgdqld" path="res://BazzarDBParser/Items_001-500_files/180px-Extract.png" id="2_w5t2d"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_spbmg"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_4t7x2"]
+
+[resource]
+script = ExtResource("3_spbmg")
+name = "Extract"
+icon = ExtResource("2_w5t2d")
+description = "When you sell this, your leftmost [color=0fb54b]Poison[/color] item gains +[color=0fb54b][b]1[/b]/[b]2[/b]/[b]3[/b]/[b]4[/b][/color] [color=0fb54b]Poison[/color]."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_f0b1n")]([])
+triggered_effects = Dictionary[int, ExtResource("4_4t7x2")]({})
+size = 1
+starting_tier = 1
+collection = 10
+type = Array[int]([35, 13])
+dev_state = 1

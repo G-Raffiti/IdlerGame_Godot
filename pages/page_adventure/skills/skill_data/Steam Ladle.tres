@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dpaicmwhv1ebq"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_hso2i"]
+[ext_resource type="Texture2D" uid="uid://d17erlg4hlkwn" path="res://BazzarDBParser/Items_501-603_files/180px-Steam_Ladle.png" id="2_51c8d"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_hix6t"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_30fxk"]
+
+[resource]
+script = ExtResource("3_hix6t")
+name = "Steam Ladle"
+icon = ExtResource("2_51c8d")
+description = "[color=fc933e]Burn[/color] [color=fc933e][b]2[/b][/color]. When you [color=3fcfff]Freeze[/color], this gains [color=fc933e][b]2[/b]/[b]4[/b]/[b]6[/b]/[b]8[/b][/color] [color=fc933e]Burn[/color] for the fight."
+cooldown = Array[float]([4.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_hso2i")]([])
+triggered_effects = Dictionary[int, ExtResource("4_30fxk")]({})
+size = 1
+starting_tier = 1
+collection = 1
+type = Array[int]([32, 4, 2])
+dev_state = 1

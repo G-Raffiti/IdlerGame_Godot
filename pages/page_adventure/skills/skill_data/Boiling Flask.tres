@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://waqmeyb86b1j"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_dvqx4"]
+[ext_resource type="Texture2D" uid="uid://bg238uead6ff4" path="res://BazzarDBParser/Items_001-500_files/180px-Boiling_Flask.jpeg" id="2_0gb06"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_afuf1"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_j356i"]
+
+[resource]
+script = ExtResource("3_afuf1")
+name = "Boiling Flask"
+icon = ExtResource("2_0gb06")
+description = "Reload adjacent [color=9aabff]Potions[/color]. Adjacent [color=9aabff]Potions[/color] have +1 Multicast."
+cooldown = Array[float]([10.0, 9.0])
+ammo = Array[int]([])
+cost = Array[int]([16, 32])
+active_effects = Array[ExtResource("1_dvqx4")]([])
+triggered_effects = Dictionary[int, ExtResource("4_j356i")]({})
+size = 2
+starting_tier = 3
+collection = 4
+type = Array[int]([2, 31])
+dev_state = 1

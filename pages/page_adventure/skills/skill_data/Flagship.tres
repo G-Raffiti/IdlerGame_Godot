@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://b0p6ioqypete6"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_gn0b4"]
+[ext_resource type="Texture2D" uid="uid://brhwkbknlhdmb" path="res://BazzarDBParser/Items_001-500_files/180px-Flagship.png" id="2_fcb0t"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_xqw4s"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_3poh1"]
+
+[resource]
+script = ExtResource("3_xqw4s")
+name = "Flagship"
+icon = ExtResource("2_fcb0t")
+description = "Deal [color=fa5436][b]50[/b]/[b]75[/b]/[b]100[/b][/color] [color=fa5436]Damage[/color]. If you have another [color=9aabff]Tool[/color], [color=9aabff]Property[/color], [color=9aabff]Friend[/color] or [color=f9923c]Ammo[/color] item this has +1 Multicast for each."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_gn0b4")]([])
+triggered_effects = Dictionary[int, ExtResource("4_3poh1")]({})
+size = 3
+starting_tier = 2
+collection = 2
+type = Array[int]([9, 6, 1, 31, 3])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bbjcl4rj7dsdx"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_u6gh1"]
+[ext_resource type="Texture2D" uid="uid://djsmxwe3njacu" path="res://BazzarDBParser/Items_001-500_files/180px-Memory_Card.png" id="2_7jcxv"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_jaepl"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_q7fhj"]
+
+[resource]
+script = ExtResource("3_jaepl")
+name = "Memory Card"
+icon = ExtResource("2_7jcxv")
+description = "This gains [color=f4d021][b]1[/b][/color][color=f4d021][/color] Value. When you sell this, The [color=9aabff]Core[/color] gains +[color=fa5436]Damage[/color] equal to x1/x2/x3/x4 this item's value."
+cooldown = Array[float]([10.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_u6gh1")]([])
+triggered_effects = Dictionary[int, ExtResource("4_q7fhj")]({})
+size = 1
+starting_tier = 1
+collection = 3
+type = Array[int]([17, 28, 16])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bxtrmy4i7wle"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_m88s0"]
+[ext_resource type="Texture2D" uid="uid://n8jdgp5jrwcn" path="res://BazzarDBParser/Items_001-500_files/180px-Cryosphere.png" id="2_fv4ye"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_b27ek"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_6jxcc"]
+
+[resource]
+script = ExtResource("3_b27ek")
+name = "Cryosphere"
+icon = ExtResource("2_fv4ye")
+description = "[color=3fcfff]Freeze[/color] both players' non-[color=9aabff]Core[/color] items for [color=3fcfff][b]2[/b]/[b]3[/b][/color] seconds."
+cooldown = Array[float]([10.0])
+ammo = Array[int]([])
+cost = Array[int]([16, 32])
+active_effects = Array[ExtResource("1_m88s0")]([])
+triggered_effects = Dictionary[int, ExtResource("4_6jxcc")]({})
+size = 2
+starting_tier = 3
+collection = 3
+type = Array[int]([17, 40])
+dev_state = 1

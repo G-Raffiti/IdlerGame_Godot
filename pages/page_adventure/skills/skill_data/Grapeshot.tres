@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://di6td1icccroe"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_45xil"]
+[ext_resource type="Texture2D" uid="uid://c5acd7lse0ahg" path="res://BazzarDBParser/Items_001-500_files/180px-Grapeshot.png" id="2_nsi42"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_fdib0"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_61f23"]
+
+[resource]
+script = ExtResource("3_fdib0")
+name = "Grapeshot"
+icon = ExtResource("2_nsi42")
+description = "Deal [color=fa5436][b]15[/b]/[b]30[/b]/[b]60[/b][/color] [color=fa5436]Damage[/color]. When you use another [color=f9923c]Ammo[/color] item, this reloads [color=f9923c][b]1[/b][/color] [color=f9923c]Ammo[/color]."
+cooldown = Array[float]([4.0])
+ammo = Array[int]([2])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_45xil")]([])
+triggered_effects = Dictionary[int, ExtResource("4_61f23")]({})
+size = 1
+starting_tier = 2
+collection = 2
+type = Array[int]([1, 8, 3])
+dev_state = 1

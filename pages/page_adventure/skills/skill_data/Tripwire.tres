@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cq0strjsktrdt"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_xw1ag"]
+[ext_resource type="Texture2D" uid="uid://dr82y0wd5xw7d" path="res://BazzarDBParser/Items_501-603_files/180px-Tripwire.png" id="2_jpebj"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_2m367"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_kf1yn"]
+
+[resource]
+script = ExtResource("3_2m367")
+name = "Tripwire"
+icon = ExtResource("2_jpebj")
+description = "When your enemy uses an item, [color=cb9f6d]Slow[/color] it for [color=cb9f6d][b]1[/b]/[b]2[/b][/color] second(s)."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([16, 32])
+active_effects = Array[ExtResource("1_xw1ag")]([])
+triggered_effects = Dictionary[int, ExtResource("4_kf1yn")]({})
+size = 2
+starting_tier = 3
+collection = 2
+type = Array[int]([26])
+dev_state = 1

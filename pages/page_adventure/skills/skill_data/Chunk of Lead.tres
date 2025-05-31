@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://d367xlmfptj"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_eg5ut"]
+[ext_resource type="Texture2D" uid="uid://bo823757lshsi" path="res://BazzarDBParser/Items_001-500_files/180px-Chunk_of_Lead.jpeg" id="2_k4umt"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_v1ukv"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_ktf17"]
+
+[resource]
+script = ExtResource("3_v1ukv")
+name = "Chunk of Lead"
+icon = ExtResource("2_k4umt")
+description = "When this is transformed, gain a Chunk of Gold."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 6, 8])
+active_effects = Array[ExtResource("1_eg5ut")]([])
+triggered_effects = Dictionary[int, ExtResource("4_ktf17")]({})
+size = 1
+starting_tier = 1
+collection = 7
+type = Array[int]([45, 44])
+dev_state = 1

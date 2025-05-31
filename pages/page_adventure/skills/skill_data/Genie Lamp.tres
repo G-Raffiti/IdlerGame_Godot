@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://n1j2ukxwg7sd"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_6oi60"]
+[ext_resource type="Texture2D" uid="uid://dsikhx5yqyanw" path="res://BazzarDBParser/Items_001-500_files/180px-Genie_Lamp.png" id="2_araj6"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_x7bhq"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_mdi6i"]
+
+[resource]
+script = ExtResource("3_x7bhq")
+name = "Genie Lamp"
+icon = ExtResource("2_araj6")
+description = "When you sell this, gain access to the Genie Rit."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([])
+active_effects = Array[ExtResource("1_6oi60")]([])
+triggered_effects = Dictionary[int, ExtResource("4_mdi6i")]({})
+size = 1
+starting_tier = 4
+collection = 7
+type = Array[int]([36, 37])
+dev_state = 1

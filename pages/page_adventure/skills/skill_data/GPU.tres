@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cohc0ykdl1idp"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_d2gt1"]
+[ext_resource type="Texture2D" uid="uid://tfjutrk5scor" path="res://BazzarDBParser/Items_001-500_files/180px-GPU.png" id="2_7iht6"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_diwlw"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_v7b4j"]
+
+[resource]
+script = ExtResource("3_diwlw")
+name = "GPU"
+icon = ExtResource("2_7iht6")
+description = "[color=00ffce]Haste[/color] the [color=9aabff]Core[/color] for [color=00ffce][b]1[/b]/[b]2[/b]/[b]3[/b]/[b]4[/b][/color] seconds"
+cooldown = Array[float]([4.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_d2gt1")]([])
+triggered_effects = Dictionary[int, ExtResource("4_v7b4j")]({})
+size = 1
+starting_tier = 1
+collection = 3
+type = Array[int]([17, 23])
+dev_state = 1

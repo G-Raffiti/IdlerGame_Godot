@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://8qjlpn38sbta"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_v3kfb"]
+[ext_resource type="Texture2D" uid="uid://nm1c6qw3uc2a" path="res://BazzarDBParser/Items_001-500_files/180px-Astrolabe.png" id="2_1x1t3"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_jv32k"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_uay4i"]
+
+[resource]
+script = ExtResource("3_jv32k")
+name = "Astrolabe"
+icon = ExtResource("2_1x1t3")
+description = "[color=00ffce]Haste[/color] a non-[color=9aabff]Weapon[/color] item for [color=00ffce][b]2[/b][/color] second(s). When you use another non-[color=9aabff]Weapon[/color] item, [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1[/b][/color] second(s)."
+cooldown = Array[float]([7.0, 6.0, 5.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_v3kfb")]([])
+triggered_effects = Dictionary[int, ExtResource("4_uay4i")]({})
+size = 2
+starting_tier = 2
+collection = 2
+type = Array[int]([2, 23])
+dev_state = 1

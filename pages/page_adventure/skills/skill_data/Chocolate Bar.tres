@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dw1jokwron13w"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_dbqw3"]
+[ext_resource type="Texture2D" uid="uid://ba2tw88fwn40r" path="res://BazzarDBParser/Items_001-500_files/180px-Chocolate_Bar.png" id="2_spjyd"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_qkdo0"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_8v3hs"]
+
+[resource]
+script = ExtResource("3_qkdo0")
+name = "Chocolate Bar"
+icon = ExtResource("2_spjyd")
+description = "When sell this, gain 10/20/30/40 [color=8fe930]Max Health[/color]. This has no base value."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 6, 8])
+active_effects = Array[ExtResource("1_dbqw3")]([])
+triggered_effects = Dictionary[int, ExtResource("4_8v3hs")]({})
+size = 1
+starting_tier = 1
+collection = 9
+type = Array[int]([41, 39])
+dev_state = 1

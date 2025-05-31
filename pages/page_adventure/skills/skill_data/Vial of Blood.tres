@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dgoufg5hyaptn"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_fhycx"]
+[ext_resource type="Texture2D" uid="uid://d4mv56kk6tdc4" path="res://BazzarDBParser/Items_501-603_files/180px-Vial_of_Blood.png" id="2_hboww"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_r3j7y"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_vdel5"]
+
+[resource]
+script = ExtResource("3_r3j7y")
+name = "Vial of Blood"
+icon = ExtResource("2_hboww")
+description = "When you sell this, gain [color=63ceec][b]1[/b]/[b]2[/b]/[b]3[/b][/color] [color=63ceec]XP[/color]."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_fhycx")]([])
+triggered_effects = Dictionary[int, ExtResource("4_vdel5")]({})
+size = 1
+starting_tier = 2
+collection = 10
+type = Array[int]([35, 54])
+dev_state = 1

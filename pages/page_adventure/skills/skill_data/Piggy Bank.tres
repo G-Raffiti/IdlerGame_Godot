@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://c6xhvab1l0b1"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_65rcy"]
+[ext_resource type="Texture2D" uid="uid://q8r06ld003ec" path="res://BazzarDBParser/Items_001-500_files/180px-Piggy_Bank.png" id="2_u38vu"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_65rcy"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_pm08i"]
+
+[resource]
+script = ExtResource("3_65rcy")
+name = "Piggy Bank"
+icon = ExtResource("2_u38vu")
+description = "When you sell this, get Spare Change equal to its value. At the start of each hour, spend [color=f4d021][b]2[/b][/color] [color=f4d021]Gold[/color] to gain 1 value."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_65rcy")]([])
+triggered_effects = Dictionary[int, ExtResource("4_pm08i")]({})
+size = 1
+starting_tier = 1
+collection = 1
+type = Array[int]([18, 7, 28])
+is_generated_item = true
+dev_state = 1

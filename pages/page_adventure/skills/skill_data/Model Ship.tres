@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://djrsdhocigm6w"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_jlrx5"]
+[ext_resource type="Texture2D" uid="uid://chk7b863ro3m5" path="res://BazzarDBParser/Items_001-500_files/180px-Model_Ship.png" id="2_8wotc"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_h82dq"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_31bx3"]
+
+[resource]
+script = ExtResource("3_h82dq")
+name = "Model Ship"
+icon = ExtResource("2_8wotc")
+description = "[color=f4cf21]Shield[/color] [color=f4cf21][b]30 / 40 / 50[/b][/color] Adjacent [color=9aabff]Toys[/color] have +1 Multicast."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_jlrx5")]([])
+triggered_effects = Dictionary[int, ExtResource("4_31bx3")]({})
+size = 2
+starting_tier = 2
+collection = 1
+type = Array[int]([7, 19, 9, 6])
+dev_state = 1

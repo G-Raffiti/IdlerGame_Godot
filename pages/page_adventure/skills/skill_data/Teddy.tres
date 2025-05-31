@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://nfxu2kdasfj0"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_npt6e"]
+[ext_resource type="Texture2D" uid="uid://c3wppp2rksclx" path="res://BazzarDBParser/Items_501-603_files/180px-Teddy.png" id="2_32bqa"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_nmxrb"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_a7i5h"]
+
+[resource]
+script = ExtResource("3_nmxrb")
+name = "Teddy"
+icon = ExtResource("2_32bqa")
+description = "Deal [color=fa5436][b]100[/b][/color] [color=fa5436]Damage[/color]. When you use an another [color=9aabff]Toy[/color], [color=9aabff]Friend[/color] or [color=f9923c]Ammo[/color] item, [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1[/b][/color] second(s). [color=f75139][b]25[/b][/color]% [color=f75139]Crit Chance[/color] Multicast x2"
+cooldown = Array[float]([9.0])
+ammo = Array[int]([])
+cost = Array[int]([100])
+active_effects = Array[ExtResource("1_npt6e")]([])
+triggered_effects = Dictionary[int, ExtResource("4_a7i5h")]({})
+size = 2
+starting_tier = 5
+collection = 7
+type = Array[int]([12, 1, 7, 31, 3])
+dev_state = 1

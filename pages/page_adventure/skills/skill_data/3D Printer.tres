@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://w85scjydmoap"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_n5iuy"]
+[ext_resource type="Texture2D" uid="uid://b4fi7isfbecvg" path="res://BazzarDBParser/Items_001-500_files/180px-3D_Printer.webp" id="2_s8jaf"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_f7e1k"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_5qpk6"]
+
+[resource]
+script = ExtResource("3_f7e1k")
+name = "3D Printer"
+icon = ExtResource("2_s8jaf")
+description = "Transform into 3 [color=C1992F]Gold[/color]/[color=69BDD7]Diamond[/color] copies of the small, non-legendary item to the left of this for the fight."
+cooldown = Array[float]([5.0, 4.0])
+ammo = Array[int]([])
+cost = Array[int]([24, 48])
+active_effects = Array[ExtResource("1_n5iuy")]([])
+triggered_effects = Dictionary[int, ExtResource("4_5qpk6")]({})
+size = 3
+starting_tier = 3
+collection = 3
+type = Array[int]([2, 17])
+dev_state = 1

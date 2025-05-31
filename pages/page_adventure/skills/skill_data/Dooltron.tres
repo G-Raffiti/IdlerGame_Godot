@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dawfemkhpseiu"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_cf4gw"]
+[ext_resource type="Texture2D" uid="uid://dniyeakf4qyfj" path="res://BazzarDBParser/Items_001-500_files/180px-Dooltron.jpeg" id="2_smoh2"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_be4mj"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_v873s"]
+
+[resource]
+script = ExtResource("3_be4mj")
+name = "Dooltron"
+icon = ExtResource("2_smoh2")
+description = "Deal [color=fa5436][b]1000[/b]/[b]2000[/b][/color] [color=fa5436]Damage[/color]. When you [color=00ffce]Haste[/color], [color=cb9f6d]Slow[/color], [color=0fb54b]Poison[/color], [color=3fcfff]Freeze[/color], or [color=fc933e]Burn[/color], [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1[/b]/[b]2[/b][/color] second(s). When you use a [color=9aabff]Friend[/color], [color=f4cf21]Shield[/color] [color=f4cf21][b]50[/b]/[b]100[/b][/color]."
+cooldown = Array[float]([30.0])
+ammo = Array[int]([])
+cost = Array[int]([24, 48])
+active_effects = Array[ExtResource("1_cf4gw")]([])
+triggered_effects = Dictionary[int, ExtResource("4_v873s")]({})
+size = 3
+starting_tier = 3
+collection = 3
+type = Array[int]([12, 1, 13, 4, 10, 5, 48, 3, 11, 19])
+dev_state = 1

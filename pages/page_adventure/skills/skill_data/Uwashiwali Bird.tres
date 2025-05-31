@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://c205ckh5vg5mc"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_do176"]
+[ext_resource type="Texture2D" uid="uid://ht5lau7lgvbf" path="res://BazzarDBParser/Items_501-603_files/Uwashiwali_Bird.webp" id="2_d31uo"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_gphj8"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_tt5us"]
+
+[resource]
+script = ExtResource("3_gphj8")
+name = "Uwashiwali Bird"
+icon = ExtResource("2_d31uo")
+description = "[color=8fe930]Heal[/color] [color=8fe930][b]20[/b]/[b]30[/b]/[b]40[/b]/[b]50[/b][/color]. This has +1 Multicast for each [color=9aabff]Property[/color] you have."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_do176")]([])
+triggered_effects = Dictionary[int, ExtResource("4_tt5us")]({})
+size = 1
+starting_tier = 1
+collection = 1
+type = Array[int]([12, 27])
+dev_state = 1

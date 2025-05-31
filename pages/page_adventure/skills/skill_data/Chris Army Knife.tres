@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://kif8uho661vq"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_dmfqb"]
+[ext_resource type="Texture2D" uid="uid://rqi2x5cjjxh0" path="res://BazzarDBParser/Items_001-500_files/180px-Chris_Army_Knife.png" id="2_rcbgj"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_ungta"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_tn12f"]
+
+[resource]
+script = ExtResource("3_ungta")
+name = "Chris Army Knife"
+icon = ExtResource("2_rcbgj")
+description = "Deal [color=fa5436][b]6/12/18/24[/b][/color] [color=fa5436]Damage[/color] [color=f4cf21]Shield[/color] [color=f4cf21][b]6/12/18/24[/b][/color]"
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_dmfqb")]([])
+triggered_effects = Dictionary[int, ExtResource("4_tn12f")]({})
+size = 1
+starting_tier = 1
+collection = 3
+type = Array[int]([12, 1, 2, 19, 3])
+dev_state = 1

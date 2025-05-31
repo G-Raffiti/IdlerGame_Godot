@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bh7vkvgv4q7cq"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_tlw4f"]
+[ext_resource type="Texture2D" uid="uid://du77ibtgxg2b" path="res://BazzarDBParser/Items_001-500_files/180px-Bushel.png" id="2_1kfk7"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_coj24"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_f3lux"]
+
+[resource]
+script = ExtResource("3_coj24")
+name = "Bushel"
+icon = ExtResource("2_1kfk7")
+description = "[color=8fe930]Heal[/color] [color=8fe930][b]20[/b]/[b]40[/b]/[b]60[/b]/[b]80[/b][/color] Gain [color=8fe930]Regen[/color] equal to of this item's [color=8fe930]Heal[/color] for the fight. When you [color=f4cf21]Shield[/color], [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1[/b][/color] second."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_tlw4f")]([])
+triggered_effects = Dictionary[int, ExtResource("4_f3lux")]({})
+size = 2
+starting_tier = 1
+collection = 1
+type = Array[int]([41, 22, 27, 15])
+dev_state = 1

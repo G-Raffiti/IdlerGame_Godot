@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://d4ejih02k5k70"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_bnkt1"]
+[ext_resource type="Texture2D" uid="uid://jgunmow7hw0q" path="res://BazzarDBParser/Items_501-603_files/180px-Tropical_Island.png" id="2_ft41r"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_qx0l2"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_18rxh"]
+
+[resource]
+script = ExtResource("3_qx0l2")
+name = "Tropical Island"
+icon = ExtResource("2_ft41r")
+description = "When you [color=cb9f6d]Slow[/color], gain [color=8fe930][b]5 / 10[/b][/color] [color=8fe930]Regen[/color] for the fight. At the start of each hour, get a Coconut or Citrus."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([24, 48])
+active_effects = Array[ExtResource("1_bnkt1")]([])
+triggered_effects = Dictionary[int, ExtResource("4_18rxh")]({})
+size = 3
+starting_tier = 3
+collection = 2
+type = Array[int]([14, 9, 48, 22])
+dev_state = 1

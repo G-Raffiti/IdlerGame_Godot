@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bbtqhjp01ofuy"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_s3k65"]
+[ext_resource type="Texture2D" uid="uid://dvoswctwqntdv" path="res://BazzarDBParser/Items_001-500_files/180px-Pickled_Peppers.png" id="2_me7tc"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_67gwg"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_510iv"]
+
+[resource]
+script = ExtResource("3_67gwg")
+name = "Pickled Peppers"
+icon = ExtResource("2_me7tc")
+description = "[color=fc933e]Burn[/color] [color=fc933e][b]5[/b]/[b]10[/b][/color]. When you [color=fc933e]Burn[/color], this gains [color=fc933e][b]5[/b]/[b]10[/b][/color] [color=fc933e]Burn[/color] for the fight."
+cooldown = Array[float]([11.0])
+ammo = Array[int]([])
+cost = Array[int]([16, 32])
+active_effects = Array[ExtResource("1_s3k65")]([])
+triggered_effects = Dictionary[int, ExtResource("4_510iv")]({})
+size = 2
+starting_tier = 3
+collection = 6
+type = Array[int]([41, 32])
+dev_state = 1

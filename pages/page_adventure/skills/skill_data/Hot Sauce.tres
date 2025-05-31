@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://ckk88qrk6iw60"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_wjcpg"]
+[ext_resource type="Texture2D" uid="uid://b4tmhnqpswbky" path="res://BazzarDBParser/Items_001-500_files/Hot_Sauce.png" id="2_uytuc"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_jnwvy"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_wo4cm"]
+
+[resource]
+script = ExtResource("3_jnwvy")
+name = "Hot Sauce"
+icon = ExtResource("2_uytuc")
+description = "[color=fc933e]Burn[/color] [color=fc933e][b]10/20[/b][/color]. For each adjacent [color=9aabff]Food[/color], this has +1 Multicast."
+cooldown = Array[float]([11.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_wjcpg")]([])
+triggered_effects = Dictionary[int, ExtResource("4_wo4cm")]({})
+size = 1
+starting_tier = 3
+collection = 6
+type = Array[int]([32, 41])
+dev_state = 1

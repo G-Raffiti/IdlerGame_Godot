@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bvlsq8nijcaln"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_v7je1"]
+[ext_resource type="Texture2D" uid="uid://c08e5dju7i1cr" path="res://BazzarDBParser/Items_001-500_files/180px-Mortar_&_Pestle.png" id="2_5qpju"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_l3fh7"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_s3xxo"]
+
+[resource]
+script = ExtResource("3_l3fh7")
+name = "Mortar Pestle"
+icon = ExtResource("2_5qpju")
+description = "Your Lifesteal [color=9aabff]Weapons[/color] gain +[color=fa5436][b]10[/b]/[b]15[/b]/[b]20[/b]/[b]25 [/b][/color] [color=fa5436]Damage[/color] for the fight. The [color=9aabff]Weapon[/color] on the right has Lifesteal. At the start of each day, get a Catalyst."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_v7je1")]([])
+triggered_effects = Dictionary[int, ExtResource("4_s3xxo")]({})
+size = 2
+starting_tier = 1
+collection = 4
+type = Array[int]([2, 16])
+dev_state = 1

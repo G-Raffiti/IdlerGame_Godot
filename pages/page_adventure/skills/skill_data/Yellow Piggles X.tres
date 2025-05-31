@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://csbqiglut3y8j"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_r8v4b"]
+[ext_resource type="Texture2D" uid="uid://dp0da1ciey762" path="res://BazzarDBParser/Items_501-603_files/180px-Yellow_Piggles.png" id="2_c724g"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_r8v4b"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_cjmif"]
+
+[resource]
+script = ExtResource("3_r8v4b")
+name = "Yellow Piggles X"
+icon = ExtResource("2_c724g")
+description = "Your [color=f4cf21]Shield[/color] items gain [color=f4cf21]Shield[/color] [color=f4cf21][b]1[/b]/[b]2[/b]/[b]3[/b]/[b]4 [/b][/color] for the fight."
+cooldown = Array[float]([4.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_r8v4b")]([])
+triggered_effects = Dictionary[int, ExtResource("4_cjmif")]({})
+size = 1
+starting_tier = 1
+collection = 1
+type = Array[int]([7, 15])
+is_generated_item = false
+dev_state = 1

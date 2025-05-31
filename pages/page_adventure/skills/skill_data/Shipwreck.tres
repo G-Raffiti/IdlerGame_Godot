@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://uipubtf1asbp"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_opgnj"]
+[ext_resource type="Texture2D" uid="uid://cu5uwf8rfohd0" path="res://BazzarDBParser/Items_001-500_files/180px-Shipwreck.png" id="2_mb8oh"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_qx2f7"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_hcx1o"]
+
+[resource]
+script = ExtResource("3_qx2f7")
+name = "Shipwreck"
+icon = ExtResource("2_mb8oh")
+description = "Your [color=9aabff]Aquatic[/color] items have +1 Multicast."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([48])
+active_effects = Array[ExtResource("1_opgnj")]([])
+triggered_effects = Dictionary[int, ExtResource("4_hcx1o")]({})
+size = 3
+starting_tier = 4
+collection = 2
+type = Array[int]([9, 6, 24])
+dev_state = 1

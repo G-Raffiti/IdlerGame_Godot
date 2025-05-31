@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bwid7knmsyyov"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_qrm8p"]
+[ext_resource type="Texture2D" uid="uid://b3mri5x7rphqq" path="res://BazzarDBParser/Items_001-500_files/180px-Igloo.png" id="2_ctnhi"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_lf2cm"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_umiid"]
+
+[resource]
+script = ExtResource("3_lf2cm")
+name = "Igloo"
+icon = ExtResource("2_ctnhi")
+description = "[color=3fcfff]Freeze[/color] 1/2/3 item for [color=3fcfff][b]1[/b][/color] seconds. When you [color=3fcfff]Freeze[/color], [color=f4cf21]Shield[/color] [color=f4cf21][b]50[/b]/[b]75[/b]/[b]100[/b][/color]. The first time you fall below half health each fight, use this."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_qrm8p")]([])
+triggered_effects = Dictionary[int, ExtResource("4_umiid")]({})
+size = 3
+starting_tier = 2
+collection = 1
+type = Array[int]([14, 40, 19])
+dev_state = 1

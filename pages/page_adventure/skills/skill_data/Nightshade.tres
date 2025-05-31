@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cqiqodiirv1vi"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_ndfhe"]
+[ext_resource type="Texture2D" uid="uid://b8fgn0ewpj2lk" path="res://BazzarDBParser/Items_001-500_files/180px-Nightshade.png" id="2_3bsnw"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_fddku"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_75bkn"]
+
+[resource]
+script = ExtResource("3_fddku")
+name = "Nightshade"
+icon = ExtResource("2_3bsnw")
+description = "[color=0fb54b]Poison[/color] [color=0fb54b][b]6[/b][/color]. When you [color=8fe930]Heal[/color] or gain [color=8fe930]Regen[/color], this gains [color=0fb54b][b]2/4/6/8[/b][/color] [color=0fb54b]Poison[/color] for the fight. When this is transformed, enchant it with Toxic if able."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_ndfhe")]([])
+triggered_effects = Dictionary[int, ExtResource("4_75bkn")]({})
+size = 2
+starting_tier = 1
+collection = 4
+type = Array[int]([29, 45, 21, 52])
+dev_state = 1

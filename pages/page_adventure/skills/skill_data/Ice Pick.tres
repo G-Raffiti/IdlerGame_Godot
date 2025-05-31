@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cv4sdc0jc0ec4"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_4nr8p"]
+[ext_resource type="Texture2D" uid="uid://c1da8b1pri00x" path="res://BazzarDBParser/Items_001-500_files/180px-Ice_Pick.png" id="2_yrkci"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_44chh"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_tn5p4"]
+
+[resource]
+script = ExtResource("3_44chh")
+name = "Ice Pick"
+icon = ExtResource("2_yrkci")
+description = "Deal [color=fa5436][b]36[/b]/[b]48[/b]/[b]60[/b][/color] [color=fa5436]Damage[/color]. [color=3fcfff]Freeze[/color] 1 item for [color=3fcfff][b]1[/b][/color] second(s). When you [color=3fcfff]Freeze[/color], this gains [color=fa5436][b]10[/b]/[b]15[/b]/[b]20[/b][/color] [color=fa5436]Damage[/color] for the fight."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_4nr8p")]([])
+triggered_effects = Dictionary[int, ExtResource("4_tn5p4")]({})
+size = 1
+starting_tier = 2
+collection = 2
+type = Array[int]([1, 40, 3, 2])
+dev_state = 1

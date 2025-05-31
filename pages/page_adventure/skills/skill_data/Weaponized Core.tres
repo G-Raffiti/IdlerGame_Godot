@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bqrlird0k4h3e"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_n5sn6"]
+[ext_resource type="Texture2D" uid="uid://2b5mmb1cm0ni" path="res://BazzarDBParser/Items_501-603_files/180px-Weaponized_Core.png" id="2_7esao"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_7icmo"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_21v68"]
+
+[resource]
+script = ExtResource("3_7icmo")
+name = "Weaponized Core"
+icon = ExtResource("2_7esao")
+description = "Deal [color=fa5436][b]20[/b][/color] [color=fa5436]Damage[/color]. This and [color=9aabff][b]Weapons[/b][/color] to the right of this gain +[color=fa5436][b]20[/b]/[b]30[/b]/[b]60[/b][/color] [color=fa5436]Damage[/color] for the fight. When you use any item to the left of this, [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1[/b][/color] second."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([])
+active_effects = Array[ExtResource("1_n5sn6")]([])
+triggered_effects = Dictionary[int, ExtResource("4_21v68")]({})
+size = 2
+starting_tier = 2
+collection = 3
+type = Array[int]([30, 1, 11, 3, 17])
+dev_state = 1

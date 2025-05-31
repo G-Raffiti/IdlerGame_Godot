@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://y3axc2gxd6cg"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_43emx"]
+[ext_resource type="Texture2D" uid="uid://u7n5pr2oyvun" path="res://BazzarDBParser/Items_501-603_files/180px-Strength_Potion.jpeg" id="2_pevht"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_t2sry"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_cyull"]
+
+[resource]
+script = ExtResource("3_t2sry")
+name = "Strength Potion"
+icon = ExtResource("2_pevht")
+description = "Your items gain [color=f75139][b]100[/b][/color]% [color=f75139]Crit Chance[/color] for 3/4/5 seconds."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([1])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_43emx")]([])
+triggered_effects = Dictionary[int, ExtResource("4_cyull")]({})
+size = 1
+starting_tier = 2
+collection = 4
+type = Array[int]([42, 24, 8])
+dev_state = 1

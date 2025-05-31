@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://gymbsevgr82y"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_4ont6"]
+[ext_resource type="Texture2D" uid="uid://cicilx3ltwqtc" path="res://BazzarDBParser/Items_001-500_files/180px-Luxury_Kiuas.png" id="2_7rdp5"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_qjqv3"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_qw7pl"]
+
+[resource]
+script = ExtResource("3_qjqv3")
+name = "Luxury Kiuas"
+icon = ExtResource("2_7rdp5")
+description = "[color=fc933e]Burn[/color] equal to this item's value. When you sell a [color=9aabff]Property[/color], this item gains [color=f4d021][b]3[/b]/[b]5[/b]/[b]7[/b]/[b]9[/b][/color] value."
+cooldown = Array[float]([8.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_4ont6")]([])
+triggered_effects = Dictionary[int, ExtResource("4_qw7pl")]({})
+size = 2
+starting_tier = 1
+collection = 1
+type = Array[int]([32, 18, 2, 28])
+dev_state = 1

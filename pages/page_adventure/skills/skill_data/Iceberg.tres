@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://ddwg5c2e3xqu6"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_w4e7g"]
+[ext_resource type="Texture2D" uid="uid://ceraehmqvt17" path="res://BazzarDBParser/Items_001-500_files/180px-Iceberg.png" id="2_w70w6"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_yipkl"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_esft6"]
+
+[resource]
+script = ExtResource("3_yipkl")
+name = "Iceberg"
+icon = ExtResource("2_w70w6")
+description = "When your enemy uses an item, [color=3fcfff]Freeze[/color] it for [color=3fcfff][b]0.5[/b]/[b]1[/b][/color] second."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([24, 48])
+active_effects = Array[ExtResource("1_w4e7g")]([])
+triggered_effects = Dictionary[int, ExtResource("4_esft6")]({})
+size = 3
+starting_tier = 3
+collection = 2
+type = Array[int]([9, 14, 40])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://gru2knrb4rov"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_ylbmq"]
+[ext_resource type="Texture2D" uid="uid://dlwythlpuvk4p" path="res://BazzarDBParser/Items_001-500_files/180px-Snowflake.png" id="2_mmfgb"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_c5pbr"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_5itsq"]
+
+[resource]
+script = ExtResource("3_c5pbr")
+name = "Snowflake"
+icon = ExtResource("2_mmfgb")
+description = "When you sell this, give your leftmost [color=3fcfff]Freeze[/color] item + [color=3fcfff][b]0.5[/b][/color] [color=3fcfff]Freeze[/color] duration."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([16])
+active_effects = Array[ExtResource("1_ylbmq")]([])
+triggered_effects = Dictionary[int, ExtResource("4_5itsq")]({})
+size = 1
+starting_tier = 4
+collection = 7
+type = Array[int]([35])
+dev_state = 1

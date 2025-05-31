@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://byyu6tjaer3ew"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_2nk84"]
+[ext_resource type="Texture2D" uid="uid://b1gk7rm0ekg3g" path="res://BazzarDBParser/Items_501-603_files/180px-Wild_Quillback.png" id="2_jbokj"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_1lcg8"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_pcumq"]
+
+[resource]
+script = ExtResource("3_1lcg8")
+name = "Wild Quillback"
+icon = ExtResource("2_jbokj")
+description = "When a player uses a [color=9aabff][b]Weapon[/b][/color], [color=0fb54b]Poison[/color] that player [color=0fb54b][b]3/4/5[/b][/color]. When you use a non-[color=9aabff][b]Weapon[/b][/color] item, gain [color=8fe930][b]3/4/5[/b][/color] [color=8fe930]Regen[/color] for the fight."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_2nk84")]([])
+triggered_effects = Dictionary[int, ExtResource("4_pcumq")]({})
+size = 2
+starting_tier = 2
+collection = 4
+type = Array[int]([12, 21, 22])
+dev_state = 1

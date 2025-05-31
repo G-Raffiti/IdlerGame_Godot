@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bjw4k3saj3jso"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_vt6vw"]
+[ext_resource type="Texture2D" uid="uid://cuuc2lvfjlry8" path="res://BazzarDBParser/Items_001-500_files/180px-Regal_Blade.png" id="2_u2a1v"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_0t06n"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_kfdej"]
+
+[resource]
+script = ExtResource("3_0t06n")
+name = "Regal Blade"
+icon = ExtResource("2_u2a1v")
+description = "Deal [color=fa5436][b]10[/b]/[b]20[/b]/[b]40[/b]/[b]80 [/b][/color] [color=fa5436]Damage[/color]. When you sell a [color=9aabff]Weapon[/color], this gains [color=fa5436][b]10[/b]/[b]20[/b]/[b]30[/b]/[b]40 [/b][/color] [color=fa5436]Damage[/color]."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_vt6vw")]([])
+triggered_effects = Dictionary[int, ExtResource("4_kfdej")]({})
+size = 2
+starting_tier = 1
+collection = 1
+type = Array[int]([1, 3])
+dev_state = 1

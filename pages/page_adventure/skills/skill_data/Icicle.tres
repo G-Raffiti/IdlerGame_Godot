@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://b476fckx1dyoi"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_7rawf"]
+[ext_resource type="Texture2D" uid="uid://bdxwqyirs647i" path="res://BazzarDBParser/Items_001-500_files/180px-Icicle.png" id="2_o5jqt"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_dfmpg"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_qny80"]
+
+[resource]
+script = ExtResource("3_dfmpg")
+name = "Icicle"
+icon = ExtResource("2_o5jqt")
+description = "At the start of each fight, [color=3fcfff]Freeze[/color] an item for [color=3fcfff][b]3/4/5/6[/b][/color] seconds."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([2])
+active_effects = Array[ExtResource("1_7rawf")]([])
+triggered_effects = Dictionary[int, ExtResource("4_qny80")]({})
+size = 1
+starting_tier = 1
+collection = 5
+type = Array[int]([40])
+dev_state = 1

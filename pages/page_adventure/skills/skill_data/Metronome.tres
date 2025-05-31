@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://con5giwj2ycxd"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_kj3ew"]
+[ext_resource type="Texture2D" uid="uid://ckpwhtp8bvmoj" path="res://BazzarDBParser/Items_001-500_files/180px-Metronome.png" id="2_nopbc"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_ncffw"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_htpxg"]
+
+[resource]
+script = ExtResource("3_ncffw")
+name = "Metronome"
+icon = ExtResource("2_nopbc")
+description = "When you use an adjacent item, [color=00ffce]Haste[/color] the other adjacent item for [color=00ffce][b]1 / 2 / 3[/b][/color] second(s)."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_kj3ew")]([])
+triggered_effects = Dictionary[int, ExtResource("4_htpxg")]({})
+size = 1
+starting_tier = 2
+collection = 3
+type = Array[int]([23])
+dev_state = 1

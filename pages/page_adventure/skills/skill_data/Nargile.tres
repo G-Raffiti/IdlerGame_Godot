@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cykt1omj0lxpm"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_61h8s"]
+[ext_resource type="Texture2D" uid="uid://bk42u4evcjuoy" path="res://BazzarDBParser/Items_001-500_files/180px-Nargile.png" id="2_y863x"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_6jc55"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_icm8n"]
+
+[resource]
+script = ExtResource("3_6jc55")
+name = "Nargile"
+icon = ExtResource("2_y863x")
+description = "[color=cb9f6d]Slow[/color] 2 items for [color=cb9f6d][b]2/3[/b][/color] second(s). Adjacent items have [color=f75139][b]25/50[/b][/color]% [color=f75139]Crit Chance[/color]. When you Crit, [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]2[/b][/color] second(s)."
+cooldown = Array[float]([9.0])
+ammo = Array[int]([])
+cost = Array[int]([16, 32])
+active_effects = Array[ExtResource("1_61h8s")]([])
+triggered_effects = Dictionary[int, ExtResource("4_icm8n")]({})
+size = 2
+starting_tier = 3
+collection = 7
+type = Array[int]([24, 26])
+dev_state = 1

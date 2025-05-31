@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bsrnru1ore8bc"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_tt0cg"]
+[ext_resource type="Texture2D" uid="uid://bskgm8qrcv626" path="res://BazzarDBParser/Items_001-500_files/180px-Quill_and_Ink.jpeg" id="2_27erf"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_tddb4"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_sbice"]
+
+[resource]
+script = ExtResource("3_tddb4")
+name = "Quill and Ink"
+icon = ExtResource("2_27erf")
+description = "[color=0fb54b]Poison[/color] [color=0fb54b][b]1[/b]/[b]2[/b]/[b]3[/b]/[b]4 [/b][/color]. Gain [color=8fe930][b]1[/b]/[b]2[/b]/[b]3[/b]/[b]4[/b][/color] [color=8fe930]Regen[/color] for the fight. If you have no other [color=9aabff]Weapons[/color], this has +1 Multicast."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_tt0cg")]([])
+triggered_effects = Dictionary[int, ExtResource("4_sbice")]({})
+size = 1
+starting_tier = 1
+collection = 4
+type = Array[int]([21, 22, 2])
+dev_state = 1

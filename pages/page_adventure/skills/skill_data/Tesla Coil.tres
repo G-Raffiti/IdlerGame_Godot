@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://jtu1a1avosb5"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_4i7tr"]
+[ext_resource type="Texture2D" uid="uid://6wxipftd1747" path="res://BazzarDBParser/Items_501-603_files/180px-Tesla_Coil.png" id="2_k5434"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_hysq4"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_1a05r"]
+
+[resource]
+script = ExtResource("3_hysq4")
+name = "Tesla Coil"
+icon = ExtResource("2_k5434")
+description = "Deal [color=fa5436][b]60/90/120[/b][/color] [color=fa5436]Damage[/color]. When you use an adjacent [color=9aabff]Tech[/color], [color=00eac1][b]Charge[/b][/color] 1 item [color=00eac1][b]1[/b][/color] second."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_4i7tr")]([])
+triggered_effects = Dictionary[int, ExtResource("4_1a05r")]({})
+size = 2
+starting_tier = 2
+collection = 3
+type = Array[int]([1, 17, 3])
+dev_state = 1

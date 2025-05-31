@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://oukamw3m35in"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_12cbi"]
+[ext_resource type="Texture2D" uid="uid://b61e2sg0253vm" path="res://BazzarDBParser/Items_001-500_files/180px-Shipment.png" id="2_0vx3l"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_tnyxu"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_x6g47"]
+
+[resource]
+script = ExtResource("3_tnyxu")
+name = "Shipment"
+icon = ExtResource("2_0vx3l")
+description = "When you sell this, get 3 Bronze/Silver/Gold [color=e79b54]Small[/color] items from any hero. This item has no base Value."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_12cbi")]([])
+triggered_effects = Dictionary[int, ExtResource("4_x6g47")]({})
+size = 3
+starting_tier = 2
+collection = 1
+type = Array[int]([18])
+dev_state = 1

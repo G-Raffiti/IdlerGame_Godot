@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://hlw5hyvle6w"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_hqdvf"]
+[ext_resource type="Texture2D" uid="uid://bt5h4mvh6jgt6" path="res://BazzarDBParser/Items_001-500_files/180px-Golf_Clubs.png" id="2_ecapj"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_odb1p"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_y3n8e"]
+
+[resource]
+script = ExtResource("3_odb1p")
+name = "Golf Clubs"
+icon = ExtResource("2_ecapj")
+description = "Deal [color=fa5436][b]50[/b][/color] [color=fa5436]Damage[/color]. When you [color=8fe930]Heal[/color] or gain [color=8fe930]Regen[/color], this gains [color=fa5436][b]10[/b]/[b]20[/b]/[b]30[/b]/[b]40 [/b][/color] [color=fa5436]Damage[/color] for the fight."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_hqdvf")]([])
+triggered_effects = Dictionary[int, ExtResource("4_y3n8e")]({})
+size = 2
+starting_tier = 1
+collection = 1
+type = Array[int]([1, 29, 3, 52])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://c0src3lujd3uu"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_c2kkp"]
+[ext_resource type="Texture2D" uid="uid://b6ai37mh5tn87" path="res://BazzarDBParser/Items_001-500_files/Soul_Ring.webp" id="2_jrdvh"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_4rplp"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_mlsop"]
+
+[resource]
+script = ExtResource("3_4rplp")
+name = "Soul Ring"
+icon = ExtResource("2_jrdvh")
+description = "[color=0fb54b]Poison[/color] equal to your [color=8fe930]Regeneration[/color]. You have +[color=8fe930][b]10[/b]/[b]20[/b][/color] [color=8fe930]Regeneration[/color]."
+cooldown = Array[float]([10.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_c2kkp")]([])
+triggered_effects = Dictionary[int, ExtResource("4_mlsop")]({})
+size = 1
+starting_tier = 3
+collection = 4
+type = Array[int]([21, 22, 20])
+dev_state = 1

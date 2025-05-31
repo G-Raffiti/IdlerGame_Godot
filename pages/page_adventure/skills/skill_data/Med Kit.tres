@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dgtcqeetfo46x"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_djqfk"]
+[ext_resource type="Texture2D" uid="uid://dypdhylhwhiu1" path="res://BazzarDBParser/Items_001-500_files/180px-Med_Kit.png" id="2_d0plf"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_227ha"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_3xppn"]
+
+[resource]
+script = ExtResource("3_227ha")
+name = "Med Kit"
+icon = ExtResource("2_d0plf")
+description = "When you sell this, your leftmost [color=8fe930]Heal[/color] item gains [color=8fe930][b]5/10/20/40[/b][/color] [color=8fe930]Heal[/color]."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_djqfk")]([])
+triggered_effects = Dictionary[int, ExtResource("4_3xppn")]({})
+size = 1
+starting_tier = 1
+collection = 5
+type = Array[int]([29, 35])
+dev_state = 1

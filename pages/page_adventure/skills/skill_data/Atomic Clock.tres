@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://uweo4mws11c0"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_26osp"]
+[ext_resource type="Texture2D" uid="uid://bm04j4e8pi7m8" path="res://BazzarDBParser/Items_001-500_files/180px-Atomic_Clock.png" id="2_rxl6b"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_pkq1m"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_6gkpo"]
+
+[resource]
+script = ExtResource("3_pkq1m")
+name = "Atomic Clock"
+icon = ExtResource("2_rxl6b")
+description = "Increase an enemy item's [b][color=00ffce]Cooldown[/color][/b] by 1/2/3 second(s) for the fight."
+cooldown = Array[float]([1.0])
+ammo = Array[int]([3])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_26osp")]([])
+triggered_effects = Dictionary[int, ExtResource("4_6gkpo")]({})
+size = 2
+starting_tier = 2
+collection = 3
+type = Array[int]([17, 8])
+dev_state = 1

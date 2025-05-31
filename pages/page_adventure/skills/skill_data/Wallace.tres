@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dsyduibgcrajy"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_7fqch"]
+[ext_resource type="Texture2D" uid="uid://bjqmccock7v68" path="res://BazzarDBParser/Items_501-603_files/180px-Wallace.png" id="2_sd3ju"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_csibl"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_6hav5"]
+
+[resource]
+script = ExtResource("3_csibl")
+name = "Wallace"
+icon = ExtResource("2_sd3ju")
+description = "[color=f4cf21][b]10[/b][/color]. This gains [color=f4cf21][b]10[/b]/[b]15[/b]/[b]20[/b]/[b]25[/b][/color] for the fight."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([2])
+active_effects = Array[ExtResource("1_7fqch")]([])
+triggered_effects = Dictionary[int, ExtResource("4_6hav5")]({})
+size = 1
+starting_tier = 1
+collection = 3
+type = Array[int]([12, 19])
+dev_state = 1

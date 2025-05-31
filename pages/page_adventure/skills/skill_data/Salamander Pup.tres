@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://de23p453x6e4b"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_rwu7g"]
+[ext_resource type="Texture2D" uid="uid://cnis42ywm2obf" path="res://BazzarDBParser/Items_001-500_files/180px-Salamander_Pup.png" id="2_lwdys"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_lxnve"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_6oheh"]
+
+[resource]
+script = ExtResource("3_lxnve")
+name = "Salamander Pup"
+icon = ExtResource("2_lwdys")
+description = "[color=fc933e]Burn[/color] [color=fc933e][b]4 / 6 / 8 / 10[/b][/color]. When you sell this, your leftmost [color=fc933e]Burn[/color] item gains +[color=fc933e][b]3 / 4 / 5 / 6[/b][/color] [color=fc933e]Burn[/color]."
+cooldown = Array[float]([9.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_rwu7g")]([])
+triggered_effects = Dictionary[int, ExtResource("4_6oheh")]({})
+size = 2
+starting_tier = 1
+collection = 7
+type = Array[int]([12, 32])
+dev_state = 1

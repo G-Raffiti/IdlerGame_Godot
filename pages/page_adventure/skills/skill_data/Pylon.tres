@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://b2pie613258rg"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_do8ba"]
+[ext_resource type="Texture2D" uid="uid://bpjh57tsw0d3p" path="res://BazzarDBParser/Items_001-500_files/180px-Pylon.png" id="2_3e6ax"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_m46i5"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_5yk6r"]
+
+[resource]
+script = ExtResource("3_m46i5")
+name = "Pylon"
+icon = ExtResource("2_3e6ax")
+description = "[color=cb9f6d]Slow[/color] 1 item for [color=cb9f6d][b]1 / 2 / 3[/b][/color] seconds. When you [color=cb9f6d]Slow[/color], [color=00ffce]Haste[/color] an item for [color=00ffce][b]1 / 2 / 3[/b][/color] seconds."
+cooldown = Array[float]([4.0])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_do8ba")]([])
+triggered_effects = Dictionary[int, ExtResource("4_5yk6r")]({})
+size = 3
+starting_tier = 2
+collection = 3
+type = Array[int]([14, 23, 26])
+dev_state = 1

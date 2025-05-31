@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://c4j7l08ojxo7r"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_ct0vr"]
+[ext_resource type="Texture2D" uid="uid://baof61dlkm82x" path="res://BazzarDBParser/Items_001-500_files/180px-Magnifying_Glass.png" id="2_67ype"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_v2pqu"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_3sb7r"]
+
+[resource]
+script = ExtResource("3_v2pqu")
+name = "Magnifying Glass"
+icon = ExtResource("2_67ype")
+description = "Deal [color=fa5436][b]5 / 15 / 30 / 50[/b][/color] [color=fa5436]Damage[/color]. When you sell this, give your leftmost weapon +[color=fa5436][b]5 / 15 / 30 / 50[/b][/color] [color=fa5436]Damage[/color]."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_ct0vr")]([])
+triggered_effects = Dictionary[int, ExtResource("4_3sb7r")]({})
+size = 1
+starting_tier = 1
+collection = 5
+type = Array[int]([1, 2, 3])
+dev_state = 1

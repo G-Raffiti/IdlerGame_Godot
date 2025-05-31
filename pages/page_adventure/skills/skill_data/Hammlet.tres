@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bn2ji78s5ltsl"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_p60aq"]
+[ext_resource type="Texture2D" uid="uid://txtnikx70mr8" path="res://BazzarDBParser/Items_001-500_files/180px-Hammlet.png" id="2_rip0s"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_4cwbk"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_b0jvj"]
+
+[resource]
+script = ExtResource("3_4cwbk")
+name = "Hammlet"
+icon = ExtResource("2_rip0s")
+description = "Deal [color=fa5436][b]15[/b]/[b]25[/b]/[b]35[/b]/[b]50 [/b][/color] [color=fa5436]Damage[/color]. When you [color=cb9f6d]Slow[/color], [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]2[/b][/color] second."
+cooldown = Array[float]([8.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_p60aq")]([])
+triggered_effects = Dictionary[int, ExtResource("4_b0jvj")]({})
+size = 1
+starting_tier = 1
+collection = 3
+type = Array[int]([12, 1, 2, 3, 48])
+dev_state = 1

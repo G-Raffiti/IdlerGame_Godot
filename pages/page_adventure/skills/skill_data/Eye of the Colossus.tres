@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://d2kikvkw1vhrp"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_gswfb"]
+[ext_resource type="Texture2D" uid="uid://bkom51stqlotw" path="res://BazzarDBParser/Items_001-500_files/180px-Eye_of_the_Colossus.png" id="2_hkfpg"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_30bnk"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_kso71"]
+
+[resource]
+script = ExtResource("3_30bnk")
+name = "Eye of the Colossus"
+icon = ExtResource("2_hkfpg")
+description = "Destroy an enemy item for the fight. When you use an adjacent item, charge this [color=00eac1][b]1.0[/b][/color] second."
+cooldown = Array[float]([11.0])
+ammo = Array[int]([])
+cost = Array[int]([100])
+active_effects = Array[ExtResource("1_gswfb")]([])
+triggered_effects = Dictionary[int, ExtResource("4_kso71")]({})
+size = 3
+starting_tier = 5
+collection = 7
+type = Array[int]([2, 11])
+dev_state = 1

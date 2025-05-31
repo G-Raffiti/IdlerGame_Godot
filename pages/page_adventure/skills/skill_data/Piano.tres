@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://drl111jlur8n4"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_neis8"]
+[ext_resource type="Texture2D" uid="uid://0v0uwag65cns" path="res://BazzarDBParser/Items_001-500_files/180px-Piano.jpeg" id="2_s7esv"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_21nlg"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_flq4x"]
+
+[resource]
+script = ExtResource("3_21nlg")
+name = "Piano"
+icon = ExtResource("2_s7esv")
+description = "When you use a [color=9aabff]Friend[/color], [color=00ffce]Haste[/color] it for [color=00ffce][b]1[/b]/[b]2[/b][/color] second(s). Adjacent items are [color=9aabff]Friends[/color]."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([16, 32])
+active_effects = Array[ExtResource("1_neis8")]([])
+triggered_effects = Dictionary[int, ExtResource("4_flq4x")]({})
+size = 2
+starting_tier = 3
+collection = 2
+type = Array[int]([23])
+dev_state = 1

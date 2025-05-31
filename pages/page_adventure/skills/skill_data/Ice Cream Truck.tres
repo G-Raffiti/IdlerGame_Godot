@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bf1ln8iiocf0k"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_drx55"]
+[ext_resource type="Texture2D" uid="uid://c2set26gsjyah" path="res://BazzarDBParser/Items_001-500_files/180px-Ice_Cream_Truck.png" id="2_0vojs"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_7kxeu"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_2f3h0"]
+
+[resource]
+script = ExtResource("3_7kxeu")
+name = "Ice Cream Truck"
+icon = ExtResource("2_0vojs")
+description = "[color=3fcfff]Freeze[/color] 1/2/3 item(s) for [color=3fcfff][b]1[/b][/color] second(s). When you use another non-[color=9aabff]Weapon[/color] item, [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1[/b][/color] second."
+cooldown = Array[float]([9.0])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_drx55")]([])
+triggered_effects = Dictionary[int, ExtResource("4_2f3h0")]({})
+size = 3
+starting_tier = 2
+collection = 1
+type = Array[int]([6, 11, 40, 41])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bu3h487uu7bs7"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_sw03t"]
+[ext_resource type="Texture2D" uid="uid://dtxhyr0pweiob" path="res://BazzarDBParser/Items_001-500_files/180px-Keychain.png" id="2_g6vq4"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_eb1pm"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_t3ekg"]
+
+[resource]
+script = ExtResource("3_eb1pm")
+name = "Keychain"
+icon = ExtResource("2_g6vq4")
+description = "Use a [color=9aabff]Property[/color]."
+cooldown = Array[float]([12.0, 9.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16])
+active_effects = Array[ExtResource("1_sw03t")]([])
+triggered_effects = Dictionary[int, ExtResource("4_t3ekg")]({})
+size = 1
+starting_tier = 3
+collection = 1
+type = Array[int]([])
+dev_state = 1

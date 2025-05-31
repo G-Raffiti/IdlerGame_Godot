@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://chtxh4w4hu7qa"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_cqjom"]
+[ext_resource type="Texture2D" uid="uid://cm0iyeubbfnbn" path="res://BazzarDBParser/Items_001-500_files/180px-Revolver.png" id="2_ewuem"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_yg3io"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_p4sqm"]
+
+[resource]
+script = ExtResource("3_yg3io")
+name = "Revolver"
+icon = ExtResource("2_ewuem")
+description = "Deal [color=fa5436][b]8[/b]/[b]16[/b]/[b]24[/b]/[b]32 [/b][/color] [color=fa5436]Damage[/color]. When you Crit, reload this [color=f9923c][b]2[/b][/color] [color=f9923c]Ammo[/color].  Crit Chance: [color=f75139][b]20[/b][/color]%."
+cooldown = Array[float]([4.0])
+ammo = Array[int]([6])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_cqjom")]([])
+triggered_effects = Dictionary[int, ExtResource("4_p4sqm")]({})
+size = 1
+starting_tier = 1
+collection = 2
+type = Array[int]([1, 8, 43, 3])
+dev_state = 1

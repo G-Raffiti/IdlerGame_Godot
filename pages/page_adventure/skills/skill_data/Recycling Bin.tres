@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cnj0btxlclqkh"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_6gq6e"]
+[ext_resource type="Texture2D" uid="uid://b1qvyluryyqqp" path="res://BazzarDBParser/Items_001-500_files/180px-Recycling_Bin.jpeg" id="2_wdm0w"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_8l2fg"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_uok8y"]
+
+[resource]
+script = ExtResource("3_8l2fg")
+name = "Recycling Bin"
+icon = ExtResource("2_wdm0w")
+description = "When you use a [color=9aabff][b]Potion[/b][/color], transform it into a [color=9aabff][b]Potion[/b][/color] for the fight and gain +[color=8fe930][b]3[/b]/[b]6[/b]/[b]9[/b][/color] [color=8fe930]Regen[/color] for the fight."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_6gq6e")]([])
+triggered_effects = Dictionary[int, ExtResource("4_uok8y")]({})
+size = 2
+starting_tier = 2
+collection = 4
+type = Array[int]([22, 31])
+dev_state = 1

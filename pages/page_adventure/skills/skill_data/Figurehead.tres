@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cw6d743v1xpsv"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_4dcrv"]
+[ext_resource type="Texture2D" uid="uid://hvhepmhj6iql" path="res://BazzarDBParser/Items_001-500_files/180px-Figurehead.png" id="2_fn3o5"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_awuq5"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_0raxv"]
+
+[resource]
+script = ExtResource("3_awuq5")
+name = "Figurehead"
+icon = ExtResource("2_fn3o5")
+description = "[color=9aabff]Aquatic[/color] items to the left of this have their [b][color=00ffce]Cooldowns[/color][/b] reduced by 10/20/30%. [color=9aabff]Weapons[/color] to the right of this have +[color=fa5436][b]25[/b]/[b]50[/b]/[b]100[/b][/color] [color=fa5436]Damage[/color]."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_4dcrv")]([])
+triggered_effects = Dictionary[int, ExtResource("4_0raxv")]({})
+size = 2
+starting_tier = 2
+collection = 2
+type = Array[int]([9, 33, 16])
+dev_state = 1

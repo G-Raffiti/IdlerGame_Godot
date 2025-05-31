@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://diaf15q71cj1c"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_7x74n"]
+[ext_resource type="Texture2D" uid="uid://yej7p4lo2ijn" path="res://BazzarDBParser/Items_501-603_files/180px-Wrist_Warrior.png" id="2_4tm3o"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_ielc0"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_w61mf"]
+
+[resource]
+script = ExtResource("3_ielc0")
+name = "Wrist Warrior"
+icon = ExtResource("2_4tm3o")
+description = "Adjacent items gain +[color=f4cf21][b]5/10/15/20[/b][/color] [color=f4cf21]Shield[/color] for the fight. When the item to the left of this Shields, deal [color=fa5436][b]5/10/15/20[/b][/color] [color=fa5436]Damage[/color]."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_7x74n")]([])
+triggered_effects = Dictionary[int, ExtResource("4_w61mf")]({})
+size = 1
+starting_tier = 1
+collection = 1
+type = Array[int]([1, 2, 20, 3, 15])
+dev_state = 1

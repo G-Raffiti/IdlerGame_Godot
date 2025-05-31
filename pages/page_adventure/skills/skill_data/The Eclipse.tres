@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bco113jwmtun4"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_424gl"]
+[ext_resource type="Texture2D" uid="uid://d3cih7kxmmkq6" path="res://BazzarDBParser/Items_501-603_files/180px-The_Eclipse.png" id="2_utsbv"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_pv0uq"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_qofl3"]
+
+[resource]
+script = ExtResource("3_pv0uq")
+name = "The Eclipse"
+icon = ExtResource("2_utsbv")
+description = "Use all your other items. When you use an item, deal [color=fa5436][b]100[/b][/color] [color=fa5436]Damage[/color]. The first time you fall below half health each fight, use this."
+cooldown = Array[float]([15.0])
+ammo = Array[int]([])
+cost = Array[int]([100])
+active_effects = Array[ExtResource("1_424gl")]([])
+triggered_effects = Dictionary[int, ExtResource("4_qofl3")]({})
+size = 3
+starting_tier = 5
+collection = 7
+type = Array[int]([1, 6, 3, 17])
+dev_state = 1

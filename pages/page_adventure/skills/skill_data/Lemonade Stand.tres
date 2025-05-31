@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bilfeg5w5vmcd"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_h7mg4"]
+[ext_resource type="Texture2D" uid="uid://cwormgb82sc43" path="res://BazzarDBParser/Items_001-500_files/180px-Lemonade_Stand.png" id="2_k5ny6"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_nfvao"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_dolc1"]
+
+[resource]
+script = ExtResource("3_nfvao")
+name = "Lemonade Stand"
+icon = ExtResource("2_k5ny6")
+description = "Gain [color=8fe930]Regen[/color] equal to 5% of your Max Health for the fight. When you sell a [color=e79b54]Small[/color] item, permanently gain [color=8fe930][b]10/20/40[/b][/color] Max Health."
+cooldown = Array[float]([12.0, 11.0, 10.0])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_h7mg4")]([])
+triggered_effects = Dictionary[int, ExtResource("4_dolc1")]({})
+size = 3
+starting_tier = 2
+collection = 1
+type = Array[int]([14, 27, 22])
+dev_state = 1

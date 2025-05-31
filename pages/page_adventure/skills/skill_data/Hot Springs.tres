@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bd2avvi4vdhrh"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_0rl1u"]
+[ext_resource type="Texture2D" uid="uid://d0ebmfnvtiqvx" path="res://BazzarDBParser/Items_001-500_files/180px-Hot_Springs.png" id="2_3ko8f"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_yomjo"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_0wtva"]
+
+[resource]
+script = ExtResource("3_yomjo")
+name = "Hot Springs"
+icon = ExtResource("2_3ko8f")
+description = "[color=8fe930]Heal[/color] [color=8fe930][b]25[/b]/[b]50[/b]/[b]100[/b]/[b]200[/b][/color]. When you sell this, your [color=8fe930]Heal[/color] items gain [color=8fe930][b]10/20/30/40[/b][/color] [color=8fe930]Heal[/color] ."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([6, 12, 24, 48])
+active_effects = Array[ExtResource("1_0rl1u")]([])
+triggered_effects = Dictionary[int, ExtResource("4_0wtva")]({})
+size = 3
+starting_tier = 1
+collection = 5
+type = Array[int]([27])
+dev_state = 1

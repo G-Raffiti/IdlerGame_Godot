@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bmwhl2c5i53oi"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_j06v2"]
+[ext_resource type="Texture2D" uid="uid://bkio34v160lb4" path="res://BazzarDBParser/Items_001-500_files/180px-Red_Piggles.png" id="2_ktbf1"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_j06v2"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_6ytj3"]
+
+[resource]
+script = ExtResource("3_j06v2")
+name = "Red Piggles A"
+icon = ExtResource("2_ktbf1")
+description = "Adjacent [color=9aabff]Weapons[/color] gain +[color=fa5436][b]3[/b]/[b]6[/b]/[b]9[/b]/[b]12 [/b][/color] [color=fa5436]Damage[/color] for the fight."
+cooldown = Array[float]([4.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_j06v2")]([])
+triggered_effects = Dictionary[int, ExtResource("4_6ytj3")]({})
+size = 1
+starting_tier = 1
+collection = 1
+type = Array[int]([7, 16])
+is_generated_item = true
+dev_state = 1

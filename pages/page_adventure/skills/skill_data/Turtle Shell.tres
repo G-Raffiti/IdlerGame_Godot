@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://b02s101t5c8s6"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_wjsl8"]
+[ext_resource type="Texture2D" uid="uid://b0vf0vuwa128s" path="res://BazzarDBParser/Items_501-603_files/180px-Turtle_Shell.png" id="2_2hx0b"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_7ooqf"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_ual6m"]
+
+[resource]
+script = ExtResource("3_7ooqf")
+name = "Turtle Shell"
+icon = ExtResource("2_2hx0b")
+description = "[color=f4cf21]Shield[/color] [color=f4cf21][b]25[/b][/color]. Your [color=f4cf21]Shield[/color] items gain +[color=f4cf21][b]10[/b]/[b]15[/b][/color] [color=f4cf21]Shield[/color] for the fight. When you use another non [color=9aabff]Weapon[/color] item, [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1[/b][/color] second."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([16, 32])
+active_effects = Array[ExtResource("1_wjsl8")]([])
+triggered_effects = Dictionary[int, ExtResource("4_ual6m")]({})
+size = 2
+starting_tier = 3
+collection = 2
+type = Array[int]([9, 19])
+dev_state = 1

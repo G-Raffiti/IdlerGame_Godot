@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://douu355ysu65h"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_sduxv"]
+[ext_resource type="Texture2D" uid="uid://chcxc00y52q5v" path="res://BazzarDBParser/Items_001-500_files/180px-Clamera.png" id="2_81lwm"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_ut6en"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_0us3a"]
+
+[resource]
+script = ExtResource("3_ut6en")
+name = "Clamera"
+icon = ExtResource("2_81lwm")
+description = "[color=cb9f6d]Slow[/color] 3 item(s) for [color=cb9f6d][b]3[/b][/color] second(s). At the start of each fight, use this."
+cooldown = Array[float]([7.0, 6.0, 5.0, 4.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 6, 8])
+active_effects = Array[ExtResource("1_sduxv")]([])
+triggered_effects = Dictionary[int, ExtResource("4_0us3a")]({})
+size = 1
+starting_tier = 1
+collection = 2
+type = Array[int]([9, 26])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://b7281t4qjfwcv"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_w110p"]
+[ext_resource type="Texture2D" uid="uid://klopm7kpj3pb" path="res://BazzarDBParser/Items_001-500_files/180px-Rocket_Boots.png" id="2_o6osw"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_bnk6s"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_sxn7s"]
+
+[resource]
+script = ExtResource("3_bnk6s")
+name = "Rocket Boots"
+icon = ExtResource("2_o6osw")
+description = "[color=00ffce]Haste[/color] adjacent items for [color=00ffce][b]1/2/3/4[/b][/color]. When you sell this, your leftmost [color=00ffce]Haste[/color] item gains +[color=00ffce][b]1[/b][/color] [color=00ffce]Haste[/color] duration."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_w110p")]([])
+triggered_effects = Dictionary[int, ExtResource("4_sxn7s")]({})
+size = 2
+starting_tier = 1
+collection = 5
+type = Array[int]([2, 20, 23])
+dev_state = 1

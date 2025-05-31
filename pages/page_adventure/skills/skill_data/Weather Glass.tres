@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bgfep0u7bypem"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_du77y"]
+[ext_resource type="Texture2D" uid="uid://eb52cpgxgrl7" path="res://BazzarDBParser/Items_501-603_files/180px-Weather_Glass.png" id="2_2itmj"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_ka83c"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_5r54a"]
+
+[resource]
+script = ExtResource("3_ka83c")
+name = "Weather Glass"
+icon = ExtResource("2_2itmj")
+description = "[color=fc933e]Burn[/color] [color=fc933e][b]4 / 6 / 8[/b][/color]. [color=0fb54b]Poison[/color] [color=0fb54b][b]2 / 3 / 4[/b][/color]. If you have another item with [color=fc933e]Burn[/color], [color=0fb54b]Poison[/color], [color=cb9f6d]Slow[/color], or [color=3fcfff]Freeze[/color], this has +1 Multicast for each."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_du77y")]([])
+triggered_effects = Dictionary[int, ExtResource("4_5r54a")]({})
+size = 2
+starting_tier = 2
+collection = 2
+type = Array[int]([2, 21, 32, 4, 48])
+dev_state = 1

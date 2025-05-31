@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dgxmv70tnv8up"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_nrbr5"]
+[ext_resource type="Texture2D" uid="uid://d2aura2xjveik" path="res://BazzarDBParser/Items_001-500_files/180px-Cash_Register.png" id="2_kagm3"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_mgcxb"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_6giq6"]
+
+[resource]
+script = ExtResource("3_mgcxb")
+name = "Cash Register"
+icon = ExtResource("2_kagm3")
+description = "At the start of each day, get 2 Spare Change."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_nrbr5")]([])
+triggered_effects = Dictionary[int, ExtResource("4_6giq6")]({})
+size = 2
+starting_tier = 1
+collection = 1
+type = Array[int]([2, 18])
+dev_state = 1

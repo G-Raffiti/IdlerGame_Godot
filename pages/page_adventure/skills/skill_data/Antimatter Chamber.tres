@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://ceavqnqx01fky"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_krsb7"]
+[ext_resource type="Texture2D" uid="uid://dmifbkwdmnd5o" path="res://BazzarDBParser/Items_001-500_files/180px-Antimatter_Chamber.webp" id="2_pb1bd"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_iiuqq"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_juipr"]
+
+[resource]
+script = ExtResource("3_iiuqq")
+name = "Antimatter Chamber"
+icon = ExtResource("2_pb1bd")
+description = "Destroy this. When this is Destroyed, destroy 3 enemy items for the fight. When you use another [color=9aabff]Tech[/color], [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]2[/b][/color] second(s)."
+cooldown = Array[float]([30.0, 24.0])
+ammo = Array[int]([])
+cost = Array[int]([24, 48])
+active_effects = Array[ExtResource("1_krsb7")]([])
+triggered_effects = Dictionary[int, ExtResource("4_juipr")]({})
+size = 3
+starting_tier = 3
+collection = 3
+type = Array[int]([17])
+is_generated_item = false
+dev_state = 1

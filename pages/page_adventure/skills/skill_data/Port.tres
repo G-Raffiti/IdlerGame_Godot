@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://b0y7hno5axy0e"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_cl8y0"]
+[ext_resource type="Texture2D" uid="uid://b0ph3t26ghp16" path="res://BazzarDBParser/Items_001-500_files/180px-Port.png" id="2_t4lyv"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_f8yf2"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_kll8o"]
+
+[resource]
+script = ExtResource("3_f8yf2")
+name = "Port"
+icon = ExtResource("2_t4lyv")
+description = "Reload all your items [color=f9923c][b]1[/b]/[b]2[/b]/[b]3[/b][/color] [color=f9923c]Ammo[/color] and [color=00eac1][b]Charge[/b][/color] them [color=00eac1][b]1[/b][/color] second. At the start of each day, get a Silver / Gold / Diamond-tier [color=e79b54]Small[/color] [color=f9923c]Ammo[/color] item from any Hero."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_cl8y0")]([])
+triggered_effects = Dictionary[int, ExtResource("4_kll8o")]({})
+size = 3
+starting_tier = 2
+collection = 2
+type = Array[int]([14, 9, 31])
+dev_state = 1

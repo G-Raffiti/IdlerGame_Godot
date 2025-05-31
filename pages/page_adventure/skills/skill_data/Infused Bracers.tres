@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://c467lf2buw0la"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_of1ew"]
+[ext_resource type="Texture2D" uid="uid://doda7yc2386fh" path="res://BazzarDBParser/Items_001-500_files/180px-Infused_Bracers.png" id="2_nxlwh"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_u6m4j"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_lloit"]
+
+[resource]
+script = ExtResource("3_u6m4j")
+name = "Infused Bracers"
+icon = ExtResource("2_nxlwh")
+description = "[color=0fb54b]Poison[/color] both players [color=0fb54b][b]5[/b][/color]. When you [color=0fb54b]Poison[/color] yourself, your [color=9aabff][b]Weapons[/b][/color] gain + [color=fa5436]Damage[/color] for the fight equal to 1/2 times the amount Poisoned. The [color=9aabff][b]Weapon[/b][/color] to the left has Lifesteal."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([16, 32])
+active_effects = Array[ExtResource("1_of1ew")]([])
+triggered_effects = Dictionary[int, ExtResource("4_lloit")]({})
+size = 2
+starting_tier = 3
+collection = 4
+type = Array[int]([20, 2, 21, 16])
+dev_state = 1

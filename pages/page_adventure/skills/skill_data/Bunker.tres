@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cpbw0nmhkua87"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_2iw8x"]
+[ext_resource type="Texture2D" uid="uid://cmh058hjfh0i4" path="res://BazzarDBParser/Items_001-500_files/180px-Bunker.png" id="2_1eya4"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_4j0bo"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_tob17"]
+
+[resource]
+script = ExtResource("3_4j0bo")
+name = "Bunker"
+icon = ExtResource("2_1eya4")
+description = "You take 10/20% less [color=fa5436]Damage[/color]. Your [color=f4cf21]Shield[/color] items have +1 Multicast."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([24, 48])
+active_effects = Array[ExtResource("1_2iw8x")]([])
+triggered_effects = Dictionary[int, ExtResource("4_tob17")]({})
+size = 3
+starting_tier = 3
+collection = 3
+type = Array[int]([14, 15])
+dev_state = 1

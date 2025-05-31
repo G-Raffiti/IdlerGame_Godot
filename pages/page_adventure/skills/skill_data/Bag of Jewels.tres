@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bsrkpjo5ha41v"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_l2k7e"]
+[ext_resource type="Texture2D" uid="uid://c5db55ldmg1da" path="res://BazzarDBParser/Items_001-500_files/180px-Bag_of_Jewels.png" id="2_vbgmy"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_wk51y"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_2om77"]
+
+[resource]
+script = ExtResource("3_wk51y")
+name = "Bag of Jewels"
+icon = ExtResource("2_vbgmy")
+description = "Sells for gold. ([color=f4d021][b]3 / 6 / 12 / 24[/b][/color])"
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([3, 6, 12, 24])
+active_effects = Array[ExtResource("1_l2k7e")]([])
+triggered_effects = Dictionary[int, ExtResource("4_2om77")]({})
+size = 1
+starting_tier = 1
+collection = 7
+type = Array[int]([35])
+dev_state = 1

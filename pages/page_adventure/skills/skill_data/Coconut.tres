@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cauiit4nh2tls"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_wou1m"]
+[ext_resource type="Texture2D" uid="uid://jkhy3udryusu" path="res://BazzarDBParser/Items_001-500_files/180px-Coconut.png" id="2_hlcq0"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_80nmk"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_b4fh2"]
+
+[resource]
+script = ExtResource("3_80nmk")
+name = "Coconut"
+icon = ExtResource("2_hlcq0")
+description = "When you sell this, gain 10/20/30/40 [color=8fe930]Max Health[/color]"
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_wou1m")]([])
+triggered_effects = Dictionary[int, ExtResource("4_b4fh2")]({})
+size = 1
+starting_tier = 1
+collection = 5
+type = Array[int]([41, 39])
+dev_state = 1

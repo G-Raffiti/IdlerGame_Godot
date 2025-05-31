@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://rnulojo417bi"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_gwbeh"]
+[ext_resource type="Texture2D" uid="uid://dfxv4dan1tmnx" path="res://BazzarDBParser/Items_001-500_files/180px-Showcase.png" id="2_1bs21"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_i05is"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_ftiwg"]
+
+[resource]
+script = ExtResource("3_i05is")
+name = "Showcase"
+icon = ExtResource("2_1bs21")
+description = "If you have 3 or more [color=9aabff][b]Weapons[/b][/color], they gain +[color=fa5436][b]15[/b]/[b]25[/b]/[b]35[/b]/[b]50 [/b][/color] [color=fa5436]Damage[/color] for the fight. If you have 3 or more [color=f4cf21]Shield[/color] items, they gain +[color=f4cf21][b]15[/b]/[b]25[/b]/[b]35[/b]/[b]50[/b][/color] [color=f4cf21]Shield[/color] for the fight."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_gwbeh")]([])
+triggered_effects = Dictionary[int, ExtResource("4_ftiwg")]({})
+size = 2
+starting_tier = 1
+collection = 1
+type = Array[int]([14, 16, 15])
+dev_state = 1

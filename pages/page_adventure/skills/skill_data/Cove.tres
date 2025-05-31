@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cb55r2qcjlani"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_rq6xg"]
+[ext_resource type="Texture2D" uid="uid://cd3vms6p0kkcb" path="res://BazzarDBParser/Items_001-500_files/180px-Cove.png" id="2_3gbeu"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_xqxg5"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_wiy6g"]
+
+[resource]
+script = ExtResource("3_xqxg5")
+name = "Cove"
+icon = ExtResource("2_3gbeu")
+description = "[color=f4cf21]Shield[/color] equal to [color=f4cf21][b]x1[/b]/[b]x2[/b]/[b]x3[/b]/[b]x4[/b][/color] this item's value. When you sell an item, this item gains [color=f4d021][b]1/1/1/2[/b][/color] value."
+cooldown = Array[float]([4.0])
+ammo = Array[int]([])
+cost = Array[int]([6, 12, 24, 48])
+active_effects = Array[ExtResource("1_rq6xg")]([])
+triggered_effects = Dictionary[int, ExtResource("4_wiy6g")]({})
+size = 3
+starting_tier = 1
+collection = 2
+type = Array[int]([9, 14, 18, 19, 28])
+dev_state = 1

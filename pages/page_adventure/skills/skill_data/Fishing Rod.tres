@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bgbr31be1st7m"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_jkgau"]
+[ext_resource type="Texture2D" uid="uid://djqbulsknvkjy" path="res://BazzarDBParser/Items_001-500_files/180px-Fishing_Rod.png" id="2_wf8yp"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_wly6m"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_y4v0v"]
+
+[resource]
+script = ExtResource("3_wly6m")
+name = "Fishing Rod"
+icon = ExtResource("2_wf8yp")
+description = "[color=00ffce]Haste[/color] the [color=9aabff]Aquatic[/color] item to the right of this for [color=00ffce][b]2[/b][/color] seconds. At the start of each day, get a [color=e79b54]Small[/color] [color=9aabff]Aquatic[/color] item."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_jkgau")]([])
+triggered_effects = Dictionary[int, ExtResource("4_y4v0v")]({})
+size = 2
+starting_tier = 1
+collection = 2
+type = Array[int]([9, 2, 23])
+dev_state = 1

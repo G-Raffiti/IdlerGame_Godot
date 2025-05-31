@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://co16mff6flsg0"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_sgxg0"]
+[ext_resource type="Texture2D" uid="uid://cse0vd87njat6" path="res://BazzarDBParser/Items_501-603_files/180px-Weaselpede.jpeg" id="2_sdbqm"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_qqqag"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_3ws1e"]
+
+[resource]
+script = ExtResource("3_qqqag")
+name = "Weaselpede"
+icon = ExtResource("2_sdbqm")
+description = "[color=3fcfff]Freeze[/color] 1 item(s) for [color=3fcfff][b]1[/b]/[b]2[/b]/[b]3[/b][/color] second(s). While your enemy has [color=0fb54b]Poison[/color], this has +1 Multicast."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_sgxg0")]([])
+triggered_effects = Dictionary[int, ExtResource("4_3ws1e")]({})
+size = 2
+starting_tier = 2
+collection = 4
+type = Array[int]([40, 13, 12])
+dev_state = 1

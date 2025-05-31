@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://v5fyedbty1hx"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_ebdaq"]
+[ext_resource type="Texture2D" uid="uid://di4kwobbrr5pc" path="res://BazzarDBParser/Items_501-603_files/180px-Tortuga.webp" id="2_l4jgg"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_7jxh3"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_nkaue"]
+
+[resource]
+script = ExtResource("3_7jxh3")
+name = "Tortuga"
+icon = ExtResource("2_l4jgg")
+description = "Deal [color=fa5436][b]200[/b]/[b]400[/b]/[b]800[/b][/color] [color=fa5436]Damage[/color]. [color=00ffce]Haste[/color] your other items [color=00ffce][b]1[/b][/color] second(s). When you use another [color=9aabff]Friend[/color], [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]2[/b][/color] seconds."
+cooldown = Array[float]([14.0, 12.0, 10.0])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_ebdaq")]([])
+triggered_effects = Dictionary[int, ExtResource("4_nkaue")]({})
+size = 3
+starting_tier = 2
+collection = 2
+type = Array[int]([9, 12, 6, 1, 3, 23])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://ct7o3aoxiqwfk"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_blvmr"]
+[ext_resource type="Texture2D" uid="uid://dvr2bn1k0mbpn" path="res://BazzarDBParser/Items_001-500_files/180px-Candy_Mail.png" id="2_1nr5g"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_p5s52"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_y1nmq"]
+
+[resource]
+script = ExtResource("3_p5s52")
+name = "Candy Mail"
+icon = ExtResource("2_1nr5g")
+description = "Adjacent [color=f4cf21]Shield[/color] items permanently gain [color=f4cf21][b]1[/b]/[b]2[/b]/[b]3[/b]/[b]4[/b][/color] [color=f4cf21]Shield[/color]. This permanently loses [color=f9923c][b]1[/b][/color] Max [color=f9923c]Ammo[/color] and destroy this if it has [color=f9923c][b]0[/b][/color] Max [color=f9923c]Ammo[/color]."
+cooldown = Array[float]([4.0])
+ammo = Array[int]([10])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_blvmr")]([])
+triggered_effects = Dictionary[int, ExtResource("4_y1nmq")]({})
+size = 2
+starting_tier = 1
+collection = 7
+type = Array[int]([41, 8, 15])
+dev_state = 1

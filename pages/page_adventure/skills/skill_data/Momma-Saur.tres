@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dfkckxeg5oj26"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_7lhms"]
+[ext_resource type="Texture2D" uid="uid://ceev7er7xin1e" path="res://BazzarDBParser/Items_001-500_files/180px-Momma-Saur.png" id="2_sksrr"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_j6eyr"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_14pb7"]
+
+[resource]
+script = ExtResource("3_j6eyr")
+name = "Momma-Saur"
+icon = ExtResource("2_sksrr")
+description = "Deal [color=fa5436][b]200[/b][/color] damage. If your enemy has at least 5 / 4 items, destroy a [color=e79b54]Small[/color] or [color=e79b54]Medium[/color] enemy item for the fight. When you destroy an item during combat, your [color=9aabff]Dinosaurs[/color] permanently gain [color=fa5436][b]30/40[/b][/color] [color=fa5436]Damage[/color]."
+cooldown = Array[float]([9.0])
+ammo = Array[int]([])
+cost = Array[int]([24, 48])
+active_effects = Array[ExtResource("1_7lhms")]([])
+triggered_effects = Dictionary[int, ExtResource("4_14pb7")]({})
+size = 3
+starting_tier = 3
+collection = 3
+type = Array[int]([12, 1, 49, 3])
+dev_state = 1

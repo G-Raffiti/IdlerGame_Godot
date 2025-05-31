@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://b16pka2yf888q"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_wsb3e"]
+[ext_resource type="Texture2D" uid="uid://c151k2i7ajyuv" path="res://BazzarDBParser/Items_001-500_files/180px-Open_Sign.png" id="2_geen6"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_k0s6n"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_4mu6r"]
+
+[resource]
+script = ExtResource("3_k0s6n")
+name = "Open Sign"
+icon = ExtResource("2_geen6")
+description = "[color=9aabff]Weapon[/color] [color=9aabff]Properties[/color] adjacent to this have + [color=fa5436]Damage[/color] equal to 50/100% of the value of your highest value item. [color=f4cf21]Shield[/color] [color=9aabff]Properties[/color] adjacent to this have + [color=f4cf21]Shield[/color] equal to 50/100% of the value of your highest value item."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([16, 32])
+active_effects = Array[ExtResource("1_wsb3e")]([])
+triggered_effects = Dictionary[int, ExtResource("4_4mu6r")]({})
+size = 2
+starting_tier = 3
+collection = 1
+type = Array[int]([16, 18, 15])
+dev_state = 1

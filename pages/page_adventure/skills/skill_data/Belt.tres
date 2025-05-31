@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bcv6g8iem1r1w"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_jb1fb"]
+[ext_resource type="Texture2D" uid="uid://dmwjhkuoiextx" path="res://BazzarDBParser/Items_001-500_files/180px-Belt.png" id="2_u1r6v"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_q1xbc"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_7dh8n"]
+
+[resource]
+script = ExtResource("3_q1xbc")
+name = "Belt"
+icon = ExtResource("2_u1r6v")
+description = "You have +50 / 75 / 100&nbsp;% [color=8fe930]Max Health[/color]."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_jb1fb")]([])
+triggered_effects = Dictionary[int, ExtResource("4_7dh8n")]({})
+size = 2
+starting_tier = 2
+collection = 1
+type = Array[int]([39, 20])
+dev_state = 1

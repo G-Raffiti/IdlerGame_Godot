@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cfkrngencojso"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_s7g3q"]
+[ext_resource type="Texture2D" uid="uid://dgskw0ssdorlm" path="res://BazzarDBParser/Items_001-500_files/180px-Laboratory.jpeg" id="2_18eiu"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_h17w7"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_ejp26"]
+
+[resource]
+script = ExtResource("3_h17w7")
+name = "Laboratory"
+icon = ExtResource("2_18eiu")
+description = "Enchant another non-enchanted item for the fight. [color=00eac1][b]Charge[/b][/color] your other [color=9aabff]Relics[/color] and Enchanted items [color=00eac1][b]1[/b]/[b]2[/b][/color] second(s). At the start of each day, get a Catalyst."
+cooldown = Array[float]([4.0])
+ammo = Array[int]([])
+cost = Array[int]([24, 48])
+active_effects = Array[ExtResource("1_s7g3q")]([])
+triggered_effects = Dictionary[int, ExtResource("4_ejp26")]({})
+size = 3
+starting_tier = 3
+collection = 4
+type = Array[int]([14, 11])
+dev_state = 1

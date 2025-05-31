@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://civgeor3mooad"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_n3o5n"]
+[ext_resource type="Texture2D" uid="uid://cnb73rd6hisdx" path="res://BazzarDBParser/Items_001-500_files/180px-Combat_Core.png" id="2_rf3l7"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_ir8qy"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_dfi5c"]
+
+[resource]
+script = ExtResource("3_ir8qy")
+name = "Combat Core"
+icon = ExtResource("2_rf3l7")
+description = "Deal [color=fa5436][b]30[/b][/color] [color=fa5436]Damage[/color] [color=f4cf21]Shield[/color] [color=f4cf21][b]30[/b][/color]. When you use any item to the left of this, this gains [color=fa5436][b]15/30/45[/b][/color] [color=fa5436]Damage[/color] for the fight. When you use any item to the right of this, this gains [color=f4cf21][b]15/30/45[/b][/color] [color=f4cf21]Shield[/color] for the fight."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_n3o5n")]([])
+triggered_effects = Dictionary[int, ExtResource("4_dfi5c")]({})
+size = 3
+starting_tier = 2
+collection = 3
+type = Array[int]([1, 30, 17, 3, 19, 6])
+dev_state = 1

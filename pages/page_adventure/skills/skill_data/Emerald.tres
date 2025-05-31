@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dsn70nobap6xq"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_x858v"]
+[ext_resource type="Texture2D" uid="uid://dnwdpdi88swyh" path="res://BazzarDBParser/Items_001-500_files/Emerald.webp" id="2_cx13v"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_kufsi"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_2qgcx"]
+
+[resource]
+script = ExtResource("3_kufsi")
+name = "Emerald"
+icon = ExtResource("2_cx13v")
+description = "[color=0fb54b]Poison[/color] [color=0fb54b][b]1/2/3/4[/b][/color]. Your other items have +[color=0fb54b][b]3/4/5/6[/b][/color]."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_x858v")]([])
+triggered_effects = Dictionary[int, ExtResource("4_2qgcx")]({})
+size = 1
+starting_tier = 1
+collection = 4
+type = Array[int]([21])
+dev_state = 1

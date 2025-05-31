@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bxtncelwspbld"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_mb2ux"]
+[ext_resource type="Texture2D" uid="uid://ceu0q5outcm1s" path="res://BazzarDBParser/Items_501-603_files/180px-Star_Chart.png" id="2_b8g1q"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_7mvy4"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_xl3wh"]
+
+[resource]
+script = ExtResource("3_7mvy4")
+name = "Star Chart"
+icon = ExtResource("2_b8g1q")
+description = "Adjacent items have +[color=f75139][b]10[/b]/[b]15[/b]/[b]20[/b]/[b]25 [/b][/color]% [color=f75139]Crit Chance[/color]. Adjacent items have their [b][color=00ffce]Cooldown[/color][/b] reduced by 10 / 15 / 20 / 25%."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_mb2ux")]([])
+triggered_effects = Dictionary[int, ExtResource("4_xl3wh")]({})
+size = 2
+starting_tier = 1
+collection = 2
+type = Array[int]([2, 33, 24])
+dev_state = 1

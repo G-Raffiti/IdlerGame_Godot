@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://ccijkvfkw8io"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_7j6xt"]
+[ext_resource type="Texture2D" uid="uid://mvvcfaj2jlsl" path="res://BazzarDBParser/Items_001-500_files/180px-Hourglass.jpeg" id="2_b8a4g"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_n73o5"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_2xcph"]
+
+[resource]
+script = ExtResource("3_n73o5")
+name = "Hourglass"
+icon = ExtResource("2_b8a4g")
+description = "Adjacent items have their [b][color=00ffce]Cooldowns[/color][/b] reduced by 4/8/12/16%."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_7j6xt")]([])
+triggered_effects = Dictionary[int, ExtResource("4_2xcph")]({})
+size = 1
+starting_tier = 1
+collection = 4
+type = Array[int]([2, 33])
+dev_state = 1

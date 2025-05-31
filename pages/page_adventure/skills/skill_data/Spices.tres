@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://fqbcau51cqs2"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_bwddv"]
+[ext_resource type="Texture2D" uid="uid://cc8r3jhak4chn" path="res://BazzarDBParser/Items_501-603_files/180px-Spices.png" id="2_chd73"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_p4nim"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_s21cq"]
+
+[resource]
+script = ExtResource("3_p4nim")
+name = "Spices"
+icon = ExtResource("2_chd73")
+description = "Your [color=9aabff]Weapons[/color] gain [color=fa5436]Damage[/color] equal to your weakest [color=9aabff]Weapon[/color]'s [color=fa5436]Damage[/color] for the fight."
+cooldown = Array[float]([9.0])
+ammo = Array[int]([1])
+cost = Array[int]([16])
+active_effects = Array[ExtResource("1_bwddv")]([])
+triggered_effects = Dictionary[int, ExtResource("4_s21cq")]({})
+size = 1
+starting_tier = 4
+collection = 1
+type = Array[int]([16, 8])
+dev_state = 1

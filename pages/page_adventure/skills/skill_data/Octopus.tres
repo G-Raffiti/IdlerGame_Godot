@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://tqhx41jyc2if"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_rj1y7"]
+[ext_resource type="Texture2D" uid="uid://d0sleusef2exy" path="res://BazzarDBParser/Items_001-500_files/180px-Octopus.png" id="2_6h6qi"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_xplw3"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_j8wqw"]
+
+[resource]
+script = ExtResource("3_xplw3")
+name = "Octopus"
+icon = ExtResource("2_6h6qi")
+description = "Deal [color=fa5436][b]8[/b][/color] [color=fa5436]Damage[/color]. Multicast: 8"
+cooldown = Array[float]([8.0])
+ammo = Array[int]([])
+cost = Array[int]([100, 100])
+active_effects = Array[ExtResource("1_rj1y7")]([])
+triggered_effects = Dictionary[int, ExtResource("4_j8wqw")]({})
+size = 2
+starting_tier = 5
+collection = 7
+type = Array[int]([9, 1, 12, 3])
+dev_state = 1

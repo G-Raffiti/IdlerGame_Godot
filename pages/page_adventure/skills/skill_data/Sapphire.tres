@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bn31btacmjppf"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_1e4e2"]
+[ext_resource type="Texture2D" uid="uid://xsyvkeoje3f7" path="res://BazzarDBParser/Items_001-500_files/Sapphire.webp" id="2_856jc"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_q8srl"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_ymy2f"]
+
+[resource]
+script = ExtResource("3_q8srl")
+name = "Sapphire"
+icon = ExtResource("2_856jc")
+description = "[color=3fcfff]Freeze[/color] 1/2/3 item(s) for [color=3fcfff][b]1[/b][/color] second(s). Your other [color=3fcfff]Freeze[/color] items have +[color=3fcfff][b]1[/b][/color] [color=3fcfff]Freeze[/color] duration."
+cooldown = Array[float]([9.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_1e4e2")]([])
+triggered_effects = Dictionary[int, ExtResource("4_ymy2f")]({})
+size = 1
+starting_tier = 2
+collection = 4
+type = Array[int]([40])
+dev_state = 1

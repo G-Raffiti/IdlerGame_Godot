@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://djlcrg4as70x1"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_ftxbn"]
+[ext_resource type="Texture2D" uid="uid://c5g30txsfrbak" path="res://BazzarDBParser/Items_001-500_files/180px-Monitor_Lizard.png" id="2_kvpvg"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_oqwsi"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_8vgbo"]
+
+[resource]
+script = ExtResource("3_oqwsi")
+name = "Monitor Lizard"
+icon = ExtResource("2_kvpvg")
+description = "[color=0fb54b][b]5[/b][/color] [color=0fb54b]Poison[/color]. When this gains [color=00ffce]Haste[/color], this gains +[color=0fb54b][b]5[/b]/[b]10[/b]/[b]15[/b][/color] [color=0fb54b]Poison[/color] for the fight."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_ftxbn")]([])
+triggered_effects = Dictionary[int, ExtResource("4_8vgbo")]({})
+size = 2
+starting_tier = 2
+collection = 3
+type = Array[int]([12, 21, 5])
+dev_state = 1

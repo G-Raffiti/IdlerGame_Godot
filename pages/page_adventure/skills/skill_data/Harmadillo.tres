@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dq0q3v302slfn"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_i04ma"]
+[ext_resource type="Texture2D" uid="uid://cfv6j7tdpiqqq" path="res://BazzarDBParser/Items_001-500_files/180px-Harmadillo.png" id="2_d7suh"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_x6l3s"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_4l3du"]
+
+[resource]
+script = ExtResource("3_x6l3s")
+name = "Harmadillo"
+icon = ExtResource("2_d7suh")
+description = "Deal [color=fa5436][b]50/100/150/200[/b][/color] [color=fa5436]Damage[/color]. When you [color=f4cf21]Shield[/color], [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]2[/b][/color] second(s)."
+cooldown = Array[float]([8.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_i04ma")]([])
+triggered_effects = Dictionary[int, ExtResource("4_4l3du")]({})
+size = 2
+starting_tier = 1
+collection = 3
+type = Array[int]([1, 12, 3, 15])
+dev_state = 1

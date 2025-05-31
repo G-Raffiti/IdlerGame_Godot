@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cc5tpg0st3emf"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_mqece"]
+[ext_resource type="Texture2D" uid="uid://bfrfgipn2oq4b" path="res://BazzarDBParser/Items_501-603_files/180px-Stained_Glass_Window.png" id="2_hk5yv"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_pxyiv"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_35vap"]
+
+[resource]
+script = ExtResource("3_pxyiv")
+name = "Stained Glass Window"
+icon = ExtResource("2_hk5yv")
+description = "When you win a fight with Stained Glass Window, your [color=9aabff]Properties[/color] in play gain [color=f4d021][b]5[/b]/[b]10[/b][/color] value. When you lose a fight with Stained Glass Window, permanently destroy this. If you have 5 or fewer items in-play, their [b][color=00ffce]Cooldowns[/color][/b] are reduced 10% / 20%."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([16, 32])
+active_effects = Array[ExtResource("1_mqece")]([])
+triggered_effects = Dictionary[int, ExtResource("4_35vap")]({})
+size = 2
+starting_tier = 3
+collection = 1
+type = Array[int]([14, 28])
+dev_state = 1

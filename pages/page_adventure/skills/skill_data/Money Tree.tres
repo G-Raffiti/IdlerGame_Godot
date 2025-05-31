@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://hak70yc8hl30"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_1ex0m"]
+[ext_resource type="Texture2D" uid="uid://drh8w5y1i62tl" path="res://BazzarDBParser/Items_001-500_files/180px-Money_Tree.png" id="2_lcajn"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_1mgtr"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_5b0cg"]
+
+[resource]
+script = ExtResource("3_1mgtr")
+name = "Money Tree"
+icon = ExtResource("2_lcajn")
+description = "[color=8fe930]Heal[/color] equal to double this item's [color=f4d021]Value[/color]. When you sell a Spare Change, this gains +[color=f4d021][b]2[/b]/[b]4[/b]/[b]6[/b]/[b]8[/b][/color] Value. When you Level Up and at the start of each day, get a Spare Change."
+cooldown = Array[float]([3.0])
+ammo = Array[int]([])
+cost = Array[int]([6, 12, 24, 48])
+active_effects = Array[ExtResource("1_1ex0m")]([])
+triggered_effects = Dictionary[int, ExtResource("4_5b0cg")]({})
+size = 3
+starting_tier = 1
+collection = 1
+type = Array[int]([14, 18, 27])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cn4bi51xf03g6"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_wsqo2"]
+[ext_resource type="Texture2D" uid="uid://b3r4x3lq6tblx" path="res://BazzarDBParser/Items_501-603_files/180px-Toolbox.png" id="2_f0dko"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_44vho"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_fc14v"]
+
+[resource]
+script = ExtResource("3_44vho")
+name = "Toolbox"
+icon = ExtResource("2_f0dko")
+description = "[color=f4cf21]Shield[/color] [color=f4cf21][b]10/30/50/100[/b][/color] Your other [color=9aabff]Tools[/color] have their [b][color=00ffce]Cooldown[/color][/b] reduced by 5/10/15/20%."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_wsqo2")]([])
+triggered_effects = Dictionary[int, ExtResource("4_fc14v")]({})
+size = 2
+starting_tier = 1
+collection = 8
+type = Array[int]([2, 33, 19])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://culjhxcw3qw3x"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_b6wlv"]
+[ext_resource type="Texture2D" uid="uid://pyiot3i4swyn" path="res://BazzarDBParser/Items_001-500_files/180px-Force_Field.png" id="2_sjic1"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_w0a5j"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_mi71q"]
+
+[resource]
+script = ExtResource("3_w0a5j")
+name = "Force Field"
+icon = ExtResource("2_sjic1")
+description = "[color=f4cf21]Shield[/color] [color=f4cf21][b]30[/b]/[b]40[/b]/[b]50[/b][/color] Deal [color=fa5436]Damage[/color] equal to your [color=f4cf21]Shield[/color]."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_b6wlv")]([])
+triggered_effects = Dictionary[int, ExtResource("4_mi71q")]({})
+size = 3
+starting_tier = 2
+collection = 3
+type = Array[int]([1, 17, 3, 19])
+dev_state = 1

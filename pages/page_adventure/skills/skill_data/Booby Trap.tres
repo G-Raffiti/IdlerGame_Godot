@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://b875vwifuocvb"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_7vjys"]
+[ext_resource type="Texture2D" uid="uid://bavxupga8lofw" path="res://BazzarDBParser/Items_001-500_files/180px-Booby_Trap.png" id="2_c243p"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_8a255"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_tcfar"]
+
+[resource]
+script = ExtResource("3_8a255")
+name = "Booby Trap"
+icon = ExtResource("2_c243p")
+description = "[color=3fcfff]Freeze[/color] 1 item(s) for [color=3fcfff][b]1 / 2 / 3[/b][/color] seconds. When you use a [color=9aabff]Property[/color], [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1[/b][/color] second(s)."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_7vjys")]([])
+triggered_effects = Dictionary[int, ExtResource("4_tcfar")]({})
+size = 2
+starting_tier = 2
+collection = 1
+type = Array[int]([40, 7])
+dev_state = 1

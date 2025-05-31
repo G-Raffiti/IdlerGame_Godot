@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dd2cag5s8ighg"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_u8f76"]
+[ext_resource type="Texture2D" uid="uid://c8f0xmiq3aahg" path="res://BazzarDBParser/Items_501-603_files/180px-Vat_of_Acid.jpeg" id="2_8scy0"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_n06ts"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_8bn7m"]
+
+[resource]
+script = ExtResource("3_n06ts")
+name = "Vat of Acid"
+icon = ExtResource("2_8scy0")
+description = "[color=0fb54b]Poison[/color] [color=0fb54b][b]3[/b]/[b]6[/b]/[b]9[/b][/color] for each type this has. [color=fc933e]Burn[/color] [color=fc933e][b]3[/b]/[b]6[/b]/[b]9[/b][/color] for each type this has. When you sell an item, this gains that item's type(s)."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_u8f76")]([])
+triggered_effects = Dictionary[int, ExtResource("4_8bn7m")]({})
+size = 3
+starting_tier = 2
+collection = 4
+type = Array[int]([32, 21])
+dev_state = 1

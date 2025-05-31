@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://m4h1apsr6oi7"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_0mjmv"]
+[ext_resource type="Texture2D" uid="uid://crf2iukf5onrx" path="res://BazzarDBParser/Items_501-603_files/180px-Vineyard.png" id="2_44n43"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_p8nh1"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_aumcc"]
+
+[resource]
+script = ExtResource("3_p8nh1")
+name = "Vineyard"
+icon = ExtResource("2_44n43")
+description = "[color=8fe930]Heal[/color] [color=8fe930][b]200[/b][/color]. Your [color=8fe930]Heal[/color] items have +[color=8fe930]Heal[/color] equal to this item's value. You have +[color=8fe930]Regen[/color] equal to this item's [color=f4d021]Value[/color]. When you sell 10 items, give this +[color=f4d021][b]5[/b]/[b]10[/b]/[b]15[/b][/color] value and get a Truffle."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_0mjmv")]([])
+triggered_effects = Dictionary[int, ExtResource("4_aumcc")]({})
+size = 3
+starting_tier = 2
+collection = 1
+type = Array[int]([14, 18, 27, 28])
+dev_state = 1

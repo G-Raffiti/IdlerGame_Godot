@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://d1nduq8ud27mb"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_6w154"]
+[ext_resource type="Texture2D" uid="uid://b3jgw5ack5eof" path="res://BazzarDBParser/Items_001-500_files/180px-Orange_Julian.jpeg" id="2_eap0p"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_4ugfe"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_ge7ub"]
+
+[resource]
+script = ExtResource("3_4ugfe")
+name = "Orange Julian"
+icon = ExtResource("2_eap0p")
+description = "Your [color=9aabff]Weapons[/color] gain +[color=fa5436][b]10[/b][/color] [color=fa5436]Damage[/color] for the fight. When you gain gold, increase the [color=fa5436]Damage[/color] bonus of this item by the amount gained."
+cooldown = Array[float]([11.0, 10.0, 9.0, 8.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_6w154")]([])
+triggered_effects = Dictionary[int, ExtResource("4_ge7ub")]({})
+size = 2
+starting_tier = 1
+collection = 2
+type = Array[int]([12, 18, 16])
+dev_state = 1

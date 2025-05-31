@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://drs6wlbuihg1r"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_tl7wc"]
+[ext_resource type="Texture2D" uid="uid://b0x5mpputtd3f" path="res://BazzarDBParser/Items_001-500_files/180px-Dock_Lines.png" id="2_3aehx"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_gql3c"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_0j0vu"]
+
+[resource]
+script = ExtResource("3_gql3c")
+name = "Dock Lines"
+icon = ExtResource("2_3aehx")
+description = "[color=cb9f6d]Slow[/color] 2 / 3 / 4 item(s) for [color=cb9f6d][b]3[/b][/color] second(s)."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_tl7wc")]([])
+triggered_effects = Dictionary[int, ExtResource("4_0j0vu")]({})
+size = 2
+starting_tier = 2
+collection = 2
+type = Array[int]([2, 9, 26])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://b6gh8njqj0eg8"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_pf2j3"]
+[ext_resource type="Texture2D" uid="uid://dnu3a1md13w68" path="res://BazzarDBParser/Items_001-500_files/180px-Makeshift_Barricade.png" id="2_12sfx"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_8sb8t"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_w5gjo"]
+
+[resource]
+script = ExtResource("3_8sb8t")
+name = "Makeshift Barricade"
+icon = ExtResource("2_12sfx")
+description = "[color=cb9f6d]Slow[/color] 1 item for [color=cb9f6d][b]1/2/3/4[/b][/color] seconds.  When you sell this, your leftmost [color=cb9f6d]Slow[/color] item gains +[color=cb9f6d][b]1/2/3/4[/b][/color] seconds [color=cb9f6d]Slow[/color] duration."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_pf2j3")]([])
+triggered_effects = Dictionary[int, ExtResource("4_w5gjo")]({})
+size = 2
+starting_tier = 1
+collection = 5
+type = Array[int]([26])
+dev_state = 1

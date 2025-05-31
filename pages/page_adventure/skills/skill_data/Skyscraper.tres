@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://ci3cu7dkv5rmg"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_imnkq"]
+[ext_resource type="Texture2D" uid="uid://db73pyb2eily4" path="res://BazzarDBParser/Items_001-500_files/180px-Skyscraper.png" id="2_5cjqh"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_510xh"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_wjfkl"]
+
+[resource]
+script = ExtResource("3_510xh")
+name = "Skyscraper"
+icon = ExtResource("2_5cjqh")
+description = "Deal [color=fa5436]Damage[/color] equal to 3 times the value of your items. This has double value in combat. If you have 5 or fewer items in-play, this has +1 Multicast."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([48])
+active_effects = Array[ExtResource("1_imnkq")]([])
+triggered_effects = Dictionary[int, ExtResource("4_wjfkl")]({})
+size = 3
+starting_tier = 4
+collection = 1
+type = Array[int]([14, 1, 3, 18, 28])
+dev_state = 1

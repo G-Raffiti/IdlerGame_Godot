@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bcrtlwyj6i4im"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_gx2f8"]
+[ext_resource type="Texture2D" uid="uid://cmc5hihlmf2i4" path="res://BazzarDBParser/Items_001-500_files/180px-Palanquin.webp" id="2_46lml"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_wa7oi"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_5y3sl"]
+
+[resource]
+script = ExtResource("3_wa7oi")
+name = "Palanquin"
+icon = ExtResource("2_46lml")
+description = "Your items have [color=f75139][b]15[/b]/[b]30[/b]/[b]50[/b][/color]% [color=f75139]Crit Chance[/color]. When you Crit with an item, reduce its [b][color=00ffce]Cooldown[/color][/b] by 5/10/15% for the fight."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_gx2f8")]([])
+triggered_effects = Dictionary[int, ExtResource("4_5y3sl")]({})
+size = 3
+starting_tier = 2
+collection = 4
+type = Array[int]([6, 33, 24, 49])
+dev_state = 1

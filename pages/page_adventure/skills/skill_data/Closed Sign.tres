@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://3pmmrkbp2elg"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_ghqja"]
+[ext_resource type="Texture2D" uid="uid://caugw3h7q83dx" path="res://BazzarDBParser/Items_001-500_files/180px-Closed_Sign.png" id="2_738dd"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_1lcqm"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_e2qx3"]
+
+[resource]
+script = ExtResource("3_1lcqm")
+name = "Closed Sign"
+icon = ExtResource("2_738dd")
+description = "You have [color=8fe930]Regen[/color] equal to 50/100% of the value of adjacent [color=9aabff]Properties[/color]."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([16, 32])
+active_effects = Array[ExtResource("1_ghqja")]([])
+triggered_effects = Dictionary[int, ExtResource("4_e2qx3")]({})
+size = 2
+starting_tier = 3
+collection = 1
+type = Array[int]([18, 22])
+dev_state = 1

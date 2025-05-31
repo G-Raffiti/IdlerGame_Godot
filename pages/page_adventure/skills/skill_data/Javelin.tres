@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://b5h8s1vm3hj3s"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_4somi"]
+[ext_resource type="Texture2D" uid="uid://g6duy81ufx6h" path="res://BazzarDBParser/Items_001-500_files/180px-Javelin.png" id="2_k1ngn"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_gym8i"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_q48do"]
+
+[resource]
+script = ExtResource("3_gym8i")
+name = "Javelin"
+icon = ExtResource("2_k1ngn")
+description = "Deal [color=fa5436][b]120[/b]/[b]180[/b]/[b]240[/b][/color] [color=fa5436]Damage[/color]. When you [color=00ffce]Haste[/color], Reload this [color=f9923c][b]1[/b][/color] [color=f9923c]Ammo[/color]."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([2])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_4somi")]([])
+triggered_effects = Dictionary[int, ExtResource("4_q48do")]({})
+size = 2
+starting_tier = 2
+collection = 2
+type = Array[int]([1, 8, 3, 5])
+dev_state = 1

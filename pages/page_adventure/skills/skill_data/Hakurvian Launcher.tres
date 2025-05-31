@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://xt0u1q3m2o4i"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_ri068"]
+[ext_resource type="Texture2D" uid="uid://sobteuve6sir" path="res://BazzarDBParser/Items_001-500_files/180px-Harkuvian_Launcher.png" id="2_c22pn"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_xvpul"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_6k7li"]
+
+[resource]
+script = ExtResource("3_xvpul")
+name = "Hakurvian Launcher"
+icon = ExtResource("2_c22pn")
+description = "Deal [color=fa5436][b]75[/b]/[b]150[/b]/[b]300[/b]/[b]600 [/b][/color] [color=fa5436]Damage[/color]. When this gains [color=00ffce]Haste[/color], it also gains [color=f75139][b]5[/b]/[b]10[/b]/[b]15[/b]/[b]20 [/b][/color]% [color=f75139]Crit Chance[/color] for the fight."
+cooldown = Array[float]([9.0])
+ammo = Array[int]([2])
+cost = Array[int]([6, 12, 24, 48])
+active_effects = Array[ExtResource("1_ri068")]([])
+triggered_effects = Dictionary[int, ExtResource("4_6k7li")]({})
+size = 3
+starting_tier = 1
+collection = 5
+type = Array[int]([1, 24, 3, 5])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://sq62llbreo6"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_jae6c"]
+[ext_resource type="Texture2D" uid="uid://d33fyclt37n7g" path="res://BazzarDBParser/Items_001-500_files/180px-Beast_of_Burden.png" id="2_2t8pa"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_8yxcx"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_ren43"]
+
+[resource]
+script = ExtResource("3_8yxcx")
+name = "Beast of Burden"
+icon = ExtResource("2_2t8pa")
+description = "Deal [color=fa5436][b]50[/b]/[b]75[/b]/[b]100[/b][/color] [color=fa5436]Damage[/color] This has the types of items you have. This has +1 Multicast for each of its Types."
+cooldown = Array[float]([10.0])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_jae6c")]([])
+triggered_effects = Dictionary[int, ExtResource("4_ren43")]({})
+size = 3
+starting_tier = 2
+collection = 1
+type = Array[int]([1, 12, 3, 6])
+dev_state = 1

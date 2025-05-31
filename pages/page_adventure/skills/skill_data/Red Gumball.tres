@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dtbsvjdb4ws7u"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_iscea"]
+[ext_resource type="Texture2D" uid="uid://ct8d0h3e26rjb" path="res://BazzarDBParser/Items_001-500_files/180px-Red_Gumball.png" id="2_ntn6e"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_drcal"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_i8q42"]
+
+[resource]
+script = ExtResource("3_drcal")
+name = "Red Gumball"
+icon = ExtResource("2_ntn6e")
+description = "When you sell this, give your items [color=fa5436][b]1[/b]/[b]2[/b]/[b]3[/b]/[b]4 [/b][/color] [color=fa5436]Damage[/color]"
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 6, 8])
+active_effects = Array[ExtResource("1_iscea")]([])
+triggered_effects = Dictionary[int, ExtResource("4_i8q42")]({})
+size = 1
+starting_tier = 1
+collection = 7
+type = Array[int]([16])
+dev_state = 1

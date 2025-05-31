@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bwc3wtb6pyscj"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_rodph"]
+[ext_resource type="Texture2D" uid="uid://br6b4aevnfj3s" path="res://BazzarDBParser/Items_001-500_files/180px-Hacksaw.png" id="2_dlkal"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_3o3pb"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_q0ytl"]
+
+[resource]
+script = ExtResource("3_3o3pb")
+name = "Hacksaw"
+icon = ExtResource("2_dlkal")
+description = "Deal [color=fa5436][b]25 / 50[/b][/color] [color=fa5436]Damage[/color]. The first time you use this each fight, destroy a [color=e79b54]Small[/color] or [color=e79b54]Medium[/color] enemy item for the fight. When you destroy an item during combat, double this item's [color=fa5436]Damage[/color] for the fight."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([16, 32])
+active_effects = Array[ExtResource("1_rodph")]([])
+triggered_effects = Dictionary[int, ExtResource("4_q0ytl")]({})
+size = 2
+starting_tier = 3
+collection = 3
+type = Array[int]([1, 2, 3])
+dev_state = 1

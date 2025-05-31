@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://eb6hxv5lut6p"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_onxvm"]
+[ext_resource type="Texture2D" uid="uid://fxlvepa01ku1" path="res://BazzarDBParser/Items_001-500_files/180px-Bar_of_Gold.png" id="2_ksvt2"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_onxvm"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_rux7g"]
+
+[resource]
+script = ExtResource("3_onxvm")
+name = "Bar of Gold"
+icon = ExtResource("2_ksvt2")
+description = "Sells for gold. ([color=f4d021][b]5/10/20/40[/b][/color])"
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([])
+active_effects = Array[ExtResource("1_onxvm")]([])
+triggered_effects = Dictionary[int, ExtResource("4_rux7g")]({})
+size = 1
+starting_tier = 1
+collection = 7
+type = Array[int]([36, 37])
+is_generated_item = false
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bjpffiysa8d8w"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_n7jqk"]
+[ext_resource type="Texture2D" uid="uid://btuxmucehbepr" path="res://BazzarDBParser/Items_001-500_files/180px-Cryosleeve.png" id="2_7vtxl"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_bhg6u"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_0hcfg"]
+
+[resource]
+script = ExtResource("3_bhg6u")
+name = "Cryosleeve"
+icon = ExtResource("2_7vtxl")
+description = "[color=3fcfff]Freeze[/color] this and adjacent items for [color=3fcfff][b]2[/b][/color] seconds. When ANY item is Frozen, [color=f4cf21]Shield[/color] [color=f4cf21][b]50/75/100[/b][/color]. When one of your items gains [color=3fcfff]Freeze[/color], reduce the duration by half."
+cooldown = Array[float]([4.0])
+ammo = Array[int]([])
+cost = Array[int]([4])
+active_effects = Array[ExtResource("1_n7jqk")]([])
+triggered_effects = Dictionary[int, ExtResource("4_0hcfg")]({})
+size = 2
+starting_tier = 2
+collection = 7
+type = Array[int]([20, 40, 19])
+dev_state = 1

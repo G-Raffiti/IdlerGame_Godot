@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://efsy6i37neaf"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_dtrh4"]
+[ext_resource type="Texture2D" uid="uid://txxll10lt8fx" path="res://BazzarDBParser/Items_001-500_files/180px-Seashadow.jpeg" id="2_o4wrd"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_sopm0"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_3rr4e"]
+
+[resource]
+script = ExtResource("3_sopm0")
+name = "Seashadow"
+icon = ExtResource("2_o4wrd")
+description = "Reduce the [b][color=00ffce]Cooldown[/color][/b] of your other items by 10% for this fight. Increase this item's [b][color=00ffce]Cooldown[/color][/b] by 4/3/2 second(s) for the fight."
+cooldown = Array[float]([2.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_dtrh4")]([])
+triggered_effects = Dictionary[int, ExtResource("4_3rr4e")]({})
+size = 2
+starting_tier = 2
+collection = 2
+type = Array[int]([12, 6, 33])
+dev_state = 1

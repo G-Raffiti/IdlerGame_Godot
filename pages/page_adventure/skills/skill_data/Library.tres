@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://5feq4rd4k6k6"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_hp80l"]
+[ext_resource type="Texture2D" uid="uid://dh8ak6jvmca2" path="res://BazzarDBParser/Items_001-500_files/180px-Library.jpeg" id="2_277at"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_k22n3"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_a6pvw"]
+
+[resource]
+script = ExtResource("3_k22n3")
+name = "Library"
+icon = ExtResource("2_277at")
+description = "ALL [color=9aabff]Weapon[/color] [b][color=00ffce]Cooldowns[/color][/b] are increased by +[color=00ffce][b]1[/b]/[b]2[/b][/color] second(s). Your non-[color=9aabff]Weapon[/color] items' [b][color=00ffce]Cooldowns[/color][/b] are decreased by [color=00ffce][b]1[/b]/[b]2[/b][/color] second(s)."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([24, 48])
+active_effects = Array[ExtResource("1_hp80l")]([])
+triggered_effects = Dictionary[int, ExtResource("4_a6pvw")]({})
+size = 3
+starting_tier = 3
+collection = 4
+type = Array[int]([14, 33])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bx5kuj365t4w7"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_1gmic"]
+[ext_resource type="Texture2D" uid="uid://c1m763aqh3ht6" path="res://BazzarDBParser/Items_501-603_files/180px-Weather_Machine.webp" id="2_fsssh"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_78ohq"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_m4h5f"]
+
+[resource]
+script = ExtResource("3_78ohq")
+name = "Weather Machine"
+icon = ExtResource("2_fsssh")
+description = "[color=fc933e]Burn[/color] [color=fc933e][b]4[/b]/[b]6[/b][/color] [color=3fcfff]Freeze[/color] one item for [color=3fcfff][b]1[/b]/[b]2[/b][/color] second(s). [color=cb9f6d]Slow[/color] one item for [color=cb9f6d][b]2[/b]/[b]3[/b][/color] second(s)."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([24, 48])
+active_effects = Array[ExtResource("1_1gmic")]([])
+triggered_effects = Dictionary[int, ExtResource("4_m4h5f")]({})
+size = 3
+starting_tier = 3
+collection = 8
+type = Array[int]([17, 6, 14, 26, 40, 32])
+dev_state = 1

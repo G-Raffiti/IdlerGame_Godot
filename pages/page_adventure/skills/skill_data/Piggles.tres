@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://llwxqouu5jvw"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_8wwnl"]
+[ext_resource type="Texture2D" uid="uid://cpiw25ru4s0oh" path="res://BazzarDBParser/Items_001-500_files/180px-Piggles.png" id="2_vfbgm"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_8wwnl"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_dx2bv"]
+
+[resource]
+script = ExtResource("3_8wwnl")
+name = "Piggles"
+icon = ExtResource("2_vfbgm")
+description = "[color=00eac1][b]Charge[/b][/color] adjacent [color=e79b54]Small[/color] items [color=00eac1][b]1/2/3/4[/b][/color] seconds. When you win a fight, get a Piggle. At the start of each day, upgrade a random Piggle."
+cooldown = Array[float]([8.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_8wwnl")]([])
+triggered_effects = Dictionary[int, ExtResource("4_dx2bv")]({})
+size = 1
+starting_tier = 1
+collection = 1
+type = Array[int]([7, 11])
+is_generated_item = false
+dev_state = 1

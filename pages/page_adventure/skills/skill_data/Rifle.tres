@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bkyid4och1dl7"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_d43p5"]
+[ext_resource type="Texture2D" uid="uid://dq4gfvrpkwsyr" path="res://BazzarDBParser/Items_001-500_files/180px-Rifle.png" id="2_3jgej"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_40li1"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_hc00p"]
+
+[resource]
+script = ExtResource("3_40li1")
+name = "Rifle"
+icon = ExtResource("2_3jgej")
+description = "Deal [color=fa5436][b]8[/b]/[b]16[/b]/[b]30[/b]/[b]48 [/b][/color] [color=fa5436]Damage[/color]. When you use this, reload this [color=f9923c][b]1[/b][/color] [color=f9923c]Ammo[/color] if it is your only [color=9aabff]Weapon[/color] with a cooldown."
+cooldown = Array[float]([3.0])
+ammo = Array[int]([1])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_d43p5")]([])
+triggered_effects = Dictionary[int, ExtResource("4_hc00p")]({})
+size = 2
+starting_tier = 1
+collection = 2
+type = Array[int]([1, 8, 3])
+dev_state = 1

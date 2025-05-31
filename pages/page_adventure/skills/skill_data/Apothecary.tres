@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://baj4ytfd3dnwn"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_uq22w"]
+[ext_resource type="Texture2D" uid="uid://c4n8p3qy5tdfn" path="res://BazzarDBParser/Items_001-500_files/180px-Apothecary.jpeg" id="2_v1u2f"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_21dsx"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_vf5ak"]
+
+[resource]
+script = ExtResource("3_21dsx")
+name = "Apothecary"
+icon = ExtResource("2_v1u2f")
+description = "Gain [color=8fe930][b]5[/b]/[b]10[/b]/[b]15[/b][/color] [color=8fe930]Regen[/color] for the fight. When you [color=00ffce]Haste[/color], [color=cb9f6d]Slow[/color], [color=0fb54b]Poison[/color], or [color=fc933e]Burn[/color], [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1[/b][/color] second(s). At the start of each day, get a [color=9aabff]Reagent[/color] or Catalyst."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_uq22w")]([])
+triggered_effects = Dictionary[int, ExtResource("4_vf5ak")]({})
+size = 3
+starting_tier = 2
+collection = 4
+type = Array[int]([14, 22])
+is_generated_item = false
+dev_state = 1

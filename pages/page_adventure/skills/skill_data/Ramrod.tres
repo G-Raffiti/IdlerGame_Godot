@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://b1xm5mijt2hxb"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_sl4sa"]
+[ext_resource type="Texture2D" uid="uid://b7qifa2j8qni7" path="res://BazzarDBParser/Items_001-500_files/180px-Ramrod.png" id="2_x5b76"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_r8qyh"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_r4tcb"]
+
+[resource]
+script = ExtResource("3_r8qyh")
+name = "Ramrod"
+icon = ExtResource("2_x5b76")
+description = "Reload adjacent [color=f9923c]Ammo[/color] items [color=f9923c][b]1[/b][/color] [color=f9923c]Ammo[/color]. Your [color=f9923c]Ammo[/color] items have + [color=f75139][b] 20 / 30 / 40[/b][/color]% [color=f75139]Crit Chance[/color] When one of your items runs out of [color=f9923c]Ammo[/color], charge this [color=00eac1][b]1[/b][/color] second."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_sl4sa")]([])
+triggered_effects = Dictionary[int, ExtResource("4_r4tcb")]({})
+size = 2
+starting_tier = 2
+collection = 2
+type = Array[int]([2, 31])
+dev_state = 1

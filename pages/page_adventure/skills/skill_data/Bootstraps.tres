@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://t21abxlee15e"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_lmbvc"]
+[ext_resource type="Texture2D" uid="uid://b420s7fobcri" path="res://BazzarDBParser/Items_001-500_files/180px-Bootstraps.png" id="2_6vh8g"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_rksgv"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_y6sqh"]
+
+[resource]
+script = ExtResource("3_rksgv")
+name = "Bootstraps"
+icon = ExtResource("2_6vh8g")
+description = "Every [color=f4d021][b]50[/b][/color] you spend, upgrade a random item of a lower tier."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_lmbvc")]([])
+triggered_effects = Dictionary[int, ExtResource("4_y6sqh")]({})
+size = 2
+starting_tier = 2
+collection = 1
+type = Array[int]([20])
+dev_state = 1

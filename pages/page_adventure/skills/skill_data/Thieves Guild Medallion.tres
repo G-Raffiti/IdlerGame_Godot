@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://b6oaeac36pqt0"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_ukmx1"]
+[ext_resource type="Texture2D" uid="uid://dytoup1nqoa1x" path="res://BazzarDBParser/Items_501-603_files/180px-Thieves_Guild_Medallion.png" id="2_fdxi5"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_7emsk"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_5webg"]
+
+[resource]
+script = ExtResource("3_7emsk")
+name = "Thieves Guild Medallion"
+icon = ExtResource("2_fdxi5")
+description = "When you sell this, gain access to the Thieves Guild."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([16])
+active_effects = Array[ExtResource("1_ukmx1")]([])
+triggered_effects = Dictionary[int, ExtResource("4_5webg")]({})
+size = 1
+starting_tier = 4
+collection = 7
+type = Array[int]([])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bg8qqrvq53jaf"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_xlang"]
+[ext_resource type="Texture2D" uid="uid://da2ob2sp77wda" path="res://BazzarDBParser/Items_001-500_files/180px-Feather.png" id="2_n5v87"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_8gcac"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_q6vbu"]
+
+[resource]
+script = ExtResource("3_8gcac")
+name = "Feather"
+icon = ExtResource("2_n5v87")
+description = "When you sell this, reduce your leftmost item's [b][color=00ffce]Cooldown[/color][/b] by 2 / 4 / 6 / 8%."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_xlang")]([])
+triggered_effects = Dictionary[int, ExtResource("4_q6vbu")]({})
+size = 1
+starting_tier = 1
+collection = 5
+type = Array[int]([35, 33])
+dev_state = 1

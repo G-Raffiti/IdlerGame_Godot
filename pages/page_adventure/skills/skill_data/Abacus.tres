@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dk0y4sh42b2a8"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_fj657"]
+[ext_resource type="Texture2D" uid="uid://b6qowk4v0pxpc" path="res://BazzarDBParser/Items_001-500_files/180px-Abacus.png" id="2_1kodj"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_h5qbm"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_vkxp2"]
+
+[resource]
+script = ExtResource("3_h5qbm")
+name = "Abacus"
+icon = ExtResource("2_1kodj")
+description = "[color=f4cf21]Shield[/color] equal to x1/x2 the value of the adjacent items."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16])
+active_effects = Array[ExtResource("1_fj657")]([])
+triggered_effects = Dictionary[int, ExtResource("4_vkxp2")]({})
+size = 1
+starting_tier = 3
+collection = 1
+type = Array[int]([2, 18, 19])
+dev_state = 1

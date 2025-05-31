@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bplpvmog3y687"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_fcb88"]
+[ext_resource type="Texture2D" uid="uid://b2w1fk83xreq6" path="res://BazzarDBParser/Items_001-500_files/180px-Catfish.png" id="2_5ucr4"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_u3lde"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_4jh7s"]
+
+[resource]
+script = ExtResource("3_u3lde")
+name = "Catfish"
+icon = ExtResource("2_5ucr4")
+description = "[color=0fb54b]Poison[/color] [color=0fb54b][b]3[/b][/color]. When this gains [color=00ffce]Haste[/color], give it + [color=0fb54b][b]2[/b]/[b]4[/b]/[b]6[/b]/[b]8[/b][/color] [color=0fb54b]Poison[/color] for the fight."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 6, 8])
+active_effects = Array[ExtResource("1_fcb88")]([])
+triggered_effects = Dictionary[int, ExtResource("4_4jh7s")]({})
+size = 1
+starting_tier = 1
+collection = 2
+type = Array[int]([9, 12, 5, 21])
+dev_state = 1

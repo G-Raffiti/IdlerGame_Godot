@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://b5vlas3uu8yo4"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_sunaa"]
+[ext_resource type="Texture2D" uid="uid://mqrnfitwbyns" path="res://BazzarDBParser/Items_001-500_files/180px-Death_Caps.png" id="2_jen2o"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_1sl1b"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_2ovb6"]
+
+[resource]
+script = ExtResource("3_1sl1b")
+name = "Death Caps"
+icon = ExtResource("2_jen2o")
+description = "[color=0fb54b]Poison[/color] [color=0fb54b][b]2[/b][/color] Your [color=0fb54b]Poison[/color] items gain [color=0fb54b][b]2[/b]/[b]4[/b]/[b]6[/b][/color] [color=0fb54b]Poison[/color] for the fight. When this is transformed, enchant it with Toxic if able."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_sunaa")]([])
+triggered_effects = Dictionary[int, ExtResource("4_2ovb6")]({})
+size = 2
+starting_tier = 2
+collection = 4
+type = Array[int]([45, 21])
+dev_state = 1

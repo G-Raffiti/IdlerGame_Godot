@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://buwv55kjj4krb"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_j5obj"]
+[ext_resource type="Texture2D" uid="uid://d1kjtt547ddtl" path="res://BazzarDBParser/Items_001-500_files/180px-Rapid_Injection_System.png" id="2_tlblt"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_3cq6i"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_h2r21"]
+
+[resource]
+script = ExtResource("3_3cq6i")
+name = "Rapid Injection System"
+icon = ExtResource("2_tlblt")
+description = "When you [color=0fb54b]Poison[/color] yourself, [color=0fb54b]Poison[/color] [color=0fb54b][b]4/8/12[/b][/color]. When you use an adjacent item, [color=0fb54b]Poison[/color] yourself [color=0fb54b][b]4/8/12[/b][/color] and gain [color=8fe930][b]2/4/6[/b][/color] [color=8fe930]Regen[/color] for the fight."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_j5obj")]([])
+triggered_effects = Dictionary[int, ExtResource("4_h2r21")]({})
+size = 2
+starting_tier = 2
+collection = 4
+type = Array[int]([2, 21, 22])
+dev_state = 1

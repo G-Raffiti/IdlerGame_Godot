@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://d2p8ypq8gwf3k"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_2s27g"]
+[ext_resource type="Texture2D" uid="uid://dwjia8u4v5pb0" path="res://BazzarDBParser/Items_501-603_files/180px-Thrusters.png" id="2_27opv"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_ekvjh"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_vrnaw"]
+
+[resource]
+script = ExtResource("3_ekvjh")
+name = "Thrusters"
+icon = ExtResource("2_27opv")
+description = "The item to the left of this is a [color=9aabff]Vehicle[/color] and has its [b][color=00ffce]Cooldown[/color][/b] reduced by 5%/10%/15% ."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 12])
+active_effects = Array[ExtResource("1_2s27g")]([])
+triggered_effects = Dictionary[int, ExtResource("4_vrnaw")]({})
+size = 1
+starting_tier = 2
+collection = 3
+type = Array[int]([17, 33])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://b17e1fc47moi8"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_0dg7o"]
+[ext_resource type="Texture2D" uid="uid://dl31xy61dt4sp" path="res://BazzarDBParser/Items_001-500_files/180px-Shoe_Blade.png" id="2_4bflv"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_tbgyl"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_bwfxj"]
+
+[resource]
+script = ExtResource("3_tbgyl")
+name = "Shoe Blade"
+icon = ExtResource("2_4bflv")
+description = "Deal [color=fa5436][b]20[/b]/[b]40[/b]/[b]60[/b]/[b]80[/b][/color]. Crit Chance: [color=f75139][b]15[/b]/[b]30[/b]/[b]50[/b]/[b]100 [/b][/color]%."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([2, 4, 8, 16])
+active_effects = Array[ExtResource("1_0dg7o")]([])
+triggered_effects = Dictionary[int, ExtResource("4_bwfxj")]({})
+size = 1
+starting_tier = 1
+collection = 2
+type = Array[int]([1, 20, 3])
+dev_state = 1

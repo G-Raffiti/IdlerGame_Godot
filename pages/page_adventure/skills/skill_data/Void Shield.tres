@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://blyr1u8rr4lse"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_7xp1r"]
+[ext_resource type="Texture2D" uid="uid://o8spk13nnqxc" path="res://BazzarDBParser/Items_501-603_files/180px-Void_Shield.png" id="2_alfl6"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_b0aah"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_vxpcp"]
+
+[resource]
+script = ExtResource("3_b0aah")
+name = "Void Shield"
+icon = ExtResource("2_alfl6")
+description = "Gain [color=f4cf21]Shield[/color] equal to your enemy's [color=fc933e]Burn[/color]. When your enemy uses an item, [color=fc933e]Burn[/color] [color=fc933e][b]1[/b][/color]."
+cooldown = Array[float]([8.0])
+ammo = Array[int]([])
+cost = Array[int]([32])
+active_effects = Array[ExtResource("1_7xp1r")]([])
+triggered_effects = Dictionary[int, ExtResource("4_vxpcp")]({})
+size = 2
+starting_tier = 4
+collection = 7
+type = Array[int]([32, 19])
+dev_state = 1

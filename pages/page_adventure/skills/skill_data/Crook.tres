@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://4sc01xta8q44"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_qrnv6"]
+[ext_resource type="Texture2D" uid="uid://cosuyi8v6xoqe" path="res://BazzarDBParser/Items_001-500_files/180px-Crook.png" id="2_c7csn"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_wr3xj"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_dccj3"]
+
+[resource]
+script = ExtResource("3_wr3xj")
+name = "Crook"
+icon = ExtResource("2_c7csn")
+description = "Deal [color=fa5436][b]16[/b][/color] [color=fa5436]Damage[/color]. Your [color=e79b54]Medium[/color] [color=9aabff]Weapons[/color] have +[color=fa5436][b]8/16/24[/b][/color] [color=fa5436]Damage[/color] for each [color=e79b54]Medium[/color] item you have."
+cooldown = Array[float]([6.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_qrnv6")]([])
+triggered_effects = Dictionary[int, ExtResource("4_dccj3")]({})
+size = 2
+starting_tier = 2
+collection = 1
+type = Array[int]([2, 1, 16, 3])
+dev_state = 1

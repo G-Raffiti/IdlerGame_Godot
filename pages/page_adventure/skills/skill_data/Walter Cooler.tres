@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://c68jgro1id6nj"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_eo2l0"]
+[ext_resource type="Texture2D" uid="uid://b01rayek1yrfx" path="res://BazzarDBParser/Items_501-603_files/180px-Walter_Cooler.png" id="2_m8nit"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_5rx43"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_tapcu"]
+
+[resource]
+script = ExtResource("3_5rx43")
+name = "Walter Cooler"
+icon = ExtResource("2_m8nit")
+description = "Permanently gain 10/15/20 [color=8fe930]Max Health[/color]. When you use an adjacent [color=9aabff]Friend[/color], [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1[/b][/color] seconds."
+cooldown = Array[float]([10.0, 9.0, 8.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_eo2l0")]([])
+triggered_effects = Dictionary[int, ExtResource("4_tapcu")]({})
+size = 1
+starting_tier = 2
+collection = 3
+type = Array[int]([12, 39])
+dev_state = 1

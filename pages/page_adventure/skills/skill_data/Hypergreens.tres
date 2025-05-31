@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dsdbw32rdvpqi"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_7xd1k"]
+[ext_resource type="Texture2D" uid="uid://dah16o2ndxplg" path="res://BazzarDBParser/Items_001-500_files/180px-Hypergreens.png" id="2_xgkqn"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_iqh71"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_kknsx"]
+
+[resource]
+script = ExtResource("3_iqh71")
+name = "Hypergreens"
+icon = ExtResource("2_xgkqn")
+description = "Adjacent items gain +[color=f4d021][b]3/6/9[/b][/color] [color=f4d021]Value[/color] for the fight. When you use an adjacent item, [color=8fe930]Heal[/color] equal to the [color=f4d021]Value[/color] of adjacent items."
+cooldown = Array[float]([4.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_7xd1k")]([])
+triggered_effects = Dictionary[int, ExtResource("4_kknsx")]({})
+size = 2
+starting_tier = 2
+collection = 1
+type = Array[int]([2, 28, 44, 27])
+dev_state = 1

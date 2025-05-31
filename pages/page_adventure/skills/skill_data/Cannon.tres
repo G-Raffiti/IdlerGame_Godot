@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://6ahrnesh6ul7"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_o61uc"]
+[ext_resource type="Texture2D" uid="uid://vpdefan4ac0s" path="res://BazzarDBParser/Items_001-500_files/180px-Cannon.png" id="2_hgmq4"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_yrn3b"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_2isla"]
+
+[resource]
+script = ExtResource("3_yrn3b")
+name = "Cannon"
+icon = ExtResource("2_hgmq4")
+description = "Deal [color=fa5436][b]40[/b]/[b]60[/b]/[b]80[/b]/[b]100 [/b][/color] [color=fa5436]Damage[/color]. [color=fc933e]Burn[/color] [color=fc933e][b]4[/b]/[b]6[/b]/[b]8[/b]/[b]10[/b][/color]."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([2])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_o61uc")]([])
+triggered_effects = Dictionary[int, ExtResource("4_2isla")]({})
+size = 2
+starting_tier = 1
+collection = 2
+type = Array[int]([1, 8, 32, 3])
+dev_state = 1

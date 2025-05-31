@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://ck1dpnyk4m0h1"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_nwqs2"]
+[ext_resource type="Texture2D" uid="uid://f8twmu13sth4" path="res://BazzarDBParser/Items_001-500_files/180px-Rowboat.png" id="2_dmt30"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_kojwu"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_7g1fw"]
+
+[resource]
+script = ExtResource("3_kojwu")
+name = "Rowboat"
+icon = ExtResource("2_dmt30")
+description = "[color=00eac1][b]Charge[/b][/color] adjacent items [color=00ffce][b]1 / 2 / 3[/b][/color] second(s). If you have 5 or more unique Types, reduce this item's [b][color=00ffce]Cooldown[/color][/b] by 50%."
+cooldown = Array[float]([9.0])
+ammo = Array[int]([])
+cost = Array[int]([16, 32])
+active_effects = Array[ExtResource("1_nwqs2")]([])
+triggered_effects = Dictionary[int, ExtResource("4_7g1fw")]({})
+size = 2
+starting_tier = 2
+collection = 2
+type = Array[int]([9, 6])
+dev_state = 1

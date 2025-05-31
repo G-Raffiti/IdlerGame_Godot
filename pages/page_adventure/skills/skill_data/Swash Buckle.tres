@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bljhj1i8atxi"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_ahw4u"]
+[ext_resource type="Texture2D" uid="uid://fxlqolkai2gr" path="res://BazzarDBParser/Items_501-603_files/180px-Swash_Buckle.png" id="2_gmge1"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_w5q6t"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_ap638"]
+
+[resource]
+script = ExtResource("3_w5q6t")
+name = "Swash Buckle"
+icon = ExtResource("2_gmge1")
+description = "Adjacent items have +[color=f75139][b]25 / 50[/b][/color]% [color=f75139]Crit Chance[/color]. Adjacent items have bonus [color=fa5436]Damage[/color], [color=8fe930]Heal[/color] or [color=f4cf21]Shield[/color] equal to their [color=f75139]Crit Chance[/color]."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([16, 32])
+active_effects = Array[ExtResource("1_ahw4u")]([])
+triggered_effects = Dictionary[int, ExtResource("4_ap638")]({})
+size = 2
+starting_tier = 3
+collection = 2
+type = Array[int]([20, 24, 16, 29, 15])
+dev_state = 1

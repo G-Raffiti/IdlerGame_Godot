@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dho6aq6sw33lq"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_v5bpi"]
+[ext_resource type="Texture2D" uid="uid://dh76hn5wnmanf" path="res://BazzarDBParser/Items_001-500_files/180px-Pulse_Rifle.png" id="2_p7yu3"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_02dsb"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_oumhi"]
+
+[resource]
+script = ExtResource("3_02dsb")
+name = "Pulse Rifle"
+icon = ExtResource("2_p7yu3")
+description = "Deal [color=fa5436][b]10[/b]/[b]20[/b]/[b]30[/b]/[b]40[/b][/color] damage. This has +1 Multicast if it is adjacent to a [color=9aabff]Friend[/color]. Double this if it is your only [color=9aabff]Friend[/color]."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_v5bpi")]([])
+triggered_effects = Dictionary[int, ExtResource("4_oumhi")]({})
+size = 2
+starting_tier = 1
+collection = 3
+type = Array[int]([1, 3])
+dev_state = 1

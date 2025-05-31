@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bt1ahbmtfontx"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_hr60b"]
+[ext_resource type="Texture2D" uid="uid://dqt3uhgjoadht" path="res://BazzarDBParser/Items_001-500_files/180px-Fire_Claw.png" id="2_a48d4"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_nv7em"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_m4ntw"]
+
+[resource]
+script = ExtResource("3_nv7em")
+name = "Fire Claw"
+icon = ExtResource("2_a48d4")
+description = "[color=fc933e]Burn[/color] [color=fc933e][b]6[/b]/[b]9[/b]/[b]12[/b][/color]. This has +[color=fc933e]Burn[/color] equal to 50/75/100% of the [color=fc933e]Burn[/color] of your other items."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_hr60b")]([])
+triggered_effects = Dictionary[int, ExtResource("4_m4ntw")]({})
+size = 2
+starting_tier = 2
+collection = 4
+type = Array[int]([32])
+dev_state = 1

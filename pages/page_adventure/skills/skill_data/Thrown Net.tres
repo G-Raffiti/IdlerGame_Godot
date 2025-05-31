@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cix63ambjj10w"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_k0a0c"]
+[ext_resource type="Texture2D" uid="uid://d4a0mwe17fqma" path="res://BazzarDBParser/Items_501-603_files/180px-Thrown_Net.png" id="2_67kyr"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_gqawv"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_b6a7i"]
+
+[resource]
+script = ExtResource("3_gqawv")
+name = "Thrown Net"
+icon = ExtResource("2_67kyr")
+description = "[color=cb9f6d]Slow[/color] 1 item for [color=cb9f6d][b]2[/b]/[b]3[/b][/color] second(s). This has +1 Multicast for each [color=9aabff]Weapon[/color] or [color=9aabff]Friend[/color] your enemy has."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_k0a0c")]([])
+triggered_effects = Dictionary[int, ExtResource("4_b6a7i")]({})
+size = 2
+starting_tier = 3
+collection = 4
+type = Array[int]([26])
+dev_state = 1

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://cr15hobhn1x4d"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_ola7c"]
+[ext_resource type="Texture2D" uid="uid://db1n482geo3qx" path="res://BazzarDBParser/Items_001-500_files/180px-Railgun.png" id="2_j2n25"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_6s3ij"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_nqijj"]
+
+[resource]
+script = ExtResource("3_6s3ij")
+name = "Railgun"
+icon = ExtResource("2_j2n25")
+description = "Deal [color=fa5436][b]300[/b]/[b]450[/b]/[b]600[/b][/color] [color=fa5436]Damage[/color]. When you use another [color=9aabff][b]Tech[/b][/color], [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]2[/b][/color] seconds."
+cooldown = Array[float]([12.0, 11.0, 10.0])
+ammo = Array[int]([])
+cost = Array[int]([12, 24, 48])
+active_effects = Array[ExtResource("1_ola7c")]([])
+triggered_effects = Dictionary[int, ExtResource("4_nqijj")]({})
+size = 3
+starting_tier = 2
+collection = 3
+type = Array[int]([1, 17, 3])
+dev_state = 1

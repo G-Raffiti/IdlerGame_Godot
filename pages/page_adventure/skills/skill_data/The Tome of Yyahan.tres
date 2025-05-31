@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bbxm2gk6rsttg"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_a684p"]
+[ext_resource type="Texture2D" uid="uid://b8gn017ouow88" path="res://BazzarDBParser/Items_501-603_files/180px-The_Tome_of_Yyahan.jpeg" id="2_368td"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_rlfgj"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_15niq"]
+
+[resource]
+script = ExtResource("3_rlfgj")
+name = "The Tome of Yyahan"
+icon = ExtResource("2_368td")
+description = "When you transform a [color=9aabff]Reagent[/color], gain [color=8fe930][b]5[/b]/[b]10[/b]/[b]15[/b][/color] [color=8fe930]Regen[/color]."
+cooldown = Array[float]([])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_a684p")]([])
+triggered_effects = Dictionary[int, ExtResource("4_15niq")]({})
+size = 2
+starting_tier = 2
+collection = 4
+type = Array[int]([22, 38])
+dev_state = 1

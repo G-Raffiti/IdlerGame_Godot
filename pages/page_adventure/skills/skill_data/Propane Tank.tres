@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://c65y3am5n0uy1"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_a7c57"]
+[ext_resource type="Texture2D" uid="uid://dnm5ar8gix8i6" path="res://BazzarDBParser/Items_001-500_files/180px-Propane_Tank.png" id="2_t27v5"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_1l03g"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_1xxwe"]
+
+[resource]
+script = ExtResource("3_1l03g")
+name = "Propane Tank"
+icon = ExtResource("2_t27v5")
+description = "[color=00ffce]Haste[/color] your [color=9aabff]Vehicles[/color] for [color=00ffce][b]3/4/5[/b][/color] seconds. [color=fc933e]Burn[/color] both players [color=fc933e][b]4/6/8[/b][/color]. If you have a [color=9aabff]Vehicle[/color], at the start of each fight, use this."
+cooldown = Array[float]([7.0])
+ammo = Array[int]([])
+cost = Array[int]([8, 16, 32])
+active_effects = Array[ExtResource("1_a7c57")]([])
+triggered_effects = Dictionary[int, ExtResource("4_1xxwe")]({})
+size = 2
+starting_tier = 2
+collection = 8
+type = Array[int]([2, 32, 23])
+dev_state = 1

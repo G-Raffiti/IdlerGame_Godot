@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://dgums177p8qvi"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_3caq7"]
+[ext_resource type="Texture2D" uid="uid://brx6o70al416q" path="res://BazzarDBParser/Items_001-500_files/180px-Marble_Scalemail.png" id="2_t3q8h"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_yxobw"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_yp0e6"]
+
+[resource]
+script = ExtResource("3_yxobw")
+name = "Marble Scalemail"
+icon = ExtResource("2_t3q8h")
+description = "[color=f4cf21]Shield[/color] [color=f4cf21][b]20[/b]/[b]60[/b]/[b]120[/b]/[b]200[/b][/color]. When you sell this, your [color=f4cf21]Shield[/color] items gain [color=f4cf21][b]3[/b]/[b]6[/b]/[b]9[/b]/[b]12[/b][/color] [color=f4cf21]Shield[/color]."
+cooldown = Array[float]([9.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_3caq7")]([])
+triggered_effects = Dictionary[int, ExtResource("4_yp0e6")]({})
+size = 2
+starting_tier = 1
+collection = 5
+type = Array[int]([20, 19])
+dev_state = 1

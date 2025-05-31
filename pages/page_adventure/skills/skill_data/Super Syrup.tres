@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://qwr7jl2s1u8s"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_khsqh"]
+[ext_resource type="Texture2D" uid="uid://clyirecsflql2" path="res://BazzarDBParser/Items_501-603_files/180px-Super_Syrup.png" id="2_rru4s"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_pw10k"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_pirv1"]
+
+[resource]
+script = ExtResource("3_pw10k")
+name = "Super Syrup"
+icon = ExtResource("2_rru4s")
+description = "Adjacent items gain +[color=f75139][b]1 / 2 / 3 / 4[/b][/color]% [color=f75139]Crit Chance[/color]. This permanently loses [color=f9923c][b]1[/b][/color] Max [color=f9923c]Ammo[/color] and destroy this if it has [color=f9923c][b]0[/b][/color] Max [color=f9923c]Ammo[/color]."
+cooldown = Array[float]([4.0])
+ammo = Array[int]([10])
+cost = Array[int]([4, 8, 16, 32])
+active_effects = Array[ExtResource("1_khsqh")]([])
+triggered_effects = Dictionary[int, ExtResource("4_pirv1")]({})
+size = 2
+starting_tier = 1
+collection = 7
+type = Array[int]([41, 8, 24])
+dev_state = 1

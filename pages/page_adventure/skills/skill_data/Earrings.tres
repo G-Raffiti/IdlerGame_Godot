@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="SkillData" load_steps=5 format=3 uid="uid://bjsleterwkvgt"]
+
+[ext_resource type="Script" uid="uid://dhw87ankvtaf5" path="res://pages/page_adventure/skills/effects/skill_effect.gd" id="1_jordg"]
+[ext_resource type="Texture2D" uid="uid://t7ypbx4n4qq6" path="res://BazzarDBParser/Items_001-500_files/180px-Earrings.png" id="2_si6bc"]
+[ext_resource type="Script" uid="uid://bjjugwsaftjka" path="res://pages/page_adventure/skills/data/skill_data.gd" id="3_clgvw"]
+[ext_resource type="Script" uid="uid://co2yfxvoapuxn" path="res://pages/page_adventure/skills/effects/effect_list.gd" id="4_c6j2d"]
+
+[resource]
+script = ExtResource("3_clgvw")
+name = "Earrings"
+icon = ExtResource("2_si6bc")
+description = "Gain 50/75/100 [color=8fe930]Max Health[/color] for the fight. When you [color=00ffce]Haste[/color] or [color=cb9f6d]Slow[/color], [color=00eac1][b]Charge[/b][/color] this [color=00eac1][b]1[/b][/color] second(s)."
+cooldown = Array[float]([5.0])
+ammo = Array[int]([])
+cost = Array[int]([4, 8, 16])
+active_effects = Array[ExtResource("1_jordg")]([])
+triggered_effects = Dictionary[int, ExtResource("4_c6j2d")]({})
+size = 1
+starting_tier = 2
+collection = 4
+type = Array[int]([5, 39, 48])
+dev_state = 1
