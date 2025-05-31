@@ -13,3 +13,6 @@ class_name ButtonRich
 
 func _ready() -> void:
     button_text = button_text
+
+func _make_custom_tooltip(for_text: String) -> Object:
+    return Tooltip.make_custom_tooltip(for_text)

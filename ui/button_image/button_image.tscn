@@ -1,0 +1,69 @@
+[gd_scene load_steps=5 format=3 uid="uid://bfclbq123ivvr"]
+
+[ext_resource type="Script" uid="uid://b2e1xtpews10n" path="res://ui/button_image/button_image.gd" id="1_jfc1h"]
+[ext_resource type="Texture2D" uid="uid://dm1w5tfqifh8m" path="res://BazzarDBParser/Items_001-500_files/180px-Beta_Ray.png" id="2_ejm5n"]
+
+[sub_resource type="Gradient" id="Gradient_80b5j"]
+offsets = PackedFloat32Array(0.902821, 0.981191, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ejm5n"]
+gradient = SubResource("Gradient_80b5j")
+fill = 2
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.5, 0)
+
+[node name="ButtonImage" type="PanelContainer"]
+offset_right = 121.0
+offset_bottom = 43.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 2
+script = ExtResource("1_jfc1h")
+image = ExtResource("2_ejm5n")
+text = "Image Button"
+
+[node name="Button" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("2_ejm5n")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+texture = SubResource("GradientTexture2D_ejm5n")
+region_rect = Rect2(0, 0, 64, 64)
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+bbcode_enabled = true
+text = "Image Button"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1

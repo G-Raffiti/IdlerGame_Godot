@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://wv3266ybrc3l"]
+
+[ext_resource type="PackedScene" uid="uid://bfclbq123ivvr" path="res://ui/button_image/button_image.tscn" id="1_chlhq"]
+
+[node name="ButtonImage" instance=ExtResource("1_chlhq")]
+clip_contents = true
+custom_minimum_size = Vector2(128, 128)
+
+[node name="TextureRect" parent="." index="1"]
+stretch_mode = 6
+
+[node name="RichTextLabel" parent="MarginContainer" index="0"]
+theme_override_constants/outline_size = 10
